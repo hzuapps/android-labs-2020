@@ -32,7 +32,7 @@ $ git clone https://github.com/你的帐号名/android-labs-2020
 ```   
 - 进入本地项目源代码目录：  
 ```   
-$ cd web-wechat-2019
+$ cd android-labs-2020
 ```   
 
 ## 5. 编写代码
