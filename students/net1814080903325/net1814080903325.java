@@ -1,5 +1,5 @@
 package com.hzu.huaStar
 
-public class Demo{
+public class net1814080903325{
 
 }
