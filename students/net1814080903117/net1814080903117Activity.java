@@ -1,8 +1,6 @@
-package edu.hzuapps.androidlabs.net1814080903117.net1814080903117Activity.java
+package edu.hzuapps.androidlabs.net1814080903117
 
-
-
-public void class net1814080903117Activity(){
+public class net1814080903117Activity{
 
 
 }
