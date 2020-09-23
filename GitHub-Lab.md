@@ -18,7 +18,7 @@ https://github.com/你的帐号名/android-labs-2020
 
 - 打开 https://git-scm.org ，下载适合本机版本（32位或64位）；
 - 双击 exe 文件将工具安装到本机上；
-- 从开始菜单打开 Git-Shell。
+- 从开始菜单打开 Git Bash。
 
 ## 4. 克隆代码到本地磁盘
 
@@ -32,12 +32,12 @@ $ git clone https://github.com/你的帐号名/android-labs-2020
 ```   
 - 进入本地项目源代码目录：  
 ```   
-$ cd web-wechat-2019
+$ cd android-labs-2020
 ```   
 
 ## 5. 编写代码
 
-- 选择下载并安装一个网页编辑工具，如：Sublime-text
+- 打开所安装的Android Studio，创建一个项目
 - 打开资源浏览器，在项目中创建个人学号目录，如：android-labs-2020/students/com123456/
 - 或者直接在命令行里，使用 mkdir 命令创建目录：  
 ```   
