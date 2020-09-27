@@ -1,4 +1,4 @@
-package com.example.net1808081001120
+package edu.hzuapps.androidlabs.net1808081001120
 
 import org.junit.Test
 

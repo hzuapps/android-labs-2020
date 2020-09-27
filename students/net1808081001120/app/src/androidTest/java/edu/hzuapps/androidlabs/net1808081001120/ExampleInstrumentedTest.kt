@@ -1,4 +1,4 @@
-package com.example.net1808081001120
+package edu.hzuapps.androidlabs.net1808081001120
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.net1808081001120", appContext.packageName)
+        assertEquals("edu.hzuapps.androidlabs.net1808081001120", appContext.packageName)
     }
 }
