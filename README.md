@@ -41,6 +41,10 @@ https://blog.csdn.net/qq_41550842/article/details/81939479
 
 https://blog.csdn.net/lqx_sunhan/article/details/82633275  
 
+## 使用阿里云镜像（2020）
+
+https://blog.csdn.net/ygc87/article/details/82857611
+
 ## Android版本6.0安装提示
 在Android SDK Manager中，参考下面的截图配置和下载6.0版本的库。
 ![在Android SDK Manager中配置教育网下载代理](https://raw.githubusercontent.com/hzuapps/android-labs/master/screens/sdk-manager-proxy-edu.cn.png "配置教育网下载代理")
