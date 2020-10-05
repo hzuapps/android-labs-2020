@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foundit">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".controller.activity.Net1814080903317RegisterActivity" />
+        <activity android:name=".controller.activity.Net1814080903317LoginActivity" />
+        <activity android:name=".controller.activity.foundIt.Net1814080903317FoundItAddActivity"/>
+        <activity android:name=".controller.activity.foundIt.Net1814080903317FoundItMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".controller.activity.foundIt.Net1814080903317FoundItMyActivity"/>
+        <activity android:name=".controller.activity.MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>
