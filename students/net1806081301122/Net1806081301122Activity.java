@@ -1,12 +1,27 @@
+package edu.hzuapps.androidlabs.net1806081301122;
 
-public class Net1806081301122Activity.java {
+import androidx.appcompat.app.AppCompatActivity;
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-	}
+public class Net1806081301122Activity extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Button button = findViewById(R.id.button);
+        final MainActivity _this = this;
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(_this, MainActivity.class);
+                _this.startActivity(intent);
+            }
+        });
+
+    }
 }
