@@ -45,7 +45,11 @@ $ mkdir students/com123456
 ```   
 - 编写一个Java类，如： students/com123456/Com123456Activity.java    
 
-## 6. 提交代码
+## 6. 提交代码   
+
+```  
+$ git pull 
+```  
 
 ```  
 $ git add students/com123456/*
