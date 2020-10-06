@@ -1,4 +1,4 @@
-package edu.hzuapps.androidlabs.sec1814080911128
+package edu.hzuapps.androidlabs.sec1814080911128;
 
 import android.os.Bundle;
 import android.widget.LinearLayout;
