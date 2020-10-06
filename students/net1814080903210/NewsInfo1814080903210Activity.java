@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Net1814080903210Activity extends AppCompatActivity {
+public class NewsInfo1814080903210Activityextends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button button = findViewById(R.id.see);
-        final Net1814080903210Activity _this = this;
+        setContentView(R.layout.activity_info);
+        Button button = findViewById(R.id.button);
+        final NewsInfoActivity _this = this;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(_this, NewsInfo1814080903210Activity.class);
+                Intent intent = new Intent(_this, Comment1814080903210Activity.class);
                 _this.startActivity(intent);
             }
         });
