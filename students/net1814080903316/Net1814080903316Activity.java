@@ -1,4 +1,4 @@
-package net1814080903316
+package edu.hzuapps
 
 public class Net1814080903316Activity {
 
