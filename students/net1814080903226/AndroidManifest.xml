@@ -9,22 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".Net1814080903226MessageViewActivity"
-            android:label="@string/title_activity_net1814080903226_message_view"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".Net1814080903226MyViewActivity"
-            android:label="@string/title_activity_net1814080903226_my_view"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Net1814080903226MainviewActivity"
-            android:label="@string/title_activity_net1814080903226_mainview"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="edu.hzuapps.androidlabs.Net1814080903226MessageActivity"></activity>
+        <activity android:name="edu.hzuapps.androidlabs.Net1814080903226MyViewActivity" />
+        <activity android:name="edu.hzuapps.androidlabs.Net1814080903226MainViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
