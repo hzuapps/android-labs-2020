@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package hzu.android.labs;
 
 import android.content.Intent;
@@ -40,4 +41,11 @@ public class Net1814080903304Activity extends AppCompatActivity {
 
     }
 
+=======
+
+public class Net1814080903304Activity.java {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+>>>>>>> f5e6f06bebe63672547d864de21f4e630c9ec512
 }
