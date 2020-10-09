@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package edu.hzuapps.androidlabs.net1814080903123;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Net1814080903123Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
                                    @Override
                                    public void onClick(View v) {
                                        Intent it = new Intent();
-                                       it.setClass(MainActivity.this, SkipActivity.class);
-                                       MainActivity.this.startActivity(it);
+                                       it.setClass(Net1814080903123Activity.this, NovelSearch.class);
+                                       Net1814080903123Activity.this.startActivity(it);
                                    }    });
 
             Button btn1= findViewById(R.id.btn1);
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent it=new Intent();
-                    it.setClass( MainActivity.this, SkipActivity1.class);
-                    MainActivity.this.startActivity(it);
+                    it.setClass( Net1814080903123Activity.this, MyBookshelf.class);
+                    Net1814080903123Activity.this.startActivity(it);
                 }
 
         });
