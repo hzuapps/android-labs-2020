@@ -12,3 +12,4 @@ public class ShownameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_show);
     }
 }
+
