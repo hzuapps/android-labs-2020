@@ -6,14 +6,14 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class funtion_setting extends AppCompatActivity {
+public class Funtion_Setting extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_funtion_setting);
 
-        final funtion_setting thisActivity = this;
+        final Funtion_Setting thisActivity = this;
 
         Button button13 = findViewById(R.id.button13);
         button13.setOnClickListener(new View.OnClickListener() {
