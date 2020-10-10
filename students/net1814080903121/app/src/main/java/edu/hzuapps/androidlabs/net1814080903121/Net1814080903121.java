@@ -19,7 +19,7 @@ public class Net1814080903121Activity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(net1814080903121Activity.this,记录联系人Activity.class);
+                Intent intent=new Intent(Net1814080903121Activity.this,AddActivity.class);
                 startActivity(intent);
             }
         });
