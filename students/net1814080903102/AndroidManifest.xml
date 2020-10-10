@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".setclass"></activity>
-        <activity android:name=".addclass" />
+        <activity android:name=".SetClass"></activity>
+        <activity android:name=".AddClass" />
         <activity android:name=".Net1814080903102Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+5580.0
+                
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

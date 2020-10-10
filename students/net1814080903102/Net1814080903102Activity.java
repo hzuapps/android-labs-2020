@@ -20,7 +20,7 @@ public class Net1814080903102Activity extends AppCompatActivity {
         addbutton.setOnClickListener(new View.OnClickListener(){//匿名类
             @Override
             public void onClick(View v){//打开
-                Intent intent = new Intent(thisActivity,addclass.class);
+                Intent intent = new Intent(thisActivity, AddClass.class);
                 thisActivity.startActivity(intent);
                 //thisActivity.startActivityForResult();
             }
@@ -30,7 +30,7 @@ public class Net1814080903102Activity extends AppCompatActivity {
         setbutton.setOnClickListener(new View.OnClickListener(){//匿名类
             @Override
             public void onClick(View v){//打开
-                Intent intent = new Intent(thisActivity,setclass.class);
+                Intent intent = new Intent(thisActivity, SetClass.class);
                 thisActivity.startActivity(intent);
                 //thisActivity.startActivityForResult();
             }
