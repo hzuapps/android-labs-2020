@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class add1814080903138Activity extends AppCompatActivity {
+public class Add1814080903138Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add1814080903138);
+        setContentView(R.layout.activity_add_1814080903138);
 
     }
     }
