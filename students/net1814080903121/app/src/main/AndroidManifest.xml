@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".显示联系人Activity"></activity>
-        <activity android:name=".编辑联系人信息Activity" />
-        <activity android:name=".记录联系人Activity" />
-        <activity android:name=".net1814080903121Activity">
+        <activity android:name=".ShownameActivity"></activity>
+        <activity android:name=".EditActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".Net1814080903121Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
