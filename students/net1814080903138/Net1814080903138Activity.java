@@ -17,5 +17,15 @@ public class Net1814080903138Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+  final Net1814080903138Activity thisActivity = this;
+        Button button = (Button)findViewById(R.id.button_check);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(thisActivity, Check1814080903138Activity.class);
+                thisActivity.startActivity(intent);
+            }
+        });
     }
 }
