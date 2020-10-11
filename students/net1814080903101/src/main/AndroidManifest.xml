@@ -12,7 +12,7 @@
         <activity android:name=".StorewareActivity"></activity>
         <activity android:name=".StoreActivity" />
         <activity android:name=".FarmActivity" />
-        <activity android:name=".Net1814080903101Activity">
+        <activity android:name=".Soft1814080903101Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
