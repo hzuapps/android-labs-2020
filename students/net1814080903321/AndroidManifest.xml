@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ShowActivity"></activity>
         <activity android:name=".StoreActivity" />
-        <activity android:name=".net1814080903321Activity" />
+        <activity android:name=".Net1814080903321Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
