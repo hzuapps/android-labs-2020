@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gopan.app">
+    package="com.gopan.bills">
 
     <application
         android:allowBackup="true"
@@ -9,19 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".CountActivity.Net1814080903209CountActivity"
-            android:label="@string/title_activity_net184080903209_count"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".ViewActivity.Net1814080903209ViewActivity"
-            android:label="@string/title_activity_net1814080903209_view"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MessageActivity.Net1814080903209MessageActivity"
-            android:label="@string/title_activity_net1814080903209_message"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Net1814080903209MainActivity">
+        <activity android:name=".activity.ShowActivity"></activity>
+        <activity android:name=".activity.CountActivity" />
+        <activity android:name=".activity.Net1814080903209Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
