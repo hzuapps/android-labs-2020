@@ -1,4 +1,4 @@
-package huz.android.labs;
+package edu.hzuapps.androidlabs.net1814080903328;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,7 +22,7 @@ public class Net1814080903328Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(thisActivity, Funtion_Next.class);
+                Intent intent = new Intent(thisActivity, RuleActivity.class);
                 startActivity(intent);
             }
         });
