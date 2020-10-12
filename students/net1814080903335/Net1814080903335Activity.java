@@ -1,4 +1,4 @@
-package huz.android.net1814080903335;
+package hzu.androidlabs.net1814080903335;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +21,7 @@ public class Net1814080903335Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(thisActivity, Net1814080903335SecondActivity.class);
+                Intent intent = new Intent(thisActivity, ReadActivity.class);
                 startActivity(intent);
             }
         });
