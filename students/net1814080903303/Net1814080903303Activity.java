@@ -1,4 +1,4 @@
-package com.example.edu.hzuapps.androidlabs.net1814080903303;
+package edu.hzuapps.androidlabs.net1814080903303;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,7 +23,7 @@ public class Net1814080903303Activity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myStartActivity(Net1814080903303Activity.this,ClassActivity.class);
+                myStartActivity(Net1814080903303Activity.this, ClassActivity.class);
 
             }
         });
@@ -31,14 +31,14 @@ public class Net1814080903303Activity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myStartActivity(Net1814080903303Activity.this,StudentActivity.class);
+                myStartActivity(Net1814080903303Activity.this, StudentActivity.class);
             }
         });
         Button button3 = (Button) findViewById(R.id.button3);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myStartActivity(Net1814080903303Activity.this,InformationActivity.class);
+                myStartActivity(Net1814080903303Activity.this, InformationActivity.class);
             }
         });
     }

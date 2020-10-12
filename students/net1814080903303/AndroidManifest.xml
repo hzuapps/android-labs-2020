@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.edu.hzuapps.androidlabs.net1814080903303.InformationActivity"></activity>
-        <activity android:name="com.example.edu.hzuapps.androidlabs.net1814080903303.StudentActivity" />
-        <activity android:name="com.example.edu.hzuapps.androidlabs.net1814080903303.ClassActivity" />
-        <activity android:name="com.example.edu.hzuapps.androidlabs.net1814080903303.Net1814080903303Activity">
+        <activity android:name="edu.hzuapps.androidlabs.net1814080903303.InformationActivity"></activity>
+        <activity android:name="edu.hzuapps.androidlabs.net1814080903303.StudentActivity" />
+        <activity android:name="edu.hzuapps.androidlabs.net1814080903303.ClassActivity" />
+        <activity android:name="edu.hzuapps.androidlabs.net1814080903303.Net1814080903303Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
