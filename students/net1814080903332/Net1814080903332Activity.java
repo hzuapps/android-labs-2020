@@ -21,7 +21,7 @@ public class Net1814080903332Activity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(thisActivity,Funtion_Next.class);
+                Intent intent = new Intent(thisActivity, SelectTravelPlace.class);
                 startActivity(intent);
             }
         });
