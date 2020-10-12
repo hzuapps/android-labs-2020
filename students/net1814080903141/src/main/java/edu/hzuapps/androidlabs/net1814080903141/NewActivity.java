@@ -4,12 +4,11 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+public class NewActivity extends AppCompatActivity {
 
-public class NewGameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.activity_newgame);
+        setContentView(R.layout.activity_new);
     }
-
 }

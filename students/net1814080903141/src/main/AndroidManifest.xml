@@ -9,13 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewGameActivity"></activity>
-        <activity android:name=".RecordActivity"></activity>
+        <activity android:name=".NewActivity"
+            android:parentActivityName=".Net1814080903141Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Net1814080903141Activity"></meta-data>
+        </activity>
+        <activity android:name=".RecordActivity"
+            android:parentActivityName=".Net1814080903141Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Net1814080903141Activity"></meta-data>
+        </activity>
         <activity android:name=".Net1814080903141Activity">
-       <intent-filter>
-           <action android:name="android.intent.action.MAIN"></action>
-           <category android:name="android.intent.category.LAUNCHER"></category>
-       </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 
