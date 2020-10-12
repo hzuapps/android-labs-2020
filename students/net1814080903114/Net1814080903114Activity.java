@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package edu.hzuapps.androidlabs;
 
 import android.content.Intent;
 import android.os.Bundle;
