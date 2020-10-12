@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package edu.hzuapps.androidlabs.net1814080903320;
 
 import android.app.Activity;
 import android.os.Bundle;

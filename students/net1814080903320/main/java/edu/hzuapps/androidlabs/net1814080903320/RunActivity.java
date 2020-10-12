@@ -1,14 +1,14 @@
-package com.example.myapplication;
+package edu.hzuapps.androidlabs.net1814080903320;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class TalkActivity extends AppCompatActivity {
+public class RunActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_talk);
+        setContentView(R.layout.activity_run);
     }
 }
