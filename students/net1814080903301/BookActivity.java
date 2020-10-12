@@ -1,4 +1,4 @@
-package com.example.k00.labs2;
+package edu.hzuapps.androidlabs.net1814080903301;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Net1814080903301Activity" />
-        <activity android:name=".selectActivity" />
-        <activity android:name=".bookActivity"></activity>
+        <activity android:name=".SelectActivity" />
+        <activity android:name=".BookActivity"></activity>
     </application>
 
 </manifest>
