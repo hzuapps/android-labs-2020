@@ -1,10 +1,8 @@
-package com.gopan.bills.activity;
+package edu.hzuapps.androidlabs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
-import com.gopan.bills.R;
 
 public class CountActivity extends AppCompatActivity {
 
