@@ -18,7 +18,7 @@ public class ViewandmodifyActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(_this,viewandmodifyActivity.class);
+                Intent intent = new Intent(_this,ViewandmodifyActivity.class);
                 _this.startActivity(intent);
             }
         });
