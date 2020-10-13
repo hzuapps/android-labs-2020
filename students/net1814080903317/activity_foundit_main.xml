@@ -7,11 +7,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp">
         <ImageView
-            android:id="@+id/foundit_my_iv"
+            android:id="@+id/foundit_main_my_iv"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
-            android:src="@mipmap/my"
+            android:src="@drawable/my"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
             />
@@ -26,7 +26,7 @@
             android:padding="5dp"
             android:gravity="center"/>
         <TextView
-            android:id="@+id/foundit_public_tv"
+            android:id="@+id/foundit_main_public_tv"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="发 布"
