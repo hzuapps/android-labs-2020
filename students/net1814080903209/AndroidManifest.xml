@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gopan.bills">
+    package="edu.hzuapps.androidlabs">
 
     <application
         android:allowBackup="true"
@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ShowActivity"></activity>
-        <activity android:name=".activity.CountActivity" />
-        <activity android:name=".activity.Net1814080903209Activity">
+        <activity android:name=".CountActivity"></activity>
+        <activity android:name=".ShowActivity" />
+        <activity android:name=".Net1814080903209Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

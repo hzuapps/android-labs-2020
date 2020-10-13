@@ -1,4 +1,4 @@
-package com.gopan.bills.activity;
+package edu.hzuapps.androidlabs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import com.gopan.bills.R;
 
 public class Net1814080903209Activity extends AppCompatActivity {
 
@@ -24,7 +22,6 @@ public class Net1814080903209Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(thisActivity, CountActivity.class);
                 thisActivity.startActivity(intent);
-                Intent intent1 = new Intent(Intent.ACTION_VIEW);
             }
         });
 
@@ -34,8 +31,8 @@ public class Net1814080903209Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(thisActivity, ShowActivity.class);
                 thisActivity.startActivity(intent);
-                Intent intent2 = new Intent(Intent.ACTION_VIEW);
             }
         });
+
     }
 }
