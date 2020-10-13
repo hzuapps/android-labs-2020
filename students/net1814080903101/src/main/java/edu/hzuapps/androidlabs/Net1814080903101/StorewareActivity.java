@@ -1,4 +1,4 @@
-package com.example.happyfarm;
+package edu.hzuapps.androidlabs.Net1814080903101;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,23 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Soft1814080903101Activity extends AppCompatActivity {
+public class StorewareActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        final Soft1814080903101Activity thisActivity=this;
-        Button button=(Button)findViewById(R.id.button_add);
+        setContentView(R.layout.activity_storeware);
+        Button button=(Button)findViewById(R.id.SWReturn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(Soft1814080903101Activity.this, FarmActivity.class);
+                intent.setClass(StorewareActivity.this, FarmActivity.class);
                 startActivity(intent);
-
             }
         });
     }
-
 }

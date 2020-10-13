@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.happyfarm">
+    package="edu.hzuapps.androidlabs.Net1814080903101">
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,7 @@
         <activity android:name=".StorewareActivity"></activity>
         <activity android:name=".StoreActivity" />
         <activity android:name=".FarmActivity" />
-        <activity android:name=".Soft1814080903101Activity">
+        <activity android:name=".Net1814080903101Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
