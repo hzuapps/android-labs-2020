@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.hzuapps.androidlabs.net1814080903141">
+    package="edu.hzuapp.androidlabs.net1814080903141">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewActivity"
+        <activity android:name=".RecordActivity"
             android:parentActivityName=".Net1814080903141Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Net1814080903141Activity"></meta-data>
         </activity>
-        <activity android:name=".RecordActivity"
+        <activity android:name=".NewActivity"
             android:parentActivityName=".Net1814080903141Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
