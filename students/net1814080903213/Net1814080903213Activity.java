@@ -26,9 +26,11 @@ public class Net1814080903213Activity extends AppCompatActivity implements View.
             case R.id.buttonToSubmitResult:
                 Intent intentSubmitResultActivity = new Intent(Net1814080903213Activity.this, SubmitResultActivity.class);
                 startActivity(intentSubmitResultActivity);
+                break;
             case R.id.buttonToWordList:
                 Intent intentWordListActivity = new Intent(Net1814080903213Activity.this, WordListActivity.class);
                 startActivity(intentWordListActivity);
+                break;
             default:
                 break;
         }
