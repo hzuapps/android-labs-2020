@@ -9,9 +9,9 @@
     <ImageView
         android:layout_marginTop="100dp"
         android:layout_marginLeft="75dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/icon3"/>
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icon3"/>
 
 
 
