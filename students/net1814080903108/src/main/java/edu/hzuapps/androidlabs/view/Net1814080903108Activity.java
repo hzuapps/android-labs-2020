@@ -15,10 +15,10 @@ public class Net1814080903108Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net1814080903108);
-        setButtonLink(R.id.sureButton,MainActivity.class);
+        bindActivityReplaceButton(R.id.sureButton,MainActivity.class);
     }
 
-    private void setButtonLink(int buttonId, final Class linkActivity){
+    private void bindActivityReplaceButton(int buttonId, final Class linkActivity){
         Button button = (Button)findViewById(buttonId);
         final Net1814080903108Activity thisActivity = this;
         button.setOnClickListener(new View.OnClickListener() {

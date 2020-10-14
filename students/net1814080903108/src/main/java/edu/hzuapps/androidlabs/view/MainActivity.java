@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initNavTypeface();
-        navButtonLinkRegister();
+        initNavButtonsTypeface();
+        bindFragmentReplaceButtons();
         replaceFragment(new HomeFragment());
     }
 
-    private void initNavTypeface(){
+    private void initNavButtonsTypeface(){
         Typeface iconFont = Typeface.createFromAsset(getAssets(), "typeface/navIcon.ttf");
         setButtonTypeface(R.id.NavCreateButton,iconFont);
         setButtonTypeface(R.id.NavHomeButton,iconFont);
@@ -35,22 +35,22 @@ public class MainActivity extends AppCompatActivity {
         Button.setTypeface(typeface);
     }
 
-    private void navButtonLinkRegister(){
-    bindButtonLink(R.id.NavHomeButton,HomeFragment.class);
-    bindButtonLink(R.id.NavListButton,ListFragment.class);
-    bindButtonLink(R.id.NavCreateButton,CreateFragment.class);
+    private void bindFragmentReplaceButtons(){
+        bindFragmentReplaceButton(R.id.NavHomeButton,"HomeFragment");
+        bindFragmentReplaceButton(R.id.NavListButton,"ListFragment");
+        bindFragmentReplaceButton(R.id.NavCreateButton,"CreateFragment");
     }
 
-    private void bindButtonLink(int buttonId,final Class fragmentClass){
+    private void bindFragmentReplaceButton(int buttonId,final String fragmentClassName){
+        final String ClassPath = "edu.hzuapps.androidlabs.view.";
         Button button = (Button)findViewById(buttonId);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-                    replaceFragment((Fragment)fragmentClass.newInstance());
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                } catch (InstantiationException e) {
+                    Fragment fragment = (Fragment)Class.forName(ClassPath+fragmentClassName).getConstructor().newInstance();
+                    replaceFragment(fragment);
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
