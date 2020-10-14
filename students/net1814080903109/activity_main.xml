@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Net1814080903109Activity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/logo"
+        tools:ignore="MissingConstraints" />         //设置背景
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight ="1"
+        tools:ignore="MissingConstraints"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_01"
+            android:layout_width="411dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+
+            android:text="功能"
+            android:textAlignment="center"
+            android:textColor="#fffaaa"
+            android:textSize="45dp"
+            tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="162dp"
+        android:layout_height="110dp"
+        android:background="#999999"
+        android:text="调节亮度"
+        android:textAlignment="center"
+        android:textColor="#fffaaa"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="165dp"
+        android:layout_height="110dp"
+        android:background="#999999"
+        android:text="超暗屏"
+        android:textAlignment="center"
+        android:textColor="#fffaaa"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
