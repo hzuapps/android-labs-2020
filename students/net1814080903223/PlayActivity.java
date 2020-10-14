@@ -7,20 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class HelpActivity extends AppCompatActivity {
+public class PlayActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_help);
-        Button button = findViewById(R.id.help);
+        setContentView(R.layout.activity_play);
+        Button button = findViewById(R.id.button);
         final HelpActivity _this = this;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(_this, HelpActivity.class);
+                Intent intent = new Intent(_this, PlayActivity.class);
                 _this.startActivity(intent);
             }
         });
     }
-} 
+}
