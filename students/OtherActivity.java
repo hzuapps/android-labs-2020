@@ -1,10 +1,10 @@
-package com.example.myapplication;
+package edu.hzuapps.androidlabs.net1814080903120;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Net1814080903120Activity extends AppCompatActivity {
+public class OtherActivity extends AppCompatActivity {
 
 
     @Override

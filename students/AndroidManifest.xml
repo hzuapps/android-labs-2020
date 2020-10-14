@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Net1814080903120Activity">
+        <activity android:name=".OtherActivity">
 
         </activity>
     </application>
