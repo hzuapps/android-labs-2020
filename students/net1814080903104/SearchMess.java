@@ -3,9 +3,11 @@ package edu.hzuapps.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SearchMess extends AppCompatActivity {
 
@@ -14,9 +16,12 @@ public class SearchMess extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_mess);
 
+        Drawable drawable = getResources().getDrawable(R.drawable.logo);
+        drawable.setBounds(0,0,200,200);
+        TextView textview = findViewById(R.id.Textview1);
+        textview.setCompoundDrawables(null,drawable,null,null);
+
         Button button = (Button) findViewById(R.id.button_return);
-        button.setX(450f);
-        button.setY(1100f);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

@@ -3,9 +3,11 @@ package edu.hzuapps.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Net1814080903104Activity extends AppCompatActivity {
 
@@ -17,8 +19,6 @@ public class Net1814080903104Activity extends AppCompatActivity {
         final Net1814080903104Activity thisActivity = this;
 
         Button button = (Button) findViewById(R.id.button_open);
-        button.setX(200f);
-        button.setY(200f);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -27,9 +27,8 @@ public class Net1814080903104Activity extends AppCompatActivity {
             }
         });
 
+
         Button button1 = (Button) findViewById(R.id.button_search);
-        button.setX(450f);
-        button.setY(1100f);
         button1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
