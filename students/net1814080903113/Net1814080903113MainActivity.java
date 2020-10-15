@@ -8,12 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class net1814080903113_MainActivity extends AppCompatActivity {
+public class Net1814080903113MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.net1814080903113_main);
+        setContentView(R.layout.Net1814080903113Main);
 
         final Activity thisActivity = this;
 
@@ -24,7 +24,7 @@ public class net1814080903113_MainActivity extends AppCompatActivity {
         btnOpen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(thisActivity, net1814080903113_PhotoShowActivity.class);
+                Intent intent = new Intent(thisActivity, Net1814080903113PhotoShowActivity.class);
                 thisActivity.startActivity(intent);
                 //thisActivity.startActivityForResult(intent, 2016);
             }
