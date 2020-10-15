@@ -11,15 +11,7 @@
     android:paddingTop="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="130dp"
-        android:background="#feffb3"
-        android:text="登录" />
+
 
     <Button
         android:id="@+id/btn2"

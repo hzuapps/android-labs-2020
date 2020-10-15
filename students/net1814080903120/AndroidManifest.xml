@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".OtherActivity">
-
+	<activity></activity>
         </activity>
     </application>
 

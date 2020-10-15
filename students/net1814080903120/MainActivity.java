@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void skip(View view){
         Intent intent = new Intent();
-        intent.setClass(MainActivity.this,OtherActivity.class);
+        intent.setClass(MainActivity,OtherActivity.class);
         startActivity(intent);
     }
 }
