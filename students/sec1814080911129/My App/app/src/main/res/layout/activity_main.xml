@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tranB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="汇率计算器"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="69dp" />
+
+    <Button
+        android:id="@+id/taxB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个税计算器"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
