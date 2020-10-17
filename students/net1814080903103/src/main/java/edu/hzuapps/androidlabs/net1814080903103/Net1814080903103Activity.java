@@ -3,9 +3,11 @@ package edu.hzuapps.androidlabs.net1814080903103;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Net1814080903103Activity extends AppCompatActivity {
 
@@ -37,5 +39,9 @@ public class Net1814080903103Activity extends AppCompatActivity {
                 thisActivity.startActivity(intent);
             }
         });
+        Drawable drawable = getResources().getDrawable(R.drawable.clock);
+        drawable.setBounds(0,0,1200,1200);
+        TextView textview = findViewById(R.id.clock_view);
+        textview.setCompoundDrawables(null,drawable,null,null);
     }
 }
