@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sec1814080911108Activity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!--   地址栏  -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/view_top"/>
+
+        <!--   浏览窗口     -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="10sp"
+            android:layout_height="500sp"
+            android:background="@drawable/view_center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            >
+            <!--下面应该做一个工具栏，技术水平不够。。只能先摆好位置。 -->
+            <Button
+                android:id="@+id/btnLoveList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15sp"
+                android:background="@drawable/btn_love_list"
+                android:text="收藏夹"
+                android:textColor="#ecf0f1"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
