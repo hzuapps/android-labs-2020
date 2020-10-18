@@ -11,7 +11,7 @@
         android:id="@+id/id1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/kk" />
+        android:src="@drawable/kkk" />
 
     <Button
         android:id="@+id/button5"
