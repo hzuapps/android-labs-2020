@@ -11,22 +11,21 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="68dp"
         android:gravity="center"
         android:layout_gravity="center"
         android:background="@color/color1"
         android:padding="10dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
 
         android:text="网抑云"
         android:textSize="30dp"
         />
 
-    <TextView
-        android:id="@+id/textview_01"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/logo"
+        android:src="@drawable/logo2"
         android:layout_marginTop="100dp"
         android:layout_gravity="center"
         />
@@ -52,14 +51,12 @@
         android:text="分享界面"
         android:textSize="20sp"
         />
-    <TextView
-        android:id="@+id/textview_02"
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/logo2"
-        android:layout_marginTop="50dp"
+        android:src="@drawable/logo1"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         />
-
-
 </androidx.appcompat.widget.LinearLayoutCompat>
