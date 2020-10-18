@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wangyiyun3"
+    tools:context=".PlayActivity">
+
+    <TextView
+        android:id="@+id/tv_play_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="播放界面"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        />
+
+    <Button
+        android:id="@+id/bt_play_return"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="450dp"
+        android:text="返回"
+        android:gravity="center"
+        android:layout_gravity="right"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
