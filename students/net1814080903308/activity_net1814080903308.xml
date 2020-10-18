@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".Net1814080903308Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/color1"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+
+        android:text="网抑云"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/logo"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/bt_main_play"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/color1"
+        android:layout_marginTop="50dp"
+        android:text="播放界面"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/bt_main_share"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/color1"
+        android:layout_marginTop="10dp"
+        android:text="分享界面"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/textview_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/logo2"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
