@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 
-public class Main1814080903225Activity2 extends AppCompatActivity {
+public class Main1814080903225_Clock extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

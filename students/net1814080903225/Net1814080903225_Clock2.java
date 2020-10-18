@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class Net1814080903325Activity extends AppCompatActivity {
+public class Net1814080903325_Clock2 extends AppCompatActivity {
     TextView t1;
     Button but1;
     Button but2;
@@ -35,7 +35,7 @@ public class Net1814080903325Activity extends AppCompatActivity {
     }
 
     public void send(View view) {
-        Intent intent = new Intent(m, Main1814080903225Activity2.class);
+        Intent intent = new Intent(m, Main1814080903225_Clock.class);
         startActivity(intent);
 //        flag = false;//结束当前线程
 
