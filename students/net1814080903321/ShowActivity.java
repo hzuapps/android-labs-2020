@@ -1,4 +1,4 @@
-package edu.hzuapp.androidlabs.Net1814080903321;
+package edu.hzuapp.androidlabs.net1814080903321;
 
 import androidx.appcompat.app.AppCompatActivity;
 

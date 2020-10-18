@@ -1,4 +1,4 @@
-package edu.hzuapp.androidlabs.Net1814080903321;
+package edu.hzuapp.androidlabs.net1814080903321;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,11 +16,13 @@ public class StoreActivity extends AppCompatActivity {
 
         Button button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(StoreActivity.this, ShowActivity.class);
-                startActivity(i);
-            }
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(StoreActivity.this, ShowActivity.class);
+                    startActivity(i);
+                }
         });
+
+
     }
 }
