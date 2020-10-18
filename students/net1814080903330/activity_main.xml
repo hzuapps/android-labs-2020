@@ -62,4 +62,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
          />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="94dp"
+        android:layout_height="93dp"
+        android:src="@drawable/timg"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
