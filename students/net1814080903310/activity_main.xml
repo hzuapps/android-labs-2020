@@ -7,8 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textview_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:drawableTop="@drawable/InfomationBackground"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -30,5 +32,10 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="59dp"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/InfomationBackground"
 
 </androidx.constraintlayout.widget.ConstraintLayout>
