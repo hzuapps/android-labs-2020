@@ -22,11 +22,11 @@ public class Sec1814080911113Activity extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()){
                     case R.id.first_Button:
-                        Intent intent = new Intent(Sec1814080911113Activity.this,FirstActivity.class);
+                        Intent intent = new Intent(Sec1814080911113Activity.this, MyMusic.class);
                         startActivity(intent);
                         break;
                     case R.id.sceond_Button:
-                        Intent intent1 = new Intent(Sec1814080911113Activity.this,SecondActivity.class);
+                        Intent intent1 = new Intent(Sec1814080911113Activity.this, Pause.class);
                         startActivity(intent1);
                         break;
                 }
