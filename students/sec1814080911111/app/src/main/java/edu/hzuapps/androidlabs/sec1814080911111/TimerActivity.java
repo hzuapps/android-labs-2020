@@ -1,4 +1,4 @@
-package com.example.sec1814080911111;
+package edu.hzuapps.androidlabs.sec1814080911111;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

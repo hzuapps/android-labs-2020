@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sec1814080911111">
+    package="edu.hzuapps.androidlabs.sec1814080911111">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CountdownTimerActivity"></activity>
+        <activity android:name=".CountdownActivity"></activity>
         <activity android:name=".TimerActivity" />
         <activity android:name=".Sec1814080911111Activity">
             <intent-filter>
