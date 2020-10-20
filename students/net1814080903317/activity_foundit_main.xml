@@ -1,43 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp">
         <ImageView
+            android:id="@+id/foundit_main_back_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/back"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"/>
+        <TextView
+            android:id="@+id/foundit_main_icon_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/foundit_main_back_iv"
+            android:text="失物招领"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            />
+
+        <ImageView
             android:id="@+id/foundit_main_my_iv"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:src="@drawable/my"
-            android:layout_marginLeft="10dp"
-            android:layout_centerVertical="true"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="失 物 招 领"
-            android:textColor="@android:color/holo_orange_light"
-            android:textSize="20sp"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:padding="5dp"
-            android:gravity="center"/>
-        <TextView
-            android:id="@+id/foundit_main_public_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="发 布"
-            android:padding="5dp"
-            android:textSize="18sp"
-            android:textColor="@color/colorPrimary"
             android:layout_alignParentRight="true"
-            android:gravity="center"
             android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            />
+            android:layout_marginRight="12dp"
+            android:padding="5dp"
+            android:src="@mipmap/my" />
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="5dp"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/foundit_main_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/foundit_main_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>
