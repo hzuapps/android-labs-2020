@@ -10,20 +10,29 @@ import android.widget.Button;
 public class Net1812070504101Activity extends AppCompatActivity {
 
 
-    Button button;
+    Button btn1;
+    Button btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button=findViewById(R.id.btn);
+        btn1=findViewById(R.id.btnStastic);
+        btn2=findViewById(R.id.btnCheck);
 
-        button.setOnClickListener(new View.OnClickListener(){
+        btn1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                Intent i =new Intent( Net1812070504101Activity.this, StatisticActivity.class);
                startActivity(i);
             }
        });
+        btn2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent i =new Intent( Net1812070504101Activity.this, CheckActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
