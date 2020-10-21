@@ -18,7 +18,7 @@ public class Sec1814080911238Activity extends AppCompatActivity {
         Button btnOpen = (Button) findViewById(R.id.button1);
         btnOpen.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(thisActivity,inputActivity.class);
+                Intent intent = new Intent(thisActivity,RememberActivity.class);
                 thisActivity.startActivity(intent);
             }
         });
@@ -26,7 +26,7 @@ public class Sec1814080911238Activity extends AppCompatActivity {
         Button btnOpen2 = (Button) findViewById(R.id.button2);
         btnOpen2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(thisActivity,rememberActivity.class);
+                Intent intent = new Intent(thisActivity,InputActivity.class);
                 thisActivity.startActivity(intent);
             }
         });

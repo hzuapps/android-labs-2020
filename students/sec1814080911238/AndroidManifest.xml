@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".inputActivity"
+            android:name=".InputActivity"
             android:label="输入单词" />
         <activity
-            android:name=".rememberActivity"
+            android:name=".RememberActivity"
             android:label="开始背单词" />
     </application>
 
