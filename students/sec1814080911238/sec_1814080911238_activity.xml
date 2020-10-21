@@ -1,51 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mini_home"
-    tools:context=".Sec1814080911238Activity">
-
+    tools:context=".Sec1814080911238Activity"
+    android:orientation="vertical">
     <TextView
         android:id="@+id/textView"
-        android:layout_width="280dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginBottom="153dp"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="0dp"
         android:gravity="center"
-        android:text="Author：毛毛"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:text="\@Author：毛毛" />
     <Button
         android:id="@+id/button1"
         android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginBottom="340dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         android:background="@color/btnColor"
-        android:textColor="@color/textColor"
         android:text="开始背单词"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.968" />
-
+        android:textColor="@color/textColor"/>
     <Button
         android:id="@+id/button2"
         android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="251dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:background="@color/btnColor"
-        android:textColor="@color/textColor"
         android:text="录入单词"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/button1"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="@color/textColor" />
+</LinearLayout>
