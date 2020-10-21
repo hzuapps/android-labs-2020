@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Sec1814080911238Activity extends AppCompatActivity {
     @Override
@@ -22,6 +23,7 @@ public class Sec1814080911238Activity extends AppCompatActivity {
                 thisActivity.startActivity(intent);
             }
         });
+
 
         Button btnOpen2 = (Button) findViewById(R.id.button2);
         btnOpen2.setOnClickListener(new View.OnClickListener() {
