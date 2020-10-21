@@ -3,10 +3,12 @@ package edu.hzuapps.androidlabs.sec1814080911222;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class PlanActivity extends AppCompatActivity {
@@ -26,5 +28,10 @@ public class PlanActivity extends AppCompatActivity {
                 thisActivity.finish();
             }
         });
+
+        Drawable drawable = getResources().getDrawable(R.drawable.plan);
+        drawable.setBounds(0,0,200,200);
+        TextView textview = (TextView) findViewById(R.id.textview_01);
+        textview.setCompoundDrawables(null,drawable,null,null);
     }
 }
