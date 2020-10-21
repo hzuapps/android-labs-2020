@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textview_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/performance"
+        android:text="  指定计划"
+        android:paddingLeft="160dp"
+        android:paddingTop="150dp"/>
+
+
+
+        <Button
+            android:id="@+id/up_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指定计划"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="90dp"/>
+
+        <Button
+            android:id="@+id/main_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="50dp"
+            android:text="返回" />
+
+</LinearLayout>
