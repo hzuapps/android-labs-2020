@@ -22,8 +22,8 @@ public class Sec1814080911133Activity extends AppCompatActivity {
                     }
                 });
 
-                Button countDown = (Button)findViewById(R.id.button6);
-                countDown.setOnClickListener(new View.OnClickListener() {
+                Button Knw = (Button)findViewById(R.id.button6);
+                Knw.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(Sec1814080911133Activity.this,KnwActivity.class);
