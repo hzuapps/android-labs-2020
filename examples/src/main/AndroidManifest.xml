@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".examples.ActivityBasic2Activity"></activity>
+        <activity android:name=".examples.RelativeLayoutActivity"></activity>
+        <activity android:name=".examples.LinearLayoutActivity" />
+        <activity android:name=".examples.GridViewActivity" />
+        <activity android:name=".examples.ListViewActivity" />
+        <activity android:name=".examples.ActivityBasic2Activity" />
         <activity
             android:name=".BackActivity"
             android:label="@string/title_activity_back"
