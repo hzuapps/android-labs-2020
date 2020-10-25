@@ -12,6 +12,10 @@ import android.view.View;
 import android.widget.Button;
 
 import edu.hzuapps.androidlabs.examples.ActivityBasicActivity;
+import edu.hzuapps.androidlabs.examples.GridViewActivity;
+import edu.hzuapps.androidlabs.examples.LinearLayoutActivity;
+import edu.hzuapps.androidlabs.examples.ListViewActivity;
+import edu.hzuapps.androidlabs.examples.RelativeLayoutActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // 设置按钮操作 "button_"
-        prepareExampleButton(R.id.button_activitybasic);
-        //prepareExampleButton(R.id.button_viewbasic);
-        //prepareExampleButton(R.id.button_servicedemo);
-        //prepareExampleButton(R.id.button_random);
+        prepareExampleButton(R.id.button_activity_basic);
+        prepareExampleButton(R.id.button_linear_layout);
+        prepareExampleButton(R.id.button_relative_layout);
+        prepareExampleButton(R.id.button_list_view);
+        prepareExampleButton(R.id.button_grid_view);
+        prepareExampleButton(R.id.button_random);
     }
 
     @Override
@@ -74,18 +80,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private Class getActivity(int id) {
-        if (R.id.button_activitybasic == id) {
+        if (R.id.button_activity_basic == id) {
             return ActivityBasicActivity.class;
-//        } else if (R.id.button_viewbasic == id) {
-//            return ViewBasicActivity.class;
-//        } else if (R.id.button_servicedemo == id) {
-//            return FrameLayoutActivity.class;
-//        } else if (R.id.button_random == id) {
-//            return LinearLayoutActivity.class;
+        } else if (R.id.button_linear_layout == id) {
+            return LinearLayoutActivity.class;
+        } else if (R.id.button_relative_layout == id) {
+            return RelativeLayoutActivity.class;
+        } else if (R.id.button_list_view == id) {
+            return ListViewActivity.class;
+        } else if (R.id.button_grid_view == id) {
+            return GridViewActivity.class;
+        } else if (R.id.button_random == id) {
+            return LinearLayoutActivity.class;
         } else {
-//            Log.e(TAG, "找不到ID: " + id);
-//            return BackActivity.class;
+            Log.e(TAG, "找不到ID: " + id);
+            return BackActivity.class;
         }
-        return null;
     }
 }
