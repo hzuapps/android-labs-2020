@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Sec1814080911106Activity"
+    android:background="@drawable/background"
     >
 
-    <TextView
-        android:id="@+id/notification_background"
-        android:layout_width="417dp"
-        android:layout_height="733dp"
-        android:drawableTop="@drawable/background" />
 
     <Button
         android:id="@+id/button_view"
@@ -32,4 +28,5 @@
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="317dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
