@@ -5,7 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Sec1814080911106Activity">
+    tools:context=".Sec1814080911106Activity"
+    >
+
+    <TextView
+        android:id="@+id/notification_background"
+        android:layout_width="417dp"
+        android:layout_height="733dp"
+        android:drawableTop="@drawable/background" />
 
     <Button
         android:id="@+id/button_view"
@@ -21,8 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Edit"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="320dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="317dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
