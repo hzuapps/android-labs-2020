@@ -1,49 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical" android:layout_width="match_parent"
-            android:layout_height="match_parent">
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-        <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="新闻标题"
-                android:textSize="50sp"
-                android:gravity="center"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新闻标题"
+        android:textSize="50sp"
+        android:gravity="center"/>
 
-        <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="522dp"
-                android:text="新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容"
-                android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容"
+        android:textSize="20sp"
+        android:layout_weight="6"/>
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo">
 
-        </androidx.appcompat.widget.AppCompatImageView>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="评论"/>
 
-        <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="评论(跳转)"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="别人的评论"/>
 
-        <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="别人的评论"/>
-
-        <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="34dp"
-                android:text="别人的评论"/>
-    </LinearLayout>
-</ScrollView>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="别人的评论"/>
+</LinearLayout>
