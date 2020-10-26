@@ -15,8 +15,8 @@ public class Sec1814080911130Activity extends AppCompatActivity {
         setContentView(R.layout.activity_sec1814080911130);
 
         final Sec1814080911130Activity thisActivity = this;
-        Button BtnStart = (Button) findViewById(R.id.button_start);
-        BtnStart.setOnClickListener(new View.OnClickListener() {
+        Button BtnPlay = (Button) findViewById(R.id.button_play);
+        BtnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(thisActivity,PlayActivity.class);
