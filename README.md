@@ -1,6 +1,10 @@
 # 移动应用开发实验库（2020春）   
 实验要求：https://github.com/hzuapps/android-labs-2020/issues?q=is%3Aissue+is%3Aopen+label%3ALab
 
+# 使用 Markdown 编写实验报告
+
+讲解视频（B站）：https://b23.tv/kNfTXL 
+
 ## Android中文教材
 http://hukai.me/android-training-course-in-chinese/index.html  
 https://www.gitbook.com/book/mobile100/android/details  
