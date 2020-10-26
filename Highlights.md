@@ -19,7 +19,7 @@
 - 配置文件 AndroidManifest.xml 
 - Activity 生命周期
 
-2.3 打开 Activity  
+2.3 打开 Activity （Intent）
 - 显式调用 startActivity （掌握） 
 - 隐式调用 intent-filter （了解）
 
