@@ -5,23 +5,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-public class Sec1814080911118Activity extends AppCompatActivity {
+
+public class Lookpyq extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lookpyq);
 
-        final Sec1814080911118Activity thisActivity = this;
+        final Lookpyq thisActivity = this;
 
-        Button listBtn = (Button) findViewById(R.id.button_main);
+        Button listBtn = (Button) findViewById(R.id.button_send);
         listBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(thisActivity,Lookpyq.class);
+                Intent intent = new Intent(thisActivity,Sendpyq.class);
                 startActivity(intent);
             }
         });
-
     }
 }
