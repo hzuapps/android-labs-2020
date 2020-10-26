@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BorrowActivity">
+
+    <!-- 顶部栏 惠州学院图书馆字样图片 -->
+    <ImageView
+        android:id="@+id/imageview_hzu_library1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hzu_library1"/>
+
+
+    <!-- book1 内网安全攻防 -->
+    <ImageView
+        android:id="@+id/imageview_lan_sec_awd"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/lan_sec_awd"/>
+
+    <!-- book2 web安全攻防 -->
+    <ImageView
+        android:id="@+id/imageview_web_sec_awd"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/web_sec_awd"/>
+
+</LinearLayout>
