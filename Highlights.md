@@ -42,5 +42,5 @@
 4.2 常用的布局  
 
 - LinearLayout 线性布局：orientation=v,h；weight=0,1+
-- RelativeLayout 相对布局
-
+- RelativeLayout 相对布局  
+- AdapterView (Spinner, ListView, GridView)
