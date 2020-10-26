@@ -6,22 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".Net1814080903213Activity">
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <Button
-            android:id="@+id/buttonToSubmitResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/submit_result"
-            android:drawableTop="@drawable/ic_search"/>
-        <Button
-            android:id="@+id/buttonToWordList"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/word_list"
-            android:drawableTop="@drawable/ic_word_list"/>
-    </LinearLayout>
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        app:menu="@menu/menu_bottom_nav"
+        android:background="#FFF"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
