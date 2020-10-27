@@ -22,7 +22,7 @@ public class Net1814080903220Activity {
 } 
 
 //截图
-![成功运行Android Studio](https://raw.githubusercontent.com/Playerlhh/android-labs-2020/master/students/net1814080903210/lab1_res.png)
-![github提交实验文件成功](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/push.jpg)
+![run android studio](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/run.jpg)
+![github pull request](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/push.jpg)
 ```
 # 五、实验心得
