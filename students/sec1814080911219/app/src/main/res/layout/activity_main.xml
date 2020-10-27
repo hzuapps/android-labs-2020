@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Sec1814080911219Activity">
+    tools:context=".Sec1814080911219Activity"
+    android:background="@drawable/background"
+    >
 
     <Button
         android:id="@+id/button_publicupload"
@@ -28,5 +30,6 @@
         android:layout_height="wrap_content"
         android:text="显示文件列表"
         />
+
 
 </LinearLayout>
