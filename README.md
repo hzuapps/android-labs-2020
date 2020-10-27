@@ -5,6 +5,8 @@
 
 讲解视频（B站）：https://b23.tv/kNfTXL 
 
+- 解决 GitHub 不显示图片的问题  https://zhuanlan.zhihu.com/p/107196957 
+
 ## Android中文教材
 http://hukai.me/android-training-course-in-chinese/index.html  
 https://www.gitbook.com/book/mobile100/android/details  
