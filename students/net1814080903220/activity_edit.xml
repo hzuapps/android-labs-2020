@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Net1814080903220EditActivity">
+
+    <EditText
+        android:id="@+id/E_dit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:hint="xx纪念日">
+    </EditText>
+    <Button
+        android:id="@+id/dateChoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/E_dit"
+        android:background="@drawable/btn_date"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:text="选择日期"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateChoose">
+        <Button
+            android:id="@+id/shanchu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateChoose"
+            android:text="删除" />
+        <Button
+            android:id="@+id/baocun"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shanchu"
+            android:text="保存"
+        />
+    </LinearLayout>
+>
+</RelativeLayout>
