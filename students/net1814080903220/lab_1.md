@@ -16,9 +16,9 @@
 1. ![run android studio](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/run.jpg)
 2. ![github pull request](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/push.jpg)  
 # 五、实验心得
-## 遇到的问题：
+遇到的问题：
 1. git命令使用不熟悉，上传文件至github上经常出错；
-2. android studio配置思路混乱
-## 解决的办法：
+2. android studio配置思路混乱  
+解决的办法：
 1. 通过百度查解决方法；
 2. 询问同学
