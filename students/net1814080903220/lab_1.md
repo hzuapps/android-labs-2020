@@ -20,7 +20,7 @@ public class Net1814080903220Activity {
 4. Fork项目hzuapps/android-labs-2020到个人项目下；
 5. 用git bash提交Net1814080903220Activity.java  
 # 四、实验结果
-![run android studio](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/run.jpg)
+![run androidstudio](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/run.jpg)
 ![github pull request](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/push.jpg)  
 # 五、实验心得
 
