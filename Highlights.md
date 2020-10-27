@@ -44,3 +44,13 @@
 - LinearLayout 线性布局：orientation=v,h；weight=0,1+
 - RelativeLayout 相对布局  
 - AdapterView (Spinner, ListView, GridView)
+
+4.3 用Markdown编写实验报告  
+
+- 一级标题 (#, ##, ###)  
+- 项目编号 (1. ) 
+- 代码（``` ）  
+- 图片（实验结果截图、图片要先Push到自己的库里、找到图片链接）
+
+
+
