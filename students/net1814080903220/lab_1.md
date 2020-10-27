@@ -13,16 +13,12 @@
 4. Fork项目hzuapps/android-labs-2020到个人项目下；
 5. 用git bash提交Net1814080903220Activity.java  
 # 四、实验结果
-```
-//java代码
-package edu.hzuapps.androidlabs.net1814080903220
-
-public class Net1814080903220Activity {
-
-} 
-
-//截图
-![run android studio](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/run.jpg)
-![github pull request](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/push.jpg)
-```
+1. ![run android studio](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/run.jpg)
+2. ![github pull request](https://raw.githubusercontent.com/JieBro333/android-labs-2020/master/students/net1814080903220/push.jpg)  
 # 五、实验心得
+## 遇到的问题：
+1. git命令使用不熟悉，上传文件至github上经常出错；
+2. android studio配置思路混乱
+## 解决的办法：
+1. 通过百度查解决方法；
+2. 询问同学
