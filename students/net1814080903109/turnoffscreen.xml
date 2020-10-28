@@ -4,57 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Net1814080903109Activity">
-
+    tools:context=".TurnoffScreenActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="497dp"
+        android:layout_height="725dp"
         android:scaleType="fitXY"
-        android:src="@drawable/logo"
+        android:src="@drawable/turnoffbg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.674"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textview_01"
-        android:layout_width="411dp"
-        android:layout_height="74dp"
-        android:layout_gravity="center"
-
-        android:text="功能"
-        android:textAlignment="center"
-        android:textColor="#fffaaa"
-        android:textSize="45dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/view1"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn1"
-        android:layout_width="152dp"
-        android:layout_height="111dp"
-        android:background="#999999"
-        android:text="调节亮度"
-        android:textAlignment="center"
-        android:textColor="#fffaaa"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.929"
-        tools:ignore="DuplicateIds,MissingConstraints" />
-
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="144dp"
-        android:layout_height="107dp"
+        android:id="@+id/view1"
+        android:layout_width="403dp"
+        android:layout_height="45dp"
         android:background="#999999"
         android:text="熄屏"
         android:textAlignment="center"
@@ -62,14 +30,26 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.929"
+        app:layout_constraintVertical_bias="0.002"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
+    <Button
+        android:id="@+id/view2"
+        android:layout_width="171dp"
+        android:layout_height="171dp"
+        android:background="@drawable/turnoff"
+        android:text="熄屏"
 
+        android:textAlignment="center"
+        android:textColor="#fffaaa"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246"
+        tools:ignore="DuplicateIds,MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
