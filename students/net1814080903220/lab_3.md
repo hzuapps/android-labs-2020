@@ -5,9 +5,9 @@
 1. 在自选题目项目中添加图片；
 2. 使用显示
 # 三、实验步骤
-1. 准备一张命好名字的图片；
+1. 准备一张或多张命好名字的图片，名字不要有中文；
 2. 放入res/drawable文件目录下；
-3. 在对应功能的layout下引用该图片名称
+3. 在布局背景background中使用@drawable/图片名字引用该图片
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
