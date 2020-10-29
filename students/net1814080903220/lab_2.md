@@ -8,11 +8,17 @@
 2. 根据自选题在Android Studio中创建一个或多个Activity；
 3. 实现一个Activity与另一个Activity之间的跳转（显式或隐式）
 # 三、实验步骤
-1. 在https://github.com/hzuapps/android-labs-2020/issues下提交自选题；
-2. 打开Android Studio,创建自选题目app对应的若干个功能Activity；
-3. 在需要实现跳转的Activity的xml文件中设置跳转按钮；
-4. 在需要实现跳转的Activity的java类中用findViewByID方法发现对应跳转按钮；
-5. 设置点击事件，用显式方法实现点击跳转功能
+1. 在https://github.com/hzuapps/android-labs-2020/issues下提交自选题“纪念日”；
+2. 打开Android Studio,在java包下创建三个相关功能Activity；
+- Net1814080903220MainActivity.java
+- Net1814080903220EditActivity.java
+- Net1814080903220PictureActivity.java
+3. 在Net1814080903220MainActivity的layout文件中设置两个按钮，分别为“编辑纪念日”和“更换背景图片”；
+4. 在Net1814080903220MainActivity.java中创建按钮对象Edit和Picture；
+5. 使用findViewById方法引用布局文件中的对应按钮，使得在写.java的按钮时能与布局文件里的一致；
+6. 设置Edit和Picture点击事件；
+7. 创建intent跳转对象，使用显式方法Intent(源Activity.this,目标Activity.class)；
+8. startActivity(intent)实现点击跳转
 ```
 public class Net1814080903220MainActivity extends AppCompatActivity {
     private Button Edit;
