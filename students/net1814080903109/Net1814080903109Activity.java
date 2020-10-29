@@ -20,7 +20,7 @@ public class Net1814080903109Activity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {  //匿名类
             @Override
             public void onClick(View v) {   //功能
-                Intent intent = new Intent(Net1814080903109Activity.this,Activity1.class);
+                Intent intent = new Intent(Net1814080903109Activity.this, LightenActivity.class);
                 startActivity(intent);
             }
         });
@@ -28,7 +28,7 @@ public class Net1814080903109Activity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {  //匿名类
             @Override
             public void onClick(View v) {   //功能
-                Intent intent = new Intent(Net1814080903109Activity.this,Activity2.class);
+                Intent intent = new Intent(Net1814080903109Activity.this, TurnoffScreenActivity.class);
                 startActivity(intent);
             }
         });
