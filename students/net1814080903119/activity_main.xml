@@ -55,7 +55,7 @@
         android:layout_marginLeft="116dp"
         android:layout_marginBottom="368dp"
         android:background="#9200D4D4"
-        android:text="上一张"
+        android:text="@string/button_last"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -67,19 +67,36 @@
         android:layout_marginRight="84dp"
         android:layout_marginBottom="368dp"
         android:background="#9000D4D4"
-        android:text="下一张"
+        android:text="@string/button_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/displayPhoto"
         android:layout_width="430dp"
-        android:layout_height="228dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="448dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/description"
         android:scaleType="fitXY"
         android:src="@drawable/tu1"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="140dp"
+        android:background="#9000D4D4"
+        android:text="浏览图片"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayPhoto"
+        app:layout_constraintVertical_bias="0.947" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
