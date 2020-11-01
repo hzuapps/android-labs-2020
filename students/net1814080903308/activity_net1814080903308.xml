@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@color/colorAccent"
-    tools:context=".Net1814080903308Activity">
+    android:background="@drawable/p1">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:background="@color/color1"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-
-        android:text="网抑云"
-        android:textSize="30dp"
-        />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/logo2"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="人云亦云"
+        android:textSize="30dp"
+        android:textColor="@color/color2"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="网抑云"
+        android:textSize="30dp"
+        android:textColor="@color/color2"
         android:layout_gravity="center"
         />
 
@@ -36,7 +37,6 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:background="@color/color1"
-        android:layout_marginTop="50dp"
         android:text="播放界面"
         android:textSize="20sp"
         />
@@ -59,4 +59,4 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         />
-</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
