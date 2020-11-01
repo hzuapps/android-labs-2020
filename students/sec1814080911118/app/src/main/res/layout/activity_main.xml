@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,10 +9,15 @@
     <Button
         android:id="@+id/button_main"
         android:layout_width="407dp"
-        android:layout_height="45dp"
-        android:text="朋友圈"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="232dp" />
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:text="朋友圈" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:src="@drawable/pyqlogo" />
+
+
+
+</RelativeLayout>
