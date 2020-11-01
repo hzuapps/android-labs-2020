@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sec1814080911223Activity">
+
+
+    <Button
+        android:id="@+id/button_begin"
+        android:layout_width="143dp"
+        android:layout_height="84dp"
+        android:drawableTop="@drawable/begin"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/kai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/kai"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>
