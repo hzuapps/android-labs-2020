@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class Net1814080903325_Clock2 extends AppCompatActivity {
+public class Net1814080903325Clock extends AppCompatActivity {
     TextView t1;
     Button but1;
     Button but2;
@@ -25,7 +25,7 @@ public class Net1814080903325_Clock2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.net1814080903225_clock);
         t1 = findViewById(R.id.t1);
         but1 = findViewById(R.id.but1);
         but2 = findViewById(R.id.but2);
