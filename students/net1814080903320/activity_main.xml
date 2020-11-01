@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/run_jump_btn"
+            android:layout_width="174dp"
+            android:layout_height="122dp"
+            android:text="约跑"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="80dp"
+             />
+
+        <Button
+            android:id="@+id/friends_jump_btn"
+            android:layout_width="174dp"
+            android:layout_height="122dp"
+            android:text="交友"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="80dp"
+            />
+
+        <Button
+            android:id="@+id/talk_jump_btn"
+            android:layout_width="174dp"
+            android:layout_height="122dp"
+            android:text="分享"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="80dp"
+             />
+
+</LinearLayout>
