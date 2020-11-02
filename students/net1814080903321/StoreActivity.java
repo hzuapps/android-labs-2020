@@ -23,6 +23,32 @@ public class StoreActivity extends AppCompatActivity {
                 }
         });
 
+        Button button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(StoreActivity.this, ShowActivity.class);
+                startActivity(i);
+            }
+        });
+
+        Button button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(StoreActivity.this, ShowActivity.class);
+                startActivity(i);
+            }
+        });
+
+        Button button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(StoreActivity.this, ShowActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
