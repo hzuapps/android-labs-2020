@@ -25,6 +25,14 @@
         android:adjustViewBounds="true"
         android:src="@drawable/bc" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:textSize="60dp"
+        android:text="记账本"
+        android:gravity="center"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
