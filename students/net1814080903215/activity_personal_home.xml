@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80DCFAFA"
+    tools:context=".PersonalHomeActivity">
+
+    <TextView
+        android:id="@+id/textview_3"
+        android:layout_width="134dp"
+        android:layout_height="153dp"
+        android:drawableTop="@drawable/timg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:text="个人空间"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textview_01"
+        android:layout_width="134dp"
+        android:layout_height="153dp"
+        android:drawableTop="@drawable/timg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <TextView
+        android:id="@+id/textview_01"
+        android:layout_width="134dp"
+        android:layout_height="153dp"
+        android:drawableTop="@drawable/timg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <TextView
+        android:id="@+id/textview_4"
+        android:layout_width="134dp"
+        android:layout_height="153dp"
+        android:drawableTop="@drawable/timg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <TextView
+        android:id="@+id/textview_"
+        android:layout_width="134dp"
+        android:layout_height="153dp"
+        android:drawableTop="@drawable/timg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/textview_2"
+        android:layout_width="134dp"
+        android:layout_height="153dp"
+        android:drawableTop="@drawable/timg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:background="@android:color/background_light"
+        android:text="个人空间"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="127dp"
+        android:layout_height="57dp"
+        android:background="@android:color/background_light"
+        android:text="上传照片"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:background="@android:color/background_light"
+        android:text="摄影社区"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
