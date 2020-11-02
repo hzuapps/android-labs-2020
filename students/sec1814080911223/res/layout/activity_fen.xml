@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KaiActivity">
+
+    <Button
+        android:id="@+id/button_fen"
+        android:layout_width="165dp"
+        android:layout_height="85dp"
+        android:drawableTop="@drawable/again"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="301dp" />
+    <TextView
+        android:id="@+id/beijing_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/beijing"
+        tools:ignore="MissingConstraints"/>
+</RelativeLayout>
