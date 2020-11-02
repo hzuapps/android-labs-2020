@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="edu.hzuapps.androidlabs.net1814080903303.StudentActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="edu.hzuapps.androidlabs.net1814080903303.StudentActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/infomation_1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/information_collect_backgroud"
+        android:orientation="vertical"></LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/info_textView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:text="@string/选择课程名字"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="49dp"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/info_editText_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="请对请假信息进行汇总"
+        />
+</LinearLayout>
