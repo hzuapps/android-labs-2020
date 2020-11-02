@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".Net1814080903124GameActivity"></activity>
-
-        <activity android:name=".Net1814080903124ContentActivity"
+        <activity android:name=".GridViewActivity"></activity>
+        <activity android:name=".Net1814080903124ACCActivity" />
+        <activity android:name=".Net1814080903124SneakerActivity" />
+        <activity
+            android:name=".Net1814080903124ClothesActivity"
             android:label="@string/title_activity_net1814080903124_content"
-            android:parentActivityName=".Net1814080903124Activity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Net1814080903124Activity"/>
+            android:parentActivityName=".Net1814080903124MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Net1814080903124MainActivity" />
         </activity>
-
-        <activity android:name=".Net1814080903124Activity">
+        <activity android:name=".Net1814080903124MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
