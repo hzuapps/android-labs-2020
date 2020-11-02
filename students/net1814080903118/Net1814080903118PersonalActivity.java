@@ -1,6 +1,8 @@
 package edu.hzuapps.androidlabs;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,8 +19,13 @@ public class Net1814080903118PersonalActivity extends AppCompatActivity {
         navLendBtn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPreferences sharedPreferences = getSharedPreferences("status", Context.MODE_PRIVATE);
+                String lendable=sharedPreferences.getString("lendable","false");
                 Intent intent=new Intent();
-                intent.setClass(Net1814080903118PersonalActivity.this,Net1814080903118WorkUnLendActivity.class);
+                if(lendable.equals("false"))
+                    intent.setClass(Net1814080903118PersonalActivity.this,Net1814080903118WorkUnLendActivity.class);
+                else
+                    intent.setClass(Net1814080903118PersonalActivity.this,Net1814080903118WorkLendActivity.class);
                 startActivity(intent);
             }
         });
