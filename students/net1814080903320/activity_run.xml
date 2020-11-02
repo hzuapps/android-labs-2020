@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="edu.hzuapps.androidlabs.net1814080903320.RunActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="我是约跑页面"
-        android:textSize="30sp"/>
+    android:layout_height="match_parent">
+
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/run"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="229dp"
+        android:src="@drawable/run" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="请填写约跑时间、地点、联系方式并发布："
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="200"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:text="发布"/>
+
+</LinearLayout>
