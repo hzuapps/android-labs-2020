@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="edu.hzuapps.androidlabs.net1814080903303.ClassActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="edu.hzuapps.androidlabs.net1814080903303.ClassActivity"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="252dp"
-        android:layout_marginRight="252dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+     <LinearLayout
+         android:id="@+id/class_1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+         android:background="@drawable/classing_backgroud"
+         android:orientation="vertical">
+     </LinearLayout>
+
+        <TextView
+            android:id="@+id/class_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/选择课程名字"
+            android:textColorHighlight="#FFC107"
+            android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+            android:id="@+id/class_button1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/课程选择"
+            android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/class_button2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/next"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>
