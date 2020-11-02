@@ -9,6 +9,6 @@ public class PlayerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_net1814080903325);
+        setContentView(R.layout.activity_player);
     }
 }
