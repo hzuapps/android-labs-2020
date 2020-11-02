@@ -1,49 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Net1814080903110Activity">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dates"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/rem" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="124dp"
-        android:layout_height="53dp"
-        android:onClick="onClick"
-        android:text="提醒"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.881"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        tools:ignore="MissingConstraints,OnClick" />
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dates"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="9dp"
+        android:text="@string/set" />
 
-    <Button
-        android:id="@+id/button_open"
-        android:layout_width="124dp"
-        android:layout_height="53dp"
-        android:onClick="onClick"
-        android:text="编辑"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        tools:ignore="MissingConstraints,OnClick" />
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="408dp"
-        android:scaleType="fitXY"
-        android:layout_height="724dp"
-        android:src="@drawable/ribcbackground"
+    <CalendarView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reminder"
+        android:paddingBottom="10dp"
         tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ListView
+        android:id="@+id/dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginRight="1dp"
+        android:layout_alignParentLeft="true"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>
