@@ -14,12 +14,21 @@ public class Net1814080903230MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button btn_game = (Button)findViewById(R.id.button);
+        final Net1814080903230MainActivity thisActivityG = this;
+        btn_game.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(thisActivityG,Net1814080903230GameActivity.class);
+                thisActivityG.startActivity(intent);
+            }
+        });
+
         Button btn_set = (Button)findViewById(R.id.button2);
-        final Net1814080903230MainActivity thisActivity = this;
+        final Net1814080903230MainActivity thisActivityS = this;
         btn_set.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(thisActivity,Net1814080903230SetActivity.class);
-                thisActivity.startActivity(intent);
+                Intent intent = new Intent(thisActivityS,Net1814080903230SetActivity.class);
+                thisActivityS.startActivity(intent);
             }
         });
     }
