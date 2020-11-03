@@ -5,14 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#80DCFAFA"
-    tools:context=".MainActivity">
+    tools:context=".PersonalHomeActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:text="上传界面"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="126dp"
         android:layout_height="57dp"
         android:background="@android:color/background_light"
-        android:text="@string/个人空间"
+        android:text="个人空间"
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +41,7 @@
         android:layout_width="127dp"
         android:layout_height="57dp"
         android:background="@android:color/background_light"
-        android:text="@string/上传照片"
+        android:text="上传照片"
         android:textColor="@android:color/background_dark"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +56,7 @@
         android:layout_width="126dp"
         android:layout_height="57dp"
         android:background="@android:color/background_light"
-        android:text="@string/摄影社区"
+        android:text="摄影社区"
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,45 +66,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="206dp"
-        android:layout_height="43dp"
-        android:text="@string/摄影分享社区"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:drawable/ic_menu_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="TODO" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449"
-        app:srcCompat="@drawable/bg"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
