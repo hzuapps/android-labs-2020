@@ -11,16 +11,8 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
-        app:srcCompat="@drawable/er" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:text="欢迎来到二手平台!"
-        android:textSize="@android:dimen/app_icon_size"
-        android:textStyle="bold" />
+        android:layout_height="390dp"
+        android:src="@drawable/shouy" />
 
     <Button
         android:id="@+id/button2"
