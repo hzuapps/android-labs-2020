@@ -9,14 +9,14 @@
         android:id="@+id/btn_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="作业提交"
+        android:text="作业发布"
         />
 
     <Button
         android:id="@+id/btn_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="作业管理"
+        android:text="作业提交"
         />
 
     <Button
