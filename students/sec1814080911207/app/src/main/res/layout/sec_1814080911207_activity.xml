@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/remind_btn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="提醒"
+        android:layout_weight="0.06" />
+
+    <Button
+        android:id="@+id/record_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:text="记录" />
+
+
+
+</LinearLayout>
