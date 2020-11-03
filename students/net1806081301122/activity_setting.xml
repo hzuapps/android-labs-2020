@@ -6,7 +6,7 @@
     android:paddingRight="16dp"
     android:orientation="vertical" >
     <Spinner
-        android:id="@+id/背景音乐"
+        android:id="@+id/music"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>
@@ -18,7 +18,7 @@
     </resources>
 
     <Spinner
-        android:id="@+id/游戏难度"
+        android:id="@+id/difficulty"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>
