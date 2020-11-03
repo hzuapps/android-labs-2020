@@ -1,43 +1,39 @@
-package com.example.example2;
+package edu.hzuapp.androidlabs.net1814080903230;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Net1814080903230SetActivity extends AppCompatActivity {
+public class SetActivity extends AppCompatActivity {
     TextView displayRegion,displaySpeed;
     Button buttonRegion_L,buttonRegion_R;
     Button buttonSpeed_L,buttonSpeed_R;
     int Rt=1,St=1;
 
- /*   public void iv_1(View view){
-        displayRegion=(TextView)findViewById(R.id.textView5);
-        int num1 = Integer.parseInt(displayRegion.getText().toString());
-        if(num1>1){
-            num1-=1;
-        }
+    /*   public void iv_1(View view){
+           displayRegion=(TextView)findViewById(R.id.textView5);
+           int num1 = Integer.parseInt(displayRegion.getText().toString());
+           if(num1>1){
+               num1-=1;
+           }
 
-        displayRegion.setText(Integer.toString(num1));
+           displayRegion.setText(Integer.toString(num1));
 
-    }
-    public void iv_2(View view){
-        displayRegion=(TextView)findViewById(R.id.textView5);
-        int num1 = Integer.parseInt(displayRegion.getText().toString());
-        if(num1<999){
-            num1+=1;
-        }
+       }
+       public void iv_2(View view){
+           displayRegion=(TextView)findViewById(R.id.textView5);
+           int num1 = Integer.parseInt(displayRegion.getText().toString());
+           if(num1<999){
+               num1+=1;
+           }
 
-        displayRegion.setText(Integer.toString(num1));
+           displayRegion.setText(Integer.toString(num1));
 
-    }*/
+       }*/
     public void disR(int Rt){
         if(Rt==0)
             displayRegion.setText("窄");
@@ -130,10 +126,10 @@ public class Net1814080903230SetActivity extends AppCompatActivity {
 
 
         Button btn_back = (Button)findViewById(R.id.button3);
-        final Net1814080903230SetActivity thisActivity = this;
+        final SetActivity thisActivity = this;
         btn_back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(thisActivity,Net1814080903230MainActivity.class);
+                Intent intent = new Intent(thisActivity,MainActivity.class);
                 thisActivity.startActivity(intent);
             }
         });

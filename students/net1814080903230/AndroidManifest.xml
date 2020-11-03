@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.example2">
+    package="edu.hzuapp.androidlabs.net1814080903230">
 
     <application
         android:allowBackup="true"
@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Net1814080903230SetActivity"></activity>
-        <activity android:name=".Net1814080903230MainActivity">
+        <activity android:name=".GameActivity"></activity>
+        <activity android:name=".SetActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
