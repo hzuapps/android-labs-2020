@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="start">
+        <item>st1</item>
+        <item>st2</item>
+        <item>st3</item>
+        <item>st4</item>
+    </string-array>
+
+    <string-array name="clothes">
+        <item>clothes1</item>
+        <item>clothes2</item>
+        <item>clothes3</item>
+        <item>clothes4</item>
+    </string-array>
+    <string-array name="shoes">
+        <item>shoes1</item>
+        <item>shoes2</item>
+        <item>shoes3</item>
+        <item>shoes4</item>
+    </string-array>
+    <string-array name="kids">
+        <item>kids1</item>
+        <item>kids2</item>
+        <item>kids3</item>
+        <item>kids4</item>
+    </string-array>
+
+
+</resources>

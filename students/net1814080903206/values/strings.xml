@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Net1814080903206Activity</string>
+    <string name="reminder">提醒</string>
+    <string name="host_number">账号</string>
+    <string name="host_register">密码</string>
+    <string name="done">确认</string>
+</resources>
