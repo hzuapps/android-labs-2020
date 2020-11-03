@@ -1,3 +1,4 @@
+
 # 一、实验目标
 
 1. 创建2-3个与自己选题有关的Activity
@@ -13,16 +14,16 @@
 
 # 三、实验步骤
 
-1. 创建2-3个Activity
-2. 将创建的Activity注册到AndroidManifest.xml
-3. 在布局文件中创建Button并赋予ID
-4.  通过ID获取Button
+1. 创建Net1814080903210Activity、Comment1814080903210Activity、NewsInfo1814080903210Activity
+2. 将创建的3个Activity注册到AndroidManifest.xml
+3. 在activity_main.xml中创建Button并赋予名为btn的id
+4.  在Net1814080903210Activity中通过findViewById方法获取Button
 5. 为Button增加点击事件处理
-6. 通过Intent实现跳转
+6. 通过Intent实现从Net1814080903210Activity到NewsInfo1814080903210Activity的跳转
 
 # 四、实验结果
 
-![result](https://raw.githubusercontent.com/Playerlhh/android-labs-2020/master/students/net1814080903210/lab2_res.png)
+![result](https://img-blog.csdnimg.cn/img_convert/6e8ec086d5ff96a3dbe655964d484685.png)
 
 # 五、实验心得
 
