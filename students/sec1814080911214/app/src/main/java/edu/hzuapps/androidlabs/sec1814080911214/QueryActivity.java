@@ -27,5 +27,10 @@ public class QueryActivity extends AppCompatActivity {
                 thisActivity.finish();
             }
         });
+Drawable drawable = getResources().getDrawable(R.drawable.query);
+        drawable.setBounds(0,0,200,200);
+        TextView textview = (TextView) findViewById(R.id.textview_01);
+        textview.setCompoundDrawables(null,drawable,null,null);
+    }
     }
 }
