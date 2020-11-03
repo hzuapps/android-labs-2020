@@ -9,16 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Net1814080903234Activity" android:label="主页面">
+        <activity
+            android:name=".Net1814080903234Activity"
+            android:label="主页面">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContactActivity"
-            android:label="联系人"/>
-        <activity android:name=".DynamicActivity" android:label="动态"></activity>
+        <activity
+            android:name=".ContactActivity"
+            android:label="聊天页面" />
+        <activity
+            android:name=".DynamicActivity"
+            android:label="动态" />
+        <activity android:name=".NewPageActivity" />
+        <activity android:name=".Relativectivity" />
+        <activity android:name=".BtnTextViewActivity" />
+        <activity android:name=".LinearActivity" />
+        <activity android:name=".ListViewActivity"></activity>
     </application>
 
 </manifest>
