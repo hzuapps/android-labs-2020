@@ -23,7 +23,7 @@
 
 # 四、实验结果
 
-![result](https://img-blog.csdnimg.cn/img_convert/6e8ec086d5ff96a3dbe655964d484685.png)
+![result](https://raw.githubusercontent.com/Playerlhh/android-labs-2020/master/students/net1814080903210/lab2_res.png)
 
 # 五、实验心得
 
