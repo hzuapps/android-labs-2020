@@ -18,17 +18,17 @@ public class MainActivity extends AppCompatActivity {
         button_manage.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 Intent intent1 = new Intent(thisActivity1,ManageActivity.class);
-                thisActivity1.startActivity(intent1);
+                MainActivity.this.startActivity(intent1);
             }
         });
 
 
-        Button button_sell = (Button) findViewById(R.id.button2);
+       Button button_sell = (Button) findViewById(R.id.button2);
         final MainActivity thisActivity2 = this;
         button_sell.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 Intent intent2 = new Intent(thisActivity2,SellActivity.class);
-                thisActivity2.startActivity(intent2);
+                MainActivity.this.startActivity(intent2);
             }
         });
     }
