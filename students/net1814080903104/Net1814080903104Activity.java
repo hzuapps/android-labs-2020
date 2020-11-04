@@ -1,4 +1,5 @@
-package edu.hzuapps.myapplication;
+package edu.hzuapps;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
