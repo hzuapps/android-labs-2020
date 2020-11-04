@@ -14,7 +14,7 @@
 2. 创建一个名为Net1814080903109Activity的java类；
 3. 将hzuapps/android-labs-2020的项目Fork到自己的github账号下；
 4. 将android-labs-2020项目克隆到本地；
-5. 用git bash提交Net1814080903234Activity.java
+5. 用git bash提交Net1814080903109Activity.java
 
 # 四、实验结果
 ![lab1](https://raw.githubusercontent.com/huanxuaner/android-labs-2020/master/students/net1814080903109/lab1.PNG)
