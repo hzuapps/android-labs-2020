@@ -1,36 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteX="59dp"
+    tools:layout_editor_absoluteY="39dp"
     tools:context=".GetReward"
     android:background="@drawable/backgroud">
 
-    <LinearLayout
-        android:layout_width="317dp"
-        android:layout_height="623dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="39dp">
+    <Button
+        android:id="@+id/button_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="500dp"
+        android:text="领取"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/button_get"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="500dp"
-            android:text="领取"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/button_return"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="500dp"
-            android:text="返回"
-            tools:ignore="MissingConstraints" />
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:text="返回"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>

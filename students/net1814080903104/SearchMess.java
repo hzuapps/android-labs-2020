@@ -1,4 +1,4 @@
-package edu.hzuapps.myapplication;
+package edu.hzuapps;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,16 +16,11 @@ public class SearchMess extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_mess);
 
-        Drawable drawable = getResources().getDrawable(R.drawable.logo);
-        drawable.setBounds(0,0,200,200);
-        TextView textview = findViewById(R.id.Textview1);
-        textview.setCompoundDrawables(null,drawable,null,null);
-
         Button button = (Button) findViewById(R.id.button_return);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(SearchMess.this,Net1814080903104Activity.class);
                 SearchMess.this.startActivity(intent);}
-                });
-}}
+        });
+    }}
