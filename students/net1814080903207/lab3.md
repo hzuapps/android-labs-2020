@@ -15,8 +15,8 @@
 3. 使用ConstraintLayout布局来对按钮进行布局
 
 # 四、实验结果 #
-![drawable](https://raw.githubusercontent.com/522090231/android-labs-2020/master/students/net1814080903207/lab3_answer1.png)
-![layout](https://raw.githubusercontent.com/522090231/android-labs-2020/master/students/net1814080903207/lab3_answer2.png)
+![drawable](https://raw.githubusercontent.com/522090231/android-labs-2020/master/students/net1814080903207/lab3_answer1.png)<br>
+![layout](https://raw.githubusercontent.com/522090231/android-labs-2020/master/students/net1814080903207/lab3_answer2.png)<br>
 ![test](https://raw.githubusercontent.com/522090231/android-labs-2020/master/students/net1814080903207/lab3_answer3.png)
 
 # 五、实验心得 #
