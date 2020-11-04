@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.hzuapps.androidlabs.net1814080903103.ClockActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/timg">
+
+    <Button
+        android:id="@+id/clock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加闹钟"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="300dp"/>
+
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="70dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
