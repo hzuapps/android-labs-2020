@@ -18,8 +18,8 @@ public class Net1814080903115Activity extends AppCompatActivity {
         final Activity thisActivity = this;
 
         Button btnBrowse = (Button) findViewById(R.id.button_browse);
-        btnBrowse.setX(300f);
-        btnBrowse.setY(200f);
+//        btnBrowse.setX(300f);
+//        btnBrowse.setY(200f);
         View view = findViewById(R.id.button_browse);
 
         btnBrowse.setOnClickListener(new View.OnClickListener() {
@@ -31,8 +31,8 @@ public class Net1814080903115Activity extends AppCompatActivity {
             }
         });
         Button btnPlay = (Button) findViewById(R.id.button_play);
-        btnPlay.setX(300f);
-        btnPlay.setY(400f);
+//        btnPlay.setX(300f);
+//        btnPlay.setY(400f);
         View view2 = findViewById(R.id.button_play);
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
