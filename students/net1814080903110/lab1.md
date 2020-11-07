@@ -19,4 +19,4 @@
 ![lab1](https://raw.githubusercontent.com/xyl123580/android-labs-2020/master/students/net1814080903110/lab1.png)
 
 # 五、实验心得
-熟悉了如何利用git bash来上传文件，学习到了添加，删除，上传相关的命令，完成好了android studio的配置。
+熟悉了如何利用git bash来上传文件，学习到了添加，删除，上传相关的命令，完成好了android studio的配置
