@@ -4,24 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/student"
     tools:context=".Net1814080903333StudentsInformationActivity2">
-<Button
-    android:id="@+id/btn3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="return"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="学生基本信息"
 
-        tools:ignore="MissingConstraints" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/students"
-        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text00"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/stu_name"
+                android:textSize="20dp"
+                android:textColor="#100"/>
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/coursename"
+                android:textSize="20dp"
+                android:textColor="#100"
+                android:layout_toRightOf="@id/text00"/>
+
+            <TextView
+                android:id="@+id/text33"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text22"
+                android:text="@string/beginclass"
+                android:textColor="#100"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/edit00"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/studentname"
+                android:layout_below="@id/text00"/>
+
+            <EditText
+                android:id="@+id/edit11"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/coursename"
+                android:layout_below="@id/text22"
+                android:layout_toRightOf="@id/edit00"/>
+
+            <EditText
+                android:id="@+id/edit22"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/beginclass"
+                android:layout_below="@id/text22"
+                android:layout_toRightOf="@id/edit11"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="600dp">
+
+            <Button
+                android:id="@+id/button00"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button00"
+                android:text="@string/update" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studenttext"
+                android:layout_marginTop="4dp"
+                android:text="@string/return_home" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button11"
+                android:text="@string/select" />
+
+            <Button
+                android:id="@+id/button44"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button33"
+                android:text="@string/delete" />
+
+            <TextView
+                android:id="@+id/studenttext"
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_below="@id/button11"
+                android:gravity="center"
+                android:text="@string/welcom_information"
+                android:textColor="@color/colorAccent"
+                android:textSize="40dp" />
+        </RelativeLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
