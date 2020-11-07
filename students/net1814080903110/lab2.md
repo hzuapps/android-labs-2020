@@ -58,7 +58,7 @@
 ```
 
 # 四、实验结果
-![lab2](https://raw.githubusercontent.com/xyl123580/android-labs-2020/master/students/net1814080903110/lab3.png)
+![lab2](https://raw.githubusercontent.com/xyl123580/android-labs-2020/master/students/net1814080903110/lab2.png)
 ![lab2](https://raw.githubusercontent.com/xyl123580/android-labs-2020/master/students/net1814080903110/lab3.png)
 
 # 五、实验心得
