@@ -38,7 +38,7 @@
     </activity>
 ```
 3. 在Net1814080903110Activity中添加跳转按钮的代码
-```xml
+```java
         Button button = (Button) findViewById(R.id.button1);
         button.setOnClickListener(new View.OnClickListener() {
                                       @Override
