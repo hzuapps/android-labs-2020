@@ -31,7 +31,7 @@
 
 # 四、实验结果
 
-![实验截图]()
+ ![实验截图](https://raw.githubusercontent.com/Deng-dong555/android-labs-2020/master/students/net1814080903215/lab2_pic.jpg)
 
 # 五、实验心得
 
