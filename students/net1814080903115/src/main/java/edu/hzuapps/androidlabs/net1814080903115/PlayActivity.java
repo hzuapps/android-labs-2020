@@ -15,8 +15,8 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
         Button btnBack = (Button) findViewById(R.id.button_back);
-        btnBack.setX(300f);
-        btnBack.setY(200f);
+//        btnBack.setX(300f);
+//        btnBack.setY(200f);
         View view = findViewById(R.id.button_back);
 
         btnBack.setOnClickListener(new View.OnClickListener() {

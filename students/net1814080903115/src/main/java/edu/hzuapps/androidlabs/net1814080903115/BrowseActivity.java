@@ -17,8 +17,8 @@ public class BrowseActivity extends AppCompatActivity {
 
 
         Button btnBack = (Button) findViewById(R.id.button_back);
-        btnBack.setX(300f);
-        btnBack.setY(200f);
+//        btnBack.setX(420f);
+//        btnBack.setY(1300f);
         View view = findViewById(R.id.button_back);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
