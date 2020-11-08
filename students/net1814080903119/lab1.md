@@ -17,7 +17,7 @@
 5. 在GitHub个人项目库pull requests（按钮）发送合并请求；
 
 ## 四、实验结果
-![运行截图](https://github.com/Lj-xinfei/android-labs-2020/new/master/students/net1814080903119/lab1.png)
+![运行截图](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/master/students/net1814080903119/lab1.jpg)
 
 ## 五、实验心得
 掌握有关GitHub的一些简单操作，git bash的添加，修改，删除命令。第一次提交时因为后缀名出错，删除时远程库跟本地库同时删掉了包括自己个人项目库，后面又重新Fork hzuapps/android-labs-2020，
