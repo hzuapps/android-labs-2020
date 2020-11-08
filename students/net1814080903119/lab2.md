@@ -1,0 +1,28 @@
+# 一、实验目标
+1. 创建2-3个与自己选题有关的Activity
+2. 利用Intent实现Activity间的跳转
+# 二、实验内容
+1. 根据功能创建相应的Activity；
+2. 编写Activity对应的布局文件；
+3. 实现各个Activity之间的跳转;
+# 三、实验步骤
+1. 创建三个Activity（名字自取）；
+2. 在AndroidManifest.xml添加虚拟机打开时所需权限，添加所创三个activity的配置代码；如：<activity android:name=".activity名字"></activity>
+3. 在各个activity添加点击事件；
+4. protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Button button = findViewById(R.id.see);
+        final activity名字 _this = this;
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(_this, activity名字.class);
+                _this.startActivity(intent);
+            }
+        });
+    }
+# 四、实验结果
+![lab2](https://raw.githubusercontent.com/xyl123580/android-labs-2020/master/students/net1814080903110/lab3.png)
+# 五、实验心得
+学会利用点击事件进行页面跳转。
