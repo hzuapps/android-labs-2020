@@ -94,7 +94,7 @@ class ImageAdapter extends BaseAdapter {
 }
 
 # 四、实验结果
-![实验截图](![lab2](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/044b6c7d13a9e6c6e5b2d3b66ca3404b1d972e31/students/net1814080903119/lab4.jpg))
+![实验截图](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/044b6c7d13a9e6c6e5b2d3b66ca3404b1d972e31/students/net1814080903119/lab4.jpg)
 
 # 五、实验心得
 了解各个布局的界面，依据项目需要选择了GridView布局，调试中遇到了图片大小问题，可在对应的layout修改格式或者在对应的Java文件解决并显示。
