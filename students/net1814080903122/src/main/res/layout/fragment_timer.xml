@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="运动方式"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入计时时间"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectButton" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="217dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_timer">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="开始计时" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="停止计时" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:text="  计时时间"
+        android:textAlignment="center"
+        android:textSize="20dp" 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/text_sport"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:text="当前运动方式"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_time" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
