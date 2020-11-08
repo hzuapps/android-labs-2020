@@ -37,7 +37,7 @@
     }
 
 # 四、实验结果
-![lab3](![lab2](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/044b6c7d13a9e6c6e5b2d3b66ca3404b1d972e31/students/net1814080903119/lab3.jpg))
+![实验截图](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/044b6c7d13a9e6c6e5b2d3b66ca3404b1d972e31/students/net1814080903119/lab3.jpg)
 
 # 五、实验心得
 学习了设置背景图片，修改图片格式，在layout（design）那可以对图片进行调整，也可以利用ImageView进行设置。
