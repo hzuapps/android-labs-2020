@@ -12,10 +12,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/wangyiyun_top"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        />
+        app:drawableTopCompat="@drawable/wangyiyun_top" />
 
     <TextView
         android:id="@+id/tv_main_1"
@@ -36,10 +35,23 @@
         android:layout_marginTop="150dp"
         android:gravity="center"
         android:padding="10dp"
-        android:text="播放界面"
+        android:text="@string/play"
         android:textColor="@color/colorBlack"
         android:textSize="20sp"
-        android:background="#E49494"
+        android:background="@color/Button_background"
+        />
+
+    <Button
+        android:id="@+id/bt_main_search"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/search"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:background="@color/Button_background"
         />
 
     <Button
@@ -47,13 +59,13 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="音乐列表"
+        android:text="@string/music"
         android:textColor="@color/colorBlack"
         android:textSize="20sp"
         android:padding="10dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:background="#E49494"
+        android:background="@color/Button_background"
         />
 
 </LinearLayout>
