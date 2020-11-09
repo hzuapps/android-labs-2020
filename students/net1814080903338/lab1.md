@@ -16,15 +16,12 @@
 
 2. 编写第一个名为Net1814080903338Activity的java类；
 
-   ```java
+```java
 package edu.hzuapps;
 
 public class Net1814080903338Activity {
 }
-   ```
-
-
-
+```
 3. 在D盘中创建依次名为android-labs-2020/students/net1814080903338的文件夹；
 
 4. Fork项目hzuapps/android-labs-2020到个人项目下；
