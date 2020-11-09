@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/siv_icon"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"></com.loopj.android.image.SmartImageView>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/siv_icon"
+        android:ellipsize="end"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:text="我是标题"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/siv_icon"
+        android:ellipsize="end"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:text="我是描述"
+        android:textColor="#99000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:text="评论"
+        android:textColor="#99000000"
+        android:textSize="12sp" />
+</RelativeLayout>
