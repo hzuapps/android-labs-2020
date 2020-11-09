@@ -25,6 +25,7 @@
    ```
 
 # 四、实验结果
+![](https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab3.png)
 
 # 五、实验心得
 为主页添加了背景图片，采用图片获取资源，熟悉了调用资源的方法，逐步对android开发有了更深的了解。
