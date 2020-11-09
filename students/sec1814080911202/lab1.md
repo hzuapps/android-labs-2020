@@ -34,7 +34,7 @@
 
 # 四、实验结果
 
-![lab1](https://raw.githubusercontent.com/l1nzsec/android-labs-2020/master/students/sec1814080911202/lab1.jpg)
+![lab1](https://raw.githubusercontent.com/L1nzSec/android-labs-2020/master/students/sec1814080911202/lab1.jpg)
 
 # 五、实验心得
 
