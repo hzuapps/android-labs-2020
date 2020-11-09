@@ -1,4 +1,4 @@
-# 一、实验报告
+# 一、实验目标
 
 1. 搭建 Android（Android Studio）开发环境
 2. 熟悉并掌握Git与GitHub.com提交实验代码的方法
