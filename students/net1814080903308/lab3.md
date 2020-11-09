@@ -12,7 +12,7 @@
 
 2.在相应layout的xml文件中设置ImageView的app:srcCompat属性实现导入图片，代码如下
 
- '''<ImageView
+```<ImageView
      android:id="@+id/imageView7"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
      app:srcCompat="@drawable/bg"
      android:contentDescription="TODO" 
   />
-'''     
+```    
 # 四、实验结果
 !
 
