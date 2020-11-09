@@ -3,10 +3,12 @@
 1. 搭建 Android（Android Studio）开发环境；
 2. 熟悉并掌握Git与GitHub.com提交实验代码的方法。
 
-# 二、实验要求
+# 二、实验内容
 
-1. 独立完成练习与实验，将代码提交到GitHub；
-2. 编写实验报告，阐述实验结果，总结实验体会。
+1. 搭建Android Studio环境，配置SDK；
+2. 创建一个名为Net学号Activity的java类；
+3. 安装git，熟悉git bash的命令；
+4. 上交实验相关文件；
 
 # 三、实验步骤
 
