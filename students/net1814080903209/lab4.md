@@ -22,7 +22,8 @@ findViewById(R.id.my_button);
 
 3. ShowActivity采用RelativeLayout布局,对CountActivity传过来的数据进行展示。
 # 四、实验结果
-
+![](https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab4_01.png)
+![](https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab4_02.png)
 
 # 五、实验心得
 本次实验完成的是记账本的添加账单部分，页面一进来就会有一个数字按键，通过点击记录本次账单的金额。
