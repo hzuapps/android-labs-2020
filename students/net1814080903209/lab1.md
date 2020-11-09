@@ -19,7 +19,7 @@
 5. 利用git bash来提交相关的文件到hzuapps/android-labs-2020
 
 # 四、实验结果
-
+![](https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab1.png)
 
 # 五、实验心得
 
