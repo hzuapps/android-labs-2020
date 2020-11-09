@@ -16,7 +16,7 @@
 5. 利用git bash来提交相关的文件到自己账号下，在自己账号上pull request到hzuapps/android-labs-2020
 
 # 四、实验结果
-![lab1](https://github.com/wuuuxj/android-labs-2020/tree/master/students/sec1814080911205/lab1.png)
+![lab1](https://github.com/wuuuxj/android-labs-2020/tree/master/students/sec1814080911205/lab1.jpg)
 
 # 五、实验心得
 学会git bash的相关命令，例如添加，删除，上传，拉取命令，安装配置好android studio并成功运行
