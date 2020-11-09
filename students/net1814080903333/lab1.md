@@ -27,4 +27,4 @@ $ git push
 ![图1andriod studio 虚拟机运行结果](https://github.com/yichouge/android-labs-2020/blob/master/students/net1814080903333/lab1.png?raw=true)
 ## 实验心得
 本次实验我遇到的问题还是挺多的最大的问题是不知如何删除github上多余或不要的文件，在终端乱输命令，结果文件路劲少输入了一级删除了自己库里的student文件不得不把老师库里的student文件克隆岛自己的本地
-磁盘上在进行操作，在寻求老师和同学们的帮助下我学会了如何用命令删除github上的文件
+磁盘上在进行操作，在寻求老师和同学们的帮助下我学会了如何用命令删除github上的文件。
