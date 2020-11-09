@@ -44,7 +44,9 @@
 ```
 
 # 四、实验结果
-
+![](https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab2_01.png)
+---
+![](https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab2_02.png)
 
 # 五、实验心得
 实验主要是实现基本的页面跳转，通过编写Activity中的代码，添加按钮事件，实现利用Intent实现Activity间的跳转，实验比较基础简单。
