@@ -10,30 +10,12 @@
 
 # 三、实验步骤
 
-1. 搭建开发环境（Android Studio），运行（截图）；
-   需要配置代理服务器。
+1. 搭建Android Studio环境，配置相应的相应SDK之后；
+2. 创建一个名为Net1814080903209Activity的java类；
+3. 将hzuapps/android-labs-2020的项目Fork到自己的github账号下；
+4. 将android-labs-2020项目克隆到本地；
+5. 用git bash提交文件ush
 
-2. 加入Git项目（Fork），将项目克隆（Clone）到自己帐号下；
-
-   ```shell
-   $ cd D:\
-   $ git clone https://github.com/itgopan/android-labs-2020/  
-   $ cd android-labs-2020 
-   ```
-3. 创建以学号命名的个人实验目录(在"我的电脑"里创建)：
-   students/net1814080903209   
-
-4. 其中，com开头表示计算机班，soft开头表示软件班，net为网络工程班，sec为网络安全班，数字为个人学号。
-   \4. 创建一个Java类：
-
-5. 提交代码并发Pull Request，老师合并之后截图。
-
-6. 提交代码的命令：
-   ```shell
-   $ git add students/net1814080903209/Net1814080903209Activity.java
-   $ git commit -m "#1 #21 第1次实验" 
-   $ git push
-   ```
 # 四、实验结果
 
 
