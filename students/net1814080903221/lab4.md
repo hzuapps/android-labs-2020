@@ -14,6 +14,7 @@
 # 三、实验步骤
 
 1. 在CountDown和WatchStop的xml文件里创建线性布局。
+```
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -21,6 +22,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Net1814080903221CountDownActivity">
+ ```
 2. 放置图片以及实施功能。
 2. 对按钮添加控件。
 
