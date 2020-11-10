@@ -20,4 +20,4 @@
   ![实验截图](https://github.com/Chenweikang2/android-labs-2020/raw/master/students/net1806081301122/1.png)
   
    ## 五、实验心得 
-  成功配置了Android Studio的开发环境，熟悉并掌握git bash提交实验的方法。 
+  成功配置了Android Studio的开发环境，熟悉并掌握git bash提交实验的方法。
