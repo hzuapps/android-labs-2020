@@ -15,10 +15,8 @@ Net1814080903224MainActivity.java
 Net1814080903224RecommendActivity.java  
 Net1814080903224ProductionActivity.java   
 Net1814080903224careActivity.java  
-3、在Net1814080903224MainActivity的layout文件中设置两个按钮，分别为“注意事项”和“景点推荐”；
-在Net1814080903224MainActivity.java中创建按钮对象jump1和jump2；   
-4、在Net1814080903224RecommendActivity.java的layout文件中设置按钮“介绍”；
-在Net1814080903224RecommendActivity.java中创建按钮对象jump3；
+3、在Net1814080903224MainActivity的layout文件中设置两个按钮，分别为“注意事项”和“景点推荐”；在Net1814080903224MainActivity.java中创建按钮对象jump1和jump2；   
+4、在Net1814080903224RecommendActivity.java的layout文件中设置按钮“返回”；在Net1814080903224RecommendActivity.java中创建按钮对象jump3；     
 5、使用findViewById方法引用布局文件中的对应按钮，使得在写.java的按钮时能与布局文件里的一致；  
 6、设置jump1、jump2和jump3的点击事件；  
 7、创建intent跳转对象，Intent(源Activity.this,目标Activity.class)；  
