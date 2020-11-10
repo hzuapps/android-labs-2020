@@ -48,4 +48,4 @@
 ![lab4](https://github.com/tillsunrise/android-labs-2020/blob/master/students/net1814080903202/lab4_2.jpg)
 ![lab4](https://github.com/tillsunrise/android-labs-2020/blob/master/students/net1814080903202/lab4_3.jpg)  
 # 五、实验心得
-这次实验相对就比较难了，要写的东西很多，首先在布局上，要重写各界面下的ToolBar，要设计各界面布局，要设计ListView的item布局等等，这个过程比较繁琐枯燥，虽然没有遇到大的问题，但是为了显示效果就要不断微调，还有要注意各种细节，比如分隔的View，圆角头像的xml等等。在Java类功能部分，难的是数据的封装，listview数据的动态加载，我使用了静态list对象来实现这一效果。
+这次实验相对就比较难了，要写的东西很多，首先在布局上，要重写各界面下的ToolBar，要设计各界面布局，要设计ListView的item布局等等，这个过程比较繁琐枯燥，虽然没有遇到大的问题，但是为了显示效果就要不断微调，还有要注意各种细节，比如分隔的View，圆角头像的xml等等。在Java类功能部分，难的是数据的封装，listview数据的动态加载，我使用了静态list对象来实现这一效果。在做实验的过程中学习了很多新知识和各种代码的用法，提升很大。
