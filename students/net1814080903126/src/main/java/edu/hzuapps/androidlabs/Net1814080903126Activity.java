@@ -32,7 +32,7 @@ public class Net1814080903126Activity extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(thisActivity,ContinueGameActivity.class);
+                Intent intent = new Intent(thisActivity,GameActivity.class);
                 thisActivity.startActivity(intent);
             }
         });
