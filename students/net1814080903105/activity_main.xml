@@ -12,6 +12,7 @@
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/homepage"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -21,30 +22,31 @@
 
     <Button
         android:id="@+id/shopping"
-        android:layout_width="100dp"
+        android:layout_width="208dp"
         android:layout_height="50dp"
         android:layout_marginStart="324dp"
         android:layout_marginLeft="324dp"
         android:layout_marginTop="308dp"
-        android:text="@string/message"
+        android:text="@string/shopping"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@id/list"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/list"
-        android:layout_width="100dp"
+        android:layout_width="208dp"
         android:layout_height="50dp"
-        android:layout_marginTop="308dp"
-        android:text="@string/message1"
+        android:text="@string/list"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintRight_toLeftOf="@id/shopping"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
