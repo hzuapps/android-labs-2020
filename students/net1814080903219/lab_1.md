@@ -19,9 +19,7 @@
 5. 下载安装git，利用git相关命令提交代码
 # 四、实验结果
 
-```  
-![图片](图片URL)
-```  
+![lab1](https://github.com/account-lin/android-labs-2020/blob/master/students/net1814080903219/lab1_result.png)  
 
 # 五、实验心得体会
-这次实验是关于Android开发环境的搭建，通过这次实验，我了解了如何利用Git的指令进行代码提交。由于是初次使用，
+这次实验是关于Android开发环境的搭建，通过这次实验，我了解了如何利用Git的指令进行代码提交。由于是初次使用，不太熟悉，容易出错。
