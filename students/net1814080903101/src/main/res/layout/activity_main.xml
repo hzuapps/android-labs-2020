@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/test"
+    android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context=".Net1814080903101Activity">
 
-    <Button
-        android:id="@+id/button_add"
-        android:layout_width="126dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="90dp"
-        android:text="开始游戏"
-        android:textSize="60px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/title"
+        android:layout_width="345dp"
+        android:layout_height="269dp"
         android:src="@drawable/title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+    <ImageButton
+        android:id="@+id/starting"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/starting"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"/>
+    <ImageButton
+        android:id="@+id/exiting"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/exiting"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"/>
+</LinearLayout>
