@@ -4,51 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Net1814080903202Activity">
+    android:background="#ccc"
+    tools:context=".Moment1814080903202Activity"
+    android:orientation="vertical">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#3F51B5">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/back" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="首页"
+            android:text="朋友圈"
             android:textColor="#fff"
             android:textSize="20sp"/>
         <ImageButton
-            android:id="@+id/Scan"
+            android:id="@+id/scan"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="right"
             android:layout_marginRight="20dp"
             android:background="@drawable/scan" />
-
     </androidx.appcompat.widget.Toolbar>
-    <LinearLayout
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/Moment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/moment" />
-
-        <Button
-            android:id="@+id/Comment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/comment" />
-    </LinearLayout>
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:src="@drawable/logo" />
-
-
+        android:layout_height="wrap_content"
+        android:id="@+id/MomentList" />
 </LinearLayout>
