@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
 
-public class Check_recordActivity extends AppCompatActivity {
+public class activity_check_record extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
