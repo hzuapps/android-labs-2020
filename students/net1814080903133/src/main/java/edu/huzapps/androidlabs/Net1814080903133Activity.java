@@ -43,7 +43,7 @@ public class Net1814080903133Activity extends AppCompatActivity {
         bookManager.clear();
         bookManager.addBook("daode","道德经","老子","3");
         for (int i=2;i<=12;i++){
-            bookManager.addBook("book"+i,"book"+i,"author"+i,"12");
+            bookManager.addBook("book","book"+i,"author"+i,"12");
         }
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
