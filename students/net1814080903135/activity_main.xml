@@ -15,14 +15,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textview_01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableTop="@drawable/timg"
-        android:text=" "
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="124dp" />
+ <FrameLayout
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="-2dp">
 
     <Button
         android:id="@+id/button"
@@ -31,6 +29,13 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="133dp"
         tools:layout_editor_absoluteY="205dp"
-        android:text="进入"/>
+        android:text="进入查询"/>
+
+	<ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="512dp"
+            android:background="@drawable/timg" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
