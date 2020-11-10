@@ -42,6 +42,7 @@ public class Net1814080903219Activity extends AppCompatActivity {
         });
     }
 }
+
 ```
 # 四、实验结果
 ![lab2result1](https://github.com/account-lin/android-labs-2020/blob/master/students/net1814080903219/lab2_result1.png)
