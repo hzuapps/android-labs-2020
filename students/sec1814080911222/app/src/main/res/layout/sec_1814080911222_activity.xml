@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    android:weightSum="1">
+    tools:context=".sec1814080911222Activity"
+    android:background="@drawable/bg">
 
-    <Button
-        android:id="@+id/performance_btn"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:text="开始运动"
-        android:layout_weight="0.06" />
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="358dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
-    <Button
-        android:id="@+id/plan_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.03"
-        android:text="指定计划" />
+        <Button
+            android:id="@+id/plan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指定计划"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="70dp"/>
 
-
+        <Button
+            android:id="@+id/performance_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始运动"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="85dp"/>
+    </LinearLayout>
 
 </LinearLayout>
