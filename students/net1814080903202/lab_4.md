@@ -44,8 +44,8 @@
 3. activity_comment1814080903202.xml总布局为LinearLayout，使用View指定高度5dp和背景色来实现分隔效果，中间部分为ListView，最下面用LinearLayout放置输入框和发送按钮；ListView的子布局为moment_listview_item.xml文件，使用RelativeLayout，使得头像和名字、时间显示在左边，内容显示在右边；在Java类中编写实体类CommentBean.java封装数据，使用SimpleAdapter加载布局；
 4. 为ToolBar的返回按钮添加点击事件，实现onBackPressed()方法，扫码按钮实现跳转Scan1814080903202Activity；在Comment1814080903202Activity中为发送按钮添加点击事件，若输入框内容不为空，将数据写入到CommentBean对象，再加入resultlist列表，调用simpleAdapter.notifyDataSetChanged()重新加载新内容；  
 # 四、实验结果
-![lab4](https://github.com/tillsunrise/android-labs-2020/blob/master/students/net1814080903202/lab4_1.jpg)
-![lab4](https://github.com/tillsunrise/android-labs-2020/blob/master/students/net1814080903202/lab4_2.jpg)
-![lab4](https://github.com/tillsunrise/android-labs-2020/blob/master/students/net1814080903202/lab4_3.jpg)  
+![lab4](https://github.com/tillsunrise/android-labs-2020/blob/master/students/net1814080903202/lab4_1.png)
+![lab4](https://github.com/tillsunrise/android-labs-2020/blob/master/students/net1814080903202/lab4_2.png)
+![lab4](https://github.com/tillsunrise/android-labs-2020/blob/master/students/net1814080903202/lab4_3.png)  
 # 五、实验心得
 这次实验相对就比较难了，要写的东西很多，首先在布局上，要重写各界面下的ToolBar，要设计各界面布局，要设计ListView的item布局等等，这个过程比较繁琐枯燥，虽然没有遇到大的问题，但是为了显示效果就要不断微调，还有要注意各种细节，比如分隔的View，圆角头像的xml等等。在Java类功能部分，难的是数据的封装，listview数据的动态加载，我使用了静态list对象来实现这一效果。在做实验的过程中学习了很多新知识和各种代码的用法，提升很大。
