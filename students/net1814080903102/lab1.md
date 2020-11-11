@@ -52,7 +52,7 @@ git push
 ```
 
 ## 四、实验结果
-![结果](https://raw.githubusercontent.com/Thisko/Figure-bed/master/img/20201111090742.png)
+![结果](https://raw.githubusercontent.com/Thisko/Figure-bed/master/img/20201111093413.png)
 
 
 
