@@ -21,6 +21,6 @@ findViewById(R.id.my_button);
 3.在Net1814080903116Activity设置ListView
 
 # 四、实验结果
-
+![lab4](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/lab4.PNG)
 # 五、实验心得
 在本次实验上认识了使用各个布局后的界面，另外根据自己项目的需要选择了相对布局，在实验过程中遇到了布局内大小超出边界、重叠等问题，在经过修改对应的配置信息解决了问题。
