@@ -17,6 +17,6 @@
 5.利用git bash来上传相关的文件到hzuapps/android-labs-2020  
 
 # 四、实验结果
-
+![lab1](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/lab1.PNG)
 # 五、实验心得
 学会了github上的基本操作，也包括git bash上传文件、删除文件等等
