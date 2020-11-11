@@ -15,6 +15,6 @@
 3.在Net1814080903116Activity中添加跳转按钮的代码
 
 # 四、实验结果
-
+![lab2](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/lab2.PNG)
 # 五、实验心得
 学会了使用按钮来进行页面跳转的操作，在过程中遇到了如按钮无反应等问题，在查找相关的资料后发现是缺少跳转功能的部分代码。
