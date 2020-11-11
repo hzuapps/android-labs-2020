@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyingtickets1814080903135Activity"
+    android:background="@drawable/timg">
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择目的地"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteY="209dp"
+        tools:layout_editor_absoluteX="76dp" />
+    >
+
+<LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/timg"
+        tools:layout_editor_absoluteY="10dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="购票"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="189dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
