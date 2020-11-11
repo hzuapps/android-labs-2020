@@ -15,6 +15,6 @@
 2.在相应的xml下添加代码
 
 # 四、实验结果
-
+![lab3](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/lab3.PNG)
 # 五、实验心得
 本次实验学会了如何在设置背景图片等操作，同时遇到了图片大小不匹配等问题，需要在配置信息上进行相应的更改。
