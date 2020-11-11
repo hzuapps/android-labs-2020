@@ -29,3 +29,4 @@
 # 五、实验心得 #
 从fork项目到创建文件Net1814080903121Activity java类再到git add file 、git commit 和git push 一气呵成 看似简单,但也存在一些需要注意的细节，比如初始用git时需要配置用户账号，邮箱
 git config --global user.name "username" git config --global user.email "useremail@qq.com"。
+
