@@ -2,31 +2,89 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".Sec1814080911106Activity"
-    android:background="@drawable/background"
-    >
+    android:background="@drawable/background_white"
+    android:orientation="vertical">
 
 
-    <Button
-        android:id="@+id/button_view"
+    <ImageView
+        android:layout_width="390dp"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="237dp" />
+        android:text="图片信息"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
 
-    <Button
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一张"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一张"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_view"
+            android:text="照   片"
+            android:layout_gravity="bottom"
+            tools:ignore="MissingConstraints"
+            />
+
+        <Button
         android:id="@+id/button_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_view"
+        android:text="编   辑"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_photograph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_view"
+        android:text="相   册"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="317dp" />
+        android:layout_weight="1"/>
+</LinearLayout>
+
 
 
 </LinearLayout>
