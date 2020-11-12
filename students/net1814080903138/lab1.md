@@ -13,7 +13,7 @@
 2. 加入Git项目（Fork），将项目克隆（Clone）到自己帐号下；
 3. 创建以学号命名的个人实验目录(在"我的电脑"里创建)；
 4. 创建名为Net1814080903138Activity的java类
-5. 提交代码并请求合并
+5. 通过gitbash提交代码并请求合并
 
 # 四、实验结果
 ![lab1](https://github.com/linjhong/android-labs-2020/blob/master/students/net1814080903138/lab1.png)
