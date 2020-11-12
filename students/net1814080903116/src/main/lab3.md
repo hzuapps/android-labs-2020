@@ -11,8 +11,10 @@
 5.点击图片（或按钮）时，打开另一个Activity。
 
 # 三、实验步骤
-1.找到相应的图片，修改为png格式，放在drawable目录下；  
-2.在相应的xml下添加代码
+1.寻找与自己项目相适应的照片下载下来；  
+2.把照片放在项目的drawable目录下；    
+3.在对应的配置文件中增加有关图片的代码，并且根据需求更改图片的规格使之与app相适应  
+
 
 # 四、实验结果
 ![lab3](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/lab3.PNG)
