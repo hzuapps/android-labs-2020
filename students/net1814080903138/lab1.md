@@ -19,4 +19,4 @@
 ![lab1](https://github.com/linjhong/android-labs-2020/blob/master/students/net1814080903138/lab1.png)
 
 # 五、实验心得
-在本次实验一中初步认识GitHub，学习到使用Android studio创建activity和git bash提交文件代码
+在本次实验一中初步认识GitHub，学习到使用Android studio创建activity和git bash提交文件代码。遇到的问题是SDK的环境配置，不过在百度的帮助下顺利解决了。
