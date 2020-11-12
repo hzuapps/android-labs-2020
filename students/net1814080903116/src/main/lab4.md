@@ -16,9 +16,8 @@ findViewById(R.id.my_button);
 4.操作之后，切换到你的第二个界面。
 
 # 三、实验步骤
-1.根据自己项目设置了相对布局方式。  
-2.在相对布局下设置了CalendarView和ListView  
-3.在Net1814080903116Activity设置ListView
+1.根据自己项目需求选择使用相对布局方式。    
+2.在对应的xml文件中配置相应的布局代码。
 
 # 四、实验结果
 ![lab4](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/lab4.PNG)
