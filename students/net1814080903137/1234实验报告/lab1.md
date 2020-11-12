@@ -21,7 +21,7 @@
 5. 提交代码并发Pull Request
 ## 四、实验结果
 
-![1](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/1.JPG)
+![1](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/1.jpg)
 ## 五. 实验心得体会
 
 这一次实验虽然内容比较简单，但在提交代码时出现了一些差错，花费了比较多的时间。通过这次实验，我学到如何下载安装git bash、克隆、提交实验代码以及如何搭建开发环境等，同时也加深了我对github、gitbash等的使用。

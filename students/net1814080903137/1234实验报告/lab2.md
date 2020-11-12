@@ -18,16 +18,16 @@
 1. 根据所选题目创建需要的Activity
 
 
-![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/2-1.JPG)
+![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/2-1.jpg)
 
 2. 在 AndroidManifest.xml文件中声明所创建的Activity
 
 
-![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/2-2.JPG)
+![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/2-2.jpg)
 
 ## 四、实验结果
 
-![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/2.JPG)
+![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/2.jpg)
 
 ## 五、实验心得
 这一次实验开始使用Android studio，内容比较简单，创建一些跟选题有关的Activity。通过这一次实验我基本明白一个Android项目下有啥文件，简单了解了各个组成的功能，在创建每一个新的Activity时需要在AndroidManifest.xml文件中声明才会有效。

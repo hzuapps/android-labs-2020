@@ -18,7 +18,7 @@
 1. 找到需要的图片，命名不出现大写字母，放在res/drawable目录下；
 
 
-![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/3-1.PNG)
+![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/3-1.jpg)
 
 2. 在res/layout目录下的.xml文件显示图片
 ```xml
@@ -36,10 +36,10 @@
 ## 四、实验结果
 
 
-![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/4-1.JPG)
+![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/4-1.jpg)
 
 
-![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/3.JPG)
+![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/3.jpg)
 
 
 ## 五、实验心得
