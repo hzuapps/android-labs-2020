@@ -33,7 +33,6 @@
    ```
 # 四、实验结果
 ![result](https://github.com/tiamo669/android-labs-2020/blob/master/students/net1814080903303/second_1.jpg)
-
 # 五、实验心得
   根据自己选择的题目创建与项目功能相关的几个Activity，并在主Activity中使用Intent和Click点击事件完成各主Activity和其他三个Activity之间的跳转，
 运用使用函数调用来实现多个按钮的跳转，避免出现重复累赘的Java代码。
