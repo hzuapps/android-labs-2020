@@ -33,6 +33,7 @@ public class MyLinearLayout extends LinearLayout{
     public String getid(){
         return ID;
     }
+    
     public void setid(String ID){
         this.ID=ID;
     }
