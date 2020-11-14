@@ -32,6 +32,7 @@ public class Net1814080903107Activity extends AppCompatActivity {
         scrollView=findViewById(R.id.scrollView);
         scrollLin=findViewById(R.id.scrollLin);
 
+        
         scrollView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
