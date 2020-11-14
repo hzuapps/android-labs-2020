@@ -5,15 +5,16 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 class MyVariable {
-    private  InetAddress sIP;//serverIP
-    private  final int sPort=20002;//serverPort
-    MyVariable(){
+    private String sIP="10.77.26.235";//"10.77.26.225"
+    private final int sPort=20002;//serverPort
+    private InetAddress inetAddress;
+    public MyVariable(){
         try {
-            sIP = InetAddress.getByName("10.77.26.225");
+            inetAddress = InetAddress.getByName(sIP);
         }catch (IOException ex){}
     }
     public InetAddress getsIP() {
-        return sIP;
+        return inetAddress;
     }
     public int getsPort() {
         return sPort;

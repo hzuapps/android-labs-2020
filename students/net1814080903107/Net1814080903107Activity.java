@@ -1,20 +1,26 @@
 package com.example.thefirst;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Net1814080903107Activity extends AppCompatActivity {
+    int startPoint=0;
     private MyVariable myVariable;
+    private ScrollView scrollView;
     private LinearLayout scrollLin;
+    private Button seache;
+
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,21 +28,42 @@ public class Net1814080903107Activity extends AppCompatActivity {
 
         myVariable =new MyVariable();
 
-        Button seache=findViewById(R.id.buttonSeache);
+        seache=findViewById(R.id.buttonSeache);
+        scrollView=findViewById(R.id.scrollView);
         scrollLin=findViewById(R.id.scrollLin);
+
+        scrollView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+            switch (event.getAction()) {
+                case MotionEvent.ACTION_DOWN :
+                    break;
+                case MotionEvent.ACTION_MOVE :
+                    break;
+                case MotionEvent.ACTION_UP :
+                    if(scrollView.getChildAt(0).getMeasuredHeight()<=scrollView.getScrollY()+scrollView.getHeight()){
+                        loadData(startPoint);
+                    }
+                    break;
+            }
+            return false;
+            }
+        });
         seache.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent searchIntent=new Intent(Net1814080903107Activity.this, SearchActivity.class);
-                startActivity(searchIntent);
+            Intent searchIntent=new Intent(Net1814080903107Activity.this, SearchActivity.class);
+            startActivity(searchIntent);
             }
         });
         //加载商店
-        loadData();
+        loadData(startPoint);
     }
+
     //加载商店
-    public void loadData(){
-        LoadDataThread ld=new LoadDataThread(this);
+    //
+    public void loadData(int startPoint){
+        LoadDataThread ld=new LoadDataThread(this,startPoint);
         ld.start();
     }
 
@@ -48,34 +75,11 @@ public class Net1814080903107Activity extends AppCompatActivity {
     }
     public void clickStore(View v){
         Intent newPage=new Intent(Net1814080903107Activity.this,StoreActivity.class);
+        LinearLayout l1=(LinearLayout)v;
+        LinearLayout l2=(LinearLayout)l1.getChildAt(1);
+        CharSequence title=((TextView)(l2.getChildAt(0))).getText();
+        newPage.putExtra("title",title);
+        newPage.putExtra("id",((MyLinearLayout)(v)).getid());
         startActivity(newPage);
-    }
-    public LinearLayout pullMessage(Bitmap image, String title, String introduce){
-        LinearLayout l1=new LinearLayout(Net1814080903107Activity.this);
-        ImageView imageView=new ImageView(this);
-        LinearLayout l2=new LinearLayout(this);
-        TextView t1=new TextView(this);
-        TextView t2=new TextView(this);
-
-        l1.setOrientation(LinearLayout.HORIZONTAL);//行布局
-        l1.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,300));
-
-        imageView.setLayoutParams(new LinearLayout.LayoutParams(6, LinearLayout.LayoutParams.MATCH_PARENT,1));
-        imageView.setImageBitmap(image);
-        l1.addView(imageView);
-
-        l2.setOrientation(LinearLayout.VERTICAL);//列布局
-        l2.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT,1));
-
-        t1.setText(title);
-        t1.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT,1));
-
-        t2.setText(introduce);
-        t2.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT,1));
-        l2.addView(t1);
-        l2.addView(t2);
-
-        l1.addView(l2);
-        return l1;
     }
 }
