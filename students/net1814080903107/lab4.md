@@ -27,4 +27,4 @@ findViewById(R.id.my_button);
 ![lab4_2](https://raw.githubusercontent.com/Howard-SSS/android-labs-2020/master/students/net1814080903107/screenshots/lab4_3.PNG)
 
 # 五、实验心得
-本次实现主要实现界面，并且完善界面点击操作事件，处理任务
+本次实现主要实现界面，并且完善界面点击操作事件，处理任务，并且可以在页面跳转后添加函数onActivityResult，实现页面返回处理，实现更多功能。
