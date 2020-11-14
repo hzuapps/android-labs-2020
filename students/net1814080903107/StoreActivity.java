@@ -20,6 +20,7 @@ public class StoreActivity extends AppCompatActivity {
     ListView listView;
     String storeName;
     @Override
+    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
