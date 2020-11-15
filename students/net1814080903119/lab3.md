@@ -11,7 +11,10 @@
 
 # 三、实验步骤
 1. 找到对应图片，修改为jpg格式，放在drawable目录下。
-2. 在对应的activity里加图片的索引，int[] photos = {R.drawable.tu1, R.drawable.tu2, R.drawable.tu3, R.drawable.tu4}；
+2. 在对应的activity里加图片的索引，
+```java
+int[] photos = {R.drawable.tu1, R.drawable.tu2, R.drawable.tu3, R.drawable.tu4}；
+```
 3. 利用点击事件实现不同图片的轮流展示。
 
 # 四、实验结果

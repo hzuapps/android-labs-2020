@@ -11,8 +11,12 @@ Net1814080903119Activity.java。
 功能1Activity.java：.Activity.java。
 功能2Activity.java：.Activity.java。
 AndroidManifest.xml。
-2. 在AndroidManifest.xml添加虚拟机打开时所需权限，添加所创三个activity的配置代码；如：<activity android:name=".activity名字"></activity>
+2. 在AndroidManifest.xml添加虚拟机打开时所需权限，添加所创三个activity的配置代码；如：
+```java
+<activity android:name=".activity名字"></activity>
+```
 3. 在各个activity借用Intent方法添加点击事件，实现跳转；
+```java
 button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -20,7 +24,7 @@ button.setOnClickListener(new View.OnClickListener() {
                 _this.startActivity(intent);
             }
         });
-
+```
 # 四、实验结果
 ![activity建立](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/044b6c7d13a9e6c6e5b2d3b66ca3404b1d972e31/students/net1814080903119/lab2.1.jpg)
 ![跳转](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/044b6c7d13a9e6c6e5b2d3b66ca3404b1d972e31/students/net1814080903119/lab2.2.jpg)
