@@ -26,8 +26,7 @@
 7. 用git bash提交相应文件；
 
 # 四、实验结果
-
- !(https://github.com/Heheheheyirong/android-labs-2020/blob/master/students/net1814080903330/net1814080903330.jpg?raw=true)
+ ![实验结果](https://github.com/Heheheheyirong/android-labs-2020/blob/master/students/net1814080903330/net1814080903330.jpg?raw=true)
 
 # 五、实验心得
 
