@@ -10,7 +10,7 @@
 1. Fork hzuapps/android-labs-2020到自己的账号下
 2. 在自己的电脑建立本地仓库克隆android-labs-2020的内容
 3. 搭建Android Studio环境，配置SDK
-4. 创建Net1814080903110Activity的java类
+4. 创建Net1814080903132Activity的java类
 5. 利用git bash来提交相关的文件到hzuapps/android-labs-2020
 # 四、实验结果
 
