@@ -17,7 +17,7 @@ findViewById(R.id.my_button);
 
 # 三、实验步骤
 1.根据自己项目需求选择使用相对布局方式。    
-2.在对应的xml文件中配置相应的布局代码。
+2.在对应的xml文件中配置相应的布局代码。  
 ![lab4.1](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/4.1.PNG)  
 ![lab4.2](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/4.2.PNG)
 
