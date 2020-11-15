@@ -14,6 +14,7 @@
 1.寻找与自己项目相适应的照片下载下来；  
 2.把照片放在项目的drawable目录下；    
 3.在对应的配置文件中增加有关图片的代码，并且根据需求更改图片的规格使之与app相适应  
+![lab3.1](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/3.1.PNG)
 
 
 # 四、实验结果
