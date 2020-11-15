@@ -10,8 +10,8 @@
 
 # 三、实验步骤
 1.搭建Android Studio环境、并且配置相应SDK  
-2.编写第一个名为Net1814080903215Activity的java类  
-3.自定义创建android-labs-2020/students/net1814080903215文件夹  
+2.编写第一个名为Net1814080903308Activity的java类  
+3.自定义创建android-labs-2020/students/net1814080903308文件夹  
 4.在个人Github账户下Fork项目hzuapps/android-labs-2020  
 5.将android-labs-2020项目下文件克隆到本地文件夹  
 6.用git bash提交相应文件
