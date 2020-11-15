@@ -20,7 +20,7 @@
 6. 用git bash提交相应文件
 
 ```text
-$ git add students/com123456/*
+$ git add students/Sec1814080911108/*
 $ git commit -m "#1 创建第一个类"
 $ git push
 ```
