@@ -11,12 +11,13 @@
   4. 操作之后，切换到第二个界面。 
   
    ## 三、实验步骤 
-  1.主页面设计两个按钮和文本框。
-  2.check按钮，add按钮点击实现跳转。
-  3.check页面设计了列表，add页面设计一个同功能的check按钮。
+  1. 主页面设计两个按钮和文本框。
+  2. check按钮，add按钮点击实现跳转。
+  3. check页面设计了列表，add页面设计一个同功能的check按钮。
    
    ## 四、实验结果 
   ![lab4](https://github.com/linjhong/android-labs-2020/blob/master/students/net1814080903138/lab4.png)
   
    ## 五、实验心得 
   本次实验在ListView的设计上出现了问题，没办法显示列表并强制退出程序。最后检查出来是代码的问题，使用了Andriod提供的simple_view代码解决了该问题。
+
