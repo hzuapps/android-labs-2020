@@ -17,6 +17,7 @@ android:background="@drawable/backgroud"
 
 ```
 # 四、实验结果
+![lab3](https://github.com/cxcx75/android-labs-2020/blob/master/students/net1814080903127/lab3.png)
 
 # 五、实验心得
 本次实验学习了编写xml文件以使用图片资源，我设置了一张背景图，开始图片并不覆盖整个屏幕，后来通过软件的可视化设计将图片拖动至覆盖整个屏幕。
