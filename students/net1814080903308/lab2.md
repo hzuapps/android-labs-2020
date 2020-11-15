@@ -10,14 +10,22 @@
 2.在MainActivity的layout视图中添加Button按钮用于跳转页面  
 3.为Button按扭添加Click点击事件实现跳转
 ```
-        Button btn1 = (Button)findViewById(R.id.button);
-     final MainActivity thisActivity = this;
-     btn1.setOnClickListener(new View.OnClickListener(){
-         public void onClick(View v){
-             Intent intent = new Intent(thisActivity,PersonalHomeActivity.class);
-             thisActivity.startActivity(intent);
-         }
-     });
+       mBtPlay = findViewById(R.id.bt_main_play);
+        mBtPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Net1814080903308Activity.this,MusicActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtShare = findViewById(R.id.bt_main_share);
+        mBtShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Net1814080903308Activity.this,ShareActivity.class);
+                startActivity(intent);
+            }
+        });
 ```
 # 四、实验结果
 !
