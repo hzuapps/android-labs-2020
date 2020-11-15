@@ -6,8 +6,7 @@
 1. 搭建Android开发环境
 2. 创建项目
 3. 创建名为Net1814080903127Activity的java类
-4. 运行显示HelloWorld
-5. 熟练Git常用命令
+4. 熟练Git常用命令
 ## 三、实验步骤
 1. 搭建Android开发环境
 2. 将项目Fork到自己的仓库
