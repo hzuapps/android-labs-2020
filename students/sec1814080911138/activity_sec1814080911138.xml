@@ -12,7 +12,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/yz1" />
-        
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="590dp" />
+
     <TextView
         android:layout_width="61dp"
         android:layout_height="10dp"
