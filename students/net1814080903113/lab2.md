@@ -23,6 +23,21 @@
 2. 在 Activity 上添加按钮、链接或导航栏，实现各个 Activity 的跳转
 
     在 Net1814080903113MainActivity.java 添加按钮点击事件处理，实现跳转其他Activity
+```java
+final Activity thisActivity = this;
+
+Button btnOpen = (Button) findViewById(R.id.buttonopen);
+
+btnOpen.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(thisActivity, Net1814080903113PhotoIntroActivity.class);
+        thisActivity.startActivity(intent);
+        //thisActivity.startActivityForResult(intent, 2016);
+
+    }
+});
+```
 
 ![主类](https://github.com/Miraiiiii/android-labs-2020/blob/master/students/net1814080903113/test2.png)
 
