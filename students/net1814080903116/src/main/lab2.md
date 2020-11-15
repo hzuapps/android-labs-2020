@@ -13,6 +13,7 @@
 1.创建相应的Activity和xml文件；  
 2.在AndroidManifest.xml配置相关的信息；  
 3.在Net1814080903116Activity中添加跳转按钮的代码
+![lab2.1](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/2.1.PNG)
 
 # 四、实验结果
 ![lab2](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/lab2.PNG)
