@@ -10,22 +10,16 @@
 # 三、实验步骤
 1.将目标图片保存到本地Android studio的 res/drawable路径中  
 
-2.在相应layout的xml文件中设置ImageView的app:srcCompat属性实现导入图片，代码如下
+2.在相应layout的xml文件中设置ImageView的src属性实现导入图片，代码如下
 
 ```
 <ImageView
-     android:id="@+id/imageView7"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     app:layout_constraintBottom_toBottomOf="parent"
-     app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintHorizontal_bias="0.51"
-     app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toTopOf="parent"
-     app:layout_constraintVertical_bias="0.449"
-     app:srcCompat="@drawable/bg"
-     android:contentDescription="TODO" 
-  />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo2"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        />
 ```    
 # 四、实验结果
 !
