@@ -80,7 +80,7 @@ findViewById(R.id.my_button);
 </LinearLayout>
 ```
 # 四、实验结果
-
+![lab4](https://github.com/cxcx75/android-labs-2020/blob/master/students/net1814080903127/lab4.png)
 
 # 五、实验心得
 本次实验主要学习了布局的使用，刚开始设置线性布局的时候发现组件都是垂直放置的，后来改成水平就好看多了。
