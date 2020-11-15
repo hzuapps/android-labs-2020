@@ -6,9 +6,34 @@
 2. 编写Activity对应的布局文件；
 3. 实现各个Activity之间的跳转;
 # 三、实验步骤
-1. 创建Activity和xml文件
-2. 在AndroidManifest.xml添加虚拟机打开时所需要的权限
-3. 在Net1814080903132Activity中添加跳转按钮的代码
+1. 创建Activity和xml文件;
+2. 在AndroidManifest.xml添加虚拟机打开时所需要的权限;
+```java
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.hzuapps.androidlabs">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Net1814080903132Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AskActivity"/>
+        <activity android:name=".CommentActivity"/>
+    </application>
+
+</manifest>
+```
+3. 在Net1814080903132Activity中添加跳转按钮的代码;
 ```java
 Button button = findViewById(R.id.button);
         final Net1814080903132Activity _this = this;
