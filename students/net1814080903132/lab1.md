@@ -13,6 +13,6 @@
 4. 创建Net1814080903132Activity的java类
 5. 利用git bash来提交相关的文件到hzuapps/android-labs-2020
 # 四、实验结果
-
+![lab1](https://raw.githubusercontent.com/ccc2020916/android-labs-2020/master/students/net1814080903132/lab1.png)
 # 五、实验心得
 学习有关AndroidStudio的配置，熟悉AndroidStudio的使用方法，学习了GitBash的使用，学会了有关的命令如添加，删除，上传等命令
