@@ -13,8 +13,9 @@
 
 ## 3.实验步骤
 1. 在res/drawable目录中放入图片。
-2. 通过TextView组件实现在主界面上展示图片,可以通过文件名直接引用drawable中的图片。
-3. 设计方法实现界面的跳转，然后在按钮上应用该方法。
+2. 对主界面net_1814080903316_activity.xml进行配置。
+3. 通过TextView组件实现在主界面上展示图片,通过文件名直接引用drawable中的图片。
+4. 设计方法实现界面的跳转，然后在按钮上应用该方法。
 
 ## 4.实验结果
 ![项目图片](https://raw.githubusercontent.com/alllovetaken/android-labs-2020/master/students/net1814080903316/lab2result.PNG)
