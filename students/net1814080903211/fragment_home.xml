@@ -4,38 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/design_default_color_background"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="jumpToProfile"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:drawableTopCompat="@drawable/ic_baseline_account_circle_256"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/toProfileBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="jumpToProfile"
-        android:text="@string/profile_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/toBrowseBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="jumpToBrowse"
-        android:text="@string/browse_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toProfileBtn" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
