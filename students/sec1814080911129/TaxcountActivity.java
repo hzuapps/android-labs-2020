@@ -22,7 +22,7 @@ public class  TaxcountActivity extends AppCompatActivity {
         btnOpen.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent =new Intent(TaxcountActivity.this,MainActivity.class);
+                Intent intent =new Intent(TaxcountActivity.this,Sec1814080911129Activity.class);
                 TaxcountActivity.this.startActivity(intent);
             }
         });
