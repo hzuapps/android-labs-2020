@@ -18,8 +18,8 @@ int[] photos = {R.drawable.tu1, R.drawable.tu2, R.drawable.tu3, R.drawable.tu4}�
 ```
 ![实验截图](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/0ab644b3cda2c438afc9d8acd516c9e1b45f178e/students/net1814080903119/lab3.2.jpg)
 3. 利用点击事件实现不同图片的轮流展示。
-![实验截图](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/0ab644b3cda2c438afc9d8acd516c9e1b45f178e/students/net1814080903119/lab3.2.jpg)
+![实验截图](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/0ab644b3cda2c438afc9d8acd516c9e1b45f178e/students/net1814080903119/lab3.3.jpg)
 # 四、实验结果
-![实验截图](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/0ab644b3cda2c438afc9d8acd516c9e1b45f178e/students/net1814080903119/lab3.2.jpg)
+![实验截图](https://raw.githubusercontent.com/Lj-xinfei/android-labs-2020/0ab644b3cda2c438afc9d8acd516c9e1b45f178e/students/net1814080903119/lab3.3.jpg)
 # 五、实验心得
 学习了设置背景图片，修改图片格式，在layout（design）那可以对图片进行调整，也可以利用ImageView进行设置。
