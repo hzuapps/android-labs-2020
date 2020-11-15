@@ -1,7 +1,7 @@
 # 实验二
 ## 一、实验目标
-1. 创建2-3个与自己选题有关的Activity
-2. 利用Intent实现Activity间的跳转  
+1. 创建2-3个与自己选题有关的Activity；
+2. 利用Intent实现Activity间的跳转；  
 ## 二、实验内容
 1. 根据功能创建相应的Activity；
 2. 编写Activity对应的布局文件；
