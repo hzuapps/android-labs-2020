@@ -57,5 +57,5 @@ findViewById(R.id.my_button);
 </LinearLayout>
 ```
 # 四、实验结果
-
+![lab4](https://raw.githubusercontent.com/ccc2020916/android-labs-2020/master/students/net1814080903132/lab4.png)
 # 五、实验心得
