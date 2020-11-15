@@ -55,6 +55,7 @@ Button button = findViewById(R.id.button);
         });
 ```
 # 四、实验结果
-
+![home_design](https://raw.githubusercontent.com/ccc2020916/android-labs-2020/master/students/net1814080903132/lab3.png)
+![lab2](https://raw.githubusercontent.com/ccc2020916/android-labs-2020/master/students/net1814080903132/lab2.png)
 # 五、实验心得
 学习了可以通过添加按钮实现页面的跳转
