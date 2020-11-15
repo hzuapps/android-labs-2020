@@ -8,7 +8,7 @@
 4. 将应用运行结果截图，放到实验报告中；
 5. 点击图片（或按钮）时，打开另一个Activity。
 # 三、实验步骤
-1. 找到相应的图片，修改为png格式，放在drawable目录下。
+1. 找到相应的图片，放在drawable目录下。
 2. 在相应的xml下添加代码
 ```java
 android:drawableTop="@drawable/home_design"
