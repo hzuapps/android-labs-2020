@@ -12,7 +12,7 @@
 # 三、实验步骤
 
 1. 将创建的Activity注册到AndroidManifest.xml；
-2. 在Net1814080903220MainActivity的layout文件视图中添加Button按钮用于跳转页面；
+2. 在Sec1814080911108Activity的layout文件视图中添加Button按钮用于跳转页面；
 3. 为按键添加事件处理：
 
 ```java
@@ -40,13 +40,13 @@ btnBookmarks.setOnClickListener(new View.OnClickListener() {
 
 
 
-<img src="./lab2.png" alt="image-20201115202136975" style="zoom:80%;" />
+![Sec1814080911108Activity](https://raw.githubusercontent.com/git-lanying/android-labs-2020/master/students/sec1814080911108/lab2.png)
 
 
 
 点击输入框后跳转到另外一个Activity
 
-<img src="./lab2_target.png" alt="image-20201115201405409" style="zoom:80%;" />
+![跳转Activity](https://raw.githubusercontent.com/git-lanying/android-labs-2020/master/students/sec1814080911108/lab2_target.png)
 
 
 

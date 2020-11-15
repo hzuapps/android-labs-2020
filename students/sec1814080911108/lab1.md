@@ -31,7 +31,7 @@ $ git push
 
 # 四、实验结果
 
-<img src=".\lab1.png" alt="lab1" style="zoom:80%;" />
+![运行成功](https://raw.githubusercontent.com/git-lanying/android-labs-2020/master/students/sec1814080911108/lab1.png)
 
 # 五、实验心得
 

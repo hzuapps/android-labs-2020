@@ -178,11 +178,11 @@ btnBookmarks.setOnClickListener(new View.OnClickListener() {
 
 # 四、实验结果
 
-<img src="./lab4.png" alt="image-20201115203920021" style="zoom:67%;" />
+![主页面](https://raw.githubusercontent.com/git-lanying/android-labs-2020/master/students/sec1814080911108/lab4.png)
 
 点击书签按钮后发生跳转：
 
-<img src="./lab4_target.png" alt="image-20201115204300074" style="zoom:67%;" />
+![跳转Activity](https://raw.githubusercontent.com/git-lanying/android-labs-2020/master/students/sec1814080911108/lab4_target.png)
 
 
 

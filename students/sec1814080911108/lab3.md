@@ -49,7 +49,7 @@
 
 # 四、实验结果
 
-<img src="./lab3.png" alt="image-20201115202806614" style="zoom:80%;" />
+![主页面](https://raw.githubusercontent.com/git-lanying/android-labs-2020/master/students/sec1814080911108/lab3.png)
 
 # 五、实验心得
 
