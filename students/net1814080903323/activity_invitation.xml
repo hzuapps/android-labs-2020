@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.hzuapp.androidlabs.net1814080903323.InvitationActivity">
+    tools:context="edu.hzuapp.androidlabs.net1814080903323activity.InvitationActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -22,29 +22,38 @@
 
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="194dp"
         android:layout_height="355dp"
-        android:src="@drawable/cat1"
-        tools:ignore="MissingConstraints"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="10dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:src="@drawable/cat1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="194dp"
         android:layout_height="355dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="205dp"
         android:src="@drawable/cat2"
-        tools:ignore="MissingConstraints"
-        android:layout_marginTop="20dp"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="228dp" />
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:layout_width="194dp"
         android:layout_height="355dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="205dp"
         android:src="@drawable/cat3"
-        tools:ignore="MissingConstraints"
-        android:layout_marginTop="20dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="441dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
