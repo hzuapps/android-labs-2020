@@ -68,7 +68,7 @@
         </RelativeLayout>
     </LinearLayout>
 ## 四、实验结果
-![图1实验三运行结果](https://github.com/yichouge/android-labs-2020/blob/master/students/net1814080903333/ExperimentalResult/lab3.png?raw=true)
+![图1实验三运行结果](https://github.com/yichouge/android-labs-2020/blob/master/students/net1814080903333/ExperimentalResult/lab4.1.png?raw=true)
 ## 五、实验心得  
 本次实验难度一般、按钮布局、给activity加背景图片、遇到的问题是一开始用的是ImageView标签只能显示在文字上面会覆盖文字、用Java语言把图片设为透明还是不行、没想到安卓直接用个 
 android:background="@drawable/？"（？为图片的命名）就可以实现将图片显示为背景也就是JavaSwing中的把图片设置为透明
