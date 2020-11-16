@@ -17,7 +17,7 @@
 6.用git bash提交相应文件
 
 # 四、实验结果
-!
+!(https://github.com/Json-xl/android-labs-2020/blob/master/students/net1814080903308/sy/sy1.PNG)
 
 # 五、实验心得
 安装Android studio的时候遇到了很多问题，主要就是虚拟机打不开，不过可以运行，后面询问同学后学会了如何用真机测试。
