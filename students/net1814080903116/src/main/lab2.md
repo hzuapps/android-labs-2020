@@ -11,8 +11,8 @@
 
 # 三、实验步骤
 1.创建相应的Activity和xml文件；  
-2.在AndroidManifest.xml配置相关的信息;    
-    <application  
+2.在AndroidManifest.xml配置相关的信息;  
+     <application  
         android:allowBackup="true"  
         android:icon="@mipmap/ic_launcher"  
         android:label="校园树洞"  
@@ -27,19 +27,9 @@
         </activity>  
         <activity android:name=".PostActivity"/>  
         <activity android:name=".TreeholdActivity"/>  
-    </application>   
+    </application>  
 3.在Net1814080903116Activity中添加跳转按钮的代码    
-    private void bindActivityButton(int ButtonId,final Class activity){  
-        Button button = (Button)findViewById(ButtonId);  
-        final Net1814080903116Activity thisActivity = this;  
-        button.setOnClickListener(new View.OnClickListener() {  
-            @Override  
-            public void onClick(View view) {  
-                Intent intent = new Intent(thisActivity,activity);  
-                thisActivity.startActivity(intent);  
-            }  
-        });  
-    }  
+ 
 ![lab2.1](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/2.1.PNG)
 
 # 四、实验结果
