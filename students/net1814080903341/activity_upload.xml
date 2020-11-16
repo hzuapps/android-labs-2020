@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reminder" />
+    <EditText
+        android:id="@+id/foods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:hint="@string/foods" />
+    <Spinner
+        android:id="@+id/genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foods"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/scene" />
+    <Spinner
+        android:id="@id/scene"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foods"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/way"
+        android:layout_width="match_parent"
+        android:layout_height="524dp"
+        android:layout_below="@id/genre"
+        android:hint="@string/ways" />
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/way"
+        android:layout_alignParentRight="true"
+        android:text="@string/done" />
+</RelativeLayout>
