@@ -25,7 +25,8 @@
    2）接着git commit -m "#1 #192 第一次实验" -m里面的内容是你要提交的附带信息，可以理解为注释，#1代表第一次四眼 #192是选题提交的那个号，第一次实验也是注释  
    3）最后git push，第一次git push时需要绑定用户信息，提交的时候需要告诉gitbash你的账户名和密码，等待即可。
 # 四、实验结果
-   *提交成功，然后再GitHub上面，在自己的目录下面 New pull request>Create pull request创建提交请求，然后提交即可，然后可在hzuapps/实验室下中的Pull requests下可以查看自己所提交的选项。
-
+   
+   *提交成功，然后再GitHub上面，在自己的目录下面 New pull request>Create pull request创建提交请求，然后提交即可，然后可在hzuapps/实验室下中的Pull requests下可以查看自己所提交的选项。  
+   ![图片2](https://github.com/jaydjxing/android-labs-2020/blob/master/students/net1814080903317/lab1-01.jpg?raw=true)
 # 五、实验心得体会
    *这次的实验难度不大。主要是搭建AS环境和学会怎样使用gitbash，gitbash教程可以在网上百度得到，其实是linux的语法，然后编写实验报告的readme.md的语法百度即可。这次的实验一定要记住的是三个副本，hzuapp/实验室、自己的github仓库的、本地（自己电脑上）的。
