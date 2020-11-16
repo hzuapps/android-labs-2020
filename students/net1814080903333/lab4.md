@@ -10,9 +10,119 @@
 4. 操作之后，切换到第二个界面。  
 ## 三、实验步骤
  1. 主页面采用绝对布局，设置两个按钮，分别是查看学生课程信息，课时费管理。  
+ ```xml
+ <Button
+        android:id="@+id/btn1"
+        android:layout_marginBottom="68dp"
+        android:text="@string/add_time"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+<Button
+        android:id="@+id/btn3"
+        android:layout_marginBottom="116dp"
+        android:text="@string/courseinformation"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+ ```
   2. 学生课程信息页面和课时费管理页面都采用线性布局和相对布局。  
-  3. 查看学生课程信息页面组件和课时费管理页面组件采用了button TextView EditText、hint标签等等。  
-  4. 在主界面使用OnClickListener事件监听器以及openActivity方法实现各界面的跳转。  
+  ```xml
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+             <TextView
+                android:id="@+id/text00"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/stu_name"
+                android:textSize="20dp"
+                android:textColor="#100"/>
+                 <EditText
+                android:id="@+id/edit00"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/studentname"
+                android:layout_below="@id/text00"/>
+                            ......
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="540dp"> 
+              <Button
+                android:id="@+id/button00"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add" />
+                           ......
+            </RelativeLayout>
+    </LinearLayout>
+```
+  3. 查看学生课程信息页面组件和课时费管理页面组件采用了button TextView EditText、hint标签等等。
+  ```xml
+         <TextView
+                android:id="@+id/text00"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/stu_name"
+                android:textSize="20dp"
+                android:textColor="#100"/>
+          <EditText
+                android:id="@+id/edit00"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                    
+                    
+                android:hint="@string/studentname"
+                    
+                    
+                android:layout_below="@id/text00"/>
+
+           <Button
+                android:id="@+id/button11"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button00"
+                android:text="@string/update" />
+```
+  4. 在主界面使用OnClickListener事件监听器实现各界面的跳转。  
+  ```java
+       
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        btn1 = (Button) findViewById(R.id.btn1);
+        btn1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(MainActivity.this , Net814080903333TeacherHomeActivity.class);
+                startActivity(i);
+            }
+        });
+        btn3=(Button)findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this ,Net1814080903333StudentsInformationActivity2.class);
+                startActivity(intent);
+            }
+        });
+    }
+  ```
 5. 利用startActivity(intent)实现跳转。    
 ## 四、实验结果
 ![图1主界面运行结果](https://github.com/yichouge/android-labs-2020/blob/master/students/net1814080903333/ExperimentalResult/lab3.png?raw=true)   图1主界面运行结果  
