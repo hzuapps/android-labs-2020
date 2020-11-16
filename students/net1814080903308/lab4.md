@@ -60,6 +60,10 @@
 
 </LinearLayout>
 '''
+
 # 四、实验结果
+!(https://github.com/Json-xl/android-labs-2020/blob/master/students/net1814080903308/sy/sy4-1.PNG?raw=true)
+!(https://github.com/Json-xl/android-labs-2020/blob/master/students/net1814080903308/sy/sy4-2.PNG?raw=true)
 
 # 五、实验心得
+这次实验主要学习使用线性布局，以及设计功能界面，在之前实验的基础上完善页面，很快就完成了，不过还不是最终成功，之后应该会继续修改
