@@ -3,19 +3,19 @@
 2. 掌握在Android应用中使用图片等资源的方法。
 
 # 二、实验内容
-1. 在主页界面上添加一张背景图片
-2. 提交res/drawable及图片使用的代码
-3. 提交res/values, res/layout等其他代码
-4. 将应用运行结果截图，放到实验报告中
-5. 点击或按钮时，打开另一个Activity
+1. 在主页界面上添加一张背景图片；
+2. 提交res/drawable及图片使用的代码；
+3. 提交res/values, res/layout等其他代码；
+4. 将应用运行结果截图，放到实验报告中；
+5. 点击或按钮时，打开另一个Activity。
 
 # 三、实验步骤
 1. 将要用的图片存到res/drawable中，记得图片命名要用小写；
-2. 可以在XML文件中添加ImageView等组件来使用图片，我没有实用这组件，选择直接将图片设为主界面背景
+2. 可以在XML文件中添加ImageView等组件来使用图片，我没有实用这组件，选择直接将图片设为主界面背景。
 ```xml
  android:background="@drawable/home_backgroud"
 ```
-3. 若想点击图片可以实现跳转功能，可以在对应的Activity中使用Intent以及startActivity方法来实现
+3. 若想点击图片可以实现跳转功能，可以在对应的Activity中使用Intent以及startActivity方法来实现。
 
 # 四、实验结果
 ![背景图片](https://github.com/tiamo669/android-labs-2020/blob/master/students/net1814080903303/second_1.jpg)
