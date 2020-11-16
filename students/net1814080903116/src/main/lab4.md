@@ -17,7 +17,6 @@ findViewById(R.id.my_button);
 
 # 三、实验步骤
 1.根据项目需求选择使用相对布局方式。 
-
 2.在activity_post.xml文件中配置相对布局代码，根据规格发表自己的动态。  
 ![lab4.2](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/4.2.PNG)  
 3.在activity_treepost.xml文件中配置相对布局代码,显示发表的动态。  
