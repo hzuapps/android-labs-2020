@@ -18,20 +18,15 @@
 ```java
 <Button
         android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
         android:text="@string/add_time"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
+        tools:ignore="MissingConstraints" />  
+<Button
         android:id="@+id/btn3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginBottom="116dp"
         android:text="@string/courseinformation"
         android:textSize="20dp"
@@ -42,23 +37,34 @@
 ```
 3. 为按键添加事件处理；  
 ```java
- @Override
+ 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+    
         super.onCreate(savedInstanceState);
+        
         setContentView(R.layout.activity_main);
+        
         btn1 = (Button) findViewById(R.id.btn1);
+        
         btn1.setOnClickListener(new View.OnClickListener(){
+        
             @Override
             public void onClick(View v){
+            
                 Intent i = new Intent(MainActivity.this , Net814080903333TeacherHomeActivity.class);
                 startActivity(i);
+                
             }
         });
+        
         btn3=(Button)findViewById(R.id.btn3);
+        
         btn3.setOnClickListener(new View.OnClickListener() {
+        
             @Override
             public void onClick(View v) {
+            
                 Intent intent = new Intent(MainActivity.this ,Net1814080903333StudentsInformationActivity2.class);
                 startActivity(intent);
             }
