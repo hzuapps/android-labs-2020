@@ -21,8 +21,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".BrowseActivity" />
     </application>
 
 </manifest>

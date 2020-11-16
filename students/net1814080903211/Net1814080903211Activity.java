@@ -1,12 +1,8 @@
 package edu.hzuapps.androidlabs.net1814080903211;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Menu;
-import android.widget.Button;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -21,13 +17,12 @@ import edu.hzuapps.androidlabs.net1814080903211.databinding.ActivityMainBinding;
 public class Net1814080903211Activity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
@@ -36,8 +31,8 @@ public class Net1814080903211Activity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
-                .setDrawerLayout(drawer)
+                R.id.nav_home, R.id.nav_search, R.id.nav_profile)
+                .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
@@ -49,18 +44,6 @@ public class Net1814080903211Activity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
-
-    public void jumpToProfile(View v)
-    {
-        Intent newActivity = new Intent(this, ProfileActivity.class);
-        startActivity(newActivity);
-    }
-
-    public void jumpToBrowse(View v)
-    {
-        Intent newActivity = new Intent(this, BrowseActivity.class);
-        startActivity(newActivity);
     }
 
     @Override
