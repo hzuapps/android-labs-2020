@@ -11,8 +11,29 @@
    ## 三、实验步骤 
   1. 创建 Net1814080903138Activity、Add1814080903138Activity(添加界面)、Check1814080903138Activity(检查界面)；
   2. 配置AndroidManifest.xml；
-  3. 在相应的界面中创建 Button 组件；
+  3. 在相应的界面中创建 Button 组件;<br>
   4. 为 Button 添加点击事件处理，实现跳转；
+  ```java
+   Button button1 = (Button)findViewById(R.id.button_add);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(thisActivity, add1814080903138Activity.class);
+                thisActivity.startActivity(intent);
+            }
+        });
+
+        Button button2 = (Button)findViewById(R.id.button_check);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(thisActivity, check1814080903138Activity.class);
+                thisActivity.startActivity(intent);
+            }
+        });
+   ```     
   
    ## 四、实验结果 
   ![lab2](https://github.com/linjhong/android-labs-2020/blob/master/students/net1814080903138/lab2.png) 
