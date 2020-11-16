@@ -11,7 +11,7 @@
 
 # 三、实验步骤
 1.创建相应的Activity和xml文件；  
-2.在AndroidManifest.xml配置相关的信息；  
+2.在AndroidManifest.xml配置相关的信息;    
     <application  
         android:allowBackup="true"  
         android:icon="@mipmap/ic_launcher"  
