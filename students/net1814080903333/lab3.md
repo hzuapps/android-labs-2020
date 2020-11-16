@@ -20,6 +20,7 @@
 
 ```
 3. 使用 LinearLayouthe和RelativeLayout布局来对按钮进行布局
+```xml
  <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -67,6 +68,7 @@
                 android:text="@string/delete" />
         </RelativeLayout>
     </LinearLayout>
+```
 ## 四、实验结果
 ![图1实验三运行结果](https://github.com/yichouge/android-labs-2020/blob/master/students/net1814080903333/ExperimentalResult/lab4.1.png?raw=true)
 ## 五、实验心得  
