@@ -29,7 +29,7 @@ public void onClick(View v) {
    ```
 4. 利用startActivity(intent)实现跳转；  
 ## 四、实验结果
-![图1实验二运行结果](https://github.com/yichouge/android-labs-2020/blob/master/students/net1814080903333/lab2.png?raw=true)
+![图1实验二运行结果](https://github.com/yichouge/android-labs-2020/blob/master/students/net1814080903333/ExperimentalResult/lab3.png?raw=true)
 ## 五、实验心得  
 本次实验难度不大、学会如何创建activity、以及xml文件的配置、按钮事件的监听的处理以及实现activity之间的相互跳转、遇到的问题是xml文件命名用大写第一次编译运行能成功、第二次运行提示错误
 修改成小写的命名之后就可以正常运行了。
