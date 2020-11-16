@@ -26,12 +26,36 @@ Net123456Activity.java (首页、LAUNCHER、主活动)：Net1814080903136Activit
 AndroidManifest.xml
 
 2. 在 Activity 上添加按钮、链接或导航栏，实现各个 Activity 的跳转
+```xml(创建按钮代码示例)
+<Button
+            android:id="@+id/button_cut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:text="剪切" />
+```
 
 在 Net1814080903136Activity.java 添加按钮点击事件处理，实现跳转
-
+```jave(添加按钮点击事件实现跳转代码示例)
+  public class Net1814080903136Activity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+       final  Net1814080903136Activity thisActivity = this;
+       Button btncut =(Button) findViewById(R.id.button_cut);
+        btncut.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(thisActivity, Edit1814080903136Activity.class);
+                thisActivity.startActivity(intent);
+            }
+        });
+}
+}
+```
 
 ## 四、实验结果
-![创建按钮局代码](https://github.com/yesijie0216/android-labs-2020/blob/master/students/net1814080903136/button2.JPG)
 
 ![按钮绑定事件 点击事件实现跳转](https://github.com/yesijie0216/android-labs-2020/blob/master/students/net1814080903136/2.JPG)
       
