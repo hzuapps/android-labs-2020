@@ -9,8 +9,15 @@
     android:orientation="vertical">
 
 
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        />
+
+
     <ImageView
-        android:id="@+id/iv_show"
         android:layout_width="390dp"
         android:layout_height="400dp"
         android:layout_weight="1"
@@ -18,7 +25,6 @@
         android:layout_marginLeft="10dp"/>
 
     <TextView
-        android:id="@+id/tv_show"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="图片信息"
@@ -33,36 +39,30 @@
         android:layout_gravity="center">
 
         <Button
-            android:id="@+id/btn_preious"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="上一张"
-            android:layout_gravity="bottom"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
+            android:text="裁剪"
             android:background="@drawable/button_view"
-            tools:ignore="MissingConstraints"/>
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转"
+            android:background="@drawable/button_view"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="20dp"
+            />
 
         <Button
-            android:id="@+id/button_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
+            android:text="确定"
             android:background="@drawable/button_view"
-            android:text="编   辑"
-            tools:ignore="MissingConstraints" />/
-
-        <Button
-            android:id="@+id/btn_next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="下一张"
+            tools:ignore="MissingConstraints"
             android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_view"
-            tools:ignore="MissingConstraints"/>
+            />
 
     </LinearLayout>
 
