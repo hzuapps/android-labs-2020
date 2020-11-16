@@ -49,7 +49,7 @@
                 android:text="@string/stu_name"
                 android:textSize="20dp"
                 android:textColor="#100"/>
-                 <EditText
+              <EditText
                 android:id="@+id/edit00"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
@@ -104,19 +104,28 @@
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        
         setContentView(R.layout.activity_main);
+        
         btn1 = (Button) findViewById(R.id.btn1);
+        
         btn1.setOnClickListener(new View.OnClickListener(){
+        
             @Override
             public void onClick(View v){
+            
                 Intent i = new Intent(MainActivity.this , Net814080903333TeacherHomeActivity.class);
                 startActivity(i);
             }
         });
+        
         btn3=(Button)findViewById(R.id.btn3);
+        
         btn3.setOnClickListener(new View.OnClickListener() {
+        
             @Override
             public void onClick(View v) {
+            
                 Intent intent = new Intent(MainActivity.this ,Net1814080903333StudentsInformationActivity2.class);
                 startActivity(intent);
             }
