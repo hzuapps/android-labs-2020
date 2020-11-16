@@ -14,7 +14,17 @@
 ## 三、实验步骤 
 
 1. 将要导入的图片放入res资源中的drawable中
+
 2. 在layout对应的xml文件中使用ImageView对图片进行导入
+```xml
+<ImageView
+    android:id="@+id/tp"
+    android:layout_width="45dp"
+    android:layout_height="50dp"
+    android:src="@drawable/music"
+    >
+</ImageView>
+```
 
 ## 四、实验结果 
 
