@@ -13,8 +13,9 @@
 1.创建相应的Activity和xml文件；  
 2.在AndroidManifest.xml配置相关的信息;  
 android:label="校园树洞"  
-<activity android:name=".PostActivity"/>  
-<activity android:name=".TreeholdActivity"/>  
+activity android:name=".PostActivity"   
+activity android:name=".TreeholdActivity"  
+
 3.在Net1814080903116Activity中添加跳转按钮的代码  
 bindActivityButton(R.id.postButton, PostActivity.class);  
 bindActivityButton(R.id.treeHoldButton, TreeholdActivity.class);  
