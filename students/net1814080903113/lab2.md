@@ -43,7 +43,7 @@ btnOpen.setOnClickListener(new View.OnClickListener() {
 
 ## 四、实验结果
 
-![截图]()
+![截图](https://github.com/Miraiiiii/android-labs-2020/blob/master/students/net1814080903113/test2.3.png)
 
 ## 五、实验心得
   这次实验中因为命名格式问题遇到了一些问题，导致一直报错，经过检查之后及时修改解决了问题。
