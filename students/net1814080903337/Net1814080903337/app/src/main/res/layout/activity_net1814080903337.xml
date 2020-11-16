@@ -34,7 +34,7 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="100dp"
         android:onClick="Overdue"
         android:text="@string/overdue"
         app:layout_constraintStart_toStartOf="@+id/button2"
