@@ -13,13 +13,60 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+                                                   
     android:background="@drawable/main"
+                                                   
     tools:context=".MainActivity">
 
 ```
 3. 使用 LinearLayouthe和RelativeLayout布局来对按钮进行布局
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="540dp">
+
+            <Button
+                android:id="@+id/button00"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button00"
+                android:text="@string/update" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studenttext"
+                android:layout_marginTop="4dp"
+                android:text="@string/return_home" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button11"
+                android:text="@string/select" />
+
+            <Button
+                android:id="@+id/button44"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button33"
+                android:text="@string/delete" />
+        </RelativeLayout>
+    </LinearLayout>
 ## 四、实验结果
 ![图1实验三运行结果](https://github.com/yichouge/android-labs-2020/blob/master/students/net1814080903333/ExperimentalResult/lab3.png?raw=true)
 ## 五、实验心得  
