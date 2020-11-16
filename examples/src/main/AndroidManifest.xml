@@ -27,6 +27,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".examples.Net123456Activity" />
+        <provider
+            android:authorities="edu.hzuapps.androidlabs.Library"
+            android:name=".ContentProviderOfBooks" />
     </application>
 
 </manifest>
