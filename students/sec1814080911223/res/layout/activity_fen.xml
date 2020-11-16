@@ -8,11 +8,13 @@
 
     <Button
         android:id="@+id/button_fen"
-        android:layout_width="165dp"
-        android:layout_height="85dp"
-        android:drawableTop="@drawable/again"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="301dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/again"
+/>
+
     <TextView
         android:id="@+id/beijing_2"
         android:layout_width="wrap_content"

@@ -10,6 +10,7 @@
         android:id="@+id/button_kai"
         android:layout_width="137dp"
         android:layout_height="80dp"
+        android:layout_centerInParent="true"
         android:drawableTop="@drawable/end"
         tools:layout_editor_absoluteX="132dp"
         tools:layout_editor_absoluteY="313dp" />
@@ -17,7 +18,7 @@
     <TextView
         android:id="@+id/beijing_1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:drawableTop="@drawable/beijing"
+        android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
 </RelativeLayout>
