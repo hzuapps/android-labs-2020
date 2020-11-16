@@ -28,4 +28,4 @@
    *提交成功，然后再GitHub上面，在自己的目录下面 New pull request>Create pull request创建提交请求，然后提交即可，然后可在hzuapps/实验室下中的Pull requests下可以查看自己所提交的选项。
 
 # 五、实验心得体会
-   *这次的实验难度不大。主要是搭建AS环境和学会怎样使用gitbash，gitbash教程可以在网上百度得到，其实是linux的语法，然后编写实验报告的readme.md的语法百度即可。
+   *这次的实验难度不大。主要是搭建AS环境和学会怎样使用gitbash，gitbash教程可以在网上百度得到，其实是linux的语法，然后编写实验报告的readme.md的语法百度即可。这次的实验一定要记住的是三个副本，hzuapp/实验室、自己的github仓库的、本地（自己电脑上）的。
