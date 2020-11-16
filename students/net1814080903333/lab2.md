@@ -9,13 +9,12 @@
 ## 三、实验步骤
 1. 将创建的Activity注册到AndroidManifest.xml；
 ```xml
-<activity android:name=".Net1814080903333StudentsInformationActivity2"/> 
-        <activity android:name=".Net814080903333TeacherHomeActivity" />  
-        
+<activity android:name=".Net814080903333TeacherHomeActivity" />  
+<activity android:name=".Net1814080903333StudentsInformationActivity2"/>   
 ```  
 2. 在Net1814080903333MainActivity的layout文件视图中添加Button按钮用于跳转页面；  
 
-```java
+```xml
 <Button
         android:id="@+id/btn1"
         android:layout_marginBottom="68dp"
