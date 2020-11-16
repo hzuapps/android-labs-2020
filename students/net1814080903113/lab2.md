@@ -37,6 +37,7 @@ btnOpen.setOnClickListener(new View.OnClickListener() {
 
     }
 });
+
 ```
 
 ![主类](https://github.com/Miraiiiii/android-labs-2020/blob/master/students/net1814080903113/test2.png)
