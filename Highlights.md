@@ -54,3 +54,15 @@
 
 
 
+## 实验五：Android存储
+
+5.1 文件存储  
+
+5.2 首选项存储  
+
+5.3 数据库（SQLite） 
+
+- ContentProviderActivity.java (使用 ContentProvider)
+- ContentProviderOfBooks.java （定义 ContentProvider）
+- activity_content_provider.xml （表单界面）
+- AndroidManifest.xml (\<Provider\>)
