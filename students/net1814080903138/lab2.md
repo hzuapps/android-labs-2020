@@ -11,7 +11,27 @@
    ## 三、实验步骤 
   1. 创建 Net1814080903138Activity、Add1814080903138Activity(添加界面)、Check1814080903138Activity(检查界面)；
   2. 配置AndroidManifest.xml；
-  3. 在相应的界面中创建 Button 组件;<br>
+  3. 在相应的界面中创建 Button 组件;
+  ```java
+  Button button1 = (Button)findViewById(R.id.button_add);
+  Button button2 = (Button)findViewById(R.id.button_check);
+  ```
+  ```xml
+       <Button
+            android:id="@+id/button_add"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homework_name"
+            android:layout_alignParentRight="true"
+            android:text="@string/b_add" />
+        <Button
+            android:id="@+id/button_check"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homework_name"
+            android:layout_toLeftOf="@id/button_add"
+            android:text="@string/b_check" />
+  ```
   4. 为 Button 添加点击事件处理，实现跳转；
   ```java
    Button button1 = (Button)findViewById(R.id.button_add);
