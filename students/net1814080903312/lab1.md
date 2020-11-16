@@ -17,7 +17,8 @@
 6.用git bash提交相应文件
 
 # 四、实验结果
-https://github.com/xiangzuonidekongbai/android-labs-2020/blob/master/students/net1814080903312/net1814080903312.PNG?raw=true
+
+![实验截图](https://github.com/xiangzuonidekongbai/android-labs-2020/blob/master/students/net1814080903312/net1814080903312.PNG?raw=true)
 
 # 五、实验心得
 安装Android studio的时候遇到了很多问题，主要是SDK的安装比较麻烦，还有对软件的操作不熟悉，在安装虚拟机时也不知道点击哪里，不过在同学的帮助下最后还是解决了，并成功运行。
