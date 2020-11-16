@@ -13,6 +13,14 @@
    ## 三、实验步骤 
   1. 将图片放到项目的 drawable 文件夹下；
   2. 在activity_main.xml添加<ImageView>代码将图片放入首界面
+  ```xml
+  <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homework"
+        android:layout_below="@id/button_check"
+        tools:ignore="MissingConstraints" />
+  ```
   ## 四、实验结果 
  ![lab3](https://github.com/linjhong/android-labs-2020/blob/master/students/net1814080903138/lab3.png)
   
