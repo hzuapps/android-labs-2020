@@ -28,7 +28,7 @@
 
 ## 四、实验结果 
 
-![图片插入代码](https://github.com/yesijie0216/android-labs-2020/blob/master/students/net1814080903136/image3.JPG)
+![图片插入结果](https://github.com/yesijie0216/android-labs-2020/blob/master/students/net1814080903136/3.JPG)
 ![图片文件](https://github.com/yesijie0216/android-labs-2020/blob/master/students/net1814080903136/src/main/res/drawable/music.jpg)
 
 
