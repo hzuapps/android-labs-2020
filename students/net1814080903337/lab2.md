@@ -15,25 +15,26 @@
 
 1. 将创建的Activity注册到AndroidManifest.xml
 2. 在页面中创建按钮，在主类中实现页面跳转：
-public class Net1814080903337Activity extends AppCompatActivity {
-    public void Record(View view) {
-        Intent intent = new Intent(this,RecordActivity.class);
-        startActivity(intent);
+
+    public class Net1814080903337Activity extends AppCompatActivity {
+        public void Record(View view) {
+            Intent intent = new Intent(this,RecordActivity.class);
+            startActivity(intent);
+        }
+        public void Seek(View view) {
+            Intent intent = new Intent(this,SeekActivity.class);
+            startActivity(intent);
+        }
+        public void Overdue(View view) {
+            Intent intent = new Intent(this,OverdueActivity.class);
+            startActivity(intent);
+        }
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_net1814080903337);
+        }
     }
-    public void Seek(View view) {
-        Intent intent = new Intent(this,SeekActivity.class);
-        startActivity(intent);
-    }
-    public void Overdue(View view) {
-        Intent intent = new Intent(this,OverdueActivity.class);
-        startActivity(intent);
-    }
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_net1814080903337);
-    }
-}
 
 
 # 四、实验结果 #
