@@ -44,4 +44,4 @@
 ![image](https://raw.githubusercontent.com/Cai-J/android-labs-2020/master/students/net1814080903231/Lab/lab_2_2.png)
 ## 五、心得体会
 
-本地实验开始进行界面的跳转，通过按钮绑定事件实现跳转别的Activity，通过这个跳转可以实现简单功能。
+本次实验开始进行界面的跳转，通过按钮绑定事件实现跳转别的Activity，通过这个跳转可以实现简单功能。
