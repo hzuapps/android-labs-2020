@@ -2,12 +2,12 @@
 ## 一.实验目标
 1. 构建安卓开发环境
 2. 熟悉git的操作与使用方法
-
+  
 ## 二.实验内容
 1. 搭建android开发环境
 2. 创建运行测试java类
 3. 熟悉git的操作与使用
-
+  
 ## 三.实验步骤
 1. 下载androidSDK  
 2. 官网下载androidStdio,并且同时在androidstdio中下载androiAVD模拟器  
@@ -27,7 +27,10 @@ public class Net1814080903113MainActivity extends AppCompatActivity{
 $ git add D:\android-labs-2020\students\net1814080903113/Net1812070504101MainActivity.java  
 $ git commit -m "#1 #171 第1次实验"  
 $ git push  
-
+  
 ## 四.实验结果
 Forked  
-Main程序  
+Main.java运行结果  
+  
+## 五.实验心得
+本次实验是关于github与git的基本使用，同时也开始学习使用android的构建第一个最基本的项目，实验步骤不难，但是第一次接触会有一点不太适应
