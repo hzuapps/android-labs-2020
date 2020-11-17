@@ -22,7 +22,7 @@ public class Net1814080903113MainActivity extends AppCompatActivity{
     @Override  
     protected void onCreate(Bundle savedInstanceState) {  
         super.onCreate(savedInstanceState);  
-        setContentView(R.layout.net1814080903113main);  
+        setContentView(R.layout.net1812070504101main);  
 7. 提交代码并请求合并  
 $ git add D:\android-labs-2020\students\net1814080903113/Net1812070504101MainActivity.java  
 $ git commit -m "#1 #171 第1次实验"  
