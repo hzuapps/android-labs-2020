@@ -1,35 +1,19 @@
 # 一、实验目标
 
  1. 根据选题要求设计界面布局及控件使用；
-2. 布局xml及界面控制操作代码提交并截图；
-3. 将应用运行结果截图。
+ 2. 布局xml及界面控制操作代码提交并截图；
+ 3. 将应用运行结果截图。
 
  # 二、实验内容
 
  1. 使用一种布局方式设计界面；
-2. 通过控件ID获取界面对象，执行相关操作：
-
- ```
-// XML
-android:id="@+id/my_button"
-// Java
-findViewById(R.id.my_button);
-```
-
-1. 实现界面控件的事件处理;
-2. 操作之后，切换到第二个界面。
+ 2. 通过控件ID获取界面对象，执行相关操作：
+ 3. 实现界面控件的事件处理;
+ 4. 操作之后，切换到第二个界面。
 
  # 三、实验步骤
-设计页面：
-1.主页面
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    tools:context=".Net1814080903337Activity">
-
+ 1.在主页面设计3个按钮，分别通往添加、查询、已过期三个页面：
+ 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -63,17 +47,7 @@ findViewById(R.id.my_button);
         app:layout_constraintStart_toStartOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-
-2.添加页面
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/rbg"
-    tools:context=".RecordActivity">
+ 2.在添加页面设置了输入的文本框以及提交按钮：
 
     <Button
         android:id="@+id/button5"
@@ -155,17 +129,7 @@ findViewById(R.id.my_button);
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         android:importantForAutofill="no"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-
-3.搜索页面
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/sbg"
-    tools:context=".SeekActivity">
+3.在搜索页面设置了文本框以及查询按钮，输入物品名称可查询详细信息：
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
