@@ -11,8 +11,22 @@
 
 # 三、实验步骤
 
-1.将创建的Activity注册到AndroidManifest.xml  
-2.在MainActivity的layout视图中添加Button按钮用于跳转页面  
+1.将创建的Activity注册到activity_net1814080903330.xml  
+2.在activity_net1814080903330的layout视图中添加Button按钮用于跳转页面 
+```
+<Button
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/button1"
+                android:text=" 主页 "
+                app:layout_constraintBottom_toTopOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button3"
+                />
+```
+
+
 3.为Button按扭添加Click点击事件实现跳转
 ```
         Button button1 = (Button)findViewById(R.id.button);
