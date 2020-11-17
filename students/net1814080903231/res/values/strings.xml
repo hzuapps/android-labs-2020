@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Let Chat</string>
+    <string name="reminder">搜索框</string>
+    <string name="done">提交</string>
+
+    <string name="tv1_text1">测试</string>
+</resources>
