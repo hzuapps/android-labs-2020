@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="12"
+    android:layout_height="wrap_content"
+    tools:context=".InstallActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="126dp"
+            android:layout_height="145dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name1"
+            android:layout_marginTop="70dp"
+            android:hint="@string/name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/photo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone1"
+            android:hint="@string/phone"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/photo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address1"
+            android:hint="@string/address"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/photo"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/binding"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/blank1"
+        android:layout_width="410dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/sever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:text="选择服务:"
+        android:textSize="24sp"
+        android:layout_toRightOf="@id/photo"/>
+
+    <CheckBox
+        android:id="@+id/hobby1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="安装"
+        android:textSize="24sp"/>
+
+    <CheckBox
+        android:id="@+id/hobby2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="维修"
+        android:textSize="25sp"/>
+
+    <CheckBox
+        android:id="@+id/hobby3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移机"
+        android:textSize="25sp"/>
+
+    <CheckBox
+        android:id="@+id/hobby4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="咨询"
+        android:textSize="25sp"/>
+
+    <Spinner
+        android:id="@+id/blank2"
+        android:layout_width="410dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time1"
+            android:layout_marginTop="20dp"
+            android:text="    预约时间: "
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:layout_marginTop="10dp"
+            android:hint="@string/time"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/time1" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/blank3"
+        android:layout_width="410dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/send2"/>
+
+</LinearLayout>
+
