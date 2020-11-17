@@ -60,8 +60,8 @@
     </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            ></LinearLayout>
+            android:layout_height="match_parent">
+            </LinearLayout>
     </LinearLayout>
 </LinearLayout>
 
@@ -70,7 +70,7 @@
 
 # 四、实验结果
 
-!
+
 
 # 五、实验心得
 
