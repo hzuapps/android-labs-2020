@@ -6,7 +6,7 @@
 ## 二.实验内容
 1. 搭建android开发环境
 2. 创建运行测试java类
-3. 熟悉git的操作与使用
+3. 使用git同步文件到github
   
 ## 三.实验步骤
 1. 下载androidSDK  
