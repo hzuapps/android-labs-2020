@@ -11,12 +11,14 @@
 
 # 三、实验步骤
 1.创建相应的Activity和xml文件；  
-2.在AndroidManifest.xml配置相关的信息;  
+2.在AndroidManifest.xml配置相关的信息;
+``` 
 android:label="校园树洞"  
 activity android:name=".PostActivity"   
 activity android:name=".TreeholdActivity"  
-
+``` 
 3.在Net1814080903116Activity中添加跳转按钮的代码  
+``` 
 bindActivityButton(R.id.postButton, PostActivity.class);  
 bindActivityButton(R.id.treeHoldButton, TreeholdActivity.class);  
 
@@ -29,6 +31,7 @@ Intent intent = new Intent(thisActivity,activity);
 thisActivity.startActivity(intent);  
 }  
 });  
+``` 
 ![lab2.1](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/2.1.PNG)
 
 # 四、实验结果
