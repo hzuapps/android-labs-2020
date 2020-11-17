@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Net1814080903224activity"
-    android:background="@drawable/use1">
+    android:background="@drawable/use1"
+    tools:context=".Net1814080903224activity">
 
 
     <TextView
@@ -22,16 +22,18 @@
         android:id="@+id/recommend"
         android:layout_width="175dp"
         android:layout_height="81dp"
-        android:text="景点推荐"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="71dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="262dp"
+        android:text="@string/rec" />
 
     <Button
         android:id="@+id/care1"
-        android:layout_width="167dp"
-        android:layout_height="72dp"
-        android:text="注意事项"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="273dp" />
+        android:layout_width="147dp"
+        android:layout_height="82dp"
+        android:layout_alignParentright="true"
+        android:text="@string/care1"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:text="注意事项" />
+
+
+</RelativeLayout>
