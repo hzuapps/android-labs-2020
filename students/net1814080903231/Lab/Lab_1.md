@@ -21,6 +21,5 @@
 ## 四、实验结果
 ![Image text](http://raw.githubusercontent.com/Cai-J/android-labs-2020/master/students/net1814080903231/Lab/lab_1_1.png)
 
-
 ## 五、心得体会
 通过本次实验，成功安装了Android Studio和Git软件，并成功编译运行了虚拟机打开的第一个Android软件，最后通过Git同步提交至GitHub。对于第一次接触GitHub，第一次使用感觉挺难的，而且遇到了路径过长导致的未知错误，最后通过另一种方法成功提交。
