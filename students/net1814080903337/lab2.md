@@ -14,11 +14,27 @@
 # 三、实验步骤 #
 
 1. 将创建的Activity注册到AndroidManifest.xml
-2. 在布局文件中创建Button并赋予ID
-3. 通过ID获取Button
-4. 为Button增加点击事件处理
-5. 利用Intent绑定跳转类
-6. 利用startActivity(intent)实现跳转
+2. 在页面中创建按钮，在主类中实现页面跳转：
+public class Net1814080903337Activity extends AppCompatActivity {
+    public void Record(View view) {
+        Intent intent = new Intent(this,RecordActivity.class);
+        startActivity(intent);
+    }
+    public void Seek(View view) {
+        Intent intent = new Intent(this,SeekActivity.class);
+        startActivity(intent);
+    }
+    public void Overdue(View view) {
+        Intent intent = new Intent(this,OverdueActivity.class);
+        startActivity(intent);
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_net1814080903337);
+    }
+}
+
 
 # 四、实验结果 #
 
