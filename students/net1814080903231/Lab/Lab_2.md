@@ -38,7 +38,6 @@
     }
 ```
 
-
 ## 四、实验结果
 ![主界面](https://raw.githubusercontent.com/Cai-J/android-labs-2020/master/students/net1814080903231/Lab/lab_2_1.png)
 ![image](https://raw.githubusercontent.com/Cai-J/android-labs-2020/master/students/net1814080903231/Lab/lab_2_2.png)
