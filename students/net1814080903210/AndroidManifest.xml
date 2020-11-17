@@ -18,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <provider android:authorities="edu.hzuapp.androidlabs.News" android:name=".NewsProvider" />
     </application>
 
 </manifest>
