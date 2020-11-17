@@ -11,35 +11,47 @@
 
 # 三、实验步骤
 
-1.将创建的Activity注册到activity_net1814080903330.xml  
+1.创建与功能有关的Net1814080903330.java、SearchActivity.java、PlayActivity.java、CollectionActivity.java文件
 2.在activity_net1814080903330的layout视图中添加Button按钮用于跳转页面 
 ```
-<Button
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
+                <Button
                 android:id="@+id/button1"
                 android:text=" 主页 "
-                app:layout_constraintBottom_toTopOf="@+id/button2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button3"
+                ...
                 />
+                <Button
+                android:id="@+id/button2"
+                android:text=" 播放音乐 "
+                ...
+                />
+                <Button
+                android:id="@+id/button3"
+                android:text=" 收藏音乐 "
+                ...
+                />
+                <Button
+                android:id="@+id/button4"
+                android:text=" 搜索音乐 "
+                ...
+                />               
 ```
 
 
-3.为Button按扭添加Click点击事件实现跳转
+3.为Button按扭添加Click点击事件实现跳转（主页转跳播放音乐）
 ```
-        Button button1 = (Button)findViewById(R.id.button);
-     final Net1814080903330Activity thisActivity = this;
-     button1.setOnClickListener(new View.OnClickListener(){
-         public void onClick(View v){
-             Intent intent = new Intent(thisActivity,Net1814080903330Activity.class);
-             thisActivity.startActivity(intent);
-         }
-     });
+Button button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Net1814080903330Activity.this , PlayActivity.class);
+                startActivity(intent);
+            }
+        });
 ```
+4.调试是否能完成页面之间的跳转
+
 # 四、实验结果
-!
+
 
 # 五、实验心得
 本次实验一共填写了3个功能，主界面Net1814080903330.java、功能分别为CollectionActivity.java、PlayActivity.java、SearchActivity.java，功能实现跳转做起来也挺简单的。
