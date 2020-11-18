@@ -15,9 +15,11 @@
 4. 显示hello world!  
 5. 将项目克隆到本地
 
+```
 $ cd D:\  
 $ git clone https://github.com/Miraiiiii/android-labs-2020/    
-$ cd android-labs-2020   
+$ cd android-labs-2020 
+```
 6. 在androidStdio中编写Net1812070504101MainActivity的java类  
 
 ```public class Net1814080903113MainActivity extends AppCompatActivity{  
