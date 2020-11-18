@@ -21,17 +21,17 @@
 
 ​		(1)下载安装
 
-![下载安装](图片/下载安装.png)
+![下载安装](picture/download.png)
 
 ​			(2)打开
 
-​	![打开](图片/打开.png)
+​	![打开](picture/open.png)
 
 ​	2.Fork Git项目，并clone到本地目录；
 
 ​		(1)加入Git项目
 
-![Fork项目](图片/Fork项目.png)
+![Fork项目](picture/fork.png)
 
 ​		(2)克隆项目到本地
 
@@ -41,11 +41,11 @@ git clone https://github.com/KoKiChiChyan/android-labs-2020/
 cd android-labs-2020 
 ```
 
-![本地项目](图片/本地项目.png)
+![本地项目](picture/local_project.png)
 
 ​	3.创建Net1814080903101项目；
 
-![新建项目](图片/新建项目.png)
+![新建项目](picture/create_project.png)
 
 ​	4.创建Net1814080903101.java类；
 
@@ -67,8 +67,9 @@ git push
 
 ## 四、实验结果
 
-![合并后结果](图片/合并后结果.png)
+![合并后结果](picture/pull_request.png)
 
 ## 五、心得体会
 
 ​		第一次实验需要熟悉git的使用以及Android Studio开发环境搭建，实验要求中说明的很详细，按照实验要求一步一步做，完成了这一次的实验。
+
