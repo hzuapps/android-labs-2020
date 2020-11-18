@@ -41,4 +41,4 @@ final Net1814080903104Activity thisActivity = this;
 ![](https://github.com/3ho-y/android-labs-2020/blob/master/students/net1814080903104/lab2(3).png)
 
 ## 五、实验心得
-本次实验创建了与所选题目功能相关的Activity，学习到如何利用按钮在Activity之间跳转。实验过程中界面跳转后闪退，在AndroidManifest.xml添加相应的权限后解决问题。
+本次实验创建了与所选题目功能相关的Activity，学习到如何通过创建按钮实现在不同的Activity之间的跳转。
