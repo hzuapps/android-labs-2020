@@ -57,9 +57,9 @@
 ```
 
 ## 四、实验结果
-![适配器](https://github.com/SJ4real/android-labs-2020/blob/master/students/net1814080903124/lab4_1.png)
-![运行截图](https://github.com/SJ4real/android-labs-2020/blob/master/students/net1814080903124/lab4_2.png)
-![GridView](https://github.com/SJ4real/android-labs-2020/blob/master/students/net1814080903124/lab4_3.png)
+![主界面](https://github.com/3ho-y/android-labs-2020/blob/master/students/net1814080903104/lab3(1).png)
+![领取奖励界面](https://github.com/3ho-y/android-labs-2020/blob/master/students/net1814080903104/lab3(2).png)
+![查询信息界面](https://github.com/3ho-y/android-labs-2020/blob/master/students/net1814080903104/lab4(1).png)
 
 ## 五、实验心得
-本次实验主要是实现了界面的设计，使用了GridView把项目的基本界面设计完成，后续还需要在界面中添加一些组件以及将点击后的功能完善。
+本次实验主要是实现了界面布局的设计，根据实际设计需要灵活使用布局，才能达到自己想要实验的效果。
