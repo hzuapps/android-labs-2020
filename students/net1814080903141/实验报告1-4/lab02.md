@@ -13,7 +13,7 @@
 
 1. 创建Net1814080903141Activity、GameActivity、RecordActivity和相对应xml文件
 
-   ![lab2-1](D:\android-labs-2020\students\net1814080903141\实验结果截图\lab2-1.png)
+   ![lab2-1](https://github.com/zm-w/android-labs-2020/blob/master/students/net1814080903141/实验结果截图/lab2-1.png)
 
 2. 在AndroidManifest.xml添加虚拟机打开时所需要的权限
 
@@ -75,7 +75,7 @@
 
 # 四、实验结果
 
-![lab2-2](D:\android-labs-2020\students\net1814080903141\实验结果截图\lab2-2.png)
+![lab2-2](https://github.com/zm-w/android-labs-2020/blob/master/students/net1814080903141/实验结果截图/lab2-2.png)
 
 # 五、实验心得
 

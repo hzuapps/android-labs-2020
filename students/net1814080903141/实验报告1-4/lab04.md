@@ -176,11 +176,11 @@
 
 # 四、实验结果
 
-![lab4-1](D:\android-labs-2020\students\net1814080903141\实验结果截图\lab4-1.png)
+![lab4-1](https://github.com/zm-w/android-labs-2020/blob/master/students/net1814080903141/%实验结果截图/lab4-1.png)
 
-![lab4-2](D:\android-labs-2020\students\net1814080903141\实验结果截图\lab4-2.png)
+![lab4-2](https://github.com/zm-w/android-labs-2020/blob/master/students/net1814080903141/实验结果截图/lab4-2.png)
 
-![lab4-3](D:\android-labs-2020\students\net1814080903141\实验结果截图\lab4-3.png)
+![lab4-3](https://github.com/zm-w/android-labs-2020/blob/master/students/net1814080903141/实验结果截图/lab4-3.png)
 
 # 五、实验心得
 

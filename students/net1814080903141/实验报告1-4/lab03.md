@@ -15,7 +15,7 @@
 
 1. 将logo.jpg，放在drawable-v24目录下。
 
-   ![lab3-1](D:\android-labs-2020\students\net1814080903141\实验结果截图\lab3-1.png)
+   ![lab3-1](https://github.com/zm-w/android-labs-2020/blob/master/students/net1814080903141/实验结果截图/lab3-1.png)
 
 2. 在activity_net1814080903141.xml中创建ImageView并引入logo.jpg
 
@@ -44,7 +44,7 @@
 
 # 四、实验结果
 
-![lab3-2](D:\android-labs-2020\students\net1814080903141\实验结果截图\lab3-2.png)
+![lab3-2](https://github.com/zm-w/android-labs-2020/blob/master/students/net1814080903141/实验结果截图/lab3-2.png)
 
 # 五、实验心得
 

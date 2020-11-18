@@ -20,7 +20,7 @@
 
 # 四、实验结果
 
-![lab1](D:\android-labs-2020\students\net1814080903141\实验结果截图\lab1.png)
+![lab1](https://github.com/zm-w/android-labs-2020/blob/master/students/net1814080903141/实验结果截图/lab1.png)
 
 # 五、实验心得体会
 
