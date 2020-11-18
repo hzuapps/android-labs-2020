@@ -180,7 +180,7 @@ findViewById(R.id.my_button);
 ```
 # 四、实验结果
 
-![image-20201116092655492](D:\android-labs-2020\students\net1814080903122\report\lab4.png)
+![image-20201116092655492](lab4.png)
 
 # 五、实验心得
 

@@ -22,7 +22,7 @@
 
 # 四、实验结果
 
-![image-20201116090336447](D:\android-labs-2020\students\net1814080903122\report\lab3.png)
+![image-20201116090336447](lab3.png)
 
 # 五、实验心得
 
