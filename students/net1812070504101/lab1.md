@@ -38,6 +38,6 @@ $ git push
 
 Forked  
 Main.java运行结果  
-  
+ <img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab1-1.png" height=200px>
 ## 五.实验心得
 本次实验是关于github与git的基本使用，同时也开始学习使用android的构建第一个最基本的项目，实验步骤不难，但是第一次接触会有一点不太适应
