@@ -134,6 +134,9 @@ public class StatisticActivity extends AppCompatActivity {
 
 
 ## 四.实验结果
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab2-1.png" height= 200px>
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab2-2.png" height= 200px>
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab2-3.png" height= 200px>
 
 
 ## 五.实验心得
