@@ -11,7 +11,25 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Net1814080903207WrongActivity"></activity>
         <activity android:name=".Net1814080903207ReciteActivity" />
+
+
+        <activity
+            android:name=".Net1814080903207FileActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <!--此处设置 intent-filter-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
         <activity android:name=".Net1814080903207Activity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
