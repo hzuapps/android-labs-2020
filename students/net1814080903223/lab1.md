@@ -19,6 +19,6 @@
 5. 在Net1814080903223Activity.java写入代码  
 6. 使用git bash提交Net1814080903223Activity.java  
 # 四、实验结果 
-！[实验结果]（https://github.com/wenzequan/android-labs-2020/new/master/students/net1814080903223）
+！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan1.jpg）
 # 五、实验心得 
  这次实验首次提交时因为java项目没添加内容没有通过，之后添加了实现holle world的代码，并且在这次我主要是学会了如何使用git和github来提交实验。
