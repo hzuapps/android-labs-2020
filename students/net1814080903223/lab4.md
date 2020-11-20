@@ -24,7 +24,7 @@ findViewById(R.id.my_button);
 1. 根据自己项目设置了Linearlayout。
 
 2. 主界面avtivity_net1814080903223布局
-   ```
+   ```  
    <?xml version="1.0" encoding="utf-8"?>
    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -33,7 +33,6 @@ findViewById(R.id.my_button);
     android:layout_height="match_parent"
     android:background="@drawable/tupian1"
     tools:context=".Net1814080903223Activity">
-
 
     <Button
         android:id="@+id/btn"
@@ -71,20 +70,20 @@ findViewById(R.id.my_button);
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+``` 
 </androidx.constraintlayout.widget.ConstraintLayout>
-   ```
-
+``` 
 3. 第一界面activity_play布局
 
    ```
-   <?xml version="1.0" encoding="utf-8"?>
-   <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:background="@drawable/tupian2"
-    android:layout_height="match_parent">
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/tupian2"
+        android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView2"
@@ -150,10 +149,12 @@ findViewById(R.id.my_button);
         android:background="@drawable/tupian202"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+``` 
 </androidx.constraintlayout.widget.ConstraintLayout>
-   ```
-4. 第二界面activity_viewandmodify布局
 ```
+ 
+4. 第二界面activity_viewandmodify布局
+```  
     <?xml version="1.0" encoding="utf-8"?>
     <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -228,7 +229,7 @@ findViewById(R.id.my_button);
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-```
+ ``` 
 # 四、实验结果
 
 ！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan401.jpg）
