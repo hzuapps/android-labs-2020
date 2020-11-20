@@ -15,7 +15,7 @@
 1. 构建Android Studio环境，配置相应的SDK之后  
 2. 创建一个Net1814080903223Activity的java类  
 3. 将hzuapps / android-labs-2020的项目fork到自己的github帐号下  
-4. 将android-labs2020项目克隆到本地  
+4. 将android-labs2020项目克隆到本地    
 5. 在Net1814080903223Activity.java写入代码  
 6. 使用git bash提交Net1814080903223Activity.java  
 # 四、实验结果 
