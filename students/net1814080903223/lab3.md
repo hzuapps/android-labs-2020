@@ -15,7 +15,7 @@
 2.把照片放在项目的drawable目录下；    
 3.在对应的配置文件中增加有关图片的代码，并且根据需求更改图片的规格使之与app相适应  
 ```   
-  <androidx.constraintlayout.widget.ConstraintLayout tools:context=".Net1814080903223Activity"   
+<androidx.constraintlayout.widget.ConstraintLayout tools:context=".Net1814080903223Activity"   
 android:background="@drawable/tupian1"   
 android:layout_height="match_parent"   
 android:layout_width="match_parent"   
@@ -57,8 +57,8 @@ android:id="@+id/textView6"
 app:layout_constraintHorizontal_bias="0.457"/>  
 ```   
 # 四、实验结果
-！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan301.jpg）
-！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan302.jpg）
+！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan301.jpg）  
+！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan302.jpg）  
 ！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan303.jpg）
 # 五、实验心得
 本次实验学会了如何在设置背景图片等操作，不仅在界面背景设置了图片，在按钮中也设置了背景图片显得更明显和美观，实验过程中遇到了图片大小不匹配等问题，在同学的帮助下，我在配置信息上进行相应的更改。
