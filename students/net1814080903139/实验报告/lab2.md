@@ -98,7 +98,7 @@ public class Net1814080903139Activity extends AppCompatActivity {
 
 # 四、实验结果
 
-![lab2](D:\Desktop\Markdown\移动应用开发\lab2result.PNG)
+![lab2](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/实验报告图片/lab2result.PNG)
 
 # 五、实验心得
 

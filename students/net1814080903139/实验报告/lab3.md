@@ -28,7 +28,7 @@
 
 # 四、实验结果
 
-![Lab3](D:\Desktop\Markdown\移动应用开发\lab3.PNG)
+![Lab3](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/实验报告图片/lab3.PNG)
 
 # 五、实验心得
 
