@@ -1,5 +1,4 @@
-package edu.hzuapps.androidlabs.net1814080903223;
-
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -7,31 +6,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
-	public class Net1814080903223Activity extends AppCompatActivity {
+public class Net1814080903223Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button button = findViewById(R.id.button);
-        final Net1814080903223Activity _this = this;
-        button.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_net1814080903223);
+        Button btn = (Button) findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(_this, PlayActivity.class);
-                _this.startActivity(intent);
-            }
-        });
+                Intent it = new Intent();
+                it.setClass(Net1814080903223Activity.this, PlayActivity.class);
+                Net1814080903223Activity.this.startActivity(it);
+            }    });
 
-        Button button2 = findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
+        Button btn2= findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(_this, ViewandmodifyActivity.class);
-                _this.startActivity(intent);
+                Intent it=new Intent();
+                it.setClass( Net1814080903223Activity.this, ViewandmodifyActivity.class);
+                Net1814080903223Activity.this.startActivity(it);
             }
-        });
 
+        });
     }
 }
-

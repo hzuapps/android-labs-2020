@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tupian1"
+    tools:context=".Net1814080903223Activity">
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="146dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="192dp"
+        android:text="PLAY"
+        android:textSize="30dp"
+        android:background="@drawable/tupian101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="146dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="392dp"
+        android:text="VIEWANDMODIFY"
+        android:textSize="30dp"
+        android:background="@drawable/tupian101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="370dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:text="欢迎进入猜拳游戏"
+        android:textSize="30dp"
+        android:background="@drawable/tupian102"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
