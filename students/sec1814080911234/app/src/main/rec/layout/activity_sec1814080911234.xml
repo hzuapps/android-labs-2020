@@ -10,24 +10,25 @@
     android:background="@drawable/index"
     >
 
+
     <Button
-        android:layout_width="62pt"
-        android:layout_height="wrap_content"
-        android:text="创建事件"
         android:id="@+id/create"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="创建事件" />
 
     <Button
-        android:layout_width="62pt"
-        android:layout_height="wrap_content"
-        android:text="日期计算"
         android:id="@+id/date"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="日期计算" />
 
     <Button
-        android:layout_width="62pt"
-        android:layout_height="wrap_content"
-        android:text="节假日"
         android:id="@+id/festival"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="节假日" />
 </LinearLayout>
