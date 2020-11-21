@@ -16,6 +16,15 @@ public class Sec1814080911202Activity extends AppCompatActivity {
 
         final Sec1814080911202Activity thisActivity = this;
 
+        Button borrowBtn = (Button) findViewById(R.id.button_borrow);
+        borrowBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(thisActivity,BorrowActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Button manageBtn = (Button) findViewById(R.id.button_manage);
         manageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,14 +35,9 @@ public class Sec1814080911202Activity extends AppCompatActivity {
             }
         });
 
-        Button borrowBtn = (Button) findViewById(R.id.button_borrow);
-        borrowBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(thisActivity,ManageActivity.class);
-                startActivity(intent);
-            }
-        });
+
+
+
 
     }
 }
