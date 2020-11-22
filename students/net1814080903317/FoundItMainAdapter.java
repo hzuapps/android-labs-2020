@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foundit.R;
 import com.example.foundit.model.bean.FoundIt;
+import com.example.foundit.model.bean.Info;
 import com.example.foundit.utils.ToastUtils;
 
 import java.util.List;
@@ -27,13 +28,13 @@ import java.util.List;
  * description:
  */
 public class FoundItMainAdapter extends RecyclerView.Adapter<FoundItMainAdapter.FoundItMainInnerHolder> {
-    private final List<FoundIt> foundItList;
-    private final Context context;
+    private  List<Info> infoList;
+    private  Context context;
     //private final Bitmap bitmap=getBitmap();
 
-    public FoundItMainAdapter(List<FoundIt> foundItList, Context context) {
+    public FoundItMainAdapter(List<Info> infoList, Context context) {
         this.context=context;
-        this.foundItList=foundItList;
+        this.infoList=infoList;
     }
 
     @NonNull
@@ -46,19 +47,14 @@ public class FoundItMainAdapter extends RecyclerView.Adapter<FoundItMainAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull FoundItMainInnerHolder holder, int position) {
-        FoundIt foundIt=foundItList.get(position);
+        Info info=infoList.get(position);
         Drawable drawable=context.getResources().getDrawable(R.drawable.headphoto);
         //设置头像
         holder.headPhotoIv.setImageDrawable(drawable);
-        //设置昵称
-        holder.nicknameTv.setText(foundIt.getNickname());
         //设置状态
-        holder.typeTv.setText(foundIt.getType());
+        holder.typeTv.setText(info.getType());
         //设置内容
-        holder.contentTv.setText(foundIt.getContent());
-        //设置时间
-        holder.publicTimeTv.setText(foundIt.getPublicTime());
-
+        holder.contentTv.setText(info.getContent());
         //联系TA点击事件......
         holder.connenctionTv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +67,6 @@ public class FoundItMainAdapter extends RecyclerView.Adapter<FoundItMainAdapter.
             @Override
             public void onClick(View v) {
                 ToastUtils.makeText(context,"你点击了评论");
-
             }
         });
 
@@ -88,8 +83,8 @@ public class FoundItMainAdapter extends RecyclerView.Adapter<FoundItMainAdapter.
     }
     @Override
     public int getItemCount() {
-        if (foundItList.size()>0) {
-            return foundItList.size();
+        if (infoList.size()>0) {
+            return infoList.size();
         }
         return 0;
     }
