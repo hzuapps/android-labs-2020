@@ -19,7 +19,6 @@ public class TableActivity extends AppCompatActivity {
     String[] weekArrays = { //
             "星期一", "星期二", "星期三", "星期四",
             "星期五", "星期六", "星期天"
-            //, "a", "b", "c", "d", "e", "f"
     };
 
     @Override
