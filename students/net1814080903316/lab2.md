@@ -9,7 +9,37 @@
 ## 2.实验内容
 1. 创建3个Activity，分别为Net1814080903316Activity、TableActivity、ImformationActivity;
 2. 在Net1814080903316Activity上添加按钮;
+```
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="goImformation"
+            android:text="@string/information" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="goTable"
+            android:text="@string/table" />
+```
 3. 在Net1814080903316Activity.java添加按钮点击事件处理，实现跳转。
+```
+        public void goImformation(View view){
+            Intent intent=new Intent(this, ImformationActivity.class);
+            startActivity(intent);
+        }
+
+        public void goTable(View view){
+        Intent intent=new Intent(this, TableActivity.class);
+        startActivity(intent);
+        }
+```
 
 ## 3.实验步骤
 1. 创建3个Activity，分别为Net1814080903316Activity、TableActivity、ImformationActivity;
