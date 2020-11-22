@@ -20,7 +20,7 @@
      });
 ```
 # 四、实验结果
-
+![图片]https://raw.githubusercontent.com/xiangzuonidekongbai/android-labs-2020/master/students/net1814080903312/lab2-3.PNG
 
 # 五、实验心得
 这次实验主要学习如何点击事件跳转页面，首先建立对应的Activity界面，在相应的layout文件视图中添加按钮，并在java中实现转跳。初步学习了如何添加并使用事件，还要继续努力。
