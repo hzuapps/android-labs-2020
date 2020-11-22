@@ -13,9 +13,41 @@
 
 ## 3.实验步骤
 1. 在res/drawable目录中放入图片。
-2. 对主界面net_1814080903316_activity.xml进行配置。
+2. 对主界面net_1814080903316_activity.xml进行布局上的配置。
+```
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Net1814080903316Activity">
+ </LinearLayout>
+```
 3. 通过TextView组件实现在主界面上展示图片,通过文件名直接引用drawable中的图片。
+```
+ <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/school"
+        android:gravity="center"
+        android:paddingTop="50dp" />
+```
 4. 设计方法实现界面的跳转，然后在按钮上应用该方法。
+```
+        public void goImformation(View view){
+            Intent intent=new Intent(this, ImformationActivity.class);
+            startActivity(intent);
+        }
+
+        public void goTable(View view){
+        Intent intent=new Intent(this, TableActivity.class);
+        startActivity(intent);
+       }
+```
+
 
 ## 4.实验结果
 ![项目图片](https://raw.githubusercontent.com/alllovetaken/android-labs-2020/master/students/net1814080903316/lab2result.PNG)
