@@ -16,6 +16,23 @@
 2. 加入Git项目（Fork），将项目克隆（Clone）到自己帐号下；
 3. 创建以学号命名的个人实验目录net1814080903316;
 4. 创建一个名为Net1814080903316Activity的Java类：
+```
+public class Net1814080903316Activity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.net_1814080903316_activity);
+    }
+        public void goImformation(View view){
+            Intent intent=new Intent(this, ImformationActivity.class);
+            startActivity(intent);
+    }
+        public void goTable(View view){
+        Intent intent=new Intent(this, TableActivity.class);
+        startActivity(intent);
+    }
+}
+```
 5. 提交代码并请求合并。
 
 ## 4.实验结果
