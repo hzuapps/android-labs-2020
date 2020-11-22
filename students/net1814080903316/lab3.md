@@ -48,7 +48,6 @@
        }
 ```
 
-
 ## 4.实验结果
 ![项目图片](https://raw.githubusercontent.com/alllovetaken/android-labs-2020/master/students/net1814080903316/lab2result.PNG)
 
