@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,28 +8,41 @@
     android:orientation="vertical"
     android:background="@drawable/mainbackgroup"
     tools:context=".Sec1814080911203Activity">
-
-    <Button
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="毓津银行欢迎您"
+        android:textSize="58dp"
+        android:textColor="#FF05DD"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="559dp"
+
+        >
+        <Button
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Transfer"
+            android:text="转账"
+            />
+
+        <Button
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Financical"
+            android:text="理财"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="60dp"
         android:id="@+id/Inquire"
+        android:layout_width="420dp"
+        android:layout_height="80dp"
         android:text="查询"
-        />
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Transfer"
-        android:text="转账"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Financical"
-        android:text="理财"
-        />
-
-
-
-</LinearLayout>
+</RelativeLayout>
