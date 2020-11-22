@@ -1,14 +1,12 @@
-package com.example.myapplication;
-
+package edu.hzuapps.androidlabs.sec1814080911129;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
+import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TextView;
+import android.os.Bundle;
 
 public class Sec1814080911129Activity extends AppCompatActivity {
 
@@ -17,29 +15,25 @@ public class Sec1814080911129Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Sec1814080911129Activity thisActivity =this;
-        Button btnOpen =(Button)findViewById(R.id.taxB);
-        btnOpen.setX(200f);
-        btnOpen.setY(200f);
-        btnOpen.setOnClickListener(new View.OnClickListener(){
+
+        Button tax= (Button)findViewById(R.id.taxB);
+        tax.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent intent =new Intent(thisActivity,TaxcountActivity.class);
-                thisActivity.startActivity(intent);
+            public void onClick(View view) {
+                Intent intent = new Intent(Sec1814080911129Activity.this,TaxActivity.class);
+                startActivity(intent);
             }
         });
 
-
-        Button btnOpen2 =(Button)findViewById(R.id.tranB);
-        btnOpen2.setX(600f);
-        btnOpen2.setY(200f);
-        btnOpen2.setOnClickListener(new View.OnClickListener(){
+        Button tran = (Button)findViewById(R.id.tranB);
+        tran.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent intent =new Intent(thisActivity,TranActivity.class);
-                thisActivity.startActivity(intent);
+            public void onClick(View view) {
+                Intent intent = new Intent(Sec1814080911129Activity.this,TranActivity.class);
+                startActivity(intent);
             }
         });
+
 
     }
 }
