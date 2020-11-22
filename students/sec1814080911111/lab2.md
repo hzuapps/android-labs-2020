@@ -35,9 +35,7 @@
 
 # 四、实验结果
 
-```  
 ![添加按钮](https://github.com/holenchan/android-labs-2020/blob/master/students/sec1814080911111/lab2.png)
-```  
 
 # 五、实验心得体会
 通过这次实验，我进一步掌握的Android Studio的使用，学会了在XML中添加按钮，并在MainActivity中实现点击按钮实现各个Activity的跳转
