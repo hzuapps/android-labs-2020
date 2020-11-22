@@ -40,3 +40,4 @@ public class Net1814080903114Activity extends AppCompatActivity {
 ![](https://github.com/xukaiyue131/android-labs-2020/blob/master/students/net1814080903114/lab2.png)
 
 ## 五、实验心得
+通过本次实验学会了怎么创建Actively，以及学会了在怎么给几个Activity间进行跳转
