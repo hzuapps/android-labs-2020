@@ -28,7 +28,7 @@
   />
 ```    
 # 四、实验结果
-![实验截图]
+![实验截图](https://raw.githubusercontent.com/xiangzuonidekongbai/android-labs-2020/master/students/net1814080903312/lab2-3.PNG)
 
 # 五、实验心得
 这次实验我们主要学习怎么导入图片，先将目的图片放入res/drawable文件夹中，然后在ImageView中实现导入图片显示。总体来说，这次实验难度不是很大，可以用图片继续优化其他页面。
