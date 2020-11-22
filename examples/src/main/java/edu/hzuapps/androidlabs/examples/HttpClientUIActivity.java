@@ -1,10 +1,11 @@
 package edu.hzuapps.androidlabs.examples;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -21,17 +22,19 @@ import java.net.URLDecoder;
 
 import edu.hzuapps.androidlabs.R;
 
-public class HttpClientActivity extends AppCompatActivity {
+public class HttpClientUIActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_http_client);
 
+        final HttpClientUIActivity thisActivity = this;
+
         ((Button) findViewById(R.id.button_get_issues)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Thread thread = new Thread(new Runnable() {
+                runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         String jsonText = getGitHubIssues();
@@ -41,14 +44,14 @@ public class HttpClientActivity extends AppCompatActivity {
                                 JSONObject jsonObj = (JSONObject) jsonArr.get(1);
                                 int number = jsonObj.getInt("number");
                                 System.out.println("NUMBER = " + number);
-                                //((EditText) thisActivity.findViewById(R.id.first_node_number)).setText(Integer.toString(number));
+                                ((EditText) thisActivity.findViewById(R.id.first_node_number)) //
+                                        .setText(Integer.toString(number));
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
                         }
                     }
                 });
-                thread.start();
             }
         });
     }

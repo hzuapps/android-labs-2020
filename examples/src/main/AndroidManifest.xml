@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.hzuapps.androidlabs">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".examples.RelativeLayoutActivity"></activity>
+        <activity android:name=".examples.FileDownloadActivity"></activity>
+        <activity android:name=".examples.HttpClientActivity" />
+        <activity android:name=".examples.SqliteGuideActivity" />
+        <activity android:name=".examples.ContentProviderActivity" />
+        <activity android:name=".examples.RelativeLayoutActivity" />
         <activity android:name=".examples.LinearLayoutActivity" />
         <activity android:name=".examples.GridViewActivity" />
         <activity android:name=".examples.ListViewActivity" />
@@ -27,9 +32,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".examples.Net123456Activity" />
-        <provider
-            android:authorities="edu.hzuapps.androidlabs.Library"
-            android:name=".ContentProviderOfBooks" />
     </application>
 
 </manifest>
