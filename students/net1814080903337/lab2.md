@@ -15,7 +15,7 @@
 
 1. 将创建的Activity注册到AndroidManifest.xml
 2. 在页面中创建按钮，在主类中实现页面跳转：
-
+```
     public class Net1814080903337Activity extends AppCompatActivity {
     
         public void Record(View view) {
@@ -53,8 +53,7 @@
         }
         
     }
-
-
+   ```
 # 四、实验结果 
 
 ![主页面](https://github.com/fairy-lee/android-labs-2020/blob/master/students/net1814080903337/picture/2.png)
