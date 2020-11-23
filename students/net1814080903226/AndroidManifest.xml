@@ -9,15 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="edu.hzuapps.androidlabs.Net1814080903226MessageActivity"></activity>
-        <activity android:name="edu.hzuapps.androidlabs.Net1814080903226MyViewActivity" />
-        <activity android:name="edu.hzuapps.androidlabs.Net1814080903226MainViewActivity">
+        <activity android:name=".ReceiveMessageActivity"></activity>
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".MyViewActivity" />
+        <activity android:name=".Net1814080903226Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <provider
+            android:authorities="edu.hzuapps.androidlabs.ContentProviderOfMyView"
+            android:name=".ContentProviderOfMyView"/>
+        
     </application>
 
 </manifest>
