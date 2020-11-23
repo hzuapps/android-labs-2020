@@ -7,7 +7,7 @@
     tools:context=".MainActivity2"
     >
 
-    <com.example.myapplication.ClockFace
+    <edu.hzuapp.androidlabs.net1814080903225.ClockFace
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="1.0"
 
         />
-    <com.example.myapplication.MyClockView
+    <edu.hzuapp.androidlabs.net1814080903225.MyClockView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

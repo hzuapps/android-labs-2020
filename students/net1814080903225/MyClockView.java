@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package edu.hzuapp.androidlabs.net1814080903225;
 
 import android.content.Context;
 import android.graphics.Canvas;
