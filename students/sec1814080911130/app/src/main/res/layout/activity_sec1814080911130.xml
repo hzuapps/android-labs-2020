@@ -3,39 +3,29 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context="edu.hzuapps.androidlabs.Sec1814080911130Activity"
-    android:background="@drawable/background"
-    android:weightSum="1">
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".OptionsActivity"></activity>
-        <activity android:name=".PlayActivity" />
-        <activity android:name=".Sec1814080911130Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+    android:background="@drawable/background">
 
     <Button
         android:id="@+id/button_play"
-        android:layout_width="match_parent"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:text="开始游戏" />
+        android:text="开始游戏"
+        android:background="#E91E63"
+        android:alpha="0.6"
+        android:textColor="#FFEB3B"
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/button_options"
-        android:layout_width="match_parent"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:text="选项" />
-
+        android:text="选项"
+        android:background="#E91E63"
+        android:alpha="0.6"
+        android:textColor="#FFEB3B"
+        android:textSize="25dp"/>
 </LinearLayout>
