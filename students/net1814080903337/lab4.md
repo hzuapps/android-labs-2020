@@ -13,7 +13,7 @@
 
  # 三、实验步骤
  1.在主页面设计3个按钮，分别通往添加、查询、已过期三个页面：
- 
+ ```
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -46,9 +46,9 @@
         android:text="@string/overdue"
         app:layout_constraintStart_toStartOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
-
+```
  2.在添加页面设置了输入的文本框以及提交按钮：
-
+```
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
@@ -128,9 +128,9 @@
         app:layout_constraintStart_toEndOf="@+id/editText4"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         android:importantForAutofill="no"/>
-
+```
 3.在搜索页面设置了文本框以及查询按钮，输入物品名称可查询详细信息：
-
+```
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
         android:layout_width="0dp"
@@ -161,7 +161,7 @@
         android:text="@string/seek"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
-
+```
  # 四、实验结果
  
 ![主页面](https://github.com/fairy-lee/android-labs-2020/blob/master/students/net1814080903337/picture/2.png)
