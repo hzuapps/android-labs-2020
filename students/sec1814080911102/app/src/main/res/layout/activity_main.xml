@@ -1,48 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Sec1814080911102Activity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Sec1814080911102Activity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_homepage"
+        android:layout_width="278dp"
+        android:layout_height="117dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        app:srcCompat="@drawable/homepage_clock"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_list"
         android:layout_width="170dp"
         android:layout_height="90dp"
-        android:layout_marginBottom="317dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
         android:text="待办事项"
         android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_clock"
         android:layout_width="170dp"
         android:layout_height="90dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
         android:text="专注计时"
         android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="@+id/button_list"
-        app:layout_constraintTop_toBottomOf="@+id/button_list"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="67dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_list"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homepage_clock"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
