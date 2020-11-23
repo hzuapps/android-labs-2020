@@ -1,10 +1,12 @@
-# 一、实验目标
+# 实验4
+
+## 一、实验目标
 
 1. 根据选题要求设计界面布局及控件使用；
 2. 布局xml及界面控制操作代码提交并截图；
 3. 将应用运行结果截图。
 
-# 二、实验内容
+## 二、实验内容
 
 1. 使用一种布局方式设计界面；
 2. 通过控件ID获取界面对象，执行相关操作：
@@ -19,7 +21,7 @@ findViewById(R.id.my_button);
 1. 实现界面控件的事件处理;
 2. 操作之后，切换到第二个界面。
 
-# 三、实验步骤
+## 三、实验步骤
 
 1. 根据自己项目设置了Linearlayout。
 
@@ -230,12 +232,12 @@ findViewById(R.id.my_button);
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
  ``` 
-# 四、实验结果
+## 四、实验结果
 
 ！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan401.jpg）  
 ！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan401.jpg）  
 ！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan401.jpg）
 
-# 五、实验心得
+## 五、实验心得
 
 在布局方面根据自身的需要设计选择了Linearlayout布局，同时根据自己的选题猜拳游戏在布局中创建了较多的组件，并且添加了较多的图片显得更美观。
