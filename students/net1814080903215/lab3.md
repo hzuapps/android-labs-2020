@@ -1,4 +1,4 @@
-# 一、实验报告
+# 一、实验目的
 
 1. 了解Android应用中各种资源的概念与使用方法
 2. 掌握在Android应用中使用图片等资源的方法
@@ -35,7 +35,7 @@
 
 # 四、实验结果
 
-![实验截图]()
+ ![实验截图](https://raw.githubusercontent.com/Deng-dong555/android-labs-2020/master/students/net1814080903215/lab3_pic.jpg)
 
 # 五、实验心得
 

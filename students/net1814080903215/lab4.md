@@ -1,4 +1,4 @@
-# 一、实验报告
+# 一、实验目的
 
 1. 根据选题要求设计界面布局及控件使用
 2. 布局xml及界面控制操作代码提交并截图
@@ -71,9 +71,9 @@
 
 
 
-![实验截图]()
+![实验截图](https://raw.githubusercontent.com/Deng-dong555/android-labs-2020/master/students/net1814080903215/lab4_pic_1.jpg)
 
-![实验截图]()
+![实验截图](https://raw.githubusercontent.com/Deng-dong555/android-labs-2020/master/students/net1814080903215/lab4_pic_2.jpg)
 
 # 五、实验心得
 
