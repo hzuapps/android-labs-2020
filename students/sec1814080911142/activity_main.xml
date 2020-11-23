@@ -16,18 +16,16 @@
         tools:layout_editor_absoluteY="65dp"
         tools:ignore="MissingConstraints" />
 
+
+
     <Button
         android:id="@+id/button2"
-        android:layout_width="83dp"
+        android:layout_width="99dp"
         android:layout_height="63dp"
         android:text="付款成功"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="167dp"
-        tools:ignore="MissingConstraints" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/myimage" />
+        tools:layout_editor_absoluteY="167dp" />
 
 
 </LinearLayout>
