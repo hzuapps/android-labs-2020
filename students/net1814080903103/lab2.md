@@ -12,6 +12,7 @@
 1. 创建Net1814080903103Activity、ClockActivity、ReckonActivity和相应的XML文件；
 2. 添加按钮；
 3. 在Net1814080903103Activity.java添加按钮点击事件处理，实现跳转到其他Activity
+```java
  protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -35,7 +36,7 @@
                 thisActivity.startActivity(intent);
             }
         });
-
+```
 ## 四、实验结果
 ![按钮](https://github.com/1814080903103/android-labs-2020/blob/master/students/net1814080903103/lab2.png)
 ![跳转界面1](https://github.com/1814080903103/android-labs-2020/blob/master/students/net1814080903103/lab3.png)
