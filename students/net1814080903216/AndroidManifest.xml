@@ -9,12 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"></activity>
+        <activity android:name=".LeaveMassage"></activity>
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".NetAboutActivity" />
-        <activity android:name=".Net1814080903216ViewActivity" />
-        <activity android:name=".Net1814080903216MainActivity">
+        <activity android:name=".ViewActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
