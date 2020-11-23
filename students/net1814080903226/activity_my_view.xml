@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:my="http://schemas.android.com/apk/res-auto"
@@ -46,63 +46,157 @@
                 android:background="@color/white" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User:"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_toLeftOf="@+id/user_name"/>
+            <EditText
                 android:id="@+id/user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@id/user_line"
-                android:text="User:Chanlex"
+                android:text="Chanlex"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                android:background="@null"/>
 
             <TextView
-                android:id="@+id/user_val"
+                android:id="@+id/qq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@id/user_line"
-                android:text="QQ:766698547"
+                android:text="QQ:"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/user_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/qq"
+                android:text="766698547"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:background="@null"/>
         </RelativeLayout>
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/userid"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="userid:1"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:background="@drawable/rectangle_border"/>
-        <TextView
-            android:id="@+id/sex"
+            android:orientation="horizontal"
+            android:background="@drawable/rectangle_border"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="userid:"
+                android:textSize="20sp"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="sex:male"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:background="@drawable/rectangle_border"/>
-        <TextView
-            android:id="@+id/address"
+            android:orientation="horizontal"
+            android:background="@drawable/rectangle_border"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/sex1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="sex:"
+                android:textSize="20sp"
+                android:gravity="right" />
+            <EditText
+                android:id="@+id/sex"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="male"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:background="@null"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="address:HZU"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:background="@drawable/rectangle_border"/>
-        <TextView
-            android:id="@+id/sign"
+            android:orientation="horizontal"
+            android:background="@drawable/rectangle_border"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="address:"
+                android:textSize="20sp"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="HZU"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:background="@null"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:text="personalized signature:Old friends and old wines are best."
+            android:layout_height="50dp"
+            android:orientation="horizontal"
             android:gravity="center"
-            android:textSize="20sp"
-            android:background="@drawable/rectangle_border"/>
+            android:background="@drawable/rectangle_border">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="phone:"
+                android:textSize="20sp"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="13417784870"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:background="@null"/>
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/edituser"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/addborder"
+                android:textColor="@drawable/buttonstatus"
+                android:text="修改个人信息"
+                android:textSize="22sp">
+            </Button>
+
             <Button
                 android:id="@+id/returnmainview"
                 android:layout_width="150dp"
