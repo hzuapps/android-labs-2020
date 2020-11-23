@@ -27,7 +27,7 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="联系我们"
+        android:text="给作者留言"
         />
 
 
@@ -41,9 +41,6 @@
             android:layout_gravity="right"
             android:layout_weight="1"
             android:text="返回上一级"/>
-
-
-
 
     </LinearLayout>
 
