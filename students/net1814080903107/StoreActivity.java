@@ -11,18 +11,27 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.net.Inet4Address;
 
 public class StoreActivity extends AppCompatActivity {
     boolean flag=false;
     ListView listView;
+    String storeName;
     @Override
+    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
 
+        Intent i=getIntent();
         listView=findViewById(R.id.chooseList);
+        //set store name
+        TextView textView=findViewById(R.id.storeName);
+        textView.setText(i.getStringExtra("title"));
+        storeName=i.getStringExtra("id");
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @SuppressLint("WrongConstant")
             @Override
@@ -39,6 +48,7 @@ public class StoreActivity extends AppCompatActivity {
                         v=findViewById(R.id.snackView);
                         break;
                 }
+                //置顶
                 v.bringToFront();
             }
         });
