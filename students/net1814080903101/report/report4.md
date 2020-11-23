@@ -22,7 +22,9 @@
 
 ## 三、实验步骤
 
-​	1.开始游戏界面
+​	1.设计开始游戏界面
+
+​		开始游戏界面内容较少，使用了LinearLayout流式布局，并添加了背景图片，三个子控件按从上而下布局，使用android:layout_marginLeft控制子控件与屏幕左侧的距离，用android:layout_marginTop控制三个控件之间的距离，用android:background="@android:color/tansparent"将其透明化后,android:src添加素材图片实现个性化按钮设置。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -63,7 +65,9 @@
 </LinearLayout>
 ```
 
-​	2.农场界面
+​	2.设计农场界面
+
+​		农场界面结构较为复杂，使用了RelativeLayout相对布局，若干个大小相同的ImageButton块通过android:id进行标识，通过android:layout_below和android:layout_toRightOf将所有控件的位置与其他控件联系起来，凑成相对布局整体。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -208,7 +212,9 @@
 </RelativeLayout>
 ```
 
-​	3.商店仓库界面
+​	3.设计商店仓库界面
+
+​		商店仓库界面同样使用了RelativeLayout相对布局，为保证上半部分的商店与下半部分的仓库设计上相同，在该界面的相对布局中嵌套了两个小的，且完全相同的相对布局，各自作为整体进行相互参照。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
