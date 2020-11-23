@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:descendantFocusability="beforeDescendants"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sec1814080911243Activity">
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/first_Button"
+            android:id="@+id/pets_Button"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/second_Button"
+            android:id="@+id/find_Button"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/three_Button"
+            android:id="@+id/pet_circle_Button"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/four_Button"
+            android:id="@+id/my_Button"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
