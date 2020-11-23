@@ -53,4 +53,4 @@ public class Net1814080903223Activity extends AppCompatActivity {
 ！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan202.jpg）  
 ！[实验结果]（https://github.com/wenzequan/android-labs-2020/blob/master/students/net1814080903223/shiyan203.jpg）  
 ## 五、实验心得
-在这次实验中我学会了使用按钮来进行界面跳转的操作，不过在过程中也遇到或按钮无反应等问题，在查找相关的资料后以及询问同学后发现有些大小写混淆了，在改正之后就顺利运行了。
+在这次实验中我学会了使用按钮来进行界面跳转的操作，不过在过程中也遇到按钮无反应等问题，在查找相关的资料后以及询问同学后发现有些大小写混淆了，在改正之后就顺利运行了。
