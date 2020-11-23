@@ -1,23 +1,15 @@
 # 一、实验目标 #
-
 1. 了解Andoid的存储手段
 2. 掌握Android的文件存储
 3. 掌握Android的数据库存储
-
 # 二、实验内容 #
-
 1. 将应用产生的数据保存到文件存储中；
 2. 说明使用的文件存储方式：内部 or 外部；
 3. 将运行结果截图
-
 # 三、实验步骤 #
-
 1. 创建一个空activity文件，名字为activity_stock_test.xml
-
 2. 在activity设置布局为LinearLayout，设置4个组件，分别是输入框、存储按钮、读出按钮、显示区
-
 3. 为两个按钮根据不同ID分别绑定两个点击事件，用于存取和读出
-
    ```java
    @Override
        public void onClick(View v) {
@@ -67,9 +59,7 @@
            }
        }
    ```
-
 # 四、实验结果 #
-
 ![result](https://raw.githubusercontent.com/ZYL618/android-labs-2020/master/students/net1814080903225/lab_5/result.png)
 
 # 五、实验心得 #
