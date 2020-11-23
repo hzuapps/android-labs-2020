@@ -8,10 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class ImformationActivity extends AppCompatActivity {
     private static final String ID = "id";
@@ -22,17 +18,8 @@ public class ImformationActivity extends AppCompatActivity {
     private static final String CLASSNAME= "className";
     private static final String GRADE= "grade";
 
-  /*  EditText idText;
-    EditText nameText;
-    EditText schoolText;
-    EditText majorText;
-    EditText collegeText;
-    EditText classText;
-    EditText gradeText;*/
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imformation);
     }
@@ -112,29 +99,3 @@ public class ImformationActivity extends AppCompatActivity {
 
     }
 }
-
-/*  List<EditText> editTexts=new ArrayList<EditText>();
-       editTexts.put("ID",(EditText)findViewById(R.id.ID));
-        editTexts.put("Name",(EditText)findViewById(R.id.Name));
-        editTexts.put("School",(EditText)findViewById(R.id.School));
-        editTexts.put("Major",(EditText)findViewById(R.id.Major));
-        editTexts.put("CollegeName",(EditText)findViewById(R.id.CollegeName));
-        editTexts.put("ClassName",(EditText)findViewById(R.id.ClassName));
-        editTexts.put("Grade",(EditText)findViewById(R.id.Grade));
-
-        editTexts.add((EditText)findViewById(R.id.ID));
-        editTexts.add((EditText)findViewById(R.id.Name));
-        editTexts.add((EditText)findViewById(R.id.School));
-        editTexts.add((EditText)findViewById(R.id.Major));
-        editTexts.add((EditText)findViewById(R.id.CollegeName));
-        editTexts.add((EditText)findViewById(R.id.ClassName));
-        editTexts.add((EditText)findViewById(R.id.Grade));
-
-
-        EditText idText=findViewById(R.id.ID);
-        EditText nameText=findViewById(R.id.Name);
-        EditText schoolText=findViewById(R.id.School);
-        EditText majorText=findViewById(R.id.Major);
-        EditText collegeText=findViewById(R.id.CollegeName);
-        EditText classText=findViewById(R.id.ClassName);
-        EditText gradeText=findViewById(R.id.Grade);*/
