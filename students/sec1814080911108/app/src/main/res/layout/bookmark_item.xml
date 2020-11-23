@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:context=".bookmarks.Bookmark">
+
+    <ImageView
+        android:layout_marginTop="12sp"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_marginStart="10sp"
+        android:id="@+id/bookmark_icon"
+        />
+    <TextView
+        android:paddingTop="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:id="@+id/bookmark_title"
+        android:layout_marginStart="10dp"
+
+        android:singleLine="true"
+        android:maxEms="20"
+        android:ellipsize="end"
+        />
+</LinearLayout>
