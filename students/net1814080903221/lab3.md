@@ -21,7 +21,7 @@ android:background="@drawable/image"
 ```
 
 # 四、实验结果
-
+![实验截图](https://raw.githubusercontent.com/TiAmo825/android-labs-2020/master/students/net1814080903221/lab3.jpg)
 
 # 五、实验心得
 这次试验较为简单，将图片复制到res/drawable文件夹是关键的一步。

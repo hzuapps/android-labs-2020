@@ -20,7 +20,7 @@
 6. 用git bash提交相应文件
 
 # 四、实验结果
-
+![实验截图](https://raw.githubusercontent.com/TiAmo825/android-labs-2020/master/students/net1814080903221/lab1.jpg)
 
 # 五、实验心得
-熟悉了怎么复制项目到自己的文件夹并用git提交到github上
+熟悉了怎么复制项目到自己的文件夹并用git提交到github上。

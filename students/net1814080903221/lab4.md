@@ -13,11 +13,21 @@
 
 # 三、实验步骤
 
-1. 创建线性布局。
-2. 在线性布局里更改按钮位置。
+1. 在CountDown和WatchStop的xml文件里创建线性布局。
+```
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Net1814080903221CountDownActivity">
+ ```
+2. 放置图片以及实施功能。
+2. 对按钮添加控件。
 
 # 四、实验结果
-
+![实验截图](https://raw.githubusercontent.com/TiAmo825/android-labs-2020/master/students/net1814080903221/lab4.jpg)
 
 # 五、实验心得
-对自己的首页进行布局，使用了线性布局让界面更完整简洁。
+对自己的首页进行布局，学习了线性布局方式，还只会基础的布局，界面也依然不够简洁，需多学习其他布局改善界面。

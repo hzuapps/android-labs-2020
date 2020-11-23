@@ -26,7 +26,7 @@
    ```
 
 # 四、实验结果
-
+![实验截图](https://raw.githubusercontent.com/TiAmo825/android-labs-2020/master/students/net1814080903221/lab2.jpg)
 
 # 五、实验心得
 学会了如何在xml文件里添加button，并添加点击事件从而实现页面跳转。
