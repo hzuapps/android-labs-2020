@@ -20,7 +20,9 @@
 
 ## 四、实验结果
 
-![实验一](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/实验报告图片/lab1result.PNG)
+![实验一](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/lab1result.PNG)
+
+
 
 
 

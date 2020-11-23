@@ -109,13 +109,13 @@ android:src="@drawable/clock"
 
 ## 四、实验结果
 
-![1](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/实验报告图片/lab4_1.PNG)![3](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/实验报告图片/lab4_2.PNG)
+![1](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/lab4_1.PNG)![3](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/lab4_2.PNG)
 
-![3](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/实验报告图片/lab4_3.PNG)![4](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/实验报告图片/lab4_4.PNG)
+![3](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/lab4_3.PNG)![4](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/lab4_4.PNG)
 
 
 
-![5](![3](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/实验报告图片/\lab3.PNG)
+![5](![3](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/lab3.PNG)
 
 ## 五、实验心得体会
 
