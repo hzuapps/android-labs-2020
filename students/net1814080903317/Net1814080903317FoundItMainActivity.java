@@ -3,12 +3,9 @@ package com.example.foundit.controller.activity.foundIt;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,7 +14,13 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.example.foundit.R;
 import com.example.foundit.controller.adapter.FoundItMainAdapter;
 import com.example.foundit.model.bean.FoundIt;
+import com.example.foundit.model.bean.Info;
+import com.example.foundit.model.dao.InfoDao;
+import com.example.foundit.utils.LogUtils;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +35,8 @@ public class Net1814080903317FoundItMainActivity extends Activity {
     private ImageView backIv;
     private SwipeRefreshLayout refreshLayout;
     private RecyclerView recyclerView;
-
+    private Context context=Net1814080903317FoundItMainActivity.this;
+    private InfoDao infoDao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,19 +48,19 @@ public class Net1814080903317FoundItMainActivity extends Activity {
     }
 
     private void initData() {
+        infoDao=new InfoDao(context);
         LinearLayoutManager layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        List<FoundIt> foundItList=getFoundItList();
-        FoundItMainAdapter foundItMainAdapter=new FoundItMainAdapter(foundItList,Net1814080903317FoundItMainActivity.this);
+        List<Info> infoList=infoDao.dbSelectAllInfos();
+        FoundItMainAdapter foundItMainAdapter=new FoundItMainAdapter(infoList,Net1814080903317FoundItMainActivity.this);
         recyclerView.setAdapter(foundItMainAdapter);
-
-
     }
 
     /**
      * 用于模拟RecyclerView复用效果
      * @return
      */
+
     private List<FoundIt> getFoundItList() {
         List<FoundIt> foundItList=new ArrayList<>();
         for (int i=1000;i<=1005;i++){
