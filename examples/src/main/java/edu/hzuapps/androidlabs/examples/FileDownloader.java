@@ -30,6 +30,10 @@ public class FileDownloader {
     private Set<String> mUrlsInProgress = new HashSet<>();
     private OnImageDownloadListener mImageDownloadListener;
 
+    public FileDownloader(@NonNull OnImageDownloadListener listener) {
+        mImageDownloadListener = listener;
+    }
+    
     /**
      * 自定义监听器,供外部处理.
      */
