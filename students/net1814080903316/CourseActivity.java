@@ -99,5 +99,5 @@ public class CourseActivity extends AppCompatActivity {
             texts[i]=editTexts[i].getText().toString();
         }
         return texts;
-    }/**/
+    }
 }

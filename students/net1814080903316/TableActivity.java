@@ -1,8 +1,6 @@
 package edu.hzuapps.androidlabs;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 
 public class TableActivity extends AppCompatActivity {
