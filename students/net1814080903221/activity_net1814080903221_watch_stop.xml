@@ -4,19 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="15dp"
     android:orientation="vertical"
     tools:context=".Net1814080903221WatchStopActivity">
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="秒表计时"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/chronometer"
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="计时开始"
-        android:layout_marginLeft="65dp"/>
+        android:text="开始"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/startBtn"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:text="计时停止" />
+        android:text="暂停"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:id="@+id/pauseBtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记录"
+        android:textSize="30dp"
+        android:id="@+id/recordBtn"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        android:textSize="30dp"
+        android:id="@+id/resetBtn"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text=""/>
 
 </LinearLayout>
