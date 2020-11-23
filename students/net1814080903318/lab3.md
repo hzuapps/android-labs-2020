@@ -15,6 +15,15 @@
 2. 在主界面上添加ImageView组件，通过ImageView组件实现在主界面上展示图片;
 3. 在主界面的xml文件上对ImageView组件进行配置；
 4. 设计方法实现界面的跳转，然后在按钮上应用该方法。
+```java
+ <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="262dp"
+            android:layout_height="216dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="200dp"
+            app:srcCompat="@drawable/logo" />
+```
 
 ## 4.实验结果
 ![项目图片](https://raw.githubusercontent.com/xiaocheng123785/android-labs-2020/master/students/net1814080903318/2.jpg)
