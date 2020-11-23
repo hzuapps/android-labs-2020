@@ -68,11 +68,9 @@
        }
    ```
 
-4. 测试程序结果
-
 # 四、实验结果 #
 
-![程序界面1](https://raw.githubusercontent.com/ZYL618/android-labs-2020/master/students/net1814080903225/lab_5/result.png)
+![result](https://raw.githubusercontent.com/ZYL618/android-labs-2020/master/students/net1814080903225/lab_5/result.png)
 
 # 五、实验心得 #
 
