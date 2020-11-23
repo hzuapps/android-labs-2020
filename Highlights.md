@@ -66,3 +66,19 @@
 - ContentProviderOfBooks.java （定义 ContentProvider）
 - activity_content_provider.xml （表单界面）
 - AndroidManifest.xml (\<Provider\>)
+
+## 实验六：Android网络
+
+1. 设置使用网络的权限：INTERNET
+
+2. 基本的网络连接类：HttpURLConnection 
+
+- openConnection()
+- connection()
+- disconnect() 
+
+3. 网络连接必须在独立线程里操作
+
+- new Thread()
+- runOnUiThread(): 更新界面
+
