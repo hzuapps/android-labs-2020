@@ -15,7 +15,7 @@
 
  1. 找到相应的图片，修改为png格式，放在drawable目录下。
  2. 在相应的xml下添加代码
-
+```
     android:background="@drawable/sbg"
  
     android:background="@drawable/rbg"
@@ -23,7 +23,7 @@
     android:background="@drawable/obg"
     
     android:background="@drawable/bg"
-
+```
  # 四、实验结果
 
 ![主页面](https://github.com/fairy-lee/android-labs-2020/blob/master/students/net1814080903337/picture/2.png)
