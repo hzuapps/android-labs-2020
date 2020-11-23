@@ -24,7 +24,7 @@
 
  ## 四、实验结果
 
- ![result](./image/1.png)
+ ![result](D:\android-labs-2020\students\net1814080903112\1.png)
 
  ## 五、实验心得
 

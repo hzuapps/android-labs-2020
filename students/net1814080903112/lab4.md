@@ -44,7 +44,7 @@
             }
         }	    }
     } 	} 
-
+    
     <?xml version="1.0" encoding="utf-8"?>
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".GameActivity">
-
+    
          <Button
             android:id="@+id/restart"
             android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.976" />
-
+    
      </androidx.constraintlayout.widget.ConstraintLayout> 
 
  2. <?xml version="1.0" encoding="utf-8"?>
@@ -153,7 +153,7 @@
 
  ## 四、实验结果
 
- ![home](D:\android-labs-2020\students\image\4.png)
+ ![home](D:\android-labs-2020\students\net1814080903112\4.png)
 
 
 五、实验心得

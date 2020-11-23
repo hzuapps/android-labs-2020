@@ -77,7 +77,7 @@ public class RankActivity extends AppCompatActivity {
 
  ## 四、实验结果
 
- ![result](D:\android-labs-2020\students\image\2.png)
+ ![result](D:\android-labs-2020\students\net1814080903112\2.png)
 
  ## 五、实验心得
 
