@@ -14,19 +14,50 @@
         android:layout_height="wrap_content"
         android:src="@drawable/hzu_library1"/>
 
-
-    <!-- book1 内网安全攻防 -->
     <ImageView
-        android:id="@+id/imageview_lan_sec_awd"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/lan_sec_awd"/>
+        android:id="@+id/boot_show"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:layout_marginLeft="5dp"/>
 
-    <!-- book2 web安全攻防 -->
-    <ImageView
-        android:id="@+id/imageview_web_sec_awd"
+    <TextView
+        android:id="@+id/book_text"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/web_sec_awd"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="100dp"
+        android:layout_weight="3"
+
+        android:text="上一本"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_func"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="100dp"
+        android:layout_weight="3"
+        android:text="借阅"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_weight="3"
+
+        android:text="下一本"
+        tools:ignore="MissingConstraints" />
 
 </LinearLayout>

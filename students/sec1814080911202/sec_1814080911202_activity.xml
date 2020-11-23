@@ -19,21 +19,24 @@
         android:id="@+id/imageview_hzu_library2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/hzu_library2"
-        android:text="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t惠州学院-叶竹君图书馆" />
+        android:drawableTop="@drawable/hzu_library2" />
 
-
-    <!-- 管理图书按钮 -->
-    <Button
-        android:id="@+id/button_manage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="管理图书" />
 
     <!-- 借阅图书按钮 -->
     <Button
         android:id="@+id/button_borrow"
-        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="借阅图书" />
+        android:text="@string/borrow" />
+
+    <!-- 管理图书按钮 -->
+    <Button
+        android:id="@+id/button_manage"
+        android:layout_gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/manage" />
+
+
 </LinearLayout>
