@@ -5,59 +5,154 @@
     android:layout_height="match_parent"
     tools:context=".CountActivity">
 
+
     <RelativeLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:gravity="center_vertical"
         android:background="@color/text_blue">
+
         <RelativeLayout
-            android:id="@+id/back_layout"
-            android:layout_centerVertical="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/back_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingRight="10dp"
-                android:layout_marginLeft="15dp"/>
-            <TextView
-                android:id="@+id/mine_frag_tv"
-                android:text="明细"
-                android:textSize="13sp"
-                android:textColor="@color/white"
-                android:layout_marginLeft="5dp"
-                android:paddingTop="10dp"
-                android:visibility="gone"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:layout_toRightOf="@+id/back_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-        <RelativeLayout
+            android:id="@+id/layout_title"
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/tb_note_outcome"
-                android:text="支出"
+                android:text="账本录入"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:background="@color/red"
-                android:textColor="@color/text_blue" />
-            <TextView
-                android:id="@+id/tb_note_income"
-                android:text="收入"
-                android:layout_toRightOf="@+id/tb_note_outcome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:background="@color/red"
-                android:textColor="@color/text_blue" />
+                android:textSize="25sp"
+                android:background="@color/text_blue"
+                android:textColor="@color/black" />
         </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/goto_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/tool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layout_time"
+            android:layout_below="@+id/tool"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:text="添加时间："
+                    android:textColor="#000000"
+                    android:maxLength="11"
+                    android:textSize="28sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/total_time"
+                    android:text=""
+                    android:textColor="#02767A"
+                    android:maxLength="11"
+                    android:textSize="28sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/layout_time"
+            android:id="@+id/layout_leibie"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="消费类别："
+                android:textColor="#000000"
+                android:maxLength="11"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/total_leibie"
+                android:text=""
+                android:textColor="#02767A"
+                android:maxLength="11"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_money"
+            android:layout_below="@+id/layout_leibie"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="消费现金："
+                android:textColor="#000000"
+                android:maxLength="11"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/total_money"
+                android:text=""
+                android:textColor="#02767A"
+                android:maxLength="11"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_note"
+            android:layout_below="@+id/layout_money"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="备注信息："
+                android:textColor="#000000"
+                android:maxLength="11"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/total_note"
+                android:hint="请输入备注信息"
+                android:textColor="#02767A"
+                android:maxLines="1"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -65,22 +160,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="17dp">
+
         <TextView
             android:id="@+id/tb_note_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tb_note_clear"
+            android:maxLength="11"
             android:text="0.00"
             android:textColor="#000000"
-            android:maxLength="11"
-            android:layout_toLeftOf="@+id/tb_note_clear"
-            android:textSize="28sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textSize="28sp" />
         <ImageView
             android:id="@+id/tb_note_clear"
             android:layout_alignParentRight="true"
             android:paddingRight="15dp"
             android:paddingLeft="10dp"
             android:layout_centerVertical="true"
-            android:layout_width="wrap_content"
+            android:src="@drawable/ic_tb_note_delete"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"/>
     </RelativeLayout>
 
@@ -120,7 +217,23 @@
             android:paddingBottom="7dp"
             android:layout_marginTop="7dp"
             android:textColor="@color/white"
-            android:text="2020.11.3"
+            android:text="时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="类别"
+            android:id="@+id/click_leibie"
+            android:background="@color/text_blue"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <RelativeLayout
@@ -198,6 +311,11 @@
                 android:background="@color/white"
                 android:textColor="#000000" />
         </LinearLayout>
+
+        <View
+            style="@style/vertical_decoration_style"
+            android:background="#8c8c8c"
+            />
 
         <LinearLayout
             android:orientation="vertical"
@@ -321,23 +439,32 @@
             </LinearLayout>
         </LinearLayout>
 
+        <View
+            style="@style/vertical_decoration_style"
+            android:background="#8c8c8c"
+            />
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent">
             <RelativeLayout
-                android:id="@+id/tb_calc_num_del"
+
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
                 <ImageView
+                    android:id="@+id/tb_calc_num_del"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:src="@drawable/ic_tb_calc_del"
                     />
             </RelativeLayout>
+            <View
+                style="@style/horizontal_decoration_style"
+                android:background="#8c8c8c"/>
             <TextView
                 android:id="@+id/tb_calc_num_done"
                 android:text="确定"
