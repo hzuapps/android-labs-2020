@@ -21,8 +21,7 @@
         android:id="@+id/chronometer"
         android:layout_marginBottom="10dp"/>
 ```
-2.设置四个按钮实现计时开始、暂停、记录、停止功能
-3.设置TextView文本框放置记录数据
+2.设置四个按钮实现计时开始、暂停、记录、停止功能3.设置TextView文本框放置记录数据
 
 ## 四、实验结果
 ![实验截图](https://github.com/TiAmo825/android-labs-2020/blob/master/students/net1814080903221/lab5.jpg)
