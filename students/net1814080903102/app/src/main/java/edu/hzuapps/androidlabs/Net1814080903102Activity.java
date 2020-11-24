@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 public class Net1814080903102Activity extends AppCompatActivity {
 
+    ClassArray classArray;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +30,6 @@ public class Net1814080903102Activity extends AppCompatActivity {
             public void onClick(View v){//打开
                 Intent intent = new Intent(thisActivity, AddClassActivity.class);
                 thisActivity.startActivity(intent);
-                //thisActivity.startActivityForResult();
             }
         });
 
@@ -71,24 +72,14 @@ public class Net1814080903102Activity extends AppCompatActivity {
         return null;
     }
 
-    private ClassArray create(){
-        ClassArray classArray = new ClassArray();
-        for(int day=0;day<7;day++){
-            for(int section=0;section<11;section++){
-                classArray.add(day,section,"周一");
-            }
-        }
-        return classArray;
-    }
-
     private void initCourseTable(){
-        ClassArray classArray = create();
+        classArray = new ClassArray(JsonIO.get("course.json"));
         LinearLayout linearLayout = (LinearLayout)findViewById(R.id.classContent);
-        for(int i=0;i<classArray.getMaxSection();i++){
+        for(int i=1;i<=classArray.getMaxSection();i++){
             LinearLayout layout = new LinearLayout(this);
             layout.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 200));
             TextView blank = new TextView(this);
-            blank.setText(String.valueOf(1+i));
+            blank.setText(String.valueOf(i));
             blank.setGravity(Gravity.CENTER_VERTICAL);
             blank.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT,0.25f));
             layout.addView(blank);
@@ -97,7 +88,10 @@ public class Net1814080903102Activity extends AppCompatActivity {
                 textView.setText(classArray.getCourseName(j,i));
                 textView.setGravity(1);
                 textView.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT,1));
-                textView.setBackgroundResource(R.drawable.courseshape);
+                if(classArray.getCourseName(j,i)==null){
+                    textView.setBackgroundColor(1);
+                }
+                else {textView.setBackgroundResource(R.drawable.courseshape);}
                 textView.setGravity(Gravity.CENTER_VERTICAL);
                 layout.addView(textView);
             }
