@@ -67,6 +67,24 @@ public class RecommendActivity extends AppCompatActivity {
         }
     }
  ```
+ ```
+public class ProductionActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_production);
+    }
+}
+ ```
+ ```
+ public class CareActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_care);
+    }
+}
+ ```
 # 四、实验结果   
 
 # 五、实验心得体会   
