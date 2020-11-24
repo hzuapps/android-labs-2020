@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +9,6 @@
     tools:context=".Sec1814080911239MainActivity"
     android:background="@drawable/main_background"
     >
-
     <Button
         android:id="@+id/button1"
         android:layout_width="300dp"
@@ -49,5 +49,4 @@
         android:textColor="@color/colortext"
         android:textStyle="bold"
         android:visibility="visible" />
-
-</LinearLayout>
+    </LinearLayout>
