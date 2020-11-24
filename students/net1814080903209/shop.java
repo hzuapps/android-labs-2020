@@ -1,6 +1,6 @@
 package edu.hzuapps.androidlabs.entity;
 
-public class shop {
+public class Shop {
     private Integer id;
     private String type;
     private Integer money;
@@ -8,7 +8,7 @@ public class shop {
     private String Note;
 
 
-    public shop(Integer id, String type, String time,Integer money, String note) {
+    public Shop(Integer id, String type, String time, Integer money, String note) {
         this.id = id;
         this.type = type;
         this.money = money;
