@@ -58,7 +58,31 @@
 
 5.1 文件存储  
 
+- 内部存储：  
+```  
+context.getFilesDir()
+```  
+- File类的用法：  
+```
+new File(PATH, NAME)
+```  
+- 字节流：InputStream，OutputStream等  
+```
+context.openFileInput() 
+context.openFileOutput()  
+```
+- 字符流：BufferedReader，BufferedWriter等  
+```   
+reader.readLine()  
+writer.write(STRING)  
+```  
+
 5.2 首选项存储  
+
+```  
+SharedPreferences settings = context.getSharedPreferences()
+SharedPreferences.Editor editor = settings.edit();
+```  
 
 5.3 数据库（SQLite） 
 
@@ -80,5 +104,10 @@
 3. 网络连接必须在独立线程里操作
 
 - new Thread()
-- runOnUiThread(): 更新界面
+- runOnUiThread(): 更新界面  
+- AsyncTask
+
+
+## 实验七：Android设备
+
 
