@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditHomework">
+
+
+    <TextView
+        android:id="@+id/chinesetextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="68dp"
+        android:text="语文"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/chineseeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/chinesetextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mathtextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:text="数学"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chinesetextView" />
+
+    <EditText
+        android:id="@+id/matheditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/mathtextView"
+        app:layout_constraintTop_toBottomOf="@+id/chineseeditText" />
+
+    <TextView
+        android:id="@+id/englishtextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:text="英语"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mathtextView" />
+
+    <EditText
+        android:id="@+id/englisheditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/englishtextView"
+        app:layout_constraintTop_toBottomOf="@+id/matheditText" />
+
+    <TextView
+        android:id="@+id/biologytextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:text="生物"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/englishtextView" />
+
+    <EditText
+        android:id="@+id/biologyeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/biologytextView"
+        app:layout_constraintTop_toBottomOf="@+id/englisheditText" />
+
+    <TextView
+        android:id="@+id/geographytextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:text="地理"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biologytextView" />
+
+    <EditText
+        android:id="@+id/geographyeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/geographytextView"
+        app:layout_constraintTop_toBottomOf="@+id/biologyeditText" />
+
+    <TextView
+        android:id="@+id/politicstextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:text="政治"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geographytextView" />
+
+    <EditText
+        android:id="@+id/politicseditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/politicstextView"
+        app:layout_constraintTop_toBottomOf="@+id/geographyeditText" />
+
+
+    <Button
+        android:id="@+id/CourseChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="620dp"
+        android:onClick="change"
+        android:text="修改"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/courseRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="620dp"
+        android:onClick="restart"
+        android:text="刷新"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
