@@ -133,9 +133,12 @@
         app:layout_constraintVertical_bias="1.0" />
 ```
 
-四、实验结果  
-1.实现跳转
-<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab4_1.png" width =200px>
+四、实验结果    
+1.主页面     
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab4_1.png" width =200px><br/>
+2.详细界面  
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab4_2.png" width =200px><br/>
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab4_2.png" width =200px>
 
 
 
