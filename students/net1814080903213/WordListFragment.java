@@ -12,11 +12,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import static android.content.ContentValues.TAG;
 
@@ -26,8 +24,11 @@ import static android.content.ContentValues.TAG;
  * create an instance of this fragment.
  */
 public class WordListFragment extends Fragment {
-    // Fake Data
-    private final List<Word> wordList = new ArrayList<>();
+    // Listing Data
+    private List<Word> wordList = new ArrayList<>();
+
+    // 声明数据库对象
+    Database db;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -67,6 +68,8 @@ public class WordListFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        // 获取数据库对象
+        db = Database.getInstance(getActivity());
     }
 
     @Override
@@ -84,15 +87,9 @@ public class WordListFragment extends Fragment {
     }
 
     private void initWords() {
-        for (int i = 0; i < 5; i++) {
-//            Word word = new Word("天気", R.drawable.ic_search);
-//            wordList.add(word);
-            wordList.add(new Word("天気", R.drawable.ic_search));
-            wordList.add(new Word("いい", R.drawable.ic_search));
-            wordList.add(new Word("から", R.drawable.ic_search));
-            wordList.add(new Word("散歩", R.drawable.ic_search));
-            wordList.add(new Word("する", R.drawable.ic_search));
-        }
+        // 从数据库中获取 WordList 数据
+        wordList = db.wordDao().getWordList();
+
         Log.d(TAG, "initWords: " + wordList.get(0).getContent());
     }
 
