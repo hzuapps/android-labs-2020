@@ -17,10 +17,8 @@
 
 
 ## 四.实验结果
-能在activity_main.xml中显示图片
-
-
-
-
+能在activity_main.xml中显示图片  
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab3_1.png" width=200px>
 
 ## 五.实验心得
+本次实验实现在.xml 中添加图片，难度不大
