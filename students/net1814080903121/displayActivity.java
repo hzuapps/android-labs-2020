@@ -112,3 +112,4 @@ public class displayActivity extends ListActivity {
         helper.close();
     }
 }
+
