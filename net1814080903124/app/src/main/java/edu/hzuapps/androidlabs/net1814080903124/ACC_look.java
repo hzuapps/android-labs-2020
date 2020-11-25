@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class FileStorageActivity extends AppCompatActivity {
+public class ACC_look extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_file_storage);
+        setContentView(R.layout.activity_acc_look);
     }
 }
