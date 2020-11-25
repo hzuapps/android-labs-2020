@@ -13,6 +13,7 @@
 
 ## 三、实验步骤
 1. 将自己挑选的图片，放在放到项目的 drawable 文件夹下；
+2. 在activity_main.xml添加代码将图片放入 ;
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,8 +25,6 @@
     android:background="@drawable/bg"
     >
    ```
-2. 在activity_main.xml添加代码将图片放入 ;
-
 
 ## 四.实验结果
 能在activity_main.xml中显示图片  
