@@ -12,7 +12,8 @@ public class SetActivity extends AppCompatActivity {
     TextView displayRegion,displaySpeed;
     Button buttonRegion_L,buttonRegion_R;
     Button buttonSpeed_L,buttonSpeed_R;
-    int Rt=1,St=1;
+    static int Rt=1;
+    static int St=1;
 
     /*   public void iv_1(View view){
            displayRegion=(TextView)findViewById(R.id.textView5);
@@ -126,11 +127,9 @@ public class SetActivity extends AppCompatActivity {
 
 
         Button btn_back = (Button)findViewById(R.id.button3);
-        final SetActivity thisActivity = this;
         btn_back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(thisActivity,MainActivity.class);
-                thisActivity.startActivity(intent);
+                finish();
             }
         });
     }
