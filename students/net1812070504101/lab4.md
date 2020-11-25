@@ -137,7 +137,7 @@
 1.主页面     
 <img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab4_1.png" width =200px><br/>
 2.详细界面  
-<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab4_2.png" width =200px><br/>
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab4_2.png" width =200px>
 <img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab4_2.png" width =200px>
 
 
