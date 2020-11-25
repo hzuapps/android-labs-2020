@@ -12,7 +12,7 @@
 
 ## 三.实验步骤
 1.在Net1812070504101Activity中添加代码实现跳转  
-···
+```
         btn1=findViewById(R.id.btnStastic);
         btn2=findViewById(R.id.btnCheck);
 
@@ -30,9 +30,9 @@
                 startActivity(i);
             }
         });
-···
+```
 2.在activity_main.xml文件中添加组件(挑选部分)  
-···
+```
  <Button
         android:id="@+id/btnCheck"
         android:layout_width="wrap_content"
@@ -69,9 +69,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.851" />
-···
+```
 3.在activity_check.xml 文件中添加组件构建布局 (挑选部分)
-···
+```
 <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -109,9 +109,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.214" />
-···
+```
 
-···
+```
 在activity_statistic.xml文件中添加组件构建布局 (挑选部分)
 <TextView
         android:id="@+id/textView3"
@@ -131,7 +131,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-···
+```
 
 四、实验结果
 1.实现跳转
