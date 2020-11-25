@@ -42,3 +42,4 @@ public class display_detailsActivity extends ListActivity {
 
     }
 }
+
