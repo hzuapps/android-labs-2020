@@ -44,7 +44,7 @@ BufferedReader reader = new BufferedReader(new
 ```java
  String title = jsonObj.getString("title");
 ```
-7. 查询数据库中的数据并显示结果
+6. 查询数据库中的数据并显示结果
 
 # 四、实验结果
 
