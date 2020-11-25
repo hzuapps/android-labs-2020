@@ -57,7 +57,7 @@ public class displayActivity extends ListActivity {
 
                 final SQLiteCursor sqlitecursor= (SQLiteCursor) adapterView.getAdapter().getItem(i);
                 final long temp=l;
-                final String[] options = new String[] { "详细信息", "删除" ,"删除所有联系人","是否要送往监狱"};
+                final String[] options = new String[] { "详细信息", "删除" ,"删除所有联系人"};
                 builder.show();
                 builder.setItems(options, new DialogInterface.OnClickListener() {
                     @Override
