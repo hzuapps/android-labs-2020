@@ -12,6 +12,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,16 +32,46 @@ import java.util.Map;
 
 
 public class Net1814080903210Activity extends AppCompatActivity {
-    String[] news={
-            "5G流量和WiFi6的最全科普,以后你都离不开","市值2.13万亿,韩国最大集团三星,放在我国是什么水平"
-            ,"苹果又要出新品，这次的主角是?","JDG曝出LPL冬季转会第一天消息,没想到最先离开的是他","千金难买食谱大全!收藏好,别丢了!","DNF盘点游戏中一些特别搞笑的装备,你还记得吗?",
-    };
+//    String[] news={
+////            "5G流量和WiFi6的最全科普,以后你都离不开","市值2.13万亿,韩国最大集团三星,放在我国是什么水平"
+////            ,"苹果又要出新品，这次的主角是?","JDG曝出LPL冬季转会第一天消息,没想到最先离开的是他","千金难买食谱大全!收藏好,别丢了!","DNF盘点游戏中一些特别搞笑的装备,你还记得吗?",
+////    };
+    ArrayList<String>  titles=new ArrayList();
     int image=R.drawable.news;
     Net1814080903210Activity _this=this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                String jsonText = getGitHubIssues();
+                if (jsonText != null) {
+                    try {
+                        JSONArray jsonArr = new JSONArray(jsonText);
+                        for(int i=0;i<jsonArr.length();i++) {
+                            JSONObject jsonObj = (JSONObject) jsonArr.get(i);
+                            String title = jsonObj.getString("title");
+                            titles.add(title);
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+        thread.start();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         saveNews();
         ListView listView = findViewById(R.id.list_view);
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
@@ -59,13 +102,44 @@ public class Net1814080903210Activity extends AppCompatActivity {
         });
     }
     public void saveNews(){
-        for(int i=0;i<news.length;i++){
+        for(int i=0;i<titles.size();i++){
             ContentValues values=new ContentValues();
-            values.put(NewsProvider.INTRODUCTION,news[i]);
+            values.put(NewsProvider.INTRODUCTION,titles.get(i));
             values.put(NewsProvider.CONTENT,"暂无内容，后面补充");
             values.put(NewsProvider.IMAGE,image);
             Uri uri = getContentResolver() // 执行插入操作
                     .insert(NewsProvider.CONTENT_URI, values);
         }
+    }
+    private String getGitHubIssues() {
+        String gitApi = "https://raw.githubusercontent.com/Playerlhh/android-labs-2020/master/students/net1814080903210/titles";
+        URL url = null;
+        String jsonText = null;
+        try {
+            url = new URL(gitApi);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+            connection.setRequestProperty("Content-Type", "application/json");
+            connection.connect();
+            BufferedReader reader = new BufferedReader(new
+                    InputStreamReader(connection.getInputStream()));
+            String lines;
+            StringBuffer sb = new StringBuffer("");
+            while ((lines = reader.readLine()) != null) {
+                lines = URLDecoder.decode(lines, "utf-8");
+                sb.append(lines);
+            }
+            jsonText = sb.toString();
+            reader.close();
+            // 断开连接
+            connection.disconnect();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (ProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return jsonText;
     }
 }
