@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShownameActivity"></activity>
-        <activity android:name=".EditActivity" />
-        <activity android:name=".AddActivity" />
+        <activity android:name=".display_detailsActivity"></activity>
+        <activity android:name=".DatabaseActivity" />
+        <activity android:name=".displayActivity" />
         <activity android:name=".Net1814080903121Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,4 +22,3 @@
     </application>
 
 </manifest>
-
