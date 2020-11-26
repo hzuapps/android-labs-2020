@@ -17,12 +17,12 @@
             android:id="@+id/main_iv_add"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/icon_add"/>
+            android:src="@mipmap/icon_add"/>
         <ImageView
             android:id="@+id/main_iv_more"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/icon_more"
+            android:src="@mipmap/icon_more"
             android:layout_alignParentRight="true"/>
         <LinearLayout
             android:id="@+id/main_layout_point"
