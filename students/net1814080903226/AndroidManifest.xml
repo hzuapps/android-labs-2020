@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.hzuapps.androidlabs">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReceiveMessageActivity"></activity>
+        <activity android:name=".FileDownloadActivity"></activity>
+        <activity android:name=".HttpClientActivity" />
+        <activity android:name=".ReceiveMessageActivity" />
         <activity android:name=".MessageActivity" />
         <activity android:name=".MyViewActivity" />
         <activity android:name=".Net1814080903226Activity">
@@ -19,11 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <provider
-            android:authorities="edu.hzuapps.androidlabs.ContentProviderOfMyView"
-            android:name=".ContentProviderOfMyView"/>
-        
+            android:name=".ContentProviderOfMyView"
+            android:authorities="edu.hzuapps.androidlabs.ContentProviderOfMyView" />
     </application>
 
 </manifest>
