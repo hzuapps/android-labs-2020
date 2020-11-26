@@ -109,9 +109,6 @@
 
 ## 五、心得与体会
 本次实验目的是实现数据库的存储，关键点是将联系人的数据保存至数据库，参考了网上的数据库帮助类Dbhelper以方便实现数据库创建，数据的插入与删除查询等功能。
-
 本次实验的难点在于displayActivity中如何获取name资源以及name在displayActivity和display_detailsActivity间的传送。通过https://developer.android.google.cn/
-
 网站adapterview的学习发现视图可以通过adpterview.getAdapter.getItem(i) 可以获取listview 点击第i个item的数据以SQLiteCursor的形式返回，然后通过游标的学习可以
-
 知道SQLiteCursor.getString(columnidex:1)可以获取索引位置为1的数据name，然后利用intent.putExtra("name",name)，和intent.getStringExtra("name")完成name的传输。
