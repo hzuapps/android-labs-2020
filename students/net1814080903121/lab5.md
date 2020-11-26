@@ -24,41 +24,41 @@
 
 //DatabaseActivity
 
-ContentValues values = new ContentValues();
+	ContentValues values = new ContentValues();
 
-values.put("name", Name);
+	values.put("name", Name);
 
-values.put("telephone", Telephone);
+	values.put("telephone", Telephone);
 
-values.put("email", Email);
+	values.put("email", Email);
 
-DBHelper helper = new DBHelper(getApplicationContext());
+	DBHelper helper = new DBHelper(getApplicationContext());
 
-helper.insert(values);
+	helper.insert(values);
 
 3. displayactivity中引用数据库对象
 
 //simplecusoradapter
 
-调用数据库对象生成Dbhelper对象helper，helper.queryAll()实现数据库查询并返回一个cursor对象。
+	调用数据库对象生成Dbhelper对象helper，helper.queryAll()实现数据库查询并返回一个cursor对象。
 
-使用simplecusoradapter绑定listview视图。利用simplecusoradapter init方法游标数据映射至布局文件中。
+	使用simplecusoradapter绑定listview视图。利用simplecusoradapter init方法游标数据映射至布局文件中。
 
-SimpleCursorAdapter adapter=new SimpleCursorAdapter(this,R.layout.display,c,from,to);
+	SimpleCursorAdapter adapter=new SimpleCursorAdapter(this,R.layout.display,c,from,to);
 
-ListView listView=getListView();
+	ListView listView=getListView();
 
-listView.setAdapter(adapter);
+	listView.setAdapter(adapter);
 
 //builder （对话框）
 
-利用builder为每一个item设置点击事件
+	//利用builder为每一个item设置点击事件
 
-final String[] options = new String[] { "详细信息", "删除" ,"删除所有联系人"};
+	final String[] options = new String[] { "详细信息", "删除" ,"删除所有联系人"};
 
-builder.setItems(options, new DialogInterface.OnClickListener() {
+	builder.setItems(options, new DialogInterface.OnClickListener() {
 
-@Override
+	@Override
 
 	public void onClick(DialogInterface dialog , int which) {
 	switch (which) {
@@ -71,41 +71,41 @@ builder.setItems(options, new DialogInterface.OnClickListener() {
 	}
 实现资源name在两个activity间的传送
 
-//dispalyActivity
+	//dispalyActivity
 
-intent.putExtra("name",name);
+	intent.putExtra("name",name);
 
-//dispaly_detailsActivity
+	//dispaly_detailsActivity
 
-Intent intent=getIntent();
+	Intent intent=getIntent();
 
-String name=intent.getStringExtra("name");
+	String name=intent.getStringExtra("name");
 
 4. display_detailsActivity
 
 //显示联系人详解信息，使用simplecusoradapter绑定listview视图。
 
-final DBHelper helper=new DBHelper(this);
+	final DBHelper helper=new DBHelper(this);
 
-Cursor c = helper.queryName(name);//定义光标
+	Cursor c = helper.queryName(name);//定义光标
 
-String[] from={"_id","name","telephone","email","address"};
+	String[] from={"_id","name","telephone","email","address"};
 
-int[] to={R.id.id,R.id.name_2,R.id.telephone,R.id.email,R.id.address};
+	int[] to={R.id.id,R.id.name_2,R.id.telephone,R.id.email,R.id.address};
 
-SimpleCursorAdapter adapter=new SimpleCursorAdapter(this,R.layout.display_details,c,from,to);
+	SimpleCursorAdapter adapter=new SimpleCursorAdapter(this,R.layout.display_details,c,from,to);
 
-ListView listView=getListView();
+	ListView listView=getListView();
 
 //listview绑定数据适配器
 
-listView.setAdapter(adapter);
+	listView.setAdapter(adapter);
 
 ## 四、运行结果及截图
-![实验五结果](https://github.com/15218047860/android-labs-2020/edit/master/students/net1814080903121/lab5_1.png)
-![实验五结果](https://github.com/15218047860/android-labs-2020/edit/master/students/net1814080903121/lab5_2.png)
-![实验五结果](https://github.com/15218047860/android-labs-2020/edit/master/students/net1814080903121/lab5_3.png)
-![实验五结果](https://github.com/15218047860/android-labs-2020/edit/master/students/net1814080903121/lab5_4.png)
+![实验五结果](https://github.com/15218047860/android-labs-2020/blob/master/students/net1814080903121/lab5_1.png)
+![实验五结果](https://github.com/15218047860/android-labs-2020/blob/master/students/net1814080903121/lab5_2.png)
+![实验五结果](https://github.com/15218047860/android-labs-2020/blob/master/students/net1814080903121/lab5_3.png)
+![实验五结果](https://github.com/15218047860/android-labs-2020/blob/master/students/net1814080903121/lab5_4.png)
 
 ## 五、心得与体会
 本次实验目的是实现数据库的存储，关键点是将联系人的数据保存至数据库，参考了网上的数据库帮助类Dbhelper以方便实现数据库创建，数据的插入与删除查询等功能。
