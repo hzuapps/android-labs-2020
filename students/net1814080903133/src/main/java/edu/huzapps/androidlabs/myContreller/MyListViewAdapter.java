@@ -8,6 +8,11 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.DiffUtil;
+import androidx.recyclerview.widget.ListAdapter;
+import androidx.recyclerview.widget.RecyclerView;
+
 import edu.hzuapps.androidlabs.Net1814080903133Activity;
 import edu.hzuapps.androidlabs.R;
 
@@ -60,10 +65,10 @@ public class MyListViewAdapter extends BaseAdapter{
 
     protected void init(int position, ViewHolder viewHolder){
         Book book = bookManager.getItem(position);
-        viewHolder.bookImage.setImageResource(MyTools.getResId(book.image,that));
+        viewHolder.bookImage.setImageResource(MyTools.getResId(book.imageURL,that));
         viewHolder.bookName.setText("书名："+book.bookName);
         viewHolder.author.setText("作者："+book.author);
-        viewHolder.nowChapter.setText("阅读进度："+book.nowChapter);
+        viewHolder.nowChapter.setText("阅读进度："+(book.nowChapter+1));
     }
 }
 
@@ -73,3 +78,4 @@ class ViewHolder{
     TextView author;
     TextView nowChapter;
 }
+
