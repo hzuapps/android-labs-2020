@@ -15,7 +15,6 @@ public class Net1814080903117Activity extends AppCompatActivity {
         final Activity thisActivity = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net1814080903117);
-
         Button btnOpen1 = findViewById(R.id.up_btn);
         btnOpen1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +34,5 @@ public class Net1814080903117Activity extends AppCompatActivity {
                 thisActivity.finish();
             }
         });
-
-
     }
 }

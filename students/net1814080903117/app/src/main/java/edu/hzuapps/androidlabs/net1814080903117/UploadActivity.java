@@ -25,7 +25,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.concurrent.FutureTask;
 
 import okhttp3.MediaType;
@@ -246,35 +249,33 @@ public class UploadActivity extends AppCompatActivity  {
     }
 
     public boolean uploadFile(String path,String filename){
-        final OkHttpClient okHttpClient = new OkHttpClient();
-        File file = new File(path);
-        if(path.isEmpty()||!file.exists())
+        File uploadfile = new File(path);
+        if(path.isEmpty()||!uploadfile.exists())
             return false;
-        final RequestBody body = new MultipartBody.Builder().setType(MultipartBody.FORM)
-                .addFormDataPart("file",filename,RequestBody.create(new File(path), MediaType.parse("multipart/form-data")))
-                .addFormDataPart("filename",filename)
-                .build();
-        FutureTask<Boolean> task = new FutureTask<>(()->{
-            try {
-                ResponseBody responseBody = okHttpClient.newCall(
-                        new Request.Builder().post(body).url("http://10.0.2.2:8080/upload").build()
-                ).execute().body();
-
-                if(responseBody!=null){
-                    return Boolean.parseBoolean(responseBody.string());
-                }
-                return false;
-            }catch (IOException e){
-                e.printStackTrace();
-                return false;
-            }
-        });
         try {
-            new Thread(task).start();
-            return task.get();
-        }catch (Exception e) {
+            InputStream inputStream = new FileInputStream(uploadfile);
+
+            if(getExternalFilesDir(null)!=null){
+                String filePath = getExternalFilesDir(null).toString();
+                File downloadfile = new File(getExternalFilesDir(null).toString()+"/"+filename);
+                FileOutputStream outputStream = new FileOutputStream(downloadfile);
+                byte[] b = new byte[1024];
+                int length;
+                if((length = inputStream.read(b))!=-1){
+                    outputStream.write(b,0,length);
+                    while( (length=inputStream.read(b)) != -1 ){
+                        outputStream.write(b,0,length);
+                    }
+                }else{
+                    file.delete();
+                }
+
+            }
+        }catch (Exception e){
+            e.printStackTrace();
             return false;
         }
+        return true;
     }
 
     public void showMessage(String msg){
