@@ -37,19 +37,20 @@
         tools:ignore="DuplicateIds,MissingConstraints" />
 
     <Button
-        android:id="@+id/view2"
+        android:id="@+id/button"
         android:layout_width="171dp"
         android:layout_height="171dp"
         android:background="@drawable/turnoff"
         android:text="熄屏"
-
+        android:onClick="lockScreen"
         android:textAlignment="center"
         android:textColor="#fffaaa"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.246"
-        tools:ignore="DuplicateIds,MissingConstraints" />
+        app:layout_constraintVertical_bias="0.458"
+        tools:ignore="DuplicateIds,MissingConstraints,OnClick" />
 </androidx.constraintlayout.widget.ConstraintLayout>
