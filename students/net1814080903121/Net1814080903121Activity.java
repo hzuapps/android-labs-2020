@@ -5,37 +5,32 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 public class Net1814080903121Activity extends AppCompatActivity {
 
-    Button btn1,btn3;
+
+    Button btn_add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        btn1=findViewById(R.id.button1);
-        btn3=findViewById(R.id.button3);
-
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btn_add = findViewById(R.id.btn_add);
+        btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1=new Intent(Net1814080903121Activity.this,AddActivity.class);
-                startActivity(intent1);
+                Intent intent = new Intent(Net1814080903121Activity.this, DatabaseActivity.class);
+                startActivity(intent);
             }
         });
-
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent3=new Intent(Net1814080903121Activity.this,ShownameActivity.class);
-                startActivity(intent3);
-            }
-        });
-
 
     }
+
 }
+
+
 
