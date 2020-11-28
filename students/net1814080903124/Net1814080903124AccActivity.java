@@ -1,7 +1,5 @@
 package edu.hzuapps.androidlabs.net1814080903124;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,12 +10,14 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-public class Net1814080903124ACCActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Net1814080903124AccActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_net1814080903124_clothes);
+        setContentView(R.layout.activity_net1814080903124_acc);
 
         GridView gridview = (GridView) findViewById(R.id.grid_view);
         gridview.setAdapter(new ImageAdapter2(this));
@@ -26,7 +26,7 @@ public class Net1814080903124ACCActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // 这里可以添加点击图片后的显示处理
-                Intent intent = new Intent(getApplicationContext(), Net1814080903124MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AccLook.class);
                 // Pass image index
                 intent.putExtra("id", position);
                 startActivity(intent);
@@ -43,7 +43,7 @@ class ImageAdapter2 extends BaseAdapter {
     }
 
     public int getCount() {
-        return mThumbIds.length;
+        return FindImage.ACC_Image.length;
     }
 
     public Object getItem(int position) {
@@ -66,14 +66,7 @@ class ImageAdapter2 extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-        imageView.setImageResource(mThumbIds[position]);
+        imageView.setImageResource(FindImage.ACC_Image[position]);
         return imageView;
     }
-
-    // Keep all Images in array
-    public Integer[] mThumbIds = {
-            R.drawable.acc_01,
-            R.drawable.acc_02,
-            R.drawable.acc_03
-    };
 }

@@ -1,12 +1,12 @@
 package edu.hzuapps.androidlabs.net1814080903124;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class Net1814080903124MainActivity extends AppCompatActivity {
@@ -43,8 +43,9 @@ public class Net1814080903124MainActivity extends AppCompatActivity {
         } else if (R.id.button_sneaker == id) {
             return Net1814080903124SneakerActivity.class;
         } else if (R.id.button_acc == id) {
-            return Net1814080903124ACCActivity.class;
-        } else {
+            return Net1814080903124AccActivity.class;
+        }
+        else {
             return Net1814080903124MainActivity.class;
         }
     }

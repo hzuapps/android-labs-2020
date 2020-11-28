@@ -1,17 +1,18 @@
+
 package edu.hzuapps.androidlabs.net1814080903124;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 
 public class Net1814080903124SneakerActivity extends AppCompatActivity {
@@ -21,24 +22,38 @@ public class Net1814080903124SneakerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net1814080903124_sneaker);
 
-        GridView gridview = (GridView) findViewById(R.id.grid_view);
+
+        final GridView gridview = (GridView) findViewById(R.id.grid_view);
         gridview.setAdapter(new ImageAdapter(this));
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // 这里可以添加点击图片后的显示处理
-                Intent intent = new Intent(getApplicationContext(), Net1814080903124MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), SneakerLook.class);
                 // Pass image index
                 intent.putExtra("id", position);
                 startActivity(intent);
+
             }
         });
+
     }
 }
 
+
+
+
+
 class ImageAdapter extends BaseAdapter {
     private Context mContext;
+
+    private int selected = -1;
+    public void notifyDataSetChanged(int id)
+    {
+        selected = id;
+        super.notifyDataSetChanged();
+    }
 
     // Constructor
     public ImageAdapter(Context c) {
@@ -46,7 +61,7 @@ class ImageAdapter extends BaseAdapter {
     }
 
     public int getCount() {
-        return mThumbIds.length;
+        return FindImage.Sneaker_Image.length;
     }
 
     public Object getItem(int position) {
@@ -69,29 +84,10 @@ class ImageAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-        imageView.setImageResource(mThumbIds[position]);
+        imageView.setImageResource(FindImage.Sneaker_Image[position]);
         return imageView;
+
+
     }
-
-    // Keep all Images in array
-    public Integer[] mThumbIds = {
-            R.drawable.shoes_01,
-            R.drawable.shoes_02,
-            R.drawable.shoes_03,
-            R.drawable.shoes_04,
-            R.drawable.shoes_05,
-            R.drawable.shoes_06,
-            R.drawable.shoes_07,
-            R.drawable.shoes_08,
-            R.drawable.shoes_09,
-            R.drawable.shoes_05,
-            R.drawable.shoes_06,
-            R.drawable.shoes_07,
-            R.drawable.shoes_08,
-            R.drawable.shoes_09,
-            R.drawable.shoes_03,
-            R.drawable.shoes_04,
-            R.drawable.shoes_01
-
-    };
 }
+

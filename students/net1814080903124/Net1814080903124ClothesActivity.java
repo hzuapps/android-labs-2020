@@ -1,7 +1,5 @@
 package edu.hzuapps.androidlabs.net1814080903124;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Net1814080903124ClothesActivity extends AppCompatActivity {
 
@@ -26,7 +26,7 @@ public class Net1814080903124ClothesActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // 这里可以添加点击图片后的显示处理
-                Intent intent = new Intent(getApplicationContext(), Net1814080903124MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ClothesLook.class);
                 // Pass image index
                 intent.putExtra("id", position);
                 startActivity(intent);
@@ -43,7 +43,7 @@ class ImageAdapter1 extends BaseAdapter {
     }
 
     public int getCount() {
-        return mThumbIds.length;
+        return FindImage.Clothes_Image.length;
     }
 
     public Object getItem(int position) {
@@ -66,14 +66,8 @@ class ImageAdapter1 extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-        imageView.setImageResource(mThumbIds[position]);
+        imageView.setImageResource(FindImage.Clothes_Image[position]);
         return imageView;
     }
 
-    // Keep all Images in array
-    public Integer[] mThumbIds = {
-            R.drawable.clothes_01,
-            R.drawable.clothes_02,
-            R.drawable.clothes_03
-    };
 }
