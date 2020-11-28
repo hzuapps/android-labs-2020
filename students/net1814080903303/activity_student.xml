@@ -1,31 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="edu.hzuapps.androidlabs.net1814080903303.InformationActivity"
+    tools:context="edu.hzuapps.androidlabs.net1814080903303.StudentActivity"
     android:orientation="vertical">
 
-    <LinearLayout
+
+        <LinearLayout
         android:id="@+id/student_1"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="@drawable/leave_information_backgroud"
         android:orientation="vertical"></LinearLayout>
-    <TextView
-        android:id="@+id/stu_textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/student"
-        android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/stu_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/选择班级"
+            android:textColorHighlight="#FFC107"
+            android:textSize="16sp" />
+
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/stu_editText1"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:hint="请输入请假学生名字" />
+        android:layout_height="45dp"
+        android:layout_marginTop="0dp"
+        android:hint="在此请输入年级班级：" />
+
+    <TextView
+        android:id="@+id/stu_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/选择请假类型"
+        android:textColorHighlight="#FFC107"
+        android:textSize="16sp" />
+
+        <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/stu_button2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:onClick="setview"
+        android:text="@string/存储" />
+
+    <Button
+        android:id="@+id/stu_button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:onClick="backview"
+        android:text="@string/确定" />
+
+    <Button
+        android:id="@+id/stu_button3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:onClick="delect"
+        android:text="取消" />
+
 
 
 </LinearLayout>
