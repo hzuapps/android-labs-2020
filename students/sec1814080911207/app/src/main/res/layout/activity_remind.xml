@@ -1,35 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemindActivity">
 
     <TextView
         android:id="@+id/textview_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/record"
-        android:text=" 提醒"
+        android:drawableTop="@drawable/remind"
         android:paddingLeft="160dp"
-        android:paddingTop="150dp"/>
+        android:paddingTop="100dp"
+        android:text="  提醒" />
 
-
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="724dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="6dp">
 
         <Button
-            android:id="@+id/down_btn"
+            android:id="@+id/remind_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="提醒"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="100dp"
             android:layout_marginLeft="90dp"/>
 
         <Button
             android:id="@+id/main_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="100dp"
             android:layout_marginLeft="50dp"
             android:text="返回" />
+    </LinearLayout>
 
 </LinearLayout>
