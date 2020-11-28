@@ -41,7 +41,10 @@ public class Borrowother extends ContentProvider {
     private SQLiteDatabase db;
     static final String DATABASE_NAME = "Library";
     static final String TABLE_BOOKS = "books";
+
+   //版本号修改才可以create new table
     static final int DATABASE_VERSION = 3;
+
     static final String CREATE_DB_TABLE =
             " CREATE TABLE " + TABLE_BOOKS +
                     " (_id INTEGER PRIMARY KEY AUTOINCREMENT, " +

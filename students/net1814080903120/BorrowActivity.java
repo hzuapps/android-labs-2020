@@ -42,11 +42,11 @@ public class BorrowActivity extends AppCompatActivity {
         // 插入新记录
         ContentValues book = new ContentValues();
         //book.put("name", name); // Map <- Key:Value
-        book.put(ContentProviderOfBooks.BOOKNAME, bookname);
-        book.put(ContentProviderOfBooks.WRITER, writer);
+        book.put(Borrowother.BOOKNAME, bookname);
+        book.put(Borrowother.WRITER, writer);
 
         Uri uri = getContentResolver() // 执行插入操作
-                .insert(ContentProviderOfBooks.CONTENT_URI, book);
+                .insert(Borrowother.CONTENT_URI, book);
 
         Toast.makeText(getBaseContext(),
                 "借书请求已发送 \n" + uri.toString(), Toast.LENGTH_LONG).show();
