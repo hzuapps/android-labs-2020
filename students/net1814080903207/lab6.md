@@ -66,7 +66,7 @@
 
 # 四、实验结果 #
 
-![result1]()
+![answer1](https://raw.githubusercontent.com/522090231/android-labs-2020/master/students/net1814080903207/lab6_answer.png)
 
 
 
