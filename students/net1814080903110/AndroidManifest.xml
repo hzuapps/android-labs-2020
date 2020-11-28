@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="edu.hzuapps.androidlabs.Net1814080903110">
 
     <application
@@ -9,8 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TestEditScheduleActivity"></activity>
+        <activity android:name=".TestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".Activity2"
+            android:name=".RemindActivity"
             android:label="Activity2">
             <intent-filter>
                 <action android:name="com.intent.Activity2" />
@@ -19,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity1"
+            android:name=".SettingActivity"
             android:label="Activity1">
             <intent-filter>
                 <action android:name="com.intent.Activity1" />
@@ -34,6 +43,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Setting2Activity"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
