@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/grid_view"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:columnWidth="200dp"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    android:gravity="center"
-    android:horizontalSpacing="10dp"
-    android:numColumns="auto_fit"
-    android:stretchMode="columnWidth"
-    android:verticalSpacing="15dp"
-    />
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="819dp"
+        android:columnWidth="200dp"
+
+        android:horizontalSpacing="1px"
+        android:numColumns="auto_fit"
+        android:layout_marginTop="45dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_static"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/selector_btn_bg"/>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_dynamic"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/selector_btn_bg"/>
+</RelativeLayout>
