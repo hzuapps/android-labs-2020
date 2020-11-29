@@ -339,4 +339,4 @@ public class Tianjiajilu extends AppCompatActivity{
 --------------------
 ```
 ## 实验截图
-![实验五截图](students/net1714080903132/实验5/屏幕截图 2020-11-29 204736.png)
+![res](./屏幕截图 2020-11-29 204736.png)
