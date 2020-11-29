@@ -339,4 +339,4 @@ public class Tianjiajilu extends AppCompatActivity{
 --------------------
 ```
 ## 实验截图
-![res](./屏幕截图 2020-11-29 204736.png)
+![res](https://github.com/SparklesStar/android-labs-2020/blob/master/students/net1714080903132/%E5%AE%9E%E9%AA%8C5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202020-11-29%20204736.png)
