@@ -50,6 +50,7 @@ public class Net1814080903133Activity extends AppCompatActivity {
 
 //        初始化从数据库取书本
         final DatabaseHelper databaseHelper = DatabaseHelper.getData();
+        databaseHelper.test(that);
         databaseHelper.setSQL(that,"novel");
         ArrayList<Book> books = null;
         try {

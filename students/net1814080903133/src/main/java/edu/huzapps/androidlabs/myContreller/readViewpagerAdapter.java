@@ -1,7 +1,6 @@
 package edu.hzuapps.androidlabs.myContreller;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -9,19 +8,16 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import java.io.IOException;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 import edu.hzuapps.androidlabs.myView.Info;
-import edu.hzuapps.androidlabs.myView.readFragment;
+import edu.hzuapps.androidlabs.myView.ReadFragment;
 
-public class readViewpagerAdapter extends FragmentStateAdapter {
+public class ReadViewpagerAdapter extends FragmentStateAdapter {
 
     Book book;
     Info info;
 
-    public readViewpagerAdapter(@NonNull FragmentActivity fragmentActivity,Book book) {
+    public ReadViewpagerAdapter(@NonNull FragmentActivity fragmentActivity, Book book) {
         super(fragmentActivity);
         this.book=book;
         info = new Info(book.getChapter());
@@ -41,7 +37,7 @@ public class readViewpagerAdapter extends FragmentStateAdapter {
         }
         args.putSerializable("info",info);
 //        创建新画面
-        readFragment newFragment = new readFragment();
+        ReadFragment newFragment = new ReadFragment();
 //        传递参数
         newFragment.setArguments(args);
         book.setNowChapter(position);

@@ -13,7 +13,7 @@ import edu.hzuapps.androidlabs.R;
 import edu.hzuapps.androidlabs.myContreller.Book;
 import edu.hzuapps.androidlabs.myContreller.BookManager;
 import edu.hzuapps.androidlabs.myContreller.DatabaseHelper;
-import edu.hzuapps.androidlabs.myContreller.readViewpagerAdapter;
+import edu.hzuapps.androidlabs.myContreller.ReadViewpagerAdapter;
 
 public class NovelReadActivity extends AppCompatActivity {
 
@@ -55,7 +55,7 @@ DatabaseHelper databaseHelper;
 
 //        ViewPager绑定适配器
         readViewPager = findViewById(R.id.readViewpager);
-        final readViewpagerAdapter readAdapter = new readViewpagerAdapter(this,book);
+        final ReadViewpagerAdapter readAdapter = new ReadViewpagerAdapter(this,book);
         readViewPager.setAdapter(readAdapter);
 
 //        判断是否初始化进行不同处理

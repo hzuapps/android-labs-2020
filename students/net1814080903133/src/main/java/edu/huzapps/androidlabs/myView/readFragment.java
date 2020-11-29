@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import edu.hzuapps.androidlabs.R;
 
-public class readFragment extends Fragment {
+public class ReadFragment extends Fragment {
     View view;
 //    书本position
     int position;
@@ -34,7 +34,7 @@ public class readFragment extends Fragment {
 //    书本实例
     ArrayList<ArrayList<Integer>> chapterArray;
     Info info;
-    readFragment that;
+    ReadFragment that;
 //    加载界面设置
     CardView loadingCardView;
     TextView loadingTextView;
