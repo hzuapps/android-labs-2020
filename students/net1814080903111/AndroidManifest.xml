@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.hzuapps.androidlabs.net1814080903111">
+    package="edu.hzuapps.androidlabs.myapp">
 
     <application
         android:allowBackup="true"
@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="edu.hzuapps.androidlabs.net1814080903111.activity_check_record"></activity>
-        <activity android:name="edu.hzuapps.androidlabs.net1814080903111.Net1814080903111Activity">
+        <activity android:name="edu.hzuapps.androidlabs.myapp.activity_record"></activity>
+        <activity android:name="edu.hzuapps.androidlabs.myapp.Net1814080903111Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
