@@ -43,12 +43,12 @@ public class StudentActivity extends AppCompatActivity {
 
            SharedPreferences settings = this.getSharedPreferences(
                    "MY_SETTINGS", // 设置的标识、APP可以有多的偏好设置
-                   Context.MODE_PRIVATE); //
+                   Context.MODE_PRIVATE); 
            //SharedPreferences settings = this.getSharedPreferences(
            //        Context.MODE_PRIVATE); // 不指定ID、使用默认偏好设置（只有一个）
            SharedPreferences.Editor editor = settings.edit(); // 开始编辑设置
            editor.putString(ID,string);     // 字符串值
-           editor.commit(); // 保存
+           editor.commit();  // 保存
        }
 
        public void backview (View view){
