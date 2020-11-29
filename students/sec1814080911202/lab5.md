@@ -27,6 +27,7 @@ protected void initDatabase(){
 
     }
 
+
     private void insert(String bookname){
         ContentValues contentValues = new ContentValues();
         contentValues.put("name", bookname);
