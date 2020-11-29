@@ -63,6 +63,9 @@ case R.id.tb_calc_num_done://确定
     }
 ```
 # 四、实验结果
+<img src="https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab5_02.png" width="500" height="1000"/>
+<img src="https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab5_03.png" width="500" height="1000"/><br/>
+<img src="https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab5_01.png" width="500" height="1000"/><br/>
 
 # 五、实验心得
 我的题目需要利用到了数据库存储，将记录的账本信息数据暂存到手机中，再之后利用条件进行所有的账本记录查询，并展示，缺点就是，代码都写在了一起，有点乱，之后再慢慢调整代码架构。
