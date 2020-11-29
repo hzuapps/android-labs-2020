@@ -1,5 +1,5 @@
 
-package edu.hzuapps.androidlabs.myapp;
+package edu.hzuapps.androidlabs.net1814080903111;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,7 +11,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
