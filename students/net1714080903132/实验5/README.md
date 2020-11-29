@@ -10,7 +10,7 @@
 说明使用的文件存储方式：内部 or 外部；
 将运行结果截图。
 ## 实验结果
-```java```
+```java
 package com.example.pl.qzd;
 
 import android.Manifest;
@@ -337,4 +337,4 @@ public class Tianjiajilu extends AppCompatActivity{
     </LinearLayout>
 </LinearLayout>
 --------------------
-```java```
+```
