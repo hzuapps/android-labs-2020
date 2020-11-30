@@ -22,7 +22,7 @@ import db.DBHelper;
  * Created by 533 on 2018/5/26.
  */
 
-public class displayActivity extends ListActivity {
+public class DisplayActivity extends ListActivity {
     public EditText et;
     SQLiteDatabase sqLiteDatabase;
     private AlertDialog.Builder createAlertDialog(int icDialogAlert, String string) {
