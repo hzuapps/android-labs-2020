@@ -1,4 +1,4 @@
-package edu.hzuapps.androidlabs.Net1814080903110;
+package edu.hzuapps.androidlabs.net;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
