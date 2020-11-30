@@ -100,4 +100,16 @@ SharedPreferences.Editor editor = settings.edit();
 
 ## 实验七：Android设备
 
+1. 拍照
 
+- new Intent(MediaStore.ACTION_IMAGE_CAPTURE)  
+- startActivityForResult(intent)  
+- onActivityResult(..., intent)
+
+## 实验八：综合实验
+
+1. 完成选题的开发报告：Android.Final.docx 
+
+2. 根据微信小程序“教学助理”的要求，按时发送Word版实验报告到老师邮箱。
+
+- 微信小程序：教学助理
