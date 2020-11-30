@@ -19,7 +19,7 @@ import android.widget.SimpleCursorAdapter;
 
 import db.DBHelper;
 
-public class display_detailsActivity extends ListActivity {
+public class Display_detailsActivity extends ListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,4 +42,5 @@ public class display_detailsActivity extends ListActivity {
 
     }
 }
+
 
