@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="edu.hzuapps.androidlabs.Net1814080903110">
+    package="edu.hzuapps.androidlabs.net">
 
     <application
         android:allowBackup="true"
@@ -10,8 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestEditScheduleActivity"></activity>
-        <activity android:name=".TestActivity">
+        <activity android:name="edu.hzuapps.androidlabs.net.TestEditScheduleActivity"></activity>
+        <activity android:name="edu.hzuapps.androidlabs.net.TestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RemindActivity"
+            android:name="edu.hzuapps.androidlabs.net.RemindActivity"
             android:label="Activity2">
             <intent-filter>
                 <action android:name="com.intent.Activity2" />
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SettingActivity"
+            android:name="edu.hzuapps.androidlabs.net.SettingActivity"
             android:label="Activity1">
             <intent-filter>
                 <action android:name="com.intent.Activity1" />
@@ -36,14 +36,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Net1814080903110Activity">
+        <activity android:name="edu.hzuapps.androidlabs.net.Net1814080903110Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Setting2Activity"
+        <activity android:name="edu.hzuapps.androidlabs.net.Setting2Activity"
             tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
