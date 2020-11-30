@@ -48,7 +48,7 @@ git push
 ```
 
 ## 四、实验结果
-![实验结果](https://github.com/1814080911223/android-labs-2020/commit/875fcb42d095b10095a568b02b197b028a959d94#diff-81bb3cde2285a6fd5f0bdee714401afac43d35f63e4beef1134b6df44da494ea)
+![实验结果](https://github.com/1814080911223/android-labs-2020/blob/master/students/sec1814080911223/%E5%AE%9E%E9%AA%8C%E6%88%AA%E5%9B%BE/lab1%E6%88%AA%E5%9B%BE.jpg)
 
 ## 五、实验心得
 
