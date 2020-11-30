@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="edu.hzuapps.androidlabs.net1814080903111.activity_check_record"></activity>
+        <activity android:name="edu.hzuapps.androidlabs.net1814080903111.activity_record"></activity>
         <activity android:name="edu.hzuapps.androidlabs.net1814080903111.Net1814080903111Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
