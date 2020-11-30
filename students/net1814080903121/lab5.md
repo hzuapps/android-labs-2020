@@ -112,3 +112,4 @@
 本次实验的难点在于displayActivity中如何获取name资源以及name在displayActivity和display_detailsActivity间的传送。通过https://developer.android.google.cn/
 网站adapterview的学习发现视图可以通过adpterview.getAdapter.getItem(i) 可以获取listview 点击第i个item的数据以SQLiteCursor的形式返回，然后通过游标的学习可以
 知道SQLiteCursor.getString(columnidex:1)可以获取索引位置为1的数据name，然后利用intent.putExtra("name",name)，和intent.getStringExtra("name")完成name的传输。
+
