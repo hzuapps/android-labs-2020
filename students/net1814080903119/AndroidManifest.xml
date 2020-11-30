@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_OWNER_DATA" />
 
+    <uses-feature android:name="android.software.live_wallpaper" />
 
 
     <application
@@ -30,15 +31,15 @@
                 android:name="android.service.wallpaper"
                 android:resource="@xml/livewallpapervideo" />
         </service>
-        <activity android:name=".LiveWallPreference"> <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".LiveWallPreference"/>
         <activity android:name=".StaticPageActivity" />
         <activity android:name=".DynamicPaperActivity" />
         <activity android:name=".HomePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".FileStorageActivity"
