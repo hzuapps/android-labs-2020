@@ -66,3 +66,4 @@ public class DatabaseActivity extends Activity {
         });
     }
 }
+
