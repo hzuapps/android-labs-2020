@@ -1,4 +1,4 @@
-# 一、实验目的
+# 一、实验目标
 1. 了解Android应用中各种资源的概念与使用方法；
 2. 掌握在Android应用中使用图片等资源的方法。
 # 二、实验要求
@@ -14,7 +14,6 @@
 android:drawableTop="@drawable/home_design"
 ```
 # 四、实验结果
-![home_design](https://raw.githubusercontent.com/ccc2020916/android-labs-2020/master/students/net1814080903132/home_design.jpg)
-
+![lab3](https://raw.githubusercontent.com/ccc2020916/android-labs-2020/master/students/net1814080903132/lab3.png)
 # 五、实验心得
 通过本次实验学会了怎样设置背景图片。
