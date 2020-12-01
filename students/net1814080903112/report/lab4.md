@@ -14,49 +14,30 @@
 
  ## 三、实验步骤
 
- 1. 使用了LinearLayout布局设计分数排行界面。
-
-    ```
-    import androidx.appcompat.app.AppCompatActivity;
-    ```
-
-    
-
-
-     import android.os.Bundle;	import android.os.Bundle;
-    import android.widget.LinearLayout;
-    import android.widget.TextView;
-
-
-     public class RankActivity extends AppCompatActivity {	public class RankActivity extends AppCompatActivity {
-
-​    
+  1. 使用了LinearLayout布局设计分数排行界面。
 
 ```
- @Override	    @Override
-    protected void onCreate(Bundle savedInstanceState) {	    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);	        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rank);	        setContentView(R.layout.activity_rank);
-        initRankTable();
-    }
-    
-     private void initRankTable(){
-        LinearLayout rankTable = (LinearLayout)findViewById(R.id.rankTable);
-        for(int i=0;i<10;i++){
-            LinearLayout rankItem = new LinearLayout(this);
-            rankItem.setOrientation(LinearLayout.HORIZONTAL);
-            TextView textView = new TextView(this);
-            textView.setText("第"+(i+1)+"名");
-            rankItem.addView(textView);
-            rankTable.addView(rankItem);
-        }
-    }	    }
-} 	} 
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RankActivity">
+
+    <LinearLayout
+        android:id="@+id/rankTable"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-
-
-2.通过控件的ID获取游戏界面的对象执行重新开始与抽牌操作。
+2.通过控件的ID获取游戏界面的对象执行重新开始与抽牌操作的界面。
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -125,7 +106,7 @@
  </androidx.constraintlayout.widget.ConstraintLayout> 
 ```
 
-3.添加点击按钮实现界面控件的事件处理。
+3.添加点击按钮实现界面控件的事件处理的界面。
 
 ```
 <?xml version="1.0" encoding="utf-8"?>`
