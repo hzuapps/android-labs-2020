@@ -5,15 +5,18 @@
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#FFE4E1">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="370dp"
-        android:layout_height="52dp"
-        android:textSize="40dp"
-        android:paddingLeft="100dp"
-        android:text="录屏界面" />
+        android:layout_width="377dp"
+        android:layout_height="60dp"
+        android:paddingLeft="140dp"
+        android:text="录屏"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,11 +27,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
+
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="137dp"
+        android:layout_height="121dp"
+        android:layout_marginLeft="120dp"
         android:layout_marginTop="21dp"
-        android:layout_marginLeft="133dp"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/lp" />
 </LinearLayout>
