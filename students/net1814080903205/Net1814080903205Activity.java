@@ -1,3 +1,5 @@
+package Net1814080903205;
+public class Net1814080903205Activity{
 package edu.hzuapps.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,4 +24,4 @@ public class Net1814080903205Activity extends AppCompatActivity {
             }
         });
     }
-}
+} 

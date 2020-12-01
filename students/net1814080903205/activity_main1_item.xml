@@ -6,4 +6,4 @@
     android:padding="10dip"
     android:textSize="21dip"
     android:textStyle="bold">
-</TextView>
+</TextView> 

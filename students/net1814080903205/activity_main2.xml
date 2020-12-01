@@ -50,4 +50,4 @@
         android:layout_gravity="right"
         android:text="@string/xinjian" />
 
-</LinearLayout>
+</LinearLayout> 
