@@ -47,8 +47,8 @@ private static class DatabaseHelper extends SQLiteOpenHelper {
 
 ## 四、实验结果
 
-![avatar](/students/net1814080903226/Lab5-1.jpg)
-![avatar](/students/net1814080903226/Lab5-2.jpg)
+![avatar](/students/net1814080903226/Lab5-1.png)
+![avatar](/students/net1814080903226/Lab5-2.png)
 
 ## 五、实验心得
 
