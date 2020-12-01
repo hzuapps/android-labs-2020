@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/tupian3"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+ tools:ignore="MissingConstraints"
+        	        tools:layout_editor_absoluteX="0dp"
+        	        tools:layout_editor_absoluteY="0dp"
+               android:background="#F5ffff">
+        	        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/textview_03_01"
+                  android:layout_width="match_parent"
+            	            android:layout_height="wrap_content"       	
+           	            android:textStyle="bold"
+           	            android:textSize="35sp"
+            android:textColor="#EE0000"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textview_03_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="384dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="16dp"
-        android:text="游戏规则"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="386dp"
-        android:layout_height="425dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="84dp"
-        android:text="石头克剪刀，剪刀克布，布克石头。"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:layout_marginLeft="250dp"
+                android:id="@+id/button_fanhui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="返回"/>
+        </LinearLayout>
+       </LinearLayout>
+</android.support.design.widget.CoordinatorLayout> 
