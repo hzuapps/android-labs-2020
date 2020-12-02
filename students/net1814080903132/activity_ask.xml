@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
@@ -7,34 +8,44 @@
     android:orientation="vertical"
     android:background="@drawable/second_1"
     >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:hint="展示内容1" />
 
     <TextView
+        android:id="@+id/comment_sm"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:hint="展示内容2" />
+        android:layout_height="10dp"
+        android:text="#此为校园吐槽君开放式交流平台，此页面仅提供查看近期内容#"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:textSize="28sp"
+        tools:ignore="InvalidId"
+        android:layout_weight="1" />
 
-    <TextView
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="420dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hzu" />
+
+    <EditText
+        android:id="@+id/comment_nr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="top"
-        android:hint="展示内容3" />
+        android:hint="展示内容" />
+
     <Button
+        android:onClick="ReadBtn"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:text="返回" />
+        android:text="点击显示内容" />
 
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:text="下一页" />
+        android:text="返回上一级" />
 
 </LinearLayout>
