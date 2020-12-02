@@ -37,12 +37,16 @@ public class AskActivity extends AppCompatActivity {
                 String ReadString=String.copyValueOf(inputBuffer,0,charRead);
                 s += ReadString;
             }
-            InputRead.close();
-            comment_nr.setText(s);
 
+        InputRead.close();
+        comment_nr.setText(s);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void Backbtn_1(View w){
+        finish();
     }
 }

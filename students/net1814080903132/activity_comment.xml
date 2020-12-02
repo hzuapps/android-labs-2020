@@ -42,4 +42,11 @@
         android:layout_gravity="right"
         android:onClick="WriteBtn"
         android:text="保存内容" />
+
+    <Button
+        android:onClick="Backbtn_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="返回上一级" />
 </LinearLayout>

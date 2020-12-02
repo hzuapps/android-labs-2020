@@ -16,14 +16,14 @@
         android:text="#此为校园吐槽君开放式交流平台，此页面仅提供查看近期内容#"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="italic"
-        android:textSize="28sp"
+        android:textSize="26sp"
         tools:ignore="InvalidId"
         android:layout_weight="1" />
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="420dp"
-        android:layout_height="300dp"
+        android:layout_height="280dp"
         android:scaleType="centerCrop"
         android:src="@drawable/hzu" />
 
@@ -43,6 +43,7 @@
         android:text="点击显示内容" />
 
     <Button
+        android:onClick="Backbtn_1"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
