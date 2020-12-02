@@ -75,6 +75,16 @@
         <RelativeLayout style="@style/NavItem">
 
             <ImageView
+                android:id="@+id/bookmark_collect"
+                style="@style/NavIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:src="@drawable/bookmark_collect" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
                 android:id="@+id/bookmarks"
                 style="@style/NavIcon"
                 android:layout_width="wrap_content"
