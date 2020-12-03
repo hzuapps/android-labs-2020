@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="10dp"
         android:text="#此为校园吐槽君开放式交流平台，此页面仅提供查看近期内容#"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#607b8b"
         android:textStyle="italic"
         android:textSize="26sp"
         tools:ignore="InvalidId"
@@ -37,16 +37,22 @@
 
     <Button
         android:onClick="ReadBtn"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
+        android:background="@drawable/btn_shape_2"
+        android:textColor="#607b8b"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:text="点击显示内容" />
 
     <Button
         android:onClick="Backbtn_1"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
+        android:background="@drawable/btn_shape_3"
+        android:textColor="#607b8b"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:text="返回上一级" />
 
 </LinearLayout>

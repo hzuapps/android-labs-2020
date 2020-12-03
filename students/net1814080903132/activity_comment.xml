@@ -37,16 +37,24 @@
         android:hint="请输入你要发表的吐槽或提出的建议" />
 
     <Button
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:onClick="WriteBtn"
+        android:background="@drawable/btn_shape_2"
+        android:textColor="#607b8b"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:text="保存内容" />
 
     <Button
         android:onClick="Backbtn_2"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
+        android:background="@drawable/btn_shape_3"
+        android:textColor="#607b8b"
+        android:textSize="17sp"
+        android:textStyle="bold"
         android:text="返回上一级" />
 </LinearLayout>
