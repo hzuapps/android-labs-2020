@@ -37,4 +37,7 @@ public class CommentActivity extends AppCompatActivity {
         }
     }
 
+    public void Backbtn_2(View w){
+        finish();
+    }
 }

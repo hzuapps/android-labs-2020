@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class Net1814080903132Activity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +19,8 @@ public class Net1814080903132Activity extends AppCompatActivity {
                 Intent intent = new Intent(_this, AskActivity.class);
                 _this.startActivity(intent);
             }
-        });
+        }
+        );
 
         Button button2 = findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
