@@ -102,12 +102,12 @@
                 android:id="@+id/teachertext0"
                 android:layout_width="match_parent"
                 android:layout_height="430dp"
-
                 android:layout_below="@id/button1"
-                android:layout_marginTop="-2dp"
+                android:layout_marginTop="-6dp"
+
                 android:text="@string/welcom_information"
                 android:textColor="@color/colorAccent"
-                android:textSize="50dp" />
+                android:textSize="16dp" />
         </RelativeLayout>
         <Button
             android:id="@+id/button2"

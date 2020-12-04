@@ -67,14 +67,12 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="600dp">
-
+            android:layout_height="540dp">
             <Button
                 android:id="@+id/button00"
                 android:layout_width="94dp"
                 android:layout_height="wrap_content"
                 android:text="@string/add" />
-
             <Button
                 android:id="@+id/button11"
                 android:layout_width="94dp"
@@ -109,10 +107,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="430dp"
                 android:layout_below="@id/button11"
+                android:layout_marginTop="2dp"
                 android:gravity="center"
                 android:text="@string/welcom_information"
                 android:textColor="@color/colorAccent"
-                android:textSize="40dp" />
+                android:textSize="16dp"
+                />
         </RelativeLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
