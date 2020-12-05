@@ -108,11 +108,11 @@
 
 ## 四、实验结果及截图
 
-![lab6（2）](D:\Desktop\Markdown\移动应用开发\lab6（2）.PNG)
+![lab6（2）](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/lab6%EF%BC%882%EF%BC%89.PNG)
 
 如下图：闹钟播放界面
 
-![lab6 (1)](D:\Desktop\Markdown\移动应用开发\lab6 (1).PNG)
+![lab6 (1)](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/lab6%20(1).PNG)
 
 
 
