@@ -38,7 +38,8 @@
 
 在Sec1814080911113Activity.java添加点击事件处理，跳到以上4个Activity中，实现Activity之间的跳转
 
-```package edu.hzuapps.androidlabs.sec1814080911113;
+```
+package edu.hzuapps.androidlabs.sec1814080911113;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
