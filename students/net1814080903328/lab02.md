@@ -13,7 +13,7 @@
   2. 配置AndroidManifest.xml；
   3. 在相应的界面中创建 Button 组件；
   4. 为 Button 添加点击事件处理，实现跳转；
-     ~~~java
+     ```java
       Button button = (Button) findViewById(R.id.button3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,8 +24,8 @@
 
             }
         });
-     ~~~
-     ~~~java
+     ```
+     ```java
      button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,10 +36,10 @@
 
             }
         });
-     ~~~
+     ```
    ## 四、实验结果 
   ![规则讲解界面截图](https://raw.githubusercontent.com/Garfield-zheng/android-labs-2020/master/students/net1814080903328/RuleInterface.PNG) 
-  ![规则讲解界面截图](https://raw.githubusercontent.com/Garfield-zheng/android-labs-2020/master/students/net1814080903328/SkillsInterface.PNG)
+  ![技巧讲解界面截图](https://raw.githubusercontent.com/Garfield-zheng/android-labs-2020/master/students/net1814080903328/SkillsInterface.PNG)
 
    ## 五、实验心得 
    在本次实验中，主要是根据自己的选题以及打算实现的功能创建Activity并通过button（按钮）实现页面间的跳转，以及AndroidMainfest的配置。完成过程比较顺利。
