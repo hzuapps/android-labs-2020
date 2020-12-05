@@ -53,6 +53,7 @@
 </LinearLayout>
 ```
 # 四、实验结果
-
+![主界面截图](https://raw.githubusercontent.com/xiangzuonidekongbai/android-labs-2020/master/students/net1814080903312/%E4%B8%BB%E7%95%8C%E9%9D%A2.PNG)
+![播放界面截图](https://raw.githubusercontent.com/xiangzuonidekongbai/android-labs-2020/master/students/net1814080903312/%E6%92%AD%E6%94%BE%E7%95%8C%E9%9D%A2.PNG)
 # 五、实验心得
 本次实验主要是学习对于界面布局的设计和调整，通过设计布局能使APP界面看起来更美观舒适。
