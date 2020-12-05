@@ -3,6 +3,9 @@ package edu.hzuapp.androidlabs.net1814080903230;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Canvas;
@@ -11,11 +14,9 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
@@ -24,10 +25,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import static edu.hzuapp.androidlabs.net1814080903230.Myview.setright;
 
 class Myview extends View {
     public Myview(Context context) {super(context);}
-    int setright;
+    static int setright;
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -115,11 +117,11 @@ public class GameActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final float[] aaa = {0};
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
@@ -130,8 +132,6 @@ public class GameActivity extends AppCompatActivity {
         androidx.constraintlayout.widget.ConstraintLayout constraintLayout = (androidx.constraintlayout.widget.ConstraintLayout) findViewById(R.id.forever);
         constraintLayout.addView(new Myview(this),1);
 
-        imageView = (ImageView) findViewById(R.id.imageView);
-        TranslateAnimation translateAnimation = new TranslateAnimation(0,1050,1000,1000);
         if(SetActivity.St==0) {
             movetime = 2500;
         }
@@ -141,19 +141,27 @@ public class GameActivity extends AppCompatActivity {
         else {
             movetime = 1000;
         }
-        translateAnimation.setDuration(movetime);
-        translateAnimation.setInterpolator(new LinearInterpolator());
-        translateAnimation.setRepeatMode(TranslateAnimation.REVERSE);
-        translateAnimation.setRepeatCount(TranslateAnimation.INFINITE);
-        translateAnimation.setZAdjustment(1);
-        imageView.startAnimation(translateAnimation);
 
-//        int aaa = (int) imageView.getX();
-//        Transformation transformation = new Transformation();
-//        Matrix XMove = transformation.getMatrix();
+        ImageView myimage = (ImageView)findViewById(R.id.imageView);
+        ObjectAnimator translateXAnimation= ObjectAnimator.ofFloat(myimage, "translationX", 0f, 1050f);
+        ObjectAnimator translateYAnimation= ObjectAnimator.ofFloat(myimage, "translationY", 1000f, 1000f);
+        translateXAnimation.setInterpolator(new LinearInterpolator());
+        translateXAnimation.setRepeatMode(ValueAnimator.REVERSE);
+        translateXAnimation.setRepeatCount(ValueAnimator.INFINITE);
+        translateYAnimation.setRepeatCount(ValueAnimator.INFINITE);
 
-//        imageView.getX();
-//        imageView.getLeft();
+        AnimatorSet set = new AnimatorSet();
+        set.setDuration(movetime);
+        set.playTogether(translateXAnimation, translateYAnimation);
+        set.start();
+
+        translateXAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                Float imageXPosition = (Float) animation.getAnimatedValue();
+                aaa[0] =imageXPosition;
+            }
+        });
 
         //结束弹窗
         final AlertDialog dialog;//声明对象
@@ -179,10 +187,10 @@ public class GameActivity extends AppCompatActivity {
         buttonScore = findViewById(R.id.button8);
         buttonScore.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if(fen<999) {
+                if((600 <= aaa[0]) && (aaa[0] <= setright)) {
                     fen += 10;
                 }
-                if(fen>50) {
+                else {
                     dialog.show();//显示对话框
                     dialog.setCancelable(false);//点击对话框外区域（及返回键）无效
                 }

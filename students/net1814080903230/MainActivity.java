@@ -1,7 +1,6 @@
 package edu.hzuapp.androidlabs.net1814080903230;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
