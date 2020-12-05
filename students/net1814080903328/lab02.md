@@ -43,4 +43,3 @@
 
    ## 五、实验心得 
    在本次实验中，主要是根据自己的选题以及打算实现的功能创建Activity并通过button（按钮）实现页面间的跳转，以及AndroidMainfest的配置。完成过程比较顺利。
-  在本次实验中，根据自己的选题功能创建了Activity，学习到了activity以及AndroidMainfest的配置。在Activity中添加相应的按钮实现不同界面之间的跳转。完成得相对顺利。
