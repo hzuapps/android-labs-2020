@@ -27,6 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <provider
+            android:authorities="edu.hzuapps.androidlabs.ContentProviderOfRecords"
+            android:name=".ContentProviderOfRecords"/>
     </application>
 
 </manifest>

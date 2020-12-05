@@ -20,10 +20,33 @@
         android:textStyle="bold"
         />
 
-    <TextView
-        android:id="@+id/textView2"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="714dp" />
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btncheak"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/check" />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/clear" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trecord"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:textSize="20dp"
+
+        />
 </LinearLayout>
-
-
