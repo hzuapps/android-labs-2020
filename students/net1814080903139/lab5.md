@@ -66,7 +66,7 @@
 
 如图所示：添加闹钟-->删除闹钟
 
-![lab5](D:\Desktop\Markdown\移动应用开发\lab5.PNG)
+![lab5](https://github.com/BBsan13/android-labs-2020/blob/master/students/net1814080903139/lab5.PNG)
 
 
 
