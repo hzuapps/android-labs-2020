@@ -14,12 +14,12 @@
 # 三、实验步骤 #
 
 1. 准备好两个json文件，放在服务器上，跟第四次实验中的两个java类(Course.java、PhysicalScore.java)对应  
-    [Course.json](http://49.234.91.116:8080/examples/course.json)  
-    [PhysicalScore.json](http://49.234.91.116:8080/examples/physicalScore.json)  
+    [Course.json](http://49.234.91.116:80/examples/course.json)  
+    [PhysicalScore.json](http://49.234.91.116:80/examples/physicalScore.json)  
 2. 通过```getGitHubIssues()```方法来获取网络文件URL并建立链接  
     ```java
     private String getGitHubIssues() {
-        String gitApi = "http://49.234.91.116:8080/examples/physicalScore.json";
+        String gitApi = "http://49.234.91.116:80/examples/physicalScore.json";
         URL url = null;
         String jsonText = null;
         try {
