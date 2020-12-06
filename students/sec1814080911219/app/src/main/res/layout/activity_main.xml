@@ -10,9 +10,30 @@
     >
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="用户名:"
+            android:textSize="25dp"/>
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:id="@+id/login_name"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="登陆"
+            android:id="@+id/login"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="140dp"
         android:orientation="vertical"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="90dp">
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,16 +80,10 @@
         >
         <Button
             android:id="@+id/button_showfilelist"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:text="文件列表"/>
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:text="我"
-            android:textSize="20dp"/>
     </LinearLayout>
 
 </RelativeLayout>
