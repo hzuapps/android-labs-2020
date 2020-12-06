@@ -6,60 +6,56 @@
 1.使用一种布局方式设计界面  
 2.通过控件ID获取界面对象，执行相关操作  
 3.实现界面控件的事件处理  
-4.操作之后，切换到第二个界面  
 # 三、实验步骤
-创建constraintlayout布局的页面，实现自己的三到四个功能
-'''
+创建constraintlayout布局的页面
+
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:orientation="vertical"
-    android:background="@color/color2">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="歌曲名/歌手"
-        android:textSize="30dp"
-        android:background="@color/color3"
-        android:layout_marginTop="10dp"
-        />
-
+    android:orientation="vertical" >
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/p3" />
+        android:layout_height="200dp"
+        android:src="@drawable/logo3"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:hint="@string/tile" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textSize="30dp"
+        android:hint="@string/message" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp">
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/smenu"
-            android:textSize="20dp" />
-
+        android:layout_height="wrap_content">
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="20dp"
-            android:text="@string/open" />
+            android:text="@string/state" />
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="20dp"
-            android:text="@string/next" />
+            android:text="@string/send" />
     </LinearLayout>
 
 </LinearLayout>
-'''
+~~~
 
 # 四、实验结果
 !(https://github.com/Json-xl/android-labs-2020/blob/master/students/net1814080903308/sy/sy4-1.PNG?raw=true)  
