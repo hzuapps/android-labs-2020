@@ -29,8 +29,13 @@ public class ChartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chart);
+        mChart = (LineChartView) findViewById(R.id.chart);
+        mData = new LineChartData();
+        List<CostBean> allDate = (List<CostBean>) getIntent().getSerializableExtra("cost_list");//从数据库中查找出所有日期
+        generateValues(allDate);
+        generateData();
     }
-}
+
     private void generateData(){    //设置折线图的线颜色等属性
         List<Line> lines=new ArrayList<>();
         List<PointValue> values=new ArrayList<>();
@@ -48,3 +53,22 @@ public class ChartActivity extends AppCompatActivity {
         mChart.setLineChartData(mData);
         }
 }
+private void generateValues(List<CostBean> allDate) {   //将重复的数据累加，不重复的则收集到数据源中
+        if(allDate!=null)
+            for (int i = 0; i < allDate.size(); i++) {
+            CostBean costBean = allDate.get(i);  //遍历每一个数据
+            String costDate = costBean.costDate;
+            int costMoney = Integer.parseInt(costBean.costMoney);
+            if (!table.containsKey(costDate)) {       //不同日期则新建
+                table.put(costDate, costMoney);
+            } else {                         //同一日期累加
+                int originMoney = table.get(costDate);
+                table.put(costDate, originMoney + costMoney);
+            }
+        }
+
+        }
+
+        }
+
+
