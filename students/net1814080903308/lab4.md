@@ -7,7 +7,7 @@
 2.通过控件ID获取界面对象，执行相关操作  
 3.实现界面控件的事件处理  
 # 三、实验步骤
-创建constraintlayout布局的页面
+创建LinearLayout布局的页面
 
 ~~~
 <?xml version="1.0" encoding="utf-8"?>
