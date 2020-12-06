@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReckonActivity">
+    tools:context="ReckonActivity">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -14,20 +14,34 @@
         android:orientation="vertical"
         android:background="@drawable/reckon">
 
-    <Button
-        android:id="@+id/start_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="开始计时"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="300dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="00:00:00"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:id="@+id/text"/>
 
     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:layout_marginTop="70dp"
+        android:onClick="startClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        android:layout_marginTop="10dp"
+        android:onClick="stopClick1"/>
+
+     <Button
         android:id="@+id/return_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="返回"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="70dp" />
+        android:layout_marginTop="10dp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
