@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array">
+        <item>吃饭</item>
+        <item>聚会</item>
+        <item>约会</item>
+        <item>玩乐</item>
+        <item>生活杂费</item>
+    </string-array>
+    
+</resources>
