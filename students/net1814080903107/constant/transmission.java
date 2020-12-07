@@ -1,7 +1,7 @@
 package com.example.thefirst.constant;
 
 public interface transmission {
-    String sIP="10.77.26.235";//"10.77.26.225"
+    String sIP="192.168.56.1";//"10.77.26.225"
     int sPort=20002;//serverPort
     String imageFrom="http://8.129.96.72/Bitmap/";//图片父链接
     //服务类型，1开始

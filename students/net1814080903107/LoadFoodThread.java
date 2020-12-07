@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import com.example.thefirst.component.MyFoodLinearLayout;
 import com.example.thefirst.component.MyMeunLinearLayout;
@@ -22,10 +23,14 @@ public class LoadFoodThread extends Thread implements transmission {
     private StoreActivity storeActivity;
     private LinearLayout linearLayout;
     private int storeID;
-    public LoadFoodThread(StoreActivity storeActivity,LinearLayout linearLayout,int storeID){
+    private int no;
+    private LinearLayout showCarS;
+    public LoadFoodThread(StoreActivity storeActivity,LinearLayout linearLayout,int storeID,int no,LinearLayout showCarS){
         this.storeActivity=storeActivity;
         this.linearLayout=linearLayout;
         this.storeID=storeID;
+        this.no=no;
+        this.showCarS=showCarS;
     }
     public void run(){
         Socket socket=null;
@@ -40,7 +45,17 @@ public class LoadFoodThread extends Thread implements transmission {
             dos.writeInt(storeActivity.startPoint);
             dos.flush();
             final int n=dis.readInt();//更新栏目数量??????
-            storeActivity.startPoint+=n;
+            switch (no){
+                case 0:
+                    storeActivity.startPoint+=n;
+                    break;
+                case 1:
+                    storeActivity.startPoint1+=n;
+                    break;
+                case 2:
+                    storeActivity.startPoint2+=n;
+                    break;
+            }
             for(int i=0;i<n;i++){
                 //...
                 final int foodID=dis.readInt();
@@ -58,22 +73,14 @@ public class LoadFoodThread extends Thread implements transmission {
                                 setFoodName(foodName).
                                 setPrice(price).
                                 setIntroduction(introduce);
+                        //添加按钮监听
+                        myFoodLinearLayout.buyFood(showCarS);
                         linearLayout.addView(myFoodLinearLayout);
                         DownloadPool.queue.add(new DownloadModel(myFoodLinearLayout.getImageView(),IMAGEVIEW,foodBitmap));
-                        myFoodLinearLayout.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Intent newPage=new Intent(storeActivity,ResultActivity.class);
-                                MyFoodLinearLayout m=(MyFoodLinearLayout)v;
-                                int ID=m.getFoodID();
-                                newPage.putExtra("foodID",ID);
-                                storeActivity.startActivity(newPage);
-                            }
-                        });
                     }
                 });
             }
-            Log.d("*LoadFood","finush");
+            Log.d("*LoadFood","finish");
         }catch (IOException ex){
             Log.e("*LoadFood"," "+ex.getMessage());
         }

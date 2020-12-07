@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -26,6 +27,7 @@ public class MyFoodLinearLayout extends LinearLayout{
     private LinearLayout l2;
     private TextView t1;
     private Button b1;
+    private Button b2;
     private TextView t2;
     private TextView t3;
     public MyFoodLinearLayout(Context context) { super(context); this.context=context;init();}
@@ -40,6 +42,7 @@ public class MyFoodLinearLayout extends LinearLayout{
         l2=new LinearLayout(MyFoodLinearLayout.this.getContext());
         t1=new TextView(l2.getContext());
         b1=new Button(l2.getContext());
+        b2=new Button(l2.getContext());
         t2=new TextView(l2.getContext());
         t3=new TextView(l2.getContext());
 
@@ -54,12 +57,8 @@ public class MyFoodLinearLayout extends LinearLayout{
 
         t1.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT,2));
 
-        b1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-
-            }
-        });
+        b1.setText("+");
+        b2.setText("-");
 
         t2.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT,2));
         t3.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT,2));
@@ -120,5 +119,26 @@ public class MyFoodLinearLayout extends LinearLayout{
 
     public Bitmap getFoodBitmap() {
         return foodBitmap;
+    }
+
+    public void buyFood(LinearLayout linearLayout){
+        b1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                MyFoodLinearLayout myFoodLinearLayout =new MyFoodLinearLayout(linearLayout.getContext());
+                myFoodLinearLayout.
+                        setFoodID(foodID).
+                        setFoodName(foodName).
+                        setPrice(price).
+                        setIntroduction(introduction);
+                linearLayout.addView(myFoodLinearLayout);
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+            }
+        });
     }
 }

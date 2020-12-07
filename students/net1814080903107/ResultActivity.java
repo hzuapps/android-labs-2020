@@ -8,7 +8,8 @@ import com.amap.api.maps.AMap;
 import com.amap.api.maps.MapView;
 
 public class ResultActivity extends AppCompatActivity {
-    MapView mMapView = null;
+    private MapView mMapView = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +22,10 @@ public class ResultActivity extends AppCompatActivity {
         AMap aMap=mMapView.getMap();
         aMap.setTrafficEnabled(true);// 显示实时交通状况
         //地图模式可选类型：MAP_TYPE_NORMAL,MAP_TYPE_SATELLITE,MAP_TYPE_NIGHT
-        aMap.setMapType(AMap.MAP_TYPE_SATELLITE);// 卫星地图模式
+        aMap.setMapType(AMap.MAP_TYPE_NORMAL);
+
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();

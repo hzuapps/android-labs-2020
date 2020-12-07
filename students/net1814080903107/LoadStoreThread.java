@@ -6,10 +6,13 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.viewpager2.widget.ViewPager2;
+
 import com.example.thefirst.component.MyMeunLinearLayout;
 import com.example.thefirst.constant.transmission;
 import com.example.thefirst.model.DownloadModel;
 import com.example.thefirst.pool.DownloadPool;
+import com.google.android.material.tabs.TabLayout;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

@@ -46,7 +46,7 @@ public class MyMeunLinearLayout extends LinearLayout{
         t2=new TextView(l2.getContext());
 
         MyMeunLinearLayout.this.setOrientation(LinearLayout.HORIZONTAL);//行布局
-        MyMeunLinearLayout.this.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,300));
+        MyMeunLinearLayout.this.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,400));
 
         i1.setLayoutParams(new LinearLayout.LayoutParams(6, LinearLayout.LayoutParams.MATCH_PARENT,1));
         i1.setScaleType(ImageView.ScaleType.FIT_XY);
@@ -62,6 +62,8 @@ public class MyMeunLinearLayout extends LinearLayout{
 
         MyMeunLinearLayout.this.addView(i1);
         MyMeunLinearLayout.this.addView(l2);
+
+
     }
     public MyMeunLinearLayout setStoreID(int storeID) {
         this.storeID = storeID;
