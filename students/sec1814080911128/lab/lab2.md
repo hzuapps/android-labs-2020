@@ -47,7 +47,7 @@
 
 ## 四、实验结果 #
 
-![运行结果](https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/lab/lab2-1.pngg)
+![运行结果](https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/lab/lab2-1.png)
 ![运行结果](https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/lab/lab2-2.png)
 ## 五、实验心得 #
 通过本次实验，了解按钮点击事件的处理以及实现了各个 Activity 的跳转，更好地理解了控制流程。
