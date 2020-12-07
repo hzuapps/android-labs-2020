@@ -7,7 +7,7 @@
     tools:context=".TreeholdActivity">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,12 +16,14 @@
         android:orientation="vertical" >
 
         <EditText
+            android:id="@+id/nameTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="标题" />
+            android:hint="昵称" />
 
 
         <EditText
+            android:id="@+id/idTV"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -29,6 +31,7 @@
             android:hint="内容" />
 
         <Button
+            android:id="@+id/button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"

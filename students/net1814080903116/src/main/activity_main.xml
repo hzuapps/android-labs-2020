@@ -9,18 +9,18 @@
 
     <TextView
         android:id="@+id/mainTextView"
-        android:layout_width="400dp"
-        android:layout_height="700dp"
-        android:text="首页"
+        android:layout_width="413dp"
+        android:layout_height="731dp"
         android:drawableTop="@drawable/main"
+        android:text="首页"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512"
 
 
-        />
+        app:layout_constraintVertical_bias="0.516" />
 
     <Button
         android:id="@+id/postButton"
@@ -29,7 +29,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
         android:layout_marginBottom="39dp"
-        android:text="功能页1"
+        android:text="解忧墙"
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
         android:layout_marginEnd="59dp"
         android:layout_marginRight="59dp"
         android:layout_marginBottom="37dp"
-        android:text="功能页2"
+        android:text="我的"
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

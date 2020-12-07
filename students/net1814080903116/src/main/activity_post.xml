@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".PostActivity">
 
-<!--    <TextView-->
-<!--        android:id="@+id/postTextView"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="功能页1"-->
-<!--        tools:layout_editor_absoluteX="173dp"-->
-<!--        tools:layout_editor_absoluteY="387dp"-->
-<!--        tools:ignore="MissingConstraints" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,25 +20,19 @@
             android:hint="解忧墙" />
 
         <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/idTV"
             android:layout_width="match_parent"
             android:layout_height="236dp"
-            android:hint="内容1"/>
+            android:hint="内容1" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="243dp"
-            android:hint="内容2"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="内容3" />
-
-<!--        <Button-->
-<!--            android:layout_width="100dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="right"/>-->
 
     </LinearLayout>
 
