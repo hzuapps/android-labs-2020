@@ -23,10 +23,10 @@
 
 ## 四、实验结果
 
-![开发环境](https://github.com/hzuapps/android-labs-2020/blob/master/students/net1814080903301/1.jpg)  
+![开发环境](https://github.com/Classic-Z/android-labs-2020/blob/master/students/net1814080903321/1.jpg)  
 图1.搭建开发环境（Android Studio），运行和虚拟机截图
 
-![提交代码](https://github.com/hzuapps/android-labs-2020/blob/master/students/net1814080903301/1.jpg)  
+![提交代码](https://github.com/Classic-Z/android-labs-2020/blob/master/students/net1814080903321/1.1.jpg)  
 图2.提交代码，老师合并之后截图
 
 ## 五、实验心得
