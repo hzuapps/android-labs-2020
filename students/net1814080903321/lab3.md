@@ -43,7 +43,7 @@
 
 ## 四、实验结果
 
-![Store页面](https://github.com/hzuapps/android-labs-2020/blob/master/students/net1814080903301/3.jpg)  
+![Store页面](https://github.com/Classic-Z/android-labs-2020/blob/master/students/net1814080903321/3.jpg)  
 应用运行结果：Store页面添加图片和按钮截图
 
 ## 五、实验心得
