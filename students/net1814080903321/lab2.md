@@ -89,7 +89,7 @@ public class StoreActivity extends AppCompatActivity {
 
 ## 四、实验结果
 
-![应用首页](https://github.com/hzuapps/android-labs-2020/blob/master/students/net1814080903301/2.jpg)  
+![应用首页](https://github.com/Classic-Z/android-labs-2020/blob/master/students/net1814080903321/2.jpg)  
 首页添加按钮运行结果截图
 
 ## 五、实验心得
