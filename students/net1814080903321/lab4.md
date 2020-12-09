@@ -436,16 +436,16 @@ activity_store.xml如下
 
 ## 四、实验结果
 
-![应用首页](https://github.com/hzuapps/android-labs-2020/blob/master/students/net1814080903301/4.jpg)  
+![应用首页](https://github.com/Classic-Z/android-labs-2020/blob/master/students/net1814080903321/2.jpg)  
 图1.应用运行结果：首页截图
 
-![Store页面](https://github.com/hzuapps/android-labs-2020/blob/master/students/net1814080903301/4.jpg)  
+![Store页面](https://github.com/Classic-Z/android-labs-2020/blob/master/students/net1814080903321/3.jpg)  
 图2.应用运行结果：商店页面（Store）截图
 
-![Show页面](https://github.com/hzuapps/android-labs-2020/blob/master/students/net1814080903301/4.jpg)  
+![Show页面](https://github.com/Classic-Z/android-labs-2020/blob/master/students/net1814080903321/4.jpg)  
 图3.应用运行结果：菜单页面（Show）截图
 
-![代码提交](https://github.com/hzuapps/android-labs-2020/blob/master/students/net1814080903301/4.jpg)  
+![代码提交](https://github.com/Classic-Z/android-labs-2020/blob/master/students/net1814080903321/4.1.jpg)  
 图4.提交代码，老师合并之后截图
 
 ## 五、实验心得
