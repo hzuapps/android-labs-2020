@@ -22,11 +22,11 @@
         android:layout_height="20sp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
-        android:text="单词英文"
+        android:text="单词"
         android:textSize="18sp"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -40,9 +40,10 @@
         android:layout_height="20sp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
-        android:text="中文翻译" />
+        android:text="翻译" />
 
     <EditText
+        android:id="@+id/editText2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
