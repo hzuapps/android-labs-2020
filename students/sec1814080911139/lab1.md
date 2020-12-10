@@ -33,6 +33,16 @@
 ```
    edu.hzuapps.androidlabs.net1814080911139.Net181408091139Activity.java
    
+   
+    package edu.hzuapps.androidlabs.sec1814080911139;
+
+    public class Sec1814080911139Activity{
+
+    public static void main(String[] args){
+    System.out.println("hello world");
+
+    }
+    }
 
 
 ```
@@ -50,3 +60,4 @@
  ![实验一图一]()
 
 ## 五、实验心得体会
+通过本次实验学习了github以及git的基本使用，熟练的掌握了Android的安装和项目的创建的具体的操作，同时也知道了git的基本使用并且最终成功的提交了作业。
