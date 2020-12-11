@@ -6,11 +6,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class myHelper extends SQLiteOpenHelper {
+public class MyHelper extends SQLiteOpenHelper {
     private SQLiteDatabase db;
     static final String DATABASE_NAME = "TeachingbarImformation";
     static final int DATABASE_VERSION = 1;
-    public myHelper(@Nullable Context context) {
+    public MyHelper(@Nullable Context context) {
 
         super(context,DATABASE_NAME, null, DATABASE_VERSION);
 
