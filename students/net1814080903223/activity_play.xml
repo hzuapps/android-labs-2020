@@ -1,74 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+tools:ignore="MissingConstraints"
+ tools:layout_editor_absoluteX="0dp"
+   tools:layout_editor_absoluteY="0dp"
+        android:background="#F5fffa">
+     <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="250dp"
+      android:background="@drawable/tupian1"
+                 />
+    <TextView
     android:layout_width="match_parent"
-    android:background="@drawable/tupian2"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="125dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="136dp"
-        android:text="PLAYERE"
-        android:textSize="30dp"
-        android:background="@drawable/tupian102"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="125dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:text="AL"
-        android:textSize="30dp"
-        android:background="@drawable/tupian102"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="110dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="396dp"
-        android:text="石头"
-        android:textSize="30dp"
-        android:background="@drawable/tupian202"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="110dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginTop="396dp"
-        android:text="剪刀"
-        android:textSize="30dp"
-        android:background="@drawable/tupian202"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="110dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="396dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="布"
-        android:textSize="30dp"
-        android:background="@drawable/tupian202"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+               android:layout_height="wrap_content"
+               android:text="请选择要出的拳"
+                android:textColor="#636363"
+              android:textStyle="bold"
+             android:textSize="28sp"
+ android:background="#F5fffa"/
+ <LinearLayout
+    android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="horizontal">
+     <Button
+       android:id="@+id/button_bu"
+    android:layout_width="125dp"
+        android:layout_height="50dp"
+       android:text="布"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+        <Button
+	   android:id="@+id/button_jiandao"
+	  android:layout_width="125dp"
+	       android:layout_height="50dp"
+	       android:text="剪刀"
+    android:textSize="23sp"
+            android:textStyle="bold"/>
+             <Button
+	                android:id="@+id/button_shitou"
+            android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:text="石头"
+	                    android:textSize="23sp"
+                android:textStyle="bold"/>
+                 </LinearLayout>
+		
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textSize="15sp"
+		            android:text="历史记录:"/>
+		        <TextView
+		            android:id="@+id/textview_history"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:textSize="15sp"
+		            android:textColor="#636363"/>
+	    </LinearLayout>
