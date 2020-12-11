@@ -11,10 +11,20 @@
 - 点击图片（或按钮）时，打开另一个Activity
 ## 三、实验步骤
 1. 将所要添加的图片用英文小写命名（带含义）放入项目目录的res/drawable，我添加的是主页背景图index.jpg
-2. 在主页面activity_sec1814080911234.xml中将index设为背景，代码为：  
-  
-        android:background="@drawable/index"
+2. 在主页面activity_sec1814080911234.xml中将index设为背景，代码为： 
 
+```xml
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Sec1814080911234Activity"
+    android:background="@drawable/index"
+    >
+```
 
 
 ## 四、实验结果
