@@ -19,7 +19,7 @@ public class Net1814080903333StudentsInformationActivity2 extends AppCompatActiv
    private  TextView textView;
    private ContentValues values;
    private String name,course,time;
-   private myHelper helper;
+   private MyHelper helper;
    private SQLiteDatabase db;
    private Cursor cursor;
     @Override

@@ -20,7 +20,7 @@ public class Net814080903333TeacherHomeActivity extends AppCompatActivity implem
     private TextView textView;
     private ContentValues values;
     private String name,course,time;
-    private myHelper helper;
+    private MyHelper helper;
     private SQLiteDatabase db;
     private Cursor cursor;
     protected void onCreate(Bundle savedInstanceState) {
