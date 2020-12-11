@@ -19,35 +19,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/dates"
-        android:hint="@string/c_reminder" />
-    <EditText
-        android:id="@+id/homework_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/class_name"
-        android:hint="@string/h_reminder" />
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:hint="@string/c_reminder"
+        android:background="@drawable/et"/>
+
 
     <Button
             android:id="@+id/button_add"
             android:layout_width="96dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/homework_name"
+            android:layout_below="@id/class_name"
             android:layout_alignParentRight="true"
             android:text="@string/b_add" />
         <Button
             android:id="@+id/button_check"
             android:layout_width="96dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/homework_name"
+            android:layout_below="@id/class_name"
             android:layout_toLeftOf="@id/button_add"
             android:text="@string/b_check" />
 
     <ImageView
+        android:id="@+id/image_tp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/homework"
         android:layout_below="@id/button_check"
         tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_tp"/>
 
 
 </RelativeLayout>

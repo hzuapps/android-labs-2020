@@ -5,23 +5,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add1814080903138Activity">
+    tools:context=".add1814080903138Activity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
-    <TextView
-        android:id="@+id/text"
+    <EditText
+        android:id="@+id/homework_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:text="添加成功"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="60dp"></TextView>
+        android:hint="@string/h_reminder"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/et"/>
 
     <Button
-        android:id="@+id/button_check"
+        android:id="@+id/btn_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/homework_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
         android:text="查看进度" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homework_name"
+        android:layout_toLeftOf="@id/btn_check"
+        android:layout_marginTop="10dp"
+        android:text="确认添加"
+       />
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homework_name"
+        android:layout_toLeftOf="@id/btn_add"
+        android:layout_marginTop="10dp"
+        android:text="显示"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_show"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btn_add"/>
+
 </RelativeLayout>
