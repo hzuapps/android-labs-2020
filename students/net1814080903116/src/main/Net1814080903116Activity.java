@@ -13,8 +13,8 @@ public class Net1814080903116Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bindActivityButton(R.id.postButton,postActivity.class);
-        bindActivityButton(R.id.treeHoldButton,treeholdActivity.class);
+        bindActivityButton(R.id.postButton, PostActivity.class);
+        bindActivityButton(R.id.treeHoldButton, TreeholdActivity.class);
 
     }
 
@@ -30,4 +30,6 @@ public class Net1814080903116Activity extends AppCompatActivity {
         });
     }
 
+    public void onClick(View view) {
+    }
 }
