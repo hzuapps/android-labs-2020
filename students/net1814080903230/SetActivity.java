@@ -1,8 +1,6 @@
 package edu.hzuapp.androidlabs.net1814080903230;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,26 +13,6 @@ public class SetActivity extends AppCompatActivity {
     static int Rt=1;
     static int St=1;
 
-    /*   public void iv_1(View view){
-           displayRegion=(TextView)findViewById(R.id.textView5);
-           int num1 = Integer.parseInt(displayRegion.getText().toString());
-           if(num1>1){
-               num1-=1;
-           }
-
-           displayRegion.setText(Integer.toString(num1));
-
-       }
-       public void iv_2(View view){
-           displayRegion=(TextView)findViewById(R.id.textView5);
-           int num1 = Integer.parseInt(displayRegion.getText().toString());
-           if(num1<999){
-               num1+=1;
-           }
-
-           displayRegion.setText(Integer.toString(num1));
-
-       }*/
     public void disR(int Rt){
         if(Rt==0)
             displayRegion.setText("窄");
@@ -57,34 +35,6 @@ public class SetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set);
-
-        /*buttonRegion_L.setOnClickListener(new View.OnClickListener(){
-
-
-        int Rtarget=1;
-        public void iv_1(View view){
-            displayRegion=(TextView)findViewById(R.id.textView5);
-            Rtarget=Integer.parseInt(displayRegion.getText().toString());
-            if(Rtarget>0){
-                Rtarget-=1;
-            }
-
-            displayRegion.setText(Integer.toString(Rtarget));
-
-        }
-        public void iv_2(View view){
-            displayRegion=(TextView)findViewById(R.id.textView5);
-            Rtarget=Integer.parseInt(displayRegion.getText().toString());
-            if(Rtarget<2){
-                Rtarget+=1;
-            }
-
-            displayRegion.setText(Integer.toString(Rtarget));
-
-        }
-    });*/
-
-
         displayRegion = findViewById(R.id.textView5);
         buttonRegion_L = findViewById(R.id.button4);
         buttonRegion_R = findViewById(R.id.button5);
