@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3d3c3c"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="轻账单"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <ImageButton
+            android:id="@+id/IB_0"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="220dp"
+            android:src="@drawable/sousuo1" />
+        <ImageButton
+            android:id="@+id/IB_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/jia" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bj1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/TV_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageButton
+                android:id="@+id/IB_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:layout_marginLeft="95dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#aaffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/Bu_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#00000000"
+                    android:text="-50                     14:30"
+                    android:gravity="left"
+
+                    android:textSize="15sp"/>
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#bebebe"/>
+                <Button
+                    android:id="@+id/Bu_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#00000000"
+                    android:layout_marginTop="10dp"
+                    android:text="-70                     16:25"
+                    android:textSize="15sp"
+                    android:gravity="left"/>
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#bebebe"/>
+
+                <LinearLayout
+                    android:layout_marginTop="110dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="65dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总支出：120"
+                        android:textSize="20sp"
+                        android:textColor="#f58686"/>
+                    <ImageButton
+                        android:id="@+id/IB_4"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/zhichu"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <ImageButton
+            android:id="@+id/IB_3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/luyin"
+            android:background="#00000000"/>
+    </LinearLayout>
+</LinearLayout>
