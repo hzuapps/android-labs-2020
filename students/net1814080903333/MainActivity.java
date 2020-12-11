@@ -1,9 +1,8 @@
 package edu.hzuapps.myapplication;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.Button;import android.view.View;import android.content.Intent;
+import android.widget.TableLayout;
 public class MainActivity extends AppCompatActivity {
     private Button btn1,btn3;
 
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this , Net1814080903333StudentsInformationActivity2.class);
+                Intent intent = new Intent(MainActivity.this ,Net1814080903333StudentsInformationActivity2.class);
                 startActivity(intent);
             }
         });
