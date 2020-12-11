@@ -10,13 +10,15 @@
         android:id="@+id/button_main"
         android:layout_width="407dp"
         android:layout_height="50dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="400dp"
         android:text="朋友圈" />
 
         <ImageView
-        android:layout_width="150sp"
-        android:layout_height="150sp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
         android:src="@drawable/pyqlogo" />
+
+
 
 
 

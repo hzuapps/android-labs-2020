@@ -7,8 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Sec1814080911118Activity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
+import edu.hzuapps.pyq.listview.Message;
+
+public class Sec1814080911118Activity extends AppCompatActivity {
+    private List<Message> messageList=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,5 +29,7 @@ public class Sec1814080911118Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
+
 }

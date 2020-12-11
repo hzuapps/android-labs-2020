@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PYQ</string>
+    <string name="look_pyq">发朋友圈</string>
+    <string name="submit">提交</string>
 </resources>
