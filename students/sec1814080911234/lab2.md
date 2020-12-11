@@ -22,7 +22,7 @@ FestivalActivity.java（节假日）
 3. 在activity_sec1814080911234.xml上添加三个按钮（创建事件、日期计算、节假日）   
 4. 在Sec1814080911234Activity.java为按扭添加点击事件实现跳转，部分代码如下
 
-
+```xml
         button_create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +46,7 @@ FestivalActivity.java（节假日）
                 thisActivity.startActivity(intent);
             }
         });
+```
 ## 四、实验结果
 ![lab2](raw.githubusercontent.com/1728799039/android-labs-2020/master/students/sec1814080911234/lab2.png)
 ## 五、实验心得
