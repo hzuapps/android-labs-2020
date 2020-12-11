@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCar">
+
+    <ScrollView
+        android:layout_width="250dp"
+        android:layout_height="564dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/goods1"
+                android:layout_width="250dp"
+                android:layout_height="220dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+                <TextView
+                    android:id="@+id/price1"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/goods_name1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/goods2"
+                android:layout_width="250dp"
+                android:layout_height="220dp"  />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/price2"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/goods_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/goods3"
+                android:layout_width="250dp"
+                android:layout_height="220dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/price3"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/goods_name3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/goods4"
+                android:layout_width="250dp"
+                android:layout_height="220dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/price4"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/goods_name4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:id="@+id/goods5"
+                android:layout_width="250dp"
+                android:layout_height="220dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/price5"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/goods_name5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/showtest"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <Button
+        android:id="@+id/allchoose"
+        android:layout_width="78dp"
+        android:layout_height="49dp"
+        android:text="全选"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/price_check"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:text="总价"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/all_price"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <Button
+        android:id="@+id/check_now"
+        android:layout_width="87dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="查询"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="71dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="删除"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/to_database"
+
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/show_database"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
