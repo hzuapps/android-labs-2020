@@ -7,15 +7,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import  android.widget.ImageView;
+import android.widget.Toast;
+
+import helper.FileHelper;
 
 public class Sec1814080911106Activity extends AppCompatActivity implements View.OnClickListener {
 
-    private ImageView mImage;
-    private TextView mText;
-    private int num;
-    private int index;
-    private String[] title;
-    private int[] images;
+    public ImageView mImage;
+    public TextView mText;
+    public int num;
+    public int index;
+    public String[] title;
+    public int[] images;
+    private FileHelper fileHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +39,18 @@ public class Sec1814080911106Activity extends AppCompatActivity implements View.
             }
         });
 
+        Button addBtn = (Button) findViewById(R.id.btn_add);
+        addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(thisActivity, AddActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
-    private void initData() {
+    public void initData() {
         title =new String[] {"第1张图片","第2张图片","第3张图片","第4张图片","第5张图片"};
         images =new int[] {R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d,R.drawable.e};
 
@@ -48,7 +61,7 @@ public class Sec1814080911106Activity extends AppCompatActivity implements View.
         index = 0;
     }
 
-    private void initView() {
+    public void initView() {
         mImage = findViewById(R.id.iv_show);
         mText = findViewById(R.id.tv_show);
         findViewById(R.id.btn_preious).setOnClickListener(this);
@@ -77,7 +90,7 @@ public class Sec1814080911106Activity extends AppCompatActivity implements View.
     }
 
 
-    private void updateImageAndTitle() {
+    public void updateImageAndTitle() {
         mImage.setImageResource(images[index]);
         mText.setText(title[index]);
     }
