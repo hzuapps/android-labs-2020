@@ -32,4 +32,14 @@
         android:background="@color/btnColor"
         android:text="录入单词"
         android:textColor="@color/textColor" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/btnColor"
+        android:text="四六级必考单词集"
+        android:textColor="@color/textColor" />
 </LinearLayout>

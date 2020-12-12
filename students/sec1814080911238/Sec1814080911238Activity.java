@@ -6,7 +6,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class Sec1814080911238Activity extends AppCompatActivity {
     @Override
@@ -24,11 +23,18 @@ public class Sec1814080911238Activity extends AppCompatActivity {
             }
         });
 
-
         Button btnOpen2 = (Button) findViewById(R.id.button2);
         btnOpen2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(thisActivity,InputActivity.class);
+                Intent intent = new Intent(thisActivity, InputActivity.class);
+                thisActivity.startActivity(intent);
+            }
+        });
+
+        Button btnOpen3 = (Button) findViewById(R.id.button3);
+        btnOpen3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(thisActivity, DownloadActivity.class);
                 thisActivity.startActivity(intent);
             }
         });
