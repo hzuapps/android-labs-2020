@@ -25,6 +25,7 @@
 
 ![实验一图片](https://github.com/Li3069/android-labs-2020/blob/master/students/net1814080903326/net1814080903326.png)
 
+
 ## 五、实验心得
 
 本次实验主要学习如何去搭建Android开发环境，建立安卓项目，使用git命令，实验难度并不是很高，但需要多操作才能熟练。
