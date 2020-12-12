@@ -2,7 +2,10 @@ package edu.hzuapps.androidlabs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Outline;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewOutlineProvider;
 import android.widget.TextView;
 
 import java.io.FileInputStream;
@@ -15,6 +18,7 @@ public class PostActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
+
             FileInputStream fis=null;
             byte[] buffer=null;
             try {

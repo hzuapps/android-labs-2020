@@ -14,23 +14,31 @@
         android:paddingRight="16dp"
         android:orientation="vertical" >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:hint="解忧墙" />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="38dp"-->
+<!--            android:hint="解忧墙" />-->
 
         <TextView
             android:id="@+id/nameTV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="395dp"
+            android:layout_height="32dp"
+            android:background="@drawable/layout"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:orientation="horizontal"
+            android:text="Name"
+            android:textColor="#607b8b"
+            android:textSize="20sp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/idTV"
-            android:layout_width="match_parent"
-            android:layout_height="236dp"
+            android:layout_width="395dp"
+            android:layout_height="233dp"
+            android:background="@drawable/layout"
+            android:textColor="#607b8b"
+            android:textSize="25sp"
+            android:textStyle="normal"
             android:hint="内容1" />
 
 
