@@ -74,7 +74,7 @@
                 .penaltyLog().penaltyDeath().build());
                 
 ## 四、实验结果
-![lab6](https://raw.githubusercontent.com/xyl123580/android-labs-2020/master/students/net1814080903110/lab6.png)
+![lab6](https://raw.githubusercontent.com/15218047860/android-labs-2020/master/students/net1814080903121/lab6.png)
 
 ## 五、实验心得
   本次实验学习网络编程，学习了比较简单的通过getGitHubIssues()方法获取数值的知识，比较需要注意的是AndroidManifest.xml文件中需要添加相应的权限。
