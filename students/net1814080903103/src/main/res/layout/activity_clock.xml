@@ -18,7 +18,7 @@
         android:id="@+id/clock_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="添加闹钟"
+        android:text="设置闹钟"
         android:layout_marginLeft="140dp"
         android:layout_marginTop="300dp"/>
 
