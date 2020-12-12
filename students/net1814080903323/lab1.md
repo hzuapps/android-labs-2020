@@ -25,7 +25,7 @@
 edu.hzuapps.androidlabs.net1814080903323.Net1814080903323Activity.java
 ```java
 package edu.hzuapps.androidlabs.net1814080903323;
-public class Nec1814080911106Activity
+public class Nec1814080903323Activity
 	public static void main(String args[]){
 		System.out.println("Hello World!");	
 	}
@@ -34,14 +34,14 @@ public class Nec1814080911106Activity
 
 5. 提交代码并发Pull Request
 ```shell
-git add net1814080911106/Net1814080903323Activity.java
+git add net1814080903323/Net1814080903323Activity.java
 git commit -m "#1 #309 第1次实验"
 git push	git push
 ```
 
 
 ## 四、实验结果
-![结果](https://github.com/joshua-ben/android-labs-2020/blob/master/students/net1814080903323/lab1-3.png)
+![结果](https://github.com/joshua-ben/android-labs-2020/blob/master/students/net1814080903323/net1814080903323.png)
 
 
 ## 五、实验心得
