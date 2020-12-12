@@ -25,7 +25,7 @@
 edu.hzuapps.androidlabs.net1814080903323.Net1814080903323Activity.java
 ```java
 package edu.hzuapps.androidlabs.net1814080903323;
-public class Nec1814080903323Activity
+public class Net1814080903323Activity
 	public static void main(String args[]){
 		System.out.println("Hello World!");	
 	}
