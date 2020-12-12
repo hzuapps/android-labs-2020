@@ -40,7 +40,7 @@
 应用运行结果：首页（Net1814080903332Activity）添加图片和按钮截图
 
 ![点击按钮跳转](https://github.com/eason89/android-labs-2020/blob/master/students/net1814080903332/2.PNG)  
-应用运行结果：点击按钮后跳转到景点选择页面（SelectTravelPlace）
+应用运行结果：首页点击 BUTTON 按钮后跳转到景点选择页面（SelectTravelPlace）
 
 ## 五、实验心得
 这次实验比起前面的实验，难度不大，只需要在想要插入图片的界面上添加好图片就可以了，图片的一些属性可以在xml文档中进行设置。注意好存放图片时一定要注意是小写。
