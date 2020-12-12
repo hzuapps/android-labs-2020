@@ -24,7 +24,7 @@ git push
 ```
 
 ## 四、实验结果
-![配置成功截图](https://cdn.jsdelivr.net/gh/HuaStarOS/android-labs-2020/students/net1814080903325/lab1.jpg)
+![配置成功截图](https://raw.githubusercontent.com/HuaStarOS/android-labs-2020/master/students/net1814080903325/lab1.jpg)
 
 ## 五、实验心得
 配置成功Android Studio的开发环境，学会了如何使用git来上传文件，初步了解GitHub上面的基本操作
