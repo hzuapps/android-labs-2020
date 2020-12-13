@@ -9,12 +9,12 @@
 ## 二、实验内容 #
 
 1. 根据自己的选题功能，创建2-3 个 Activity（界面可以尝试设计）；
-- Sec1814080911128Activity.java (首页、LAUNCHER、主活动)
-- 功能1Activity.java
-- 功能2Activity.java
+- Net1814080903341Activity.java (首页、LAUNCHER、主活动)
+- SearchActivity.java
+- UploadActivity.java
 - AndroidManifest.xml
 2. 在 Activity 上添加按钮、链接或导航栏，实现各个 Activity 的跳转。
-- 在 Sec1814080911128Activity.java 添加按钮点击事件处理，实现跳转
+- 在 Net814080903341Activity.java 添加按钮点击事件处理，实现跳转
 
 ## 三、实验步骤 #
 
