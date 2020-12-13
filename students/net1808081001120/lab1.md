@@ -19,7 +19,7 @@
 5. 在git bash提交Net1808081001120Activity 的java类
 
 ## 四、实验结果
-![实验一图片](https://github.com/SaTarU1IX/android-labs-2020/blob/master/students/Net1808081001120Activity.png)
+![实验一图片](https://github.com/SaTarU1IX/android-labs-2020/blob/master/students/net1808081001120/Net1808081001120Activity.png)
 
 ## 五、实验心得
 本次实验主要学习如何建立了android项目，以及github以及git的基本使用，基本能够掌握，比较简单，还需多多动手操作。
