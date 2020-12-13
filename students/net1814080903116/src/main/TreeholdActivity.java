@@ -35,7 +35,7 @@ public class TreeholdActivity extends AppCompatActivity {
                     FileOutputStream fos=null;
                     //抛出异常
                     try {
-                        fos=openFileOutput("login",MODE_PRIVATE);
+                        fos=openFileOutput("login",MODE_APPEND);
                         //把这些信息写入
                         fos.write((name+" "+id+" ").getBytes());
                         fos.flush();//刷新

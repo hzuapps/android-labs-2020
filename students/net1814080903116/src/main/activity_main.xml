@@ -33,6 +33,7 @@
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/button_main"
         tools:ignore="OnClick" />
 
     <Button
@@ -44,6 +45,7 @@
         android:layout_marginBottom="37dp"
         android:text="我的"
         android:onClick="onClick"
+        android:background="@drawable/button_main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
