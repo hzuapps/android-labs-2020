@@ -9,7 +9,7 @@
 
 1. 搭建Android开发环境
 2. 创建项目
-3. 创建名为Sec1814080911106Activity的java类
+3. 创建名为Net1814080903315Activity的java类
 
 ## 三、实验步骤
 
