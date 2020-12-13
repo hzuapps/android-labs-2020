@@ -2,7 +2,7 @@
 ## 一、实验目标
 1. 搭建Android(Android Studio)开发环境。
 2. 熟悉并且掌握Git和GitHub.com提交实验代码的方法。
-##二、实验内容
+## 二、实验内容
 1. 搭建开发环境（Android Studio）
 2. 创建名为Net1814080903236Activity的java类
 3. 下载并安装Git，熟悉git相关命令的使用
