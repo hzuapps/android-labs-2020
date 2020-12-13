@@ -57,8 +57,8 @@
 
 ## 四、实验结果
 
- ![实验一图1](https://github.com/xxak11234/android-labs-2020/blob/master/students/sec1814080911139/%E5%AE%9E%E9%AA%8C%E4%B8%80%E5%9B%BE1.jpg?raw=true);
- ![实验一图2](https://github.com/xxak11234/android-labs-2020/blob/master/students/sec1814080911139/%E5%AE%9E%E9%AA%8C%E4%B8%80%E5%9B%BE2.jpg?raw=true);
+ ![实验一图1](https://github.com/xxak11234/android-labs-2020/blob/master/students/sec1814080911139/picture1.jpg?raw=true)；
+ ![实验一图2](https://github.com/xxak11234/android-labs-2020/blob/master/students/sec1814080911139/picture2.jpg?raw=true)；
 
 ## 五、实验心得体会
 通过本次实验学习了github以及git的基本使用，熟练的掌握了Android的安装和项目的创建的具体的操作，同时也知道了git的基本使用并且最终成功的提交了作业。
