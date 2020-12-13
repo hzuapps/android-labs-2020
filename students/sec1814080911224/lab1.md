@@ -23,7 +23,7 @@
 5. 利用git bash来提交相关的文件到自己账号下，在自己账号上pull request到hzuappsandroid-labs-2020
 
 # 四、实验结果
-![lab1](httpsgithub.comhzuappsandroid-labs-2020blobmasterstudentssec1814080911224anroid.PNG)
+![lab1](https://github.com/ljjljjj/android-labs-2020/tree/master/students/sec1814080911224/lab1.PNG)
 
 # 五、实验心得
 学习了git bash的git clone以及git push等命令，大概了解了github的使用方法，成功安装配置了android studio并成功运行。
