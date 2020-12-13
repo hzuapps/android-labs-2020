@@ -26,4 +26,12 @@
         android:textColor="#FF0000"
         android:text="作业图片"
         />
+
+    <Button
+        android:id="@+id/btn_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="文件存储"
+        />
 </LinearLayout>
