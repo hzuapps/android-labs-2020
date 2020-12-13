@@ -6,9 +6,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,6 +28,8 @@ public class Net1814080903111Activity extends AppCompatActivity implements Runna
     private String yearmonth,day;
     private SimpleDateFormat simpleDateFormat;
     final Net1814080903111Activity th = this;
+
+    final private int record = 111;
     //数据库配置
     static final String db_name = "RecordDB";
     static final String tb_name = "RecordTB";
@@ -42,6 +47,10 @@ public class Net1814080903111Activity extends AppCompatActivity implements Runna
 
         initView();
         checktoday();
+        c =db.rawQuery("select * from " + tb_name ,null);
+        while(c.moveToNext()){
+            System.out.println(c.getString(0)+" "+c.getString(1));
+        }
         handler = new Handler() {
             public void handleMessage(Message msg) {
                 textView.setText("当前时间："+(String)msg.obj);
@@ -67,7 +76,6 @@ public class Net1814080903111Activity extends AppCompatActivity implements Runna
         db.execSQL(createTable);
 
         c =db.rawQuery("select * from " + tb_name +" where yearmonth LIKE '"+yearmonth+"' and day LIKE '"+day+"'",null);
-        System.out.println(c.getCount());
         while(c.moveToNext()){
             btn_signin.setText("今日已签到");
             btn_signin.setEnabled(false);
@@ -82,22 +90,34 @@ public class Net1814080903111Activity extends AppCompatActivity implements Runna
     }
     private void initView() {       //设置组件
         textView=(TextView) findViewById(R.id.tv_time);
-        btn_check= findViewById(R.id.btn_check);
         btn_signin=findViewById(R.id.btn_signin);
     }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_check:
-                Intent intent = new Intent(th,activity_record.class);
-                th.startActivity(intent);
-                break;
             case R.id.btn_signin:
                 addData(yearmonth,day);
                 btn_signin.setEnabled(false);
                 btn_signin.setText("今日已签到");
                 break;
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        menu.add(1,record,2,"查看签到记录");
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case record:
+                Intent intent = new Intent(th,activity_record.class);
+                th.startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
     @Override
     public void run() {
