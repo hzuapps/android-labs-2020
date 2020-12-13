@@ -9,7 +9,7 @@
 ## 二、实验内容
 1. 搭建Android开发环境
 2. 创建项目
-3. 创建名为Sec1814080911127Activity的java类
+3. 创建名为Sec1814080911106Activity的java类
 4. 熟练Git常用命令
 
 
