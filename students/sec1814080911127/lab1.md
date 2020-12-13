@@ -30,7 +30,7 @@ cd android-labs-2020
 edu.hzuapps.androidlabs.sec1814080911127.Sec1814080911127Activity.java
 ```java
 package edu.hzuapps.androidlabs.sec1814080911127;
-public class Sec1814080911127Activity
+public class Sec1814080911127Activity{
 	public static void main(String args[]){
 		System.out.println("Hello World!");	
 	}
