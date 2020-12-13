@@ -1,4 +1,4 @@
-# 实验一
+# 实验一 Android开发环境搭建
 
 ## 一、实验目标
 
@@ -18,6 +18,7 @@
 3. 将hzuapps/android-labs-2020的项目Fork到自己的github账号下；
 4. 安装git bash用git clone命令将android-labs-2020项目克隆到本地；
 5. 在git bash提交Net1814080903315Activity的java类；
+6. 提交代码并发Pull Request；
 
 ## 四、实验结果
 
