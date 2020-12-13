@@ -1,15 +1,12 @@
 package edu.hzuapps.androidlabs.net1814080903111;
 
 import android.content.Context;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -17,7 +14,6 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.ParseException;
@@ -39,8 +35,6 @@ public class activity_record extends AppCompatActivity implements View.OnClickLi
     private TextView calendar_date;
     private int week,dates;
     private MyAdapter adapter;
-
-    final private int help = 111;
     //数据库配置
     static final String db_name = "RecordDB";   //数据库名
     static final String tb_name = "RecordTB";   //数据表名
@@ -52,16 +46,14 @@ public class activity_record extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
         initView();
-        recordset = new HashSet();
         //获取当前月份
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM");
         Date date = new Date(System.currentTimeMillis());
         today = simpleDateFormat.format(date);
         getData(today);
-        //checkrecord();
+        checkrecord();
     }
     private void checkrecord(){     //查看数据库，将记录放到Set集合中
-        recordset.clear();
         String yearmonth = today.split("-")[0]+today.split("-")[1];
         db = openOrCreateDatabase(db_name, Context.MODE_PRIVATE,null);  //有则访问 没则创建
         String createTable = "CREATE TABLE IF NOT EXISTS " +
@@ -70,30 +62,11 @@ public class activity_record extends AppCompatActivity implements View.OnClickLi
                 " day VARCHAR (2) not null )" ;
         db.execSQL(createTable);
         c =db.rawQuery("select * from " + tb_name +" where yearmonth LIKE '"+yearmonth+"'",null);
-
+        recordset = new HashSet();
         while(c.moveToNext()){
             //System.out.println(Integer.valueOf(c.getString(1)));
             recordset.add(Integer.valueOf(c.getString(1)));
         }
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(1,help,2,"说明");
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id){
-            case help:
-                AlertDialog alertDialog1 = new AlertDialog.Builder(this)
-                        .setTitle("说明")//标题
-                        .setMessage("红色为已签到，黑色为未签到，灰色为不在本月")//内容
-                        .create();
-                alertDialog1.show();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
     }
     private void getData(String today) {
         calendar_date.setText(today);
@@ -250,7 +223,7 @@ public class activity_record extends AppCompatActivity implements View.OnClickLi
         @Override
         public View getView(int position, View convertView, ViewGroup parent)
         {
-            checkrecord();
+            //checkrecord();
             ViewHolder viewHolder = null;
             if (convertView == null)
             {
@@ -265,9 +238,8 @@ public class activity_record extends AppCompatActivity implements View.OnClickLi
             }
             viewHolder.mTextView.setText(mDatas.get(position));
             if (position >= week-1 && position < week+dates-1){//判断是当月的日期
-                    if (position >= week - 1 && position <= dates + week - 2 && recordset.contains(position + 2 - week)) {
+                    if (position >= week - 1 && position <= dates + week - 2 && recordset.contains(position + 2 - week))
                         viewHolder.mTextView.setTextColor(Color.RED);//已签到——红色
-                    }
                     else
                     viewHolder.mTextView.setTextColor(Color.BLACK);//未签到——黑色
             }else {
