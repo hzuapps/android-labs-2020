@@ -21,7 +21,7 @@
 5. 安装git bash用git clone命令将android-labs-2020项目克隆到本地；
 6. 在git bash中用git add，git push命令提交代码。
 ```shell
-git add net1814080903341/Sec1814080903341Activity.java
+git add net1814080903341/Net1814080903341Activity.java
 git commit -m "#1 #262 第一次实验"
 git push 
 ```
@@ -30,4 +30,4 @@ git push
 
 ![运行结果](https://github.com/ting-man/android-labs-2020/blob/master/students/net1814080903341/1.jpg)
 ## 五、实验心得 #
-通过本次实验，了解了关于git的一些命令以及如何创建Sec1814080911128Activity类并且能够成功运行。
+通过本次实验，了解了关于git的一些命令以及如何创建Net1814080903341Activity类并且能够成功运行。
