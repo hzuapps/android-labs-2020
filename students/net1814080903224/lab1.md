@@ -20,7 +20,7 @@ public calss Net1814080903224Activity{
 4、加入Git项目（Fork），将项目克隆（Clone）到hzuapps/android-labs-2020个人项目下；   
 5、用git bash把Net1814080903224Activity.java push到网站上。  
 ## 四、实验结果  
-
-## 五、实验心得体会  
+![test1](https://raw.githubusercontent.com/ciallos/android-labs-2020/master/students/net1814080903224/test1.jpg)
+## 五、实验心得体会  )
 1、没有实际操作到Android Stutio，只是单纯建立项目，难度不大。   
 2、在按照代码打git bash的时候容易直接复制地址导致无法上传文件，得到git bash中的/和文件夹的\相反。
