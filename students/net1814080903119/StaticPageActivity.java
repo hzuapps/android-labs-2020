@@ -15,7 +15,6 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -26,6 +25,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import static edu.hzuapps.androidlabs.net1814080903119.MyImageView.returnBitMap;
+import static edu.hzuapps.androidlabs.net1814080903119.SaveImageUrl.ImageUrlCol;
 
 public class StaticPageActivity extends AppCompatActivity {
     private static Context context;
@@ -45,10 +50,10 @@ public class StaticPageActivity extends AppCompatActivity {
 
         staticSet = findViewById(R.id.button4);
         staticDownlo = findViewById(R.id.button6);
-        ImageView imageView = findViewById(R.id.imageView);
+        MyImageView imageView = findViewById(R.id.imageView);
         Intent intent=getIntent();
         final Integer posion = intent.getIntExtra("id",0);
-     imageView.setImageResource(imagecol[posion]);
+        imageView.setImageURL(ImageUrlCol[posion]);
         staticSet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,34 +61,38 @@ public class StaticPageActivity extends AppCompatActivity {
                 WallpaperManager mWallManager = WallpaperManager.getInstance(StaticPageActivity.this);
                 try
                 {
-                    mWallManager.setResource(imagecol[posion]);
+                    mWallManager.setBitmap(returnBitMap(ImageUrlCol[posion]));
                 }
                 catch (IOException e)
                 {
                     e.printStackTrace();
                 }
-
             }
         });
         staticDownlo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                URL conurl = null;
+                try {
+                    conurl = new URL(ImageUrlCol[posion]);
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                HttpURLConnection con = null;
+                try {
+                    con = (HttpURLConnection) conurl.openConnection();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 Toast.makeText(StaticPageActivity.this,"下载成功", Toast.LENGTH_SHORT).show();
-                saveImageToGallery(StaticPageActivity.this,BitmapFactory.decodeResource(StaticPageActivity.this.getResources(), imagecol[posion]));
+                try {
+                    saveImageToGallery(StaticPageActivity.this,BitmapFactory.decodeStream(con.getInputStream()));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
-    public Integer[] imagecol = {
-            R.drawable.picture1,
-            R.drawable.picture2,
-            R.drawable.picture3,
-            R.drawable.picture4,
-            R.drawable.picture5,
-            R.drawable.picture6,
-            R.drawable.picture7,
-            R.drawable.picture8,
-            R.drawable.picture9,
-    };
 
     //读写权限
     private static String[] PERMISSIONS_STORAGE = {
@@ -103,7 +112,7 @@ public class StaticPageActivity extends AppCompatActivity {
     }
 
 
-   public static void saveImageToGallery(Context context, Bitmap bmp) {
+    public static void saveImageToGallery(Context context, Bitmap bmp) {
        // 首先保存图片
        File appDir = new File(Environment.getExternalStorageDirectory(), "");
        if (!appDir.exists()) {
