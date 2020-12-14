@@ -103,9 +103,19 @@ SharedPreferences.Editor editor = settings.edit();
 
 3. 网络连接必须在独立线程里操作
 
-- new Thread()
-- runOnUiThread(): 更新界面  
-- AsyncTask
+- 方法一：new Thread()
+- 方法二：runOnUiThread(): 更新界面  
+- 方法三：AsyncTask.doInBackground() 
+
+4. 下载文件 
+
+- 多线程：（1）下载网络文件、（2）将文件写到磁盘  
+- 下载的三个操作：error、progress、complete 
+
+5. Android程序基本写法
+
+- Activity可以作为Listener
+- 成员变量加前缀，保存常用控件（Button、Input），统一初始化
 
 
 ## 实验七：Android设备
