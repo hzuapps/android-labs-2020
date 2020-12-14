@@ -7,10 +7,36 @@
     android:orientation="vertical"
     tools:context=".Net1814080903221CountDownActivity">
 
-    <Button
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/et_timer"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="倒计时"
-        android:layout_marginLeft="65dp"/>
+        android:textSize="30dp"
+        android:hint="请输入倒计时时间" />
+
+    <Button
+        android:id="@+id/btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取倒计时时间" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="倒计时时间" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始计时" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止计时" />
 
 </LinearLayout>
