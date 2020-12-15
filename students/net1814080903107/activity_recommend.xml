@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Net1814080903107Activity">
+
+    <LinearLayout
+        android:id="@+id/Seache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/divide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/buttonSeache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="seache" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Seache">
+
+        <HorizontalScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/outFood"
+                    style="@style/divideButton"
+                    android:text="@string/outFood" />
+
+                <Button
+                    android:id="@+id/fastFood"
+                    style="@style/divideButton"
+                    android:text="@string/firstFood" />
+
+                <Button
+                    android:id="@+id/dessert"
+                    style="@style/divideButton"
+                    android:text="@string/dessert" />
+
+                <Button
+                    android:id="@+id/barbecue"
+                    style="@style/divideButton"
+                    android:text="@string/barbecue" />
+
+                <Button
+                    android:id="@+id/noodles"
+                    style="@style/divideButton"
+                    android:text="@string/noodles" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divide">
+
+        <LinearLayout
+            android:id="@+id/scrollLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/food1"
+                style="@style/menuItemLayout">
+
+                <ImageView
+                    android:id="@+id/test1Image"
+                    style="@style/menuImage"
+                    android:src="@drawable/sqsm" />
+
+                <LinearLayout
+                    android:id="@+id/test1Lin"
+                    style="@style/wm1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/test1Title"
+                        style="@style/menuTitle"
+                        android:text="@string/testStore1" />
+
+                    <TextView
+                        android:id="@+id/test1Brief"
+                        style="@style/menuIntroduce"
+                        android:text="@string/introduce" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/test2"
+                style="@style/menuItemLayout">
+
+                <ImageView
+                    android:id="@+id/test2Image"
+                    style="@style/menuImage"
+                    android:src="@drawable/kfc" />
+
+                <LinearLayout
+                    android:id="@+id/test2Lin"
+                    style="@style/wm1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/test2Title"
+                        style="@style/menuTitle"
+                        android:text="@string/testStore2" />
+
+                    <TextView
+                        android:id="@+id/test2Brief"
+                        style="@style/menuIntroduce"
+                        android:text="@string/introduce" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/test3"
+                style="@style/menuItemLayout">
+
+                <ImageView
+                    android:id="@+id/test3Image"
+                    style="@style/menuImage"
+                    android:src="@drawable/hbw" />
+
+                <LinearLayout
+                    android:id="@+id/test3Lin"
+                    style="@style/wm1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/test3Title"
+                        style="@style/menuTitle"
+                        android:text="@string/hbw" />
+
+                    <TextView
+                        android:id="@+id/test3Brief"
+                        style="@style/menuIntroduce"
+                        android:text="@string/introduce" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/test4"
+                style="@style/menuItemLayout">
+
+                <ImageView
+                    android:id="@+id/test4Image"
+                    style="@style/menuImage"
+                    android:src="@drawable/m" />
+
+                <LinearLayout
+                    android:id="@+id/test4Lin"
+                    style="@style/wm1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/test4Title"
+                        style="@style/menuTitle"
+                        android:text="@string/mcdonald_s" />
+
+                    <TextView
+                        android:id="@+id/test4Brief"
+                        style="@style/menuIntroduce"
+                        android:text="@string/introduce" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
