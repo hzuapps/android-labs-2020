@@ -16,14 +16,14 @@
 ## 三、实验步骤
 
 1. 在AndroidManifest.xml中添加网络权限
-  xml
+  ```xml
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET"/>
-    
+  ```
 2. 创建HttpClientUIActivity和activity_http_client.xml
 
 3. 通过HttpClientUIActivity中getGitHubIssues()方法来获取数值。
-  java
+  ```java
   private String getGitHubIssues() {
         String gitApi = "https://api.github.com/repos/hzuapps/android-labs-2020/issues";
         //gitApi = "https://www.baidu.com";
@@ -63,16 +63,16 @@
         }
         return jsonText;
     }
-    
+  ```    
 4. 访问网络要放在独立的线程中
-  java
+  ```java
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
                 .detectDiskReads().detectDiskWrites().detectNetwork()
                 .penaltyLog().build());
         StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
                 .detectLeakedSqlLiteObjects().detectLeakedClosableObjects()
                 .penaltyLog().penaltyDeath().build());
-                
+   ```             
 ## 四、实验结果
 ![lab6](https://raw.githubusercontent.com/15218047860/android-labs-2020/master/students/net1814080903121/lab6.png)
 
