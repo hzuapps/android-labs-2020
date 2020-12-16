@@ -30,7 +30,7 @@ public class FoodFragment extends Fragment {
 
     public LinearLayout getLinearLayout(){
         return linearLayout;
-    }
+    } 
     @CallSuper
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
