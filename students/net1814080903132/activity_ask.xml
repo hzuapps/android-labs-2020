@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/second_1"
+    >
+
+    <TextView
+        android:id="@+id/comment_sm"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:text="#此为校园吐槽君开放式交流平台，此页面仅提供查看近期内容#"
+        android:textColor="#607b8b"
+        android:textStyle="italic"
+        android:textSize="26sp"
+        tools:ignore="InvalidId"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="420dp"
+        android:layout_height="280dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hzu" />
+
+    <EditText
+        android:id="@+id/comment_nr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="展示内容" />
+
+    <Button
+        android:onClick="ReadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape_2"
+        android:textColor="#607b8b"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="点击显示内容" />
+
+    <Button
+        android:onClick="Backbtn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape_3"
+        android:textColor="#607b8b"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="返回上一级" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidLabs</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_back">BackActivity</string>
+    <string name="action_settings">设置</string>
+    <string name="to">收件人</string>
+    <string name="subject">标题</string>
+    <string name="message">信息内容</string>
+    <string name="send">发送</string>
+    <string name="reminder">提醒</string>
+    <string name="done">完成</string>
+</resources>

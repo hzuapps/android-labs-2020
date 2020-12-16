@@ -1,5 +1,5 @@
 package com.example.thefirst;
-
+ 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -48,6 +48,7 @@ public class StoreActivity extends AppCompatActivity {
     private TextView storeIntroduction;
     private ImageView storeBitmap;
     @Override
+    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);

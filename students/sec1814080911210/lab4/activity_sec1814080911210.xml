@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="edu.hzuapps.androidlabs.sec1814080911210.Sec1814080911210Activity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:src="@drawable/main"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_weight="0.28">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="查看地图"
+            android:id="@+id/map"
+            android:allowUndo="false"
+            android:backgroundTint="#a8c97c"
+            android:textSize="22dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="查看地点信息"
+            android:id="@+id/search"
+            android:backgroundTint="#a8c97c"
+            android:clickable="false"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

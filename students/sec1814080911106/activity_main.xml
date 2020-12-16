@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Sec1814080911106Activity"
+    android:background="@drawable/background_white"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="390dp"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片信息"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_preious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一张"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_view"
+            tools:ignore="MissingConstraints"/>
+
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_view"
+            android:text="编   辑"
+            tools:ignore="MissingConstraints" />/
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一张"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_view"
+            tools:ignore="MissingConstraints"/>
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加标签"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_view"
+            tools:ignore="MissingConstraints"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

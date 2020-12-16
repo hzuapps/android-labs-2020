@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CountdownActivity" >
+
+    <EditText
+        android:id="@+id/inPutTome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/getTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取时间" />
+
+    <TextView
+        android:id="@+id/showTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/startCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始倒计时" />
+
+    <Button
+        android:id="@+id/stopCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止倒计时" />
+</LinearLayout>

@@ -1,5 +1,5 @@
 package com.example.thefirst.component;
-
+ 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;

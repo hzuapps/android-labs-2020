@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="app_neirong">对话内容框</string>
+    <string name="to">发送动态消息</string>
+    <string name="subject">subject</string>
+    <string name="message">请输入内容</string>
+    <string name="send">send</string>
+</resources>

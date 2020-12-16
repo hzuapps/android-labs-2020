@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Copy1Activity"
+    >
+
+
+    <EditText
+        android:id="@+id/MedicineName"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/MedicineName"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/NumbersOfMedicine"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/MedicineName"
+        android:hint="@string/NumbersOfMedicine"
+        android:layout_centerHorizontal="true"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/TimeForMedicine"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:hint="@string/activity_copy1_Word2"
+        android:layout_below="@id/NumbersOfMedicine"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+    </EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_copy1_Word1"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

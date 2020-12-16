@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.hzuapps.androidlabs.net1814080903119">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+
+    <uses-feature android:name="android.software.live_wallpaper" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_channel"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".VideoWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER"
+            tools:ignore="WrongManifestParent">
+
+            <!-- 为动态壁纸配置intent-filter -->
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <!-- 为动态壁纸配置meta-data -->
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/livewallpapervideo" />
+        </service>
+        <activity android:name=".LiveWallPreference"/>
+        <activity android:name=".StaticPageActivity" />
+        <activity android:name=".DynamicPaperActivity" />
+        <activity android:name=".HomePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FileStorageActivity"
+            android:exported="true" />
+        <activity android:name=".GridViewActivity" />
+    </application>
+
+</manifest>

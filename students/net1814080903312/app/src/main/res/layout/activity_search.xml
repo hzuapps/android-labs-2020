@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wangyiyun3"
+    tools:context=".SearchActivity">
+
+    <TextView
+        android:id="@+id/tv_search_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/search"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/colorWrite"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_search_1"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"
+            android:hint="搜索的音乐名"
+            android:maxLines="1"
+            />
+
+        <Button
+            android:id="@+id/bt_search_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorBlack"
+            android:background="@color/Button_background"
+            />
+    </LinearLayout>
+</LinearLayout>

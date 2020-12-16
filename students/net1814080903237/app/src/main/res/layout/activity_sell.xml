@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="16dp"
+android:paddingRight="16dp" >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="362dp"
+        android:layout_height="122dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="339dp"
+        android:hint="@string/miaos" />
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="86dp"
+        android:layout_height="57dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="245dp"
+        android:hint="@string/reminder" />
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="271dp"
+        android:layout_marginLeft="271dp"
+        android:layout_marginTop="361dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="116dp"
+        android:text="@string/done" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_marginEnd="141dp"
+        android:layout_marginRight="141dp"
+        android:layout_marginBottom="75dp"
+        android:text="选择图片" />
+
+</RelativeLayout>
