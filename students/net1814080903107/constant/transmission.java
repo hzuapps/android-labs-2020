@@ -1,5 +1,5 @@
 package com.example.thefirst.constant;
-
+ 
 public interface transmission {
     String sIP="10.101.144.99";//"10.101.144.99"
     int sPort=20002;//serverPort
