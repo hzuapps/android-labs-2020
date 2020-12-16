@@ -12,15 +12,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import edu.hzuapps.androidlabs.net1814080903222.components.ListDecorator;
+import edu.hzuapps.androidlabs.net1814080903222.components.storage.ExcludeItem;
 import edu.hzuapps.androidlabs.net1814080903222.databinding.ExcludeListItemBinding;
 import edu.hzuapps.androidlabs.net1814080903222.databinding.FragmentSettingBinding;
 
 class ExcludeListAdapter extends RecyclerView.Adapter<ExcludeListAdapter.ExcludeItemHolder> {
 
-    private final ArrayList<ExcludeItem> excludeList;
+    private final List<ExcludeItem> excludeList;
 
     static class ExcludeItemHolder extends RecyclerView.ViewHolder {
 
@@ -37,7 +38,7 @@ class ExcludeListAdapter extends RecyclerView.Adapter<ExcludeListAdapter.Exclude
         }
     }
 
-    public ExcludeListAdapter(ArrayList<ExcludeItem> excludeList) {
+    public ExcludeListAdapter(List<ExcludeItem> excludeList) {
         this.excludeList = excludeList;
     }
 

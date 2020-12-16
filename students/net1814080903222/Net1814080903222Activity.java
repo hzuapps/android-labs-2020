@@ -14,6 +14,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import edu.hzuapps.androidlabs.net1814080903222.components.storage.StorageHelper;
 import edu.hzuapps.androidlabs.net1814080903222.databinding.ActivityMainBinding;
 
 public class Net1814080903222Activity extends AppCompatActivity {
@@ -23,6 +24,9 @@ public class Net1814080903222Activity extends AppCompatActivity {
     private static final String[] PERMISSIONS_STORAGE = {
             Manifest.permission.READ_EXTERNAL_STORAGE
     };
+
+    //Database
+    StorageHelper database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
