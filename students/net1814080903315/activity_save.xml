@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveActivity">
+
+    <LinearLayout
+        android:layout_width="421dp"
+        android:layout_height="737dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="124dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_weight="1"
+            android:rotationX="0"
+            android:text="保存" />
+
+
+        <EditText
+            android:id="@+id/chose_picture"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:layout_weight="1"
+
+            android:text="选择图片" />
+
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="126dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="删除" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="返回" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

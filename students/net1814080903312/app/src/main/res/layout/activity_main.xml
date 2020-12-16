@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/colorRed"
+    tools:context=".Net1814080903312Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        app:drawableTopCompat="@drawable/wangyiyun_top" />
+
+    <TextView
+        android:id="@+id/tv_main_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/bt_main_play"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/play"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:background="@color/Button_background"
+        />
+
+    <Button
+        android:id="@+id/bt_main_search"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/search"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:background="@color/Button_background"
+        />
+
+    <Button
+        android:id="@+id/bt_main_music"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/music"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/Button_background"
+        />
+
+</LinearLayout>

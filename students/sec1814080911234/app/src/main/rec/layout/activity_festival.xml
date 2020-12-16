@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FestivalActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="293dp"
+        android:layout_height="238dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/fes" />
+
+    <TextView
+        android:id="@+id/fes1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="距离春节还剩"/>
+
+    <TextView
+        android:id="@+id/fes2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="距离劳动节还剩"/>
+
+    <TextView
+        android:id="@+id/fes3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="距离端午节还剩"/>
+
+    <TextView
+        android:id="@+id/fes4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="距离中秋节还剩"/>
+    <TextView
+        android:id="@+id/fes5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="距离国庆节还剩"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="229dp"
+        android:src="@drawable/run" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="请填写约跑时间、地点、联系方式并发布："
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="200"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:text="发布"/>
+
+</LinearLayout>

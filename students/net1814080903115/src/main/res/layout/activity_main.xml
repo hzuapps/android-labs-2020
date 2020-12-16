@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="0dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_01"
+            android:layout_width="509dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/indexp"
+            android:scaleType="centerInside"
+
+            />
+
+        <Button
+            android:id="@+id/button_browse"
+            android:layout_width="171dp"
+            android:layout_height="53dp"
+            android:text="浏览"
+            android:layout_marginLeft="126dp"
+            android:layout_marginTop="50dp"
+             />
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="171dp"
+            android:layout_height="54dp"
+            android:text="播放"
+            android:layout_marginLeft="126dp"
+            android:layout_marginTop="100dp"
+
+            />
+
+</LinearLayout>

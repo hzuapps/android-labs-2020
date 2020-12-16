@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CityMangeActivity">
+    <RelativeLayout
+        android:id="@+id/city_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5F5F5">
+        <ImageView
+            android:id="@+id/city_iv_back"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/city_iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_write"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/city_tv_title"
+            android:text="城市管理"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/city_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"
+        android:layout_below="@id/city_top_layout"/>
+    <ListView
+        android:id="@+id/city_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/city_line"
+        android:divider="@null"></ListView>
+    <ImageView
+        android:id="@+id/city_iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="#87CEEB"
+        android:padding="3dp"/>
+</RelativeLayout>

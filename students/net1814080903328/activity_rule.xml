@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RuleActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#77FFEE"
+        android:text="    学习篮球规则"
+        android:textSize="50sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--            tools:layout_editor_absoluteY="1613dp" -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="412dp"
+                android:layout_height="60dp"
+                android:text="   " />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5599FF"
+                android:text="三秒违例"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5DEB3"
+                android:text="某队控制球时,该队队员在对方的限制区内停留不得超过持续的3秒钟.二、限制区的各线都属于限制区的一部分,队员触及任何一线都算位于限制区内.三、3秒钟的限制在所有掷界外球情况下均有效.它的计算要从掷界外球队员在界外可处理球（球进入比赛状态）的一刹那开始"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5599FF"
+                android:text="回场违例"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5DEB3"
+                android:text="在比赛中，前场控制球的队，不得使球再回到后场，否则为球回后场违例。道 具体判定球回后场有三个条件： （1）该队必须控制球； （2）球进入前场后，在球又回到后场前该队队员内（或裁判员）最后触及球； （3）球回后场后，该队队员在后场最先触及球。这三个条件必须依次连续发生。 有个特例是队员前场抢到球后落到后容场，虽然满足上述条件，但是是特例，不算回场违例"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5599FF"
+                android:text="翻腕违例"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5DEB3"
+                android:text="“翻腕”在运球中可以造成运球结束，从而导致球员非法运球或者发生走步违例。 　　运球结束定义：当队员双手同时触及球或允许球在一手或双手中停留时运球结束。 也就是说，若你在运球中发生“翻腕”那么运球就已经结束，若再次运球就会形成携带球违例。"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5599FF"
+                android:text="阻挡违例"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5DEB3"
+                android:text="阻挡为例就是在篮球比赛中，带球撞人与阻挡犯规，是持球队员与百防守持球队员在进攻和防守时，采取了不合理的位置、不正确的身体姿势、不正当的起动方法和非法的动作而造成错误的身体接触而产生的侵人犯规。"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5599FF"
+                android:text="侵人违例"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5DEB3"
+                android:text="侵人犯规是队员与对方队员的接触犯规，无论球是活球或是死球。 队员不应通过伸展他的手、臂、肘、肩、髋、腿、膝或脚来拉、阻挡、推、拉、绊、阻止对方队员行进；以及不应将其身体弯曲成“反常的”姿势（超出他的圆柱体）；也不应放纵任何粗野或猛烈的动作。"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

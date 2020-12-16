@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Net1814080903136Activity">
+
+
+<ImageView
+    android:id="@+id/tp"
+    android:layout_width="45dp"
+    android:layout_height="50dp"
+    android:src="@drawable/music"
+    >
+</ImageView>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:drawablePadding="5dp"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:layout_toRightOf="@id/tp"
+        android:hint="请输入本地音乐"/>
+<ListView
+    android:id="@+id/mp3list"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/button_cut"/>
+<CheckBox
+    android:id="@+id/select"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false"
+    android:layout_below="@id/button_cut"
+    />
+    <Button
+            android:id="@+id/button_cut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:text="剪切" />
+    <Button
+        android:id="@+id/button_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/button_cut"
+        android:layout_below="@id/name"
+        android:text="合成" />
+
+
+    <Button
+        android:id="@+id/button_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/button_com"
+        android:text="格式转换" />
+
+</RelativeLayout>

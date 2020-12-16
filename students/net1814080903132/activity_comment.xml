@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/second_2">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="#添加话题#"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/comment_ht"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ededed"
+            android:padding="8dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/comment_nr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="请输入你要发表的吐槽或提出的建议" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="WriteBtn"
+        android:background="@drawable/btn_shape_2"
+        android:textColor="#607b8b"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="保存内容" />
+
+    <Button
+        android:onClick="Backbtn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/btn_shape_3"
+        android:textColor="#607b8b"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="返回上一级" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sec1814080911217Activity"
+    android:orientation="vertical"
+    android:background="@drawable/zhuye">
+
+    <Button
+        android:id="@+id/button_earn_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="140dp"
+        android:layout_weight="0"
+        android:textSize="50sp"
+        android:background="#00000000"
+        android:textColor="@android:color/black"
+
+        android:text="赚取积分" />
+
+    <Button
+        android:id="@+id/button_exchange_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85sp"
+        android:layout_marginTop="190dp"
+        android:layout_weight="0"
+        android:textSize="50sp"
+        android:background="#00000000"
+        android:textColor="@android:color/black"
+        android:text="兑换积分" />
+
+</LinearLayout>

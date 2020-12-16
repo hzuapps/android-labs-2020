@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.hzuapps.net1814080903301.ContentProviderActivity">
+
+    <TextView
+        android:id="@+id/Weedingdress_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="婚纱信息"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/dress_cover"
+        android:layout_width="256px"
+        android:layout_height="256px"
+        android:src="@drawable/myimage"
+        android:layout_below="@+id/Weedingdress_title"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/dress_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="婚纱套餐名"
+        android:layout_below="@+id/dress_cover"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/dress_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="婚纱备注信息"
+        android:layout_below="@+id/dress_name"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:layout_below="@+id/dress_tags"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一套婚纱"
+        android:layout_below="@+id/dress_tags"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

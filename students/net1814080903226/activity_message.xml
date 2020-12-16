@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MessageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/returnmainview"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/addborder"
+            android:textColor="@drawable/buttonstatus"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="返回主页"></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="消息："
+            android:gravity="center"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="6sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

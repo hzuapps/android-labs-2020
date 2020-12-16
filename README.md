@@ -1,6 +1,12 @@
 # 移动应用开发实验库（2020春）   
 实验要求：https://github.com/hzuapps/android-labs-2020/issues?q=is%3Aissue+is%3Aopen+label%3ALab
 
+# 使用 Markdown 编写实验报告
+
+讲解视频（B站）：https://b23.tv/kNfTXL 
+
+- 解决 GitHub 不显示图片的问题  https://zhuanlan.zhihu.com/p/107196957 
+
 ## Android中文教材
 http://hukai.me/android-training-course-in-chinese/index.html  
 https://www.gitbook.com/book/mobile100/android/details  
@@ -40,6 +46,10 @@ https://blog.csdn.net/qq_41550842/article/details/81939479
 ```  
 
 https://blog.csdn.net/lqx_sunhan/article/details/82633275  
+
+## 使用阿里云镜像（2020）
+
+https://blog.csdn.net/ygc87/article/details/82857611
 
 ## Android版本6.0安装提示
 在Android SDK Manager中，参考下面的截图配置和下载6.0版本的库。

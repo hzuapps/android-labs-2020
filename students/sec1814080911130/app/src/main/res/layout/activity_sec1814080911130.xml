@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="edu.hzuapps.androidlabs.Sec1814080911130Activity"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="开始游戏"
+        android:background="#E91E63"
+        android:alpha="0.6"
+        android:textColor="#FFEB3B"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button_options"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="选项"
+        android:background="#E91E63"
+        android:alpha="0.6"
+        android:textColor="#FFEB3B"
+        android:textSize="25dp"/>
+</LinearLayout>
