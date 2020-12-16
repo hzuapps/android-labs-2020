@@ -49,16 +49,6 @@ public class Net1814080903107Activity extends AppCompatActivity implements trans
         seache=findViewById(R.id.buttonSeache);
         tabLayout=findViewById(R.id.tab);
         viewPager2=findViewById(R.id.viewPager2);
-
-<<<<<<< master
-        myFragmentStateAdapter=new MyFragmentStateAdapter(this);
-        myFragmentStateAdapter.notifyDataSetChanged();
-        myFragmentStateAdapter.addFragment(new FoodFragment(this));
-        myFragmentStateAdapter.addFragment(new FoodFragment(this));
-        myFragmentStateAdapter.addFragment(new FoodFragment(this));
-        myFragmentStateAdapter.addFragment(sFragment);
-        viewPager2.setAdapter(myFragmentStateAdapter);
-=======
         
         scrollView.setOnTouchListener(new View.OnTouchListener() {
             @Override
