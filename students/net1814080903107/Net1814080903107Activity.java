@@ -50,6 +50,7 @@ public class Net1814080903107Activity extends AppCompatActivity implements trans
         tabLayout=findViewById(R.id.tab);
         viewPager2=findViewById(R.id.viewPager2);
 
+<<<<<<< master
         myFragmentStateAdapter=new MyFragmentStateAdapter(this);
         myFragmentStateAdapter.notifyDataSetChanged();
         myFragmentStateAdapter.addFragment(new FoodFragment(this));
@@ -57,6 +58,36 @@ public class Net1814080903107Activity extends AppCompatActivity implements trans
         myFragmentStateAdapter.addFragment(new FoodFragment(this));
         myFragmentStateAdapter.addFragment(sFragment);
         viewPager2.setAdapter(myFragmentStateAdapter);
+=======
+        
+        scrollView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+            switch (event.getAction()) {
+                case MotionEvent.ACTION_DOWN :
+                    break;
+                case MotionEvent.ACTION_MOVE :
+                    break;
+                case MotionEvent.ACTION_UP :
+                    if(scrollView.getChildAt(0).getMeasuredHeight()<=scrollView.getScrollY()+scrollView.getHeight()){
+                        loadData(startPoint);
+                    }
+                    break;
+            }
+            return false;
+            }
+        });
+        seache.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            Intent searchIntent=new Intent(Net1814080903107Activity.this, SearchActivity.class);
+            startActivity(searchIntent);
+            }
+        });
+        //加载商店
+        loadData(startPoint);
+    }
+>>>>>>> master
 
         new TabLayoutMediator(tabLayout, viewPager2,
                 (tab, position) -> tab.setText(title[position])
