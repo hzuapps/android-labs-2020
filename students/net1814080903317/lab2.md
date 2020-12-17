@@ -28,7 +28,7 @@
 
 ​	2.编写xml语法，设计布局，添加跳转图标，然后在AndroidManifest.xml上添加Activity。
 
-![图片2](https://github.com/jaydjxing/android-labs-2020/blob/master/students/net1814080903317/lab2-1.jpg?raw=true)
+![图片2](https://github.com/jaydjxing/android-labs-2020/blob/master/students/net1814080903317/lab2-1.png?raw=true)
 
 
 
@@ -59,7 +59,7 @@ myIv.setOnClickListener(new View.OnClickListener() {
 
    成功跳转到个人页面：
 
-![图片3](https://github.com/jaydjxing/android-labs-2020/blob/master/students/net1814080903317/lab2-2.jpg?raw=true)
+![图片3](https://github.com/jaydjxing/android-labs-2020/blob/master/students/net1814080903317/lab2-2.png?raw=true)
 
 # 五、实验心得体会
 
