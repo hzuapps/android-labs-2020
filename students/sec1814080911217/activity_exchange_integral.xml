@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:textColor="@android:color/black"
+        android:textColor="@color/black"
         android:layout_marginTop="15dp"
         android:text="兑换积分"
         />
@@ -37,8 +37,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="30dp"
-                android:text="figure1" />
+                android:text="英雄瑞文 （1000）" />
             <Button
+                android:id="@+id/exchange1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="exchange"
@@ -55,8 +56,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="30dp"
-                android:text="figure2" />
+                android:paddingTop="70dp"
+                android:text="英雄剑圣 （800）" />
             <Button
+                android:id="@+id/exchange2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="exchange"
@@ -74,8 +77,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="30dp"
-                android:text="figure3" />
+                android:paddingTop="70dp"
+                android:text="双倍经验卡 （50）" />
             <Button
+                android:id="@+id/exchange3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="exchange"

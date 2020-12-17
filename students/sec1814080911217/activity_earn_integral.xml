@@ -37,8 +37,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="30dp"
-                android:text="figure1" />
+                android:text="每日签到 （+10）" />
             <Button
+                android:id="@+id/earn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="earn"
@@ -55,8 +56,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="30dp"
-                android:text="figure2" />
+                android:paddingTop="70dp"
+                android:text="拍照分享 （+20）" />
             <Button
+                android:id="@+id/earn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="earn"
@@ -74,8 +77,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="30dp"
-                android:text="figure3" />
+                android:paddingTop="70dp"
+                android:text="观看15s广告 （+20）" />
             <Button
+                android:id="@+id/earn3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="earn"
