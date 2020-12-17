@@ -13,11 +13,10 @@
 3. 将hzuapps/android-labs-2020的项目fork到自己的github帐号下
 4. 用git bash提交Sec1814080911138Activity.java	
 ## 四、实验结果	
-1、将项目克隆到自己的帐户下 ![avatar](D:\android-labs-2020\students\sec1814080911138\1.png)
+1、将项目克隆到自己的帐户下 ![avatar](https://android-labs-2020/students/sec1814080911138/1.png)
 
-2、创建一个名为Sec1814080911138Activity的java类	![avatar](D:\android-labs-2020\students\sec1814080911138\2.png)
+2、创建一个名为Sec1814080911138Activity的java类	![avatar](https://android-labs-2020/students/sec1814080911138/2.png)
 
 ## 五、实验心得
  本次实验是本学期移动应用开发的第一堂实验课，初步学习安卓的时候感觉很困难，因为有很多以前没接触过的知识和平台，但好在有老师和同学的帮助，渐渐熟悉并学会了搭建android开发环境及SDK并掌握了git与GitHub提交实验代码的方法。
 万事开头难，我相信继续努力会学到更多的知识。
-0ea6
