@@ -15,7 +15,9 @@
 
 ## 三、实验步骤
 1. 创建NoteDatabase用于建立数据表。
+
 ![实验截图](https://github.com/H-ao-max/android-labs-2020/blob/master/students/net1814080903137/实验报告截图/5-3.JPG)
+
 2. 创建CRUD对数据进行增删改等操作。
 
 核心代码：
