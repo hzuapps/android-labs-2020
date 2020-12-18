@@ -1,4 +1,5 @@
 # 实验二 
+
   ## 一、实验目标 
   1. 创建2-3个与自己选题有关的Activity 
   2. 利用Intent实现Activity间的跳转 
@@ -9,7 +10,9 @@
   3. 实现各个Activity之间的跳转; 
   
    ## 三、实验步骤 
-  1. 创建 MainActivity(主界面)、GameSceneActivity(游戏界面)、FailGameSceneActivity(游戏失败界面)；
+  1. 创建 MainActivity(主界面)、GameSceneActivity(游戏界面)、FailGameSceneActivity(游戏失败界
+
+面)；
   2. 将创建的 Activity 注册到 AndroidManifest.xml 中；
   3. 在布局文件中创建 Button 组件；
   4. 为 Button 添加点击事件处理；
