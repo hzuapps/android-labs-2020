@@ -14,7 +14,7 @@
 
 ## 三、实验步骤
 
-1. 打开Android Studio，在Net1814080911106\app\src\main\java\edu\hzuapps\androidlabs\net1814080903135下新建2个 Activity<br>
+1. 打开Android Studio，在Net1814080903135\app\src\main\java\edu\hzuapps\androidlabs\net1814080903135下新建2个 Activity
     + 查询界面Activity：Queryinterface1814080903135Activity.java <br>
     + 买票界面Activity：Buyingtickets1814080903135Activity.java <br>
 
