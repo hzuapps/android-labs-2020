@@ -10,21 +10,20 @@
         android:id="@+id/EditWrite1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/button3"
+        android:layout_toLeftOf="@id/buttonWrite"
         android:hint="请输入"
         android:imeOptions="actionDone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonWrite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="172dp"
         android:layout_marginLeft="172dp"
         android:layout_marginTop="248dp"
         android:text="@string/button_confirm"
-        android:onClick="sendMessage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

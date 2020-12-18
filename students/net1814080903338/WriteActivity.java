@@ -1,43 +1,59 @@
 package edu.hzuapps;
 
-import androidx.annotation.RequiresPermission;
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import edu.hzuapps.dao.*;
+import edu.hzuapps.model.*;
+
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.SpannedString;
-import android.text.style.AbsoluteSizeSpan;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+import android.app.Activity;
+import android.content.Intent;
 
-import java.io.File;
-import java.io.IOException;
+public class WriteActivity extends Activity {
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-public class WriteActivity extends AppCompatActivity {
+    private EditText editTextB2;
+    private Button buttonB1;
+
+    private UserDao userDao;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
+        // 注册组件
+        userDao = new UserDao(this);
+
+        editTextB2 = (EditText) findViewById(R.id.EditWrite1);
+
+        buttonB1 = (Button) findViewById(R.id.buttonWrite);
+
+
+
+        buttonB1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+
+
+                String text = editTextB2.getText() + "";
+
+
+                userDao.dbInsert(text);
+                Toast.makeText(
+                        WriteActivity.this,
+                        "成功写入：" + text , Toast.LENGTH_SHORT)
+                        .show();
+
+
+
+            }
+        });
+
 
     }
 
-
-public void sendMessage(View view){
-
-    Intent intent = new Intent(WriteActivity.this, ReadActivity.class);
-    EditText editText = (EditText) findViewById(R.id.EditWrite1);
-    File file = new File(this.getFilesDir(),"lab5.txt");
-    try {
-        file.createNewFile(); // 练习1： 如何确认文件已经创建？
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
-    EditText text = (EditText) findViewById(R.id.EditWrite1);
-    String inputText = text.getText().toString();
-    }
 }
