@@ -34,3 +34,30 @@ Drawable drawable = getResources().getDrawable(R.drawable.query);
     }
     }
 }
+protected void loadsdCard() throws IOException {
+
+
+            // 判断SD卡是否存在
+            if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+
+                // 目录
+                File path = new File(PATH);
+                // 文件
+                File f = new File(PATH + FILENAME);
+                FileInputStream fi = new FileInputStream(f);
+
+                byte[] bytes = new byte[1024];
+                int len = 0;
+                while ((len=fi.read(bytes))!=-1){
+                    System.out.print(new String(bytes,0,len));
+                }
+ btnOpen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    loadsdCard();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
