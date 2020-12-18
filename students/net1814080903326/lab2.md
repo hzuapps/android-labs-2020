@@ -30,7 +30,7 @@
 
 ## 四、实验结果
 Net1814080903326Activity.java
-~~~
+```java
 package hzu.android.labs;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -60,9 +60,9 @@ public class Net1814080903326Activity extends AppCompatActivity {
         });
     }
 }
-~~~
+```
 AndroidManifest.xml
-~~~
+```java
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="hzu.android.labs">
@@ -85,9 +85,9 @@ AndroidManifest.xml
     </application>
 
 </manifest>
-~~~
+```
 PageTurning1.java 
-~~~
+```java
       @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,7 +101,7 @@ PageTurning1.java
                 startActivity(intent);
             }
         });
-~~~
+```
 
 ## 五、实验心得
 	本次实验是主要进行的是通过按钮实现界面跳转，难度不大。
