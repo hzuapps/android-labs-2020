@@ -13,7 +13,7 @@
 2. 添加按钮，分别命名为button和button1；
 3. 在MainActivity.java添加两个按钮点击事件处理，实现按钮button跳转到AlarmSetActivity，按钮button1跳转到TimeDisplayActivity；
 ```java
-final MainActivity thisActivity=this;
+        final MainActivity thisActivity=this;
         Button btnitem = (Button) findViewById(R.id.button);
         btnitem.setOnClickListener(new View.OnClickListener() {
             @Override
