@@ -32,7 +32,7 @@ public class  Net1814080903135Activity{
 ```
 5. 提交代码并发Pull Request  
 ```shell
-git add net1814080903135/Net1814080903135Activity.java
+git add net1814080903135/Net1814080903135Activity.jav
 git commit -m "#1 #133 第1次实验"
 git push	git push
 ```
