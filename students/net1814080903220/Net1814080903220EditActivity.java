@@ -1,75 +1,123 @@
 package edu.hzuapps.androidlabs.net1814080903220;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Calendar;
 
-import android.app.Activity;
-import android.app.DatePickerDialog;
-import android.app.Dialog;
+import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
 
-//新增时间选择器功能
 
-public class  Net1814080903220EditActivity extends AppCompatActivity {
-    int mYear, mMonth, mDay;
-    Button btn;
-    TextView dateDisplay;
-    final int DATE_DIALOG = 1;
+public class Net1814080903220EditActivity extends AppCompatActivity {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit);
+    private String mFileName = "test.txt";
 
-        btn = (Button) findViewById(R.id.dateChoose);
-        /**dateDisplay = (TextView) findViewById(R.id.dateDisplay);**/
-
-        btn.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                showDialog(DATE_DIALOG);
-            }
-        });
-
-        final Calendar ca = Calendar.getInstance();
-        mYear = ca.get(Calendar.YEAR);
-        mMonth = ca.get(Calendar.MONTH);
-        mDay = ca.get(Calendar.DAY_OF_MONTH);
+    //Net1814080903220EditActivity中按返回键返回Net1814080903220MainActivity并销毁当前的Activity
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Intent intent = new Intent();
+            intent.setClass(Net1814080903220EditActivity.this, Net1814080903220MainActivity.class);
+            moveTaskToBack(true);
+            startActivity(intent);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
-    @Override
-    protected Dialog onCreateDialog(int id) {
-        switch (id) {
-            case DATE_DIALOG:
-                return new DatePickerDialog(this, mdateListener, mYear, mMonth, mDay);
+    /*******文件内部存储********/
+    private void save(String content){
+        FileOutputStream fileOutputStream = null;
+        try{
+            fileOutputStream = openFileOutput(mFileName,MODE_PRIVATE);
+            fileOutputStream.write(content.getBytes());
+        }catch (IOException e){
+            e.printStackTrace();
+        }finally {
+            if(fileOutputStream != null){
+                try{
+                    fileOutputStream.close();
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    private String read(){
+        FileInputStream fileInputStream = null;
+        try {
+            fileInputStream = openFileInput(mFileName);
+            byte[] buff = new byte[1024];
+            StringBuilder sb = new StringBuilder("");
+            int len = 0;
+            while ((len = fileInputStream.read(buff)) > 0){
+                sb.append(new String(buff,0,len));
+            }
+            return sb.toString();
+        } catch (IOException e){
+            e.printStackTrace();
         }
         return null;
     }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_edit);
+        final TextView mtvContent1 = (TextView)findViewById(R.id.text1);
+        Button mBtnShow = (Button)findViewById(R.id.baocun);
+        final EditText editText = (EditText)findViewById(R.id.E_dit);
+        /****点击保存按钮后显示EditText输入后数据****/
+        mBtnShow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                save(editText.getText().toString());
+                mtvContent1.setText(read());
+            }
+        });
 
-    /**
-     * 设置日期 利用StringBuffer追加
-     */
-    public void display() {
-        dateDisplay.setText(new StringBuffer().append(mMonth + 1).append("-").append(mDay).append("-").append(mYear).append(" "));
+        DateView();
     }
 
-    private DatePickerDialog.OnDateSetListener mdateListener = new DatePickerDialog.OnDateSetListener() {
+    private void DateView() {
+        // 实例化控件
+        final EditText editText3;
+        final DatePickerDialog dateDialog;
+        int year, monthOfYear, dayOfMonth;
+        Button dateButton = (Button) findViewById(R.id.dateChoose);
+        editText3 = (EditText) findViewById(R.id.E_dit2);
+        Calendar calendar = Calendar.getInstance();
+        year = calendar.get(Calendar.YEAR);
+        monthOfYear = calendar.get(Calendar.MONTH);
+        dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
 
-        @Override
-        public void onDateSet(DatePicker view, int year, int monthOfYear,
-                              int dayOfMonth) {
-            mYear = year;
-            mMonth = monthOfYear;
-            mDay = dayOfMonth;
-            display();
-        }
-    };
+        dateDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+
+            @Override
+            public void onDateSet(DatePicker arg0, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                String text = year + "-" + (monthOfYear + 1) + "-" + dayOfMonth;
+                editText3.setText(text);
+            }
+        }, year, monthOfYear, dayOfMonth);
+
+        dateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                dateDialog.show();
+            }
+        });
+    }
 }
