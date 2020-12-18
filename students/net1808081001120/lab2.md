@@ -69,7 +69,7 @@ public class PersonviewActivity extends AppCompatActivity {
 
 ## 四、实验结果
 
-![应用首页]()  
+![应用首页](https://github.com/SaTarU1IX/android-labs-2020/blob/master/students/net1808081001120/lab-2.jpg)  
 首页添加按钮运行结果截图
 
 ## 五、实验心得
