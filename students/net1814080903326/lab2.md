@@ -26,9 +26,7 @@
 
 2. Net1814080903326Activity.java (首页、LAUNCHER、主活动)：Net1814080903326Activity.java
 
-3.功能1Activity.java：Funtion_Next.java
-
-4.功能2Activity.java：Funtion_Setting.java
+3.功能1Activity.java
 
 ## 四、实验结果
 Net1814080903326Activity.java
