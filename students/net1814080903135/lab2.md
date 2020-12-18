@@ -52,6 +52,7 @@ public class Net1814080903135Activity extends AppCompatActivity {
 }
 ```
 ## 四、实验结果
-![实验结果](https://github.com/clinying/android-labs-2020/blob/master/students/net1814080903135/lab2.png)
+![实验结果](https://github.com/clinying/android-labs-2020/blob/master/students/net1814080903135/lab2-1.png)
+![实验结果](https://github.com/clinying/android-labs-2020/blob/master/students/net1814080903135/lab2-2.png)
 ## 五、实验心得
 通过本次实验，学习了在Android项目中创建Activity，并且利用按键实现Android页面之间一个简单跳转，在实验过程中，遇到了一点问题，但通过查看老师给的相关教程，成功完成了实验。
