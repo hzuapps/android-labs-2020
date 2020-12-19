@@ -14,7 +14,21 @@ public class UserDao {
     {
         dbOpenHelper = new DBOpenHelper(context, null, null, 0);// 初始化DBOpenHelper对象
     }
-
+    public User dbQueryOneById(int id) {
+        sqliteDatabase = dbOpenHelper.getWritableDatabase();
+        String sql = "select * from t_user where id=? and isDel=0";
+        String[] selectionArgs = new String[] { id + "" };
+        Cursor cursor = sqliteDatabase.rawQuery(sql,selectionArgs);
+        if (cursor.moveToNext())// 判断Cursor中是否有数据
+        {
+            // 如果有用户，则把查到的值填充这个用户实体
+            User user = new User();
+//            user.setId(cursor.getInt(cursor.getColumnIndex("id")));
+            user.setText(cursor.getString(cursor.getColumnIndex("text")));
+            return user;// 返回一个用户给前台
+        }
+        return null;// 没有返回null
+    }
     // 插入用户数据
     public void dbInsert(String text) {
         sqliteDatabase = dbOpenHelper.getWritableDatabase();// 以读写方法打开数据库，不仅仅是写，getReadableDatabase()是只读
@@ -37,7 +51,12 @@ public class UserDao {
         return 0;// 如果没有数据，则返回0
     }
 
-
+    public void dbUpdateText(int id,String text) {
+        sqliteDatabase = dbOpenHelper.getWritableDatabase();
+        String sql = "update t_user set text=? where id=? and isDel=0";
+        Object bindArgs[] = new Object[] { text, id };
+        sqliteDatabase.execSQL(sql, bindArgs);
+    }
 
 
 

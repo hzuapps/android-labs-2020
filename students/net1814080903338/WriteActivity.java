@@ -48,7 +48,9 @@ public class WriteActivity extends Activity {
                         "成功写入：" + text , Toast.LENGTH_SHORT)
                         .show();
 
-
+                Intent intent = new Intent(WriteActivity.this,
+                        ReadActivity.class);
+                startActivity(intent);
 
             }
         });

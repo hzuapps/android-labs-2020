@@ -28,15 +28,7 @@
         android:text="@string/button_write"
         android:layout_marginStart="140dp" />
 
-    <Button
-        android:id="@+id/button_netRevise"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="45dp"
-        android:onClick="onClickRevise"
-        android:text="@string/button_revise"
-        android:layout_marginStart="140dp" />
+
 
 
 </LinearLayout>
