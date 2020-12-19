@@ -1,6 +1,7 @@
 package edu.hzuapps.androidlabs.net1814080903105;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
-public class ShoppingActivity extends Activity {
+public class ShoppingActivity extends AppCompatActivity {
 
     ListView lv = null;
     SQLiteDatabase db = null;
