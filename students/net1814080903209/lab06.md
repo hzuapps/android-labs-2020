@@ -112,9 +112,8 @@
 
 # 四、实验结果
 
-![image-20201215133446927](E:\2021大三第一学期\移动开发\实验\lab06_01.png)
-
-![image-20201215133419119](E:\2021大三第一学期\移动开发\实验\lab06_02.png)
+![](https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab06_01.png)
+![](https://raw.githubusercontent.com/itgopan/android-labs-2020/master/students/net1814080903209/lab06_02.png)
 
 # 五、实验心得
 
