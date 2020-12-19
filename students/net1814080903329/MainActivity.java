@@ -12,7 +12,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mbtnButton;
     private Button mbtnButton1;
     private Button mbtnButton2;
-
+    private Button mbtnButton3;
+    private Button mbtnButton4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,7 +64,25 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        mbtnButton3=(Button) findViewById(R.id.btn_url);
+        mbtnButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //跳转到使用HttpurlConnectionF访问界面
+                Intent intent=new Intent(MainActivity.this,HttpUrlConnectionActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        mbtnButton4=(Button) findViewById(R.id.btn_url1);
+        mbtnButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //跳转到使用下载图片界面
+                Intent intent=new Intent(MainActivity.this,SaveImageViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

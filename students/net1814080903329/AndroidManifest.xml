@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.hzuapps.androidlabs">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FileActivity"></activity>
+        <activity android:name=".SaveImageViewActivity"></activity>
+        <activity android:name=".HttpUrlConnectionActivity" />
+        <activity android:name=".FileActivity" />
         <activity android:name=".PictureActivity" />
         <activity android:name=".HomeworkMangerActivity" />
         <activity android:name=".Net1814080903329Activity" />
