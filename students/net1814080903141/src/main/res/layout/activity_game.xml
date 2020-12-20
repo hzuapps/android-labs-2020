@@ -9,7 +9,8 @@
     >
 
     <LinearLayout
-        android:layout_width="394dp"
+
+        android:layout_width="match_parent"
         android:layout_height="74dp"
         android:orientation="horizontal">
 
@@ -25,7 +26,7 @@
         <TextView
             android:id="@+id/tvscore"
             android:layout_width="wrap_content"
-            android:layout_height="42dp"
+            android:layout_height="35dp"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="32dp"
@@ -42,7 +43,7 @@
         <TextView
             android:id="@+id/tvbest"
             android:layout_width="wrap_content"
-            android:layout_height="42dp"
+            android:layout_height="35dp"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="32dp"
@@ -57,25 +58,25 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="398dp"
-        android:layout_height="53dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
         android:orientation="horizontal">
 
-        <EditText
+        <TextView
             android:id="@id/tscore"
-            android:layout_width="78dp"
-            android:layout_height="47dp"
+            android:layout_width="74dp"
+            android:layout_height="43dp"
             android:layout_marginStart="150dp"
             android:layout_marginLeft="150dp"
             android:inputType="" />
 
-        <EditText
+        <TextView
             android:id="@+id/tbest"
-            android:layout_width="78dp"
-            android:layout_height="47dp"
+            android:layout_width="74dp"
+            android:layout_height="43dp"
             android:layout_marginStart="53dp"
             android:layout_marginLeft="53dp"
-            android:inputType="text" />
+            android:inputType="" />
     </LinearLayout>
 
     <LinearLayout
@@ -99,87 +100,92 @@
             android:text="@string/exit" />
 
         <Button
-            android:id="@+id/btnsave"
+            android:id="@+id/btnshelp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
-            android:text="@string/save" />
+            android:text="@string/help" />
     </LinearLayout>
 
     <GridLayout
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:columnCount="4"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
         android:layout_gravity="center"
-        android:rowCount="4"
+        android:layout_marginTop="15dp"
+        android:columnCount="4"
 
-        android:layout_marginTop="40dp">
+        android:rowCount="4">
+
         <TextView
             android:id="@+id/cell1"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center|fill"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_column="0"
-            android:layout_gravity="center|fill"
-            android:layout_row="0"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell2"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
             android:layout_column="1"
             android:layout_gravity="center|fill"
-            android:layout_row="0"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell3"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
             android:layout_column="2"
             android:layout_gravity="center|fill"
-            android:layout_row="0"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell4"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
             android:layout_column="3"
             android:layout_gravity="center|fill"
-            android:layout_row="0"
-            android:gravity="center"
-            android:textSize="20sp"/>
-        <TextView
-            android:id="@+id/cell5"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cell5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
             android:layout_column="0"
             android:layout_gravity="center|fill"
-            android:layout_row="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/cell6"
-            android:layout_width="93dp"
-            android:layout_height="94dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_row="1"
             android:layout_column="1"
             android:layout_gravity="center|fill"
@@ -188,125 +194,135 @@
             android:layout_marginTop="5dp"
             android:gravity="center"
             android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell7"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_gravity="center|fill"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_column="2"
-            android:layout_gravity="center|fill"
-            android:layout_row="1"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell8"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_gravity="center|fill"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_column="3"
-            android:layout_gravity="center|fill"
-            android:layout_row="1"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell9"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="center|fill"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_column="0"
-            android:layout_gravity="center|fill"
-            android:layout_row="2"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell10"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="center|fill"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_column="1"
-            android:layout_gravity="center|fill"
-            android:layout_row="2"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell11"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_gravity="center|fill"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_column="2"
-            android:layout_gravity="center|fill"
-            android:layout_row="2"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell12"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_gravity="center|fill"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_column="3"
-            android:layout_gravity="center|fill"
-            android:layout_row="2"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell13"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
             android:layout_column="0"
             android:layout_gravity="center|fill"
-            android:layout_row="3"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell14"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
             android:layout_column="1"
             android:layout_gravity="center|fill"
-            android:layout_row="3"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/cell15"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
             android:layout_column="2"
             android:layout_gravity="center|fill"
-            android:layout_row="3"
-            android:gravity="center"
-            android:textSize="20sp"/>
-        <TextView
-            android:id="@+id/cell16"
-            android:layout_width="94dp"
-            android:layout_height="94dp"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cell16"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
             android:layout_column="3"
             android:layout_gravity="center|fill"
-            android:layout_row="3"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
     </GridLayout>
 </LinearLayout>
