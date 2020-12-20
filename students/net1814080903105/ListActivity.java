@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 public class ListActivity extends AppCompatActivity {
 
@@ -20,7 +19,6 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-
         GridView gridview = (GridView) findViewById(R.id.grid_view);
         gridview.setAdapter(new ImageAdapter(this));
 
@@ -28,7 +26,7 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // 这里可以添加点击图片后的显示处理
-                Intent intent = new Intent(getApplicationContext(), Net1814080903105Activity.class);
+                Intent intent = new Intent(getApplicationContext(), CommodityInfoActivity.class);
                 // Pass image index
                 intent.putExtra("id", position);
                 startActivity(intent);
@@ -46,7 +44,8 @@ class ImageAdapter extends BaseAdapter {
     }
 
     public int getCount() {
-        return mThumbIds.length;
+        DataArray dataArray = new DataArray();
+        return dataArray.Picture.length;
     }
 
     public Object getItem(int position) {
@@ -60,30 +59,18 @@ class ImageAdapter extends BaseAdapter {
     // create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView imageView;
+        DataArray dataArray = new DataArray();
 
         if (convertView == null) {
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imageView.setLayoutParams(new GridView.LayoutParams(400, 300));
+            imageView.setScaleType(ImageView.ScaleType.FIT_START);
             imageView.setPadding(8, 8, 8, 8);
         } else {
             imageView = (ImageView) convertView;
-            //LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(parent.getWidth()/3,parent.getWidth()/3);
-            //imageView.setLayoutParams(layoutParams);
         }
-        imageView.setImageResource(mThumbIds[position]);
+        imageView.setImageResource(dataArray.Picture[position]);
         return imageView;
     }
 
-    // Keep all Images in array
-    public Integer[] mThumbIds = {
-            R.drawable.h02,
-            R.drawable.h04,
-            R.drawable.h02,
-            R.drawable.h04,
-            R.drawable.h02,
-            R.drawable.h04
-    };
 }
-
-
