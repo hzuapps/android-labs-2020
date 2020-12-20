@@ -15,99 +15,111 @@
 
 1.创建自己的安卓项目题目————健康助手
 
-2.根据自选题在Android Studio中创建4个Activity，分别为Sec1814080911133Activity、KnwActivity、TemActivity
+2.根据自选题在Android Studio中创建3个Activity，分别为Sec1814080911133Activity、KnwActivity、TemActivity
 
 3.实现一个Activity与另一个Activity之间的跳转（显式或隐式）
 
-
 ##  三、实验步骤
 
-先在Sec1814080911133Activity中：
-
+1.Sec1814080911133Activity：
 package edu.hzuapps.androidlabs.sec1814080911133;
-
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.Button;
-
 public class Sec1814080911133Activity extends AppCompatActivity {
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_main);
+Button Tem = (Button)findViewById(R.id.button);
+Tem.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View view) {
+Intent intent = new Intent(Sec1814080911133Activity.this,TemActivity.class);
+startActivity(intent);
+}
+});
+Button Knw = (Button)findViewById(R.id.button2);
+Knw.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View view) {
+Intent intent = new Intent(Sec1814080911133Activity.this,KnwActivity.class);
+startActivity(intent);
+}
+});
+}
+}
 
+2.KnwActivity:
+package edu.hzuapps.androidlabs.sec1814080911133;
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
+public class KnwActivity extends AppCompatActivity{
+@Override
+protected void onCreate(Bundle savedInstanceState){
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_knw);
 
-            Button Tem = (Button)findViewById(R.id.button);
-            Tem.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(Sec1814080911133Activity.this,TemActivity.class);
-                    startActivity(intent);
-                }
-            });
+Button返回=(Button)findViewById(R.id.button3);
+返回.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+Intent intent=new Intent(KnwActivity.this,Sec1814080911133Activity.class);
+startActivity(intent);
+}
+});
+}
+}
 
-            Button Knw = (Button)findViewById(R.id.button2);
-            Knw.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(Sec1814080911133Activity.this,KnwActivity.class);
-                    startActivity(intent);
-                }
-            });
+3.TemActivity:
+package edu.hzuapps.androidlabs.sec1814080911133;
 
-        }
-    }
-然后在对应的activity_main.xml文件里面:
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Sec1814080911133Activity">
+public class TemActivity extends AppCompatActivity{
+@Override
+protected void onCreate(Bundle savedInstanceState){
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_tem);
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="236dp"
-        android:background="@android:color/transparent"
-        android:text="Tem"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+Button点击记录=(Button)findViewById(R.id.button4);
+点击记录.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+Intent intent=new Intent(TemActivity.this,TActivity.class);
+startActivity(intent);
+}
+});
+Button返回=(Button)findViewById(R.id.button5);
+返回.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+Intent intent=new Intent(TemActivity.this,Sec1814080911133Activity.class);
+startActivity(intent);
+}
+});
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        android:background="@android:color/transparent"
-        android:text="Knw"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableTop="@drawable/main"
-        android:scaleType="fitXY"
-        android:text="健康助手"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
-
+Button查看记录=(Button)findViewById(R.id.button8);
+查看记录.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+Intent intent=new Intent(TemActivity.this,T2Activity.class);
+startActivity(intent);
+}
+});
+}
+}
 
  ## 四、实验结果
 
