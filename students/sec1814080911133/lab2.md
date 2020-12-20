@@ -121,7 +121,7 @@ startActivity(intent);
 }
 }
 
- ## 四、实验结果
+## 四、实验结果
 
 ![实验2图片]
 https://github.com/Jamielxl/android-labs-2020/blob/master/students/sec1814080911133/lab2_res.png
