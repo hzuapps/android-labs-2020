@@ -80,7 +80,6 @@ public class PersonalHomeActivity extends AppCompatActivity {
                 }
                 BufferedReader bufferedReader= new BufferedReader(new InputStreamReader(fileInputStream));
                 String temp="";
-                text.setText("文件路径："+getApplicationContext().getFilesDir()+"\n");
                 while (true){
                     try {
                         if (!((temp=bufferedReader.readLine())!=null)) break;
