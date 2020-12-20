@@ -78,26 +78,46 @@ public class ReadActivity extends Activity {
                 tableRow.addView(textView);
 
 
-                Button button = new Button(this);
-                button.setText("删除");
-                button.setTextSize(18);
-                button.setId(user.getId());//设置按钮的id就是用户的id
-                button.setOnClickListener(new OnClickListener() {
+//                Button button = new Button(this);
+//                button.setText("删除");
+//                button.setTextSize(18);
+//                button.setId(user.getId());//设置按钮的id就是用户的id
+//                button.setOnClickListener(new OnClickListener() {
+//
+//                    @Override
+//                    public void onClick(View view) {
+//                        userDao.dbDeleteUser(view.getId());//这样可以获取按钮的id
+//
+//                        finish();
+//                        Intent intent = new Intent(ReadActivity.this,
+//                                ReadActivity.class);
+//                        startActivity(intent);
+//                        Toast.makeText(ReadActivity.this, "删除成功！",
+//                                Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//                tableRow.addView(button);//将这个按钮添加到这行中
+                Button button_revise = new Button(this);
+                button_revise.setText("详情");
+                button_revise.setTextSize(18);
+                button_revise.setId(user.getId());//设置按钮的id就是用户的id
+                button_revise.setOnClickListener(new OnClickListener() {
 
                     @Override
                     public void onClick(View view) {
-                        userDao.dbDeleteUser(view.getId());//这样可以获取按钮的id
-
-                        finish();
+//                        userDao.dbDeleteUser(view.getId());//这样可以获取按钮的id
+//                        //修改密码，更新数据库之后，刷新一下这个TableActivity
+//                        finish();
                         Intent intent = new Intent(ReadActivity.this,
-                                ReadActivity.class);
+                                ReviseActivity.class);
+                        int j = view.getId();
+                        intent.putExtra("data",j+"");
                         startActivity(intent);
-                        Toast.makeText(ReadActivity.this, "删除成功！",
-                                Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(ReadActivity.this, "成功！",
+//                                Toast.LENGTH_SHORT).show();
                     }
                 });
-                tableRow.addView(button);//将这个按钮添加到这行中
-
+                tableRow.addView(button_revise);//将这个按钮添加到这行中
                 tableLayout1.addView(tableRow, new TableLayout.LayoutParams(
                         ViewGroup.LayoutParams.WRAP_CONTENT,
                         ViewGroup.LayoutParams.MATCH_PARENT));

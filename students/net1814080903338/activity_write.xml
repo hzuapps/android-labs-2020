@@ -10,19 +10,22 @@
         android:id="@+id/EditWrite1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
         android:layout_toLeftOf="@id/buttonWrite"
         android:hint="请输入"
         android:imeOptions="actionDone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/buttonWrite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginLeft="172dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="356dp"
         android:text="@string/button_confirm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

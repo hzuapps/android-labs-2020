@@ -19,10 +19,7 @@ public class Net1814080903338Activity extends AppCompatActivity {
         Intent intent2 = new Intent(this, WriteActivity.class);
         startActivity(intent2);
     }
-        public void onClickRevise(View view) {
-            Intent intent3 = new Intent(this, ReviseActivity.class);
-            startActivity(intent3);
-        }
+
    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
