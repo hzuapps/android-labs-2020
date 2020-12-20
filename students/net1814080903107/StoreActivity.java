@@ -1,5 +1,5 @@
 package com.example.thefirst;
- 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -48,7 +48,6 @@ public class StoreActivity extends AppCompatActivity {
     private TextView storeIntroduction;
     private ImageView storeBitmap;
     @Override
-    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store);
@@ -211,7 +210,6 @@ public class StoreActivity extends AppCompatActivity {
             File PHOTO_DIR = new File("data/data/com.example.thefirst");//设置保存路径
             File avaterFile = new File(PHOTO_DIR, bitmapName);
             if(avaterFile.exists()) {
-                System.out.println(123534645);
                 bitmap = BitmapFactory.decodeFile(PHOTO_DIR+"/"+bitmapName);
             }
         } catch (Exception e) {}

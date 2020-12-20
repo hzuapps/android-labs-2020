@@ -1,8 +1,9 @@
 package com.example.thefirst;
- 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -23,7 +24,16 @@ public class ResultActivity extends AppCompatActivity {
     public AMapLocationListener mLocationListener = new AMapLocationListener() {
         @Override
         public void onLocationChanged(AMapLocation aMapLocation) {
-
+            if (aMapLocation != null) {
+                if (aMapLocation.getErrorCode() == 0) {
+                    mMapView.onCreate(aMapLocation.getExtras());
+                }else {
+                    //定位失败时，可通过ErrCode（错误码）信息来确定失败的原因，errInfo是错误信息，详见错误码表。
+                    Log.e("AmapError","location Error, ErrCode:"
+                            + aMapLocation.getErrorCode() + ", errInfo:"
+                            + aMapLocation.getErrorInfo());
+                }
+            }
         }
     };
     @Override
@@ -68,6 +78,7 @@ public class ResultActivity extends AppCompatActivity {
         super.onDestroy();
         //在activity执行onDestroy时执行mMapView.onDestroy()，销毁地图
         mMapView.onDestroy();
+        mLocationClient.onDestroy();
     }
     @Override
     protected void onResume() {
