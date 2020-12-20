@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HttpClientActivity">
+
+    <Button
+        android:id="@+id/button_get_issues"
+        android:layout_width="237dp"
+        android:layout_height="78dp"
+        android:text="获取天气信息" />
+
+<EditText
+    android:id="@+id/first_node_number"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+</LinearLayout>
