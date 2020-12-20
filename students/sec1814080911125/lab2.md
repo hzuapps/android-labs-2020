@@ -1,36 +1,82 @@
-# ÊµÑé¶ş 
+**# å®éªŒäºŒ** 
 
-  ## Ò»¡¢ÊµÑéÄ¿±ê 
-  1. ´´½¨2-3¸öÓë×Ô¼ºÑ¡ÌâÓĞ¹ØµÄActivity 
-  2. ÀûÓÃIntentÊµÏÖActivity¼äµÄÌø×ª 
+ 
+
+  **## ä¸€ã€å®éªŒç›®æ ‡** 
+
+  **1. åˆ›å»ºè‡ªå·±çš„é€‰é¢˜** 
+
+  **2. ç¼–å†™ç›¸åº”çš„Activityï¼ˆæœ‰nä¸ªåŠŸèƒ½å°±å»ºç«‹n+1ä¸ªActivityï¼‰** 
+
+  **3.å¯¹åº”è‡ªå·±çš„é€‰é¢˜çš„åŠŸèƒ½å®ç°Activityä¸­çš„åŠŸèƒ½**
+
   
-   ## ¶ş¡¢ÊµÑéÄÚÈİ 
-  1. ¸ù¾İ¹¦ÄÜ´´½¨ÏàÓ¦µÄActivity£» 
-  2. ±àĞ´Activity¶ÔÓ¦µÄ²¼¾ÖÎÄ¼ş£» 
-  3. ÊµÏÖ¸÷¸öActivityÖ®¼äµÄÌø×ª£» 
+
+   **## äºŒã€å®éªŒå†…å®¹** 
+
+  **1. åœ¨Issuesä¸­åˆ›å»ºè‡ªå·±çš„é€‰é¢˜ï¼šhttps://github.com/hzuapps/android-labs-2020/issues ï¼›** 
+
+  **2.æ ¹æ®è‡ªé€‰é¢˜ç›®ï¼Œç¼–å†™å¤šä¸ªActivityï¼Œåœ¨ä¸»çª—å£ç±»å¸¦ä¸Šå­¦å·å‰ç¼€ï¼Œæ”¾åˆ°è‡ªå·±çš„JavaåŒ…ä¸‹ï¼›** 
+
+  **3. å°†æ ‡é¢˜è®¾ç½®ä¸ºè‡ªå·±çš„å­¦å·+å¯¹åº”çš„åŠŸèƒ½æˆ–é¢˜ç›®;** 
+
+  **4. æ ¹æ®è‡ªå·±é€‰æ‹©çš„é¢˜ç›®å®ç°Activityä¸­å¯¼èˆªã€è°ƒç”¨ç­‰åŠŸèƒ½ï¼ˆé€‰åšï¼‰ã€‚**
+
   
-   ## Èı¡¢ÊµÑé²½Öè 
-  1. ´´½¨ MainActivity(Ö÷½çÃæ)¡¢GameSceneActivity(ÓÎÏ·½çÃæ)¡¢FailGameSceneActivity(ÓÎÏ·Ê§°Ü½çÃæ)£»
-  2. ½«´´½¨µÄ Activity ×¢²áµ½ AndroidManifest.xml ÖĞ£» 
-  3. ÔÚ²¼¾ÖÎÄ¼şÖĞ´´½¨ Button ×é¼ş£» 
-  4. Îª Button Ìí¼Óµã»÷ÊÂ¼ş´¦Àí£»
-  5. Í¨¹ı MainActivity(Intent) ÊµÏÖ½çÃæÌø×ª£» 
+
+   **## ä¸‰ã€å®éªŒæ­¥éª¤** 
+
+  **1. åˆ›å»º Sec1814080911125Activity.java(ä¸»ç•Œé¢)ã€GameSceneActivity.java(æ¸¸æˆç•Œé¢)ã€FailGameSceneActivity.java(æ¸¸æˆå¤±è´¥ç•Œé¢)ï¼›**
+
+  **2. å°†åˆ›å»ºçš„ Activity æ³¨å†Œåˆ° AndroidManifest.xml ä¸­ï¼›**
+
+  **3. åœ¨å¸ƒå±€æ–‡ä»¶ä¸­åˆ›å»º Button ç»„ä»¶ï¼›**
+
+  **4. ä¸º Button æ·»åŠ ç‚¹å‡»äº‹ä»¶å¤„ç†ï¼›**
+
+  **5. é€šè¿‡ MainActivity(Intent) å®ç°ç•Œé¢è·³è½¬**
+
   
-   ## ËÄ¡¢ÊµÑé½á¹û 
-  ![ÊµÑé½á¹û](https://github.com/1nnocent1/android-labs-2020/blob/master/students/sec1814080911125/lab2.png) 
+
+   **##å››ã€ å®éªŒä»£ç **
+
+1.Sec1814080911125Activity.java
+
+'''
+
+| public class MainActivity extends AppCompatActivity {<br/><br/>    @Override<br/>    protected void onCreate(Bundle savedInstanceState) {<br/>        super.onCreate(savedInstanceState);<br/>        setContentView(R.layout.activity_main);<br/><br/>        final MainActivity thisActivity = this;<br/><br/>        Button BtnStart=(Button)findViewById(R.id.button_start);<br/><br/>        View.OnClickListener onClickListener = new View.OnClickListener() {<br/>            @Override<br/>            public void onClick(View v) {<br/>                switch (v.getId()){<br/>                    case R.id.button_start:<br/>                        Intent intent = new Intent(MainActivity.this,GameSceneActivity.class);<br/>                        startActivity(intent);<br/>                        break;<br/>                }<br/>            }<br/>        };<br/><br/>    }<br/>} |
+| ------------------------------------------------------------ |
+|                                                              |
+
+'''
+
+2.GameSceneActivity.java
+
+'''
+
+| public class GameSceneActivity extends AppCompatActivity {<br/><br/>    @Override<br/>    protected void onCreate(Bundle savedInstanceState) {<br/>        super.onCreate(savedInstanceState);<br/>        setContentView(R.layout.activity_game_scene);<br/>    }<br/>} |
+| ------------------------------------------------------------ |
+|                                                              |
+
+'''
+
+3.FailGameSceneActivity.java
+
+'''
+
+| public class FailGameSceneActivity extends AppCompatActivity {<br/><br/>    @Override<br/>    protected void onCreate(Bundle savedInstanceState) {<br/>        super.onCreate(savedInstanceState);<br/>        setContentView(R.layout.activity_fail_game_scene);<br/>    }<br/>} |
+| ------------------------------------------------------------ |
+|                                                              |
+
+'''
+
+   **## äº”ã€å®éªŒç»“æœ** 
+
+  **![å®éªŒç»“æœ](https://github.com/1nnocent1/android-labs-2020/blob/master/students/sec1814080911125/lab2.png)** 
+
   
-   ## Îå¡¢ÊµÑéĞÄµÃ 
-  µÚ¶ş´ÎÊµÑéÊÇ¸ù¾İ×Ô¼ºËùÑ¡µÄÌâÄ¿´´½¨¼¸¸ö¹¦ÄÜµÄActivity,È»ºóÔÚÖ÷ActivityÖĞÊ¹ÓÃIntentÊµÏÖ¸÷¸öActivityµÄÌø×ª¡£
 
+   **## å…­ã€å®éªŒå¿ƒå¾—** 
 
-
-
-
-
-
-
-
-
-
-
+  **ç¬¬äºŒæ¬¡å®éªŒæ˜¯æ ¹æ®è‡ªå·±æ‰€é€‰çš„é¢˜ç›®åˆ›å»ºå‡ ä¸ªåŠŸèƒ½çš„Activity,ç„¶ååœ¨ä¸»Activityä¸­ä½¿ç”¨Intentå®ç°å„ä¸ªActivityçš„è·³è½¬ã€‚**
 
