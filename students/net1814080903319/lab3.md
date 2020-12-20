@@ -19,7 +19,7 @@
 ```
 
 ## 四、实验结果
-![实验三结果截图](https://raw.githubusercontent.com/Basr-suer/android-labs-2020/master/students/net1814080903319/lab2.jpg)
+![实验三结果截图](https://raw.githubusercontent.com/Basr-suer/android-labs-2020/master/students/net1814080903319/lab3.jpg)
 
 ## 五、实验心得
 本次实验是在Android中对资源在xml上的使用，成功显示图片，以及在线性布局中嵌套一个相对布局中显示按钮
