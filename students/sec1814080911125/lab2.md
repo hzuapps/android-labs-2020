@@ -1,8 +1,8 @@
-**# 实验二** 
+# **实验二** 
 
  
 
-  **## 一、实验目标** 
+##   **一、实验目标** 
 
   **1. 创建自己的选题** 
 
@@ -12,7 +12,7 @@
 
   
 
-   **## 二、实验内容** 
+##    **二、实验内容** 
 
   **1. 在Issues中创建自己的选题：https://github.com/hzuapps/android-labs-2020/issues ；** 
 
@@ -24,9 +24,9 @@
 
   
 
-   **## 三、实验步骤** 
+##    **三、实验步骤** 
 
-  **1. 创建 Sec1814080911125Activity.java(主界面)、GameSceneActivity.java(游戏界面)、FailGameSceneActivity.java(游戏失败界面)；**
+  **1. 创建 MainActivity.java(主界面)、GameSceneActivity.java(游戏界面)、FailGameSceneActivity.java(游戏失败界面)；**
 
   **2. 将创建的 Activity 注册到 AndroidManifest.xml 中；**
 
@@ -38,45 +38,80 @@
 
   
 
-   **##四、 实验代码**
+##    **四、 实验代码**
 
-1.Sec1814080911125Activity.java
+1.MainActivity.java
 
-'''
+```
+public class MainActivity extends AppCompatActivity {
 
-| public class MainActivity extends AppCompatActivity {<br/><br/>    @Override<br/>    protected void onCreate(Bundle savedInstanceState) {<br/>        super.onCreate(savedInstanceState);<br/>        setContentView(R.layout.activity_main);<br/><br/>        final MainActivity thisActivity = this;<br/><br/>        Button BtnStart=(Button)findViewById(R.id.button_start);<br/><br/>        View.OnClickListener onClickListener = new View.OnClickListener() {<br/>            @Override<br/>            public void onClick(View v) {<br/>                switch (v.getId()){<br/>                    case R.id.button_start:<br/>                        Intent intent = new Intent(MainActivity.this,GameSceneActivity.class);<br/>                        startActivity(intent);<br/>                        break;<br/>                }<br/>            }<br/>        };<br/><br/>    }<br/>} |
-| ------------------------------------------------------------ |
-|                                                              |
+​```
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
 
-'''
+    final MainActivity thisActivity = this;
+
+    Button BtnStart=(Button)findViewById(R.id.button_start);
+
+    View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.button_start:
+                    Intent intent = new Intent(MainActivity.this,GameSceneActivity.class);
+                    startActivity(intent);
+                    break;
+            }
+        }
+    };
+
+}
+​```
+
+}
+```
 
 2.GameSceneActivity.java
 
-'''
+```
+public class GameSceneActivity extends AppCompatActivity {
 
-| public class GameSceneActivity extends AppCompatActivity {<br/><br/>    @Override<br/>    protected void onCreate(Bundle savedInstanceState) {<br/>        super.onCreate(savedInstanceState);<br/>        setContentView(R.layout.activity_game_scene);<br/>    }<br/>} |
-| ------------------------------------------------------------ |
-|                                                              |
+​```
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_game_scene);
+}
+​```
 
-'''
+}
+```
 
 3.FailGameSceneActivity.java
 
-'''
+```
+public class FailGameSceneActivity extends AppCompatActivity {
 
-| public class FailGameSceneActivity extends AppCompatActivity {<br/><br/>    @Override<br/>    protected void onCreate(Bundle savedInstanceState) {<br/>        super.onCreate(savedInstanceState);<br/>        setContentView(R.layout.activity_fail_game_scene);<br/>    }<br/>} |
-| ------------------------------------------------------------ |
-|                                                              |
+​```
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_fail_game_scene);
+}
+​```
 
-'''
+}
+```
 
-   **## 五、实验结果** 
+##    **五、实验结果** 
 
   **![实验结果](https://github.com/1nnocent1/android-labs-2020/blob/master/students/sec1814080911125/lab2.png)** 
 
   
 
-   **## 六、实验心得** 
+##    **六、实验心得**
 
   **第二次实验是根据自己所选的题目创建几个功能的Activity,然后在主Activity中使用Intent实现各个Activity的跳转。**
 
