@@ -24,6 +24,34 @@
 3. 将创建的java文件注册到AndroidManifest.xml，修改成自己的app名称
 4. 在activity_sec1814080911129.xml中添加按钮，设计界面；
 5. 在Sec1814080911129Activity.java添加按钮点击事件处理，实现跳转到其他Activity
+```java
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        Button tax= (Button)findViewById(R.id.taxB);
+        tax.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Sec1814080911129Activity.this,TaxActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button tran = (Button)findViewById(R.id.tranB);
+        tran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Sec1814080911129Activity.this,TranActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+    }
+```
 
 
 ## 四、实验结果
