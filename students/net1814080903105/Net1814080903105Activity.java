@@ -2,6 +2,7 @@ package edu.hzuapps.androidlabs.net1814080903105;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.content.Intent;
@@ -13,23 +14,35 @@ public class Net1814080903105Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button = findViewById(R.id.shopping);
-        final Net1814080903105Activity _this = this;
+
+        prepareButton(R.id.button_shopping);
+        prepareButton(R.id.button_list);
+    }
+
+    private void prepareButton (final int buttonId) {
+        final Activity thisActivity = this;
+        Button button = findViewById(buttonId);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(_this, ShoppingActivity.class);
-                _this.startActivity(intent);
-            }
-        });
-
-        Button button1 = findViewById(R.id.list);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(_this, ListActivity.class);
-                _this.startActivity(intent);
+            public void onClick(View view) {
+                openActivity(thisActivity, getActivity(buttonId));
             }
         });
     }
+
+    private void openActivity (Activity activity, Class activityClass){
+        Intent intent = new Intent(activity, activityClass);
+        activity.startActivity(intent);
+    }
+
+    private Class getActivity ( int id){
+        if (R.id.button_list == id) {
+            return ListActivity.class;
+        } else if (R.id.button_shopping == id) {
+            return ShoppingActivity.class;
+        } else {
+            return Net1814080903105Activity.class;
+        }
+    }
+
 }
