@@ -38,6 +38,32 @@ public class Sec1814080911128Activity extends AppCompatActivity {
         button.setOnClickListener(this);
         loading = (L)
     }
+	//使用AsyncHttpClient访问网络
+    private void fillData() {
+
+        //创建AsyncHttpClient实例
+        AsyncHttpClient client = new AsyncHttpClient();
+        //使用GET方式请求
+        client.get("hhttps://raw.githubusercontent.com/Jadore147258369/android-labs-2020/master/students/sec1814080911128/NewsInfo.json", new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int i, org.apache.http.Header[] headers, byte[] bytes) {
+                //请求成功
+
+                try {
+                    String json = new String(bytes, "utf-8");
+                    newsInfos = JsonParse.getNewsInfo(json);
+                    if (newsInfos == null) {
+                        Toast.makeText(MainActivity.this, "解析失败", Toast.LENGTH_SHORT).show();
+                    } else {
+                        //更新界面
+                        loading.setVisibility(View.INVISIBLE);
+                        lvNews.setAdapter(new NewsAdapter());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
     @Override
     public void onClick(View v) {
         //1.点击获取账号密码
