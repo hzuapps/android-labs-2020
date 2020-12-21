@@ -1,4 +1,4 @@
-package edu.hzuapp.androidlabs.sqlitetest2;
+package edu.hzuapp.androidlabs.sqlitetest;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
