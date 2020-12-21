@@ -57,7 +57,7 @@ public class HttpClientActivity extends AppCompatActivity {
     }
 
     private String getGitHubIssues() {
-        String gitApi = "http://10.101.144.94/api";
+        String gitApi = "https://api.github.com/repos/hzuapps/android-labs-2020/issues";
         URL url = null;
         String jsonText = null;
         try {
