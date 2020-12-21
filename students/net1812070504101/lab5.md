@@ -72,7 +72,23 @@ public class Util {
 ```
 
 ## 四.实验结果 
-<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab5_1.png" width=200px>
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab5_1.png" height=50%>
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab5_2.png" height=50%>  
+
+## 五.实验心得  
+  本次实验，用到了SQLiteDatabase,过程中遇到很多bug,完成的很艰辛
 
 
-## 五.实验心得
+
+
+
+
+
+
+
+
+
+
+
+
+
