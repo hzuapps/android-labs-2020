@@ -34,7 +34,7 @@
         android:text="Get GitHub Issues"/>
 ```
 
-3. 新建HttpClientActivity.java，实现获取url并操作xml，以下是主要代码：
+3. 新建HttpClientActivity.java，实现获取url并操作json，以下是主要代码：
 ```java
 public class HttpClientActivity extends AppCompatActivity {
 
@@ -114,4 +114,4 @@ public class HttpClientActivity extends AppCompatActivity {
 
 # 五、实验心得
 
-本次实验是android网络编程，实验内容是访问并获取xml文件，然后对xml文件进行解析，实验要注意的点就是需要在AndroidManifest.xml给相应的网络权限，并且有时候github这个api链接不上需要多次尝试。通过本次实验，了解了android的基本网络编程，学会了访问url以及用JSONObject和JSONArray操作解析xml。
+本次实验是android网络编程，实验内容是访问并获取json文件，然后对json文件进行解析，实验要注意的点就是需要在AndroidManifest.xml给相应的网络权限，并且有时候github这个api链接不上需要多次尝试。通过本次实验，了解了android的基本网络编程，学会了访问url以及用JSONObject和JSONArray操作解析json。
