@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Sec1814080911113Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/local_music_bottomlayout"
+        android:background="#33EEEEEE"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+            android:background=""
+
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="35dp"
+            android:src="@drawable/qqmusic1" />
+
+        <TextView
+            android:id="@+id/local_music_bottom_tv_song"
+            android:layout_width="198dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/local_music_bottom_iv_icon"
+            android:text=""
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/local_music_bottom_tv_singer"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/local_music_bottom_tv_song"
+            android:layout_alignLeft="@id/local_music_bottom_tv_song"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="3dp"
+            android:text=""
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_next"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/next1" />
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_play"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_next"
+            android:src="@drawable/play1"/>
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_last"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_play"
+            android:src="@drawable/last1" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/local_music_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/local_music_bottomlayout"
+        android:layout_marginBottom="49dp"
+        />
+
+
+    <!-- 
+     <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:text="本地音乐"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一曲"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.965"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.856" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停播放"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.856"
+             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一曲"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.856" />
+
+        <ImageView
+            android:layout_width="171dp"
+            android:layout_height="147dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/qqmusic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.193" />
+        */
+-->
+    </RelativeLayout>
