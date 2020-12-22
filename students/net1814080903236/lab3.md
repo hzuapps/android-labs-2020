@@ -9,7 +9,7 @@
 4.将应用运行结果截图，放到实验报告中;  
 5.点击图片（或按钮）时，打开另一个Activity。 
 ## 三、实验步骤
-1.根据自己的选题选择两张图片，首页图片存放在students/net1814080903236/app/src/main/res/drawable/main.jpg，提醒页面图片存放在students/net1814080903236/app/src/main/res/drawable/remind.jpg
+1.根据自己的选题选择两张图片，首页图片存放在students/net1814080903236/app/src/main/res/drawable/main.jpg，提醒页面图片存放在students/net1814080903236/app/src/main/res/drawable/remind.jpg   
 2.在首页布局activity_main.xml中使用<ImageView>添加主页图片   
 ```
 <ImageView
