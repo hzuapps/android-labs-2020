@@ -9,15 +9,15 @@
     <ImageView
         android:id="@+id/img_text"
         android:layout_width="100dp"
-        android:layout_height="66dp"
+        android:layout_height="79dp"
         android:src="@drawable/resizeapi" />
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="69dp"
+        android:layout_height="79dp"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:paddingLeft="7dp">
+        android:minHeight="79dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/Text_Title"
@@ -44,7 +44,8 @@
             android:layout_weight="2"
             android:gravity="center"
             android:textColor="#000000"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:minHeight="0dp"/>
 
     </LinearLayout>
 </LinearLayout>
