@@ -6,7 +6,7 @@
 ## 二、实验内容
  在现在Activity中显示图片资源；
 ## 三、实验步骤
-根据选定题目选取一张图片命名为 icon3.jpeg 放入res/drawable中给activity.net1814080903325.xml中使用
+根据选定题目选取一张图片命名为 icon3.jpeg 放入res/drawable中给activity.net1814080903325.xml中使用;
 
 在activity.net1814080903325.xml添加图片
 ```java
