@@ -14,6 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
+import edu.hzuapps.androidlabs.net1814080903222.components.DownloadDialog;
 import edu.hzuapps.androidlabs.net1814080903222.components.ListDecorator;
 import edu.hzuapps.androidlabs.net1814080903222.components.storage.ExcludeItem;
 import edu.hzuapps.androidlabs.net1814080903222.databinding.ExcludeListItemBinding;
@@ -80,7 +81,14 @@ public class SettingFragment extends Fragment {
                     ExcludeListAdapter adapter = new ExcludeListAdapter(newList);
                     recyclerView.setAdapter(adapter);
                 });
+
+        binding.downloadBtn.setOnClickListener(this::showDownloadDialog);
         return root;
+    }
+
+    public void showDownloadDialog(View v) {
+        DownloadDialog dialog = new DownloadDialog();
+        dialog.show(getParentFragmentManager(), "DOWNLOAD");
     }
 
     @Override
