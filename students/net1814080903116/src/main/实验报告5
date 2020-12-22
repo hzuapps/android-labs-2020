@@ -1,0 +1,33 @@
+# 一、实验目标
+
+1.了解Andoid的存储手段用    
+2.掌握Android的文件存储    
+3.将应用运行结果截图   
+ 
+# 二、实验内容
+1.将应用产生的数据保存到文件存储中    
+2.说明使用的文件存储方式：内部 or 外部    
+3.将运行结果截图  
+
+
+# 三、实验步骤
+1.获取各个数据信息  
+'''
+final EditText nameET =(EditText)findViewById(R.id.nameTV);
+final EditText idET =(EditText)findViewById(R.id.idTV);
+'''
+2.获得按钮控件。    
+'''
+Button login=(Button)findViewById(R.id.button);
+''' 
+3.把获取到信息利用起来。    
+'''
+fos=openFileOutput("login",MODE_APPEND);
+fos.write((name+" "+id+" ").getBytes());
+''' 
+
+# 四、实验结果
+![lab5.1](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/5.1.PNG)  
+![lab5.2](https://github.com/Dlmdp/android-labs-2020/blob/master/students/net1814080903116/src/main/5.2.PNG)
+# 五、实验心得
+在本次实验中学习到存储方面的知识，我选择的是文件存储，完成起来比较有难度，一开始很难入手，后面也是要去找参考来看看具体的步骤才行。
