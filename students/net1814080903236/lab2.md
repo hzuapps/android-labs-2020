@@ -12,12 +12,14 @@
 2. 确定两个功能，记录生日信息，发出生日提醒
 3. 设计三个Java类，MainActivity（应用开始主页），RecordActivity（记录生日信息），RemindActivity（发出生日提醒）
 4. 将三个Activity添加到AndroidMainifest.xml中
-```  <activity android:name=".RecordActivity"></activity>
+```
+<activity android:name=".RecordActivity"></activity>
         <activity android:name=".RemindActivity"></activity>
         <activity android:name=".MainActivity">
 ``` 
 5. 在MainActivity中添加按钮，实现点击按钮进入应用跳转到记录信息界面
-``` Button button = findViewById(R.id.button3);
+```
+Button button = findViewById(R.id.button3);
         final MainActivity thisActivity1 = this;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +30,8 @@
         }
 ```
 6. 在RecordActivity中添加按钮，实现点击按钮跳转到提醒界面
-``` Button button = findViewById(R.id.button2);
+```
+Button button = findViewById(R.id.button2);
         final RecordActivity thisActivity = this;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
