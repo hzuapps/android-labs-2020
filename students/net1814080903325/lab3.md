@@ -14,7 +14,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/icon3" />
+        android:src="@drawable/icon3" />
 ```
 ## 四、实验结果
 ![实验三结果截图](https://raw.githubusercontent.com/HuaStarOS/android-labs-2020/master/students/net1814080903325/lab3.jpg)
