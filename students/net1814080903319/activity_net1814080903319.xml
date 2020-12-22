@@ -3,14 +3,34 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="最新"
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="180dp"
-        android:textColor="#F394E0"/>
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="检查网络" />
+        <TextView
+            android:id="@+id/text_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/button_check" />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/zuixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="#F394E0"/>
 
     <View
         android:layout_marginLeft="100dp"
@@ -34,30 +54,30 @@
             android:layout_marginLeft="12dp"
             android:layout_centerHorizontal="false"
             android:layout_centerVertical="true"/>
-
-
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp">
-    <TextView
-        android:id="@+id/tanchang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="10dp"
-        android:textColor="#FFFFFF"
-        android:background="#F394E0"
-        android:text="U弹唱" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_toRightOf="@+id/tanchang"
-        android:text="温岚" />
+        <TextView
+            android:id="@+id/tanchang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#F394E0"
+            android:text="U弹唱" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/tanchang"
+            android:text="温岚" />
     </RelativeLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -65,6 +85,7 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="2dp"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -79,9 +100,8 @@
             android:layout_marginLeft="12dp"
             android:layout_centerHorizontal="false"
             android:layout_centerVertical="true"/>
-
-
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -103,6 +123,7 @@
             android:layout_toRightOf="@+id/tanchang1"
             android:text="陈洁仪" />
     </RelativeLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -125,9 +146,8 @@
             android:layout_marginLeft="12dp"
             android:layout_centerHorizontal="false"
             android:layout_centerVertical="true"/>
-
-
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -149,6 +169,7 @@
             android:layout_toRightOf="@+id/tanchang2"
             android:text="周杰伦" />
     </RelativeLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -156,5 +177,17 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="2dp"/>
+
+    <Button
+        android:id="@+id/tiaozhuang"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:background="#F394E0"
+        android:layout_marginTop="10dp"
+        android:text="ALL"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
 
 </LinearLayout>
