@@ -41,7 +41,7 @@
 
 ## 四、实验结果
 
-![首页]()  
+![首页](https://github.com/Dokemg/android-labs-2020/blob/master/students/sec1814080911127/lab3.jpg)  
 
 
 ## 五、实验心得
