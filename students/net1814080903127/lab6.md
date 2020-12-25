@@ -48,6 +48,6 @@ android:minHeight="79dp"
 ```
 
 # 四、实验结果
-![lab6](https://github.com/cxcx75/android-labs-2020/tree/master/students/net1814080903127/lab6.png)
+![lab6](https://github.com/cxcx75/android-labs-2020/blob/master/students/net1814080903127/lab6.png)
 # 五、实验心得
 本次实验增加了删除功能，写相应的删除方法，再在主界面单条笔记上设置点击事件即可，删除后主界面刷新笔记，以此去掉主界面已经删除的笔记。单条item布局高度不固定问题通过上网查资料后，加入最大、最小高度的属性调整即可，至于桌面图标，导入图标，在AndroidManifest.xml配置就行。
