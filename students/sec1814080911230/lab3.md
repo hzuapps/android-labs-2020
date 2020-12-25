@@ -18,7 +18,7 @@
 
 2.在activity_main.xml里插入背景图
 
-  ```java
+  ```java```
 <RelativeLayout 
 android:background="@drawable/background" 
 android:paddingTop="230dp" 
@@ -56,7 +56,7 @@ android:text="Rank" android:id="@+id/button2"/>
   
 3.在activity_rank.xml里面插入背景图
 
-  ```java
+  ```java```
   <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -73,7 +73,7 @@ android:text="Rank" android:id="@+id/button2"/>
 
 4、实现跳转
 
-  ```java
+  ```java```
   package edu.hzuapps.androidlabs.sec1814080911230;
 
 import androidx.appcompat.app.AppCompatActivity;
