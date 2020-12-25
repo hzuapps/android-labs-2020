@@ -1,6 +1,9 @@
 package edu.hzuapps.androidlabs.net1814080903127;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -19,20 +22,23 @@ public class Net1814080903127Activity extends AppCompatActivity {
     private Button addText;
     private int itemID;
     private Note textItem;
-
+    final Net1814080903127Activity _this = this;
+    public void refresh(){
+        DBHelper db=new DBHelper(_this);
+        sqLiteDatabase=db.getReadableDatabase();
+        //获取数据
+        list=db.querydata(sqLiteDatabase);
+        noteAdapter=new NoteAdapter(_this,list);
+        textList=findViewById(R.id.textlist);
+        textList.setAdapter(noteAdapter);
+        registerForContextMenu(textList);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textList=findViewById(R.id.textlist);
-        DBHelper db=new DBHelper(Net1814080903127Activity.this);
-        sqLiteDatabase=db.getReadableDatabase();
-        //获取数据
-        list=db.querydata(sqLiteDatabase);
-        noteAdapter=new NoteAdapter(Net1814080903127Activity.this,list);
-        textList=findViewById(R.id.textlist);
-        textList.setAdapter(noteAdapter);
-        registerForContextMenu(textList);
+        refresh();
 
         //表项点击事件
         textList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -41,7 +47,7 @@ public class Net1814080903127Activity extends AppCompatActivity {
                 itemID=list.get(position).getId();
                 textItem=list.get(position);
                 textList.showContextMenu();
-                Intent intent=new Intent(Net1814080903127Activity.this,AddActivity.class);
+                Intent intent=new Intent(_this,AddActivity.class);
                 Bundle bundle=new Bundle();
                 String Update_Context=textItem.getContext();
                 String Update_Title=textItem.getTitle();
@@ -54,9 +60,34 @@ public class Net1814080903127Activity extends AppCompatActivity {
             }
         });
 
+        //长按删除
+        textList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                itemID=list.get(position).getId();
+                new AlertDialog.Builder(_this)
+                        .setTitle("长按删除")
+                        .setMessage("确定删除")
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                DBHelper db=new DBHelper(_this);
+                                sqLiteDatabase=db.getReadableDatabase();
+                                db.delete(sqLiteDatabase,itemID);
+                                refresh();
+                            }
+                        }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                }).create().show();
+                return true;
+            }
+        });
+
         //"新建便签"按钮事件
-        addText = findViewById(R.id.button);
-        final Net1814080903127Activity _this = this;
+        addText = findViewById(R.id.RemindAdd);
+        //final Net1814080903127Activity _this = this;
         addText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,4 +105,24 @@ public class Net1814080903127Activity extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        String title="提示";
+        new AlertDialog.Builder(Net1814080903127Activity.this)
+                .setTitle(title)
+                .setMessage("确定退出吗？")
+                .setPositiveButton("确定" ,new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        sqLiteDatabase.close();
+                        finish();
+                    }
+                }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        }).create().show();
+    }
+
 }
