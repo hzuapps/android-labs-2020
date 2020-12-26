@@ -18,7 +18,7 @@
 
 2. 在activity_main.xml,添加TextView，如下：
 
-```
+``` java
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
 
 3. 在 activity_knw.xml添加TextView，如下：
 
-```
+``` java
     <TextView
         android:id="@+id/Textview"
         android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
 
 4. 在 activity_tem.xml,添加 InamgeView 如下：
 
-```
+``` java
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="0dp"
