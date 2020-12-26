@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Net1814080903337Activity extends AppCompatActivity {
+
     public void Record(View view) {
         Intent intent = new Intent(this,RecordActivity.class);
         startActivity(intent);
@@ -19,6 +20,10 @@ public class Net1814080903337Activity extends AppCompatActivity {
         Intent intent = new Intent(this,OverdueActivity.class);
         startActivity(intent);
     }
+public void SeekResult(View view){
+        Intent intent=new Intent(this,SeekResult.class);
+        startActivity(intent);
+}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
