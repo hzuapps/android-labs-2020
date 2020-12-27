@@ -1,12 +1,29 @@
-package edu.hzuapps.androidlabs.net1814080903211.components;
+package edu.hzuapps.androidlabs.net1814080903211.ui.home;
 
 import androidx.annotation.Nullable;
+import androidx.room.Entity;
+import androidx.room.Ignore;
 
+import org.jetbrains.annotations.NotNull;
+
+@Entity(
+        tableName = "chat_list",
+        primaryKeys = {"Name", "Type"}
+)
 public class ChatObject {
-    String name;
-    String type;
-    @Nullable
+    @NotNull
+    private String name;
+    @NotNull
+    private String type;
+
+    private @Nullable @Ignore
     String extraInfo;
+
+    public ChatObject(String name, String type) {
+        this.name = name;
+        this.type = type;
+        this.extraInfo = null;
+    }
 
     public ChatObject(String name, String type, @Nullable String extraInfo) {
         this.name = name;

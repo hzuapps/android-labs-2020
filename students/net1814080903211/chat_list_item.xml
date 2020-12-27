@@ -7,7 +7,7 @@
 
         <variable
             name="object"
-            type="edu.hzuapps.androidlabs.net1814080903211.components.ChatObject" />
+            type="edu.hzuapps.androidlabs.net1814080903211.ui.home.ChatObject" />
     </data>
 
     <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
