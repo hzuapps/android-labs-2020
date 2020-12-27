@@ -18,74 +18,18 @@
 
 2.在activity_main.xml里插入背景图
 
-  ```java```
-<RelativeLayout 
+```
 android:background="@drawable/background" 
-android:paddingTop="230dp" 
-android:orientation="vertical" 
-android:paddingRight="100dp" 
-android:paddingLeft="100dp" 
-android:layout_height="match_parent" 
-android:layout_width="match_parent" 
-xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-<LinearLayout 
-android:orientation="vertical" 
-android:layout_height="match_parent" 
-android:layout_width="match_parent">
-
-<Button 
-android:background="#00000000" 
-android:layout_height="wrap_content" 
-android:layout_width="match_parent" 
-android:textColor="@android:color/holo_red_dark" 
-android:text="Start Game" 
-android:id="@+id/button1"/>
-
-<Button
-android:background="#00000000" 
-android:layout_height="wrap_content" 
-android:layout_width="match_parent" 
-android:textColor="@android:color/holo_red_dark" 
-android:text="Rank" android:id="@+id/button2"/>
-
-</LinearLayout>
-
-</RelativeLayout>
   
 3.在activity_rank.xml里面插入背景图
 
-  ```java```
-  <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/rank_backgroud"
-    >
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </ListView>
-
-
-</LinearLayout>
+```
+android:background="@drawable/rank_backgroud"
 
 4、实现跳转
 
-  ```java```
-  package edu.hzuapps.androidlabs.sec1814080911230;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import edu.hzuapps.androidlabs.sec1814080911230.R;
-public class Sec1814080911230Activity extends AppCompatActivity  {
-
+```
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -115,8 +59,8 @@ public class Sec1814080911230Activity extends AppCompatActivity  {
             });
 
         }
-    }
-
+        
+        
 
 ## 四、实验结果
 ![主界面](https://raw.githubusercontent.com/wukai230/android-labs-2020/master/students/sec1814080911230/lab3(1).png)
