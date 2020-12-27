@@ -20,12 +20,13 @@
 
 ```
 android:background="@drawable/background" 
-
+```
   
 3.在activity_rank.xml里面插入背景图
 
 ```
 android:background="@drawable/rank_backgroud"
+```
 
 4、实现跳转
 
@@ -59,7 +60,7 @@ android:background="@drawable/rank_backgroud"
             });
 
         }
-        
+```        
         
 
 ## 四、实验结果
