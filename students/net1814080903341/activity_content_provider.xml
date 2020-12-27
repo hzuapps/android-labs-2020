@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContentProviderActivity">
+    <TextView
+        android:id="@+id/Foods_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="菜谱信息"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/food_cover"
+        android:layout_width="256px"
+        android:layout_height="256px"
+        android:src="@drawable/food"
+        android:layout_below="@+id/Foods_title"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="菜名"
+        android:layout_below="@+id/food_cover"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/food_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="注意事项"
+        android:layout_below="@+id/food_name"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:layout_below="@+id/food_tags"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一道菜"
+        android:layout_below="@+id/food_tags"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
