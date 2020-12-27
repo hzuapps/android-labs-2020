@@ -30,8 +30,9 @@
 
 ## 四、实验结果
 
-![实验3结果截图](https://github.com/1nnocent1/android-labs-2020/blob/master/students/sec1814080911125/lab3.png)
+![实验3结果截图](https://github.com/1nnocent1/android-labs-2020/blob/f909c9315f9e58f3bfd1acef1e75fde40de6d7ab/students/sec1814080911125/lab3.png)
 		
 ## 五、实验心得
 
 经过本次实验，学会了如何在界面显示图片，设置其属性等。
+
