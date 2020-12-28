@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Net1814080903318Activity">
+    tools:context=".Net1814080903318Activity"
+    android:background="#7FFFD4"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,26 +14,36 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="135dp"
-            android:layout_height="96dp"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="80dp"
-            android:text="录屏" />
+            android:layout_width="274dp"
+            android:layout_height="194dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="300dp"
+            android:background="@color/colorAccent"
+
+            android:text="录屏"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="50dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="150dp"
-            android:layout_height="109dp"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="480dp"
-            android:text="我的" />
+            android:layout_width="274dp"
+            android:layout_height="197dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="520dp"
+            android:background="@color/colorAccent"
+            android:text="我的"
+            android:textColor="@android:color/background_light"
+            android:textSize="50dp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="262dp"
-            android:layout_height="216dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="200dp"
+            android:layout_width="410dp"
+            android:layout_height="274dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
             app:srcCompat="@drawable/logo" />
     </RelativeLayout>
 
