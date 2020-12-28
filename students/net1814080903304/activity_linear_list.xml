@@ -9,29 +9,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="reminder" />
+
     <Spinner
         android:id="@+id/dates"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="264dp"
+        android:layout_height="69dp"
         android:layout_below="@id/name"
         android:layout_alignParentLeft="true"
-        android:layout_toLeftOf="@+id/times"
-        />
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/times" />
+
     <Spinner
         android:id="@id/times"
-        android:layout_width="96dp"
-        android:layout_height="wrap_content"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
         android:layout_below="@id/name"
         android:layout_alignParentRight="true"
-        android:entries="@array/medal"/>
+        android:layout_marginTop="585dp"
+        android:layout_marginRight="7dp"
+        android:entries="@array/medal" />
 
     <Button
         android:layout_width="96dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/times"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="31dp"
         android:text="done" />
-
 
 
 </RelativeLayout>
