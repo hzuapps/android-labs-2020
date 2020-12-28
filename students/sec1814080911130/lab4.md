@@ -13,7 +13,7 @@
 
 1. 主界面activity_sec1814080911130.xml采用LinearLayout布局，主要设置了2个button，并使用OnClickListener事件监听器以及openActivity方法实现各界面的跳转。
 
-   ```java
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -45,14 +45,14 @@
         android:textColor="#FFEB3B"
         android:textSize="25dp"/>
 </LinearLayout>
-   ```
+```
 
    
 
 2. 对按钮函数进行封装。
 
-   ```java
-   public class Sec1814080911130Activity extends AppCompatActivity {
+```java
+public class Sec1814080911130Activity extends AppCompatActivity {
     public static final String TAG = Sec1814080911130Activity.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +94,7 @@
         }
     }
 }
-   ```
+```
 
 # 四、实验结果
 
