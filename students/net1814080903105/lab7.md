@@ -41,7 +41,7 @@ public void onClick(View v) {
 4. 修改主界面页面跳转相关代码。
 
 ## 四、实验结果
-![商品信息](https://github.com/czj-105/android-labs-2020/blob/master/students/net1814080903105/lab1.jpg)
+![商品信息](https://github.com/czj-105/android-labs-2020/blob/master/students/net1814080903105/lab7.jpg)
 
 ## 五、实验心得
 没有用到设备，增加了商品信息activity，商品信息图片数组封装方便操作，修改了主界面页面跳转相关代码。
