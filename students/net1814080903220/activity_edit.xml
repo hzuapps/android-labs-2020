@@ -4,43 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
+
     tools:context=".Net1814080903220EditActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/event">
+
+    </ImageView>
 
     <EditText
         android:id="@+id/E_dit"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:textSize="20dp"
-        android:hint="xx纪念日">
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/icon1"
+        android:hint="输入纪念日名称"
+        android:maxLength="6"
+        android:textSize="18sp">
+
     </EditText>
+
     <Button
         android:id="@+id/dateChoose"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/E_dit"
+        android:layout_marginStart="200dp"
         android:background="@drawable/btn_date"
-        android:layout_marginTop="10dp"
-        android:textSize="16dp"
         android:text="选择日期"
-        />
-    <LinearLayout
-        android:layout_width="match_parent"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/shanchu"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/dateChoose">
-        <Button
-            android:id="@+id/shanchu"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/dateChoose"
-            android:text="删除" />
-        <Button
-            android:id="@+id/baocun"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/shanchu"
-            android:text="保存"
-        />
-    </LinearLayout>
->
+        android:layout_below="@id/dateChoose"
+        android:layout_marginTop="10dp"
+        android:background="#F8655A"
+        android:text="删除" />
+
+    <Button
+        android:id="@+id/baocun"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateChoose"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/shanchu"
+        android:background="#1597FE"
+        android:text="保存" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateChoose"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/baocun"
+        android:background="#FFC107"
+        android:text="更新" />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/date">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/E_dit2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/E_dit"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10sp"
+        android:layout_toEndOf="@id/icon2"
+        android:hint="显示日期"
+        android:inputType="number"
+        android:textSize="18sp">
+    </EditText>
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textSize="120sp"
+        android:id="@+id/text1">
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageback"
+        android:scaleType="centerCrop">
+    </ImageView>
 </RelativeLayout>
