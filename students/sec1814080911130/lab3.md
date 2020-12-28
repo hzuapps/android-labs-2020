@@ -13,7 +13,7 @@
 1. 准备一张或多张命好名字的图片，名字不要有中文；
 2. 放入res/drawable文件目录下；
 3. 在布局背景background中使用@drawable/图片名字引用该图片
-```
+```java
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
