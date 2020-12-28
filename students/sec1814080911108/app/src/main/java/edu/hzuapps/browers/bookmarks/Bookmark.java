@@ -6,10 +6,12 @@ package edu.hzuapps.browers.bookmarks;
 public class Bookmark {
     private String title;
     private int imageId;
+    private String url;
 
-    public Bookmark(String title, int imageId) {
+    public Bookmark(String title, int imageId,String url) {
         this.title = title;
         this.imageId = imageId;
+        this.url = url;
     }
 
     public String getTitle() {

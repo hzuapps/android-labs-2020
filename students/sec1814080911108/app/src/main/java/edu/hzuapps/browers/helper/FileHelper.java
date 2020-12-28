@@ -1,4 +1,4 @@
-package edu.hzuapps.browers;
+package edu.hzuapps.browers.helper;
 
 import android.content.Context;
 
