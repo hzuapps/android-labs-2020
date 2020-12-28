@@ -10,17 +10,16 @@
 
 1. 
 2. 
-
-```java
-public class ClassNameIsHere {}
-```  
-
 3. 
 
 ## 三、实验步骤
 
 1. 
 2. 
+
+```java
+public class ClassNameIsHere {}
+```  
 3. 
 
 ## 四、实验结果
