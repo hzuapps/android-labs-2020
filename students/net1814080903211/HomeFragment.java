@@ -4,30 +4,26 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import edu.hzuapps.androidlabs.net1814080903211.components.ListSeparator;
 import edu.hzuapps.androidlabs.net1814080903211.databinding.FragmentHomeBinding;
-import edu.hzuapps.androidlabs.net1814080903211.components.ChatObject;
 import edu.hzuapps.androidlabs.net1814080903211.databinding.ChatListItemBinding;
 
 
 class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.ChatListItemHolder> {
-    private final ArrayList<ChatObject> objectList;
+    private final List<ChatObject> objectList;
 
-    public ChatListAdapter(ArrayList<ChatObject> list) {
+    public ChatListAdapter(List<ChatObject> list) {
         super();
         objectList = list;
     }
@@ -83,13 +79,10 @@ public class HomeFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.addItemDecoration(new ListSeparator());
 
-        homeViewModel.getChatObjects().observe(getViewLifecycleOwner(),
-                new Observer<ArrayList<ChatObject>>() {
-                    @Override
-                    public void onChanged(@Nullable ArrayList<ChatObject> s) {
-                        ChatListAdapter adapter = new ChatListAdapter(s);
-                        recyclerView.setAdapter(adapter);
-                    }
+        homeViewModel.getChatObjects(getContext()).observe(getViewLifecycleOwner(),
+                list -> {
+                    ChatListAdapter adapter = new ChatListAdapter(list);
+                    recyclerView.setAdapter(adapter);
                 });
         return root;
     }
