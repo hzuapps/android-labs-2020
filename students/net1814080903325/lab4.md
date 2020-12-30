@@ -9,7 +9,7 @@
 2. 在非主界面设置布局以及内容；
 
 ## 三、实验步骤
-1. 将activity_player.xml中的布局进行修改，在相对布局中进行多个相对布局嵌套
+1. 将activity_player.xml中的布局进行修改，在相对布局中进行线性布局嵌套
 ```java
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -136,4 +136,4 @@
 ![实验四结果截图](https://raw.githubusercontent.com/HuaStarOS/android-labs-2020/master/students/net1814080903325/lab4.jpg)
 
 ## 五、实验心得
-实验四主要是熟悉对Android布局的使用，本次实验是在线性布局中嵌套多个相对布局，在相对布局中显示文本信息
+实验四主要是熟悉对Android布局的使用，本次实验是在相对布局中进行线性布局嵌套，在相对布局中显示文本信息
