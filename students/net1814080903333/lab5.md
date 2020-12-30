@@ -106,9 +106,10 @@ public void onClick(View v) {
 }}
 ```  
 ## 四、实验结果
-
-## 五、实验心得体会
-
+![图1实验五运行结果](https://raw.githubusercontent.com/yichouge/android-labs-2020/master/students/net1814080903333/ExperimentalResult/lab5.1.png)  
+![图2实验五运行结果](https://raw.githubusercontent.com/yichouge/android-labs-2020/master/students/net1814080903333/ExperimentalResult/lab5.2.png)  
+## 五、实验心得体会  
+本次实验难度比前面几次的都要难，主要是创数据库跟跟MySQL有一些区别，本实验最大的难点就是怎么存储数据到数据库中，至于增删改查跟MySQL差不多难度不是很大，从数据库调取数据跟Java用swing调取数据一样难度不大。
 
 
 
