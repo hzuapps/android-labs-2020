@@ -42,4 +42,4 @@ public class Net1814080903332Activity extends AppCompatActivity {
 ## 四、实验结果
 ![图片](https://github.com/eason89/android-labs-2020/blob/master/students/net1814080903332/4.PNG)
 ## 五、实验心得
-  这次实验将界面布局进行设计，增加一些功能，实现了APP的基本逻辑。
+  这次实验将界面布局进行设计，增加一些功能，实现了APP的基本逻辑
