@@ -1,12 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".StartGameActivity"
+    android:orientation="vertical"
+    android:background="@drawable/start_game_backgroud"
     >
+
+    <TextView
+        android:id="@+id/word1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="1、Android"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:gravity="left"
+        />
+
+    <EditText
+        android:id="@+id/put1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/word2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="2、Prefect"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:gravity="left"
+        />
+    <EditText
+        android:id="@+id/put2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/word3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="3、Subscription"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:gravity="left"
+        />
+    <EditText
+        android:id="@+id/put3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        />
+    <Button
+        android:id="@+id/queding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入用户名"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入得分"
+        android:textColor="@android:color/black"
+        />
+    <Button
+        android:id="@+id/btnSavePlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        />
 
 </LinearLayout>
