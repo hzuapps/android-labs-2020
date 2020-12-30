@@ -150,7 +150,7 @@ activity_personview.xml
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 ```
-        
+PersonviewActivity.java
 ```
 public class PersonviewActivity extends AppCompatActivity {
 
