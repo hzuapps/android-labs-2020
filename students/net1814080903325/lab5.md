@@ -55,7 +55,7 @@ private void init() {
 ```
 
 ## 四、实验结果
-![列表结果截图](https://raw.githubusercontent.com/HuaStarOS/android-labs-2020/master/students/net1814080903325/lab5.jpg)
+![实验结果截图](https://raw.githubusercontent.com/HuaStarOS/android-labs-2020/master/students/net1814080903325/lab5.jpg)
 
 ## 五、实验心得
 这次实验根据我自己APP的需求，我选择了文件存储。
