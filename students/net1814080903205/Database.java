@@ -13,6 +13,7 @@ import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Database extends ContentProvider {
@@ -174,6 +175,30 @@ public class Database extends ContentProvider {
 
         getContext().getContentResolver().notifyChange(uri, null);
         return count;
+    }
+
+    public ArrayList<ArrayList<String>> getStudentList(MainActivity1 context){
+        Cursor cursor;
+        ArrayList<ArrayList<String>> studentList = new ArrayList<ArrayList<String>>();
+        db = context.openOrCreateDatabase("Student_Information",context.MODE_PRIVATE,null);
+        cursor = db.rawQuery("select * from student",null);
+        cursor.moveToFirst();
+
+        ArrayList<String> temp;
+
+        for(int i=0;i<cursor.getCount();i++){
+            temp = new ArrayList<String>();
+            temp.add(cursor.getString(cursor.getColumnIndex("edid")));
+            temp.add(cursor.getString(cursor.getColumnIndex("edname")));
+            temp.add(cursor.getString(cursor.getColumnIndex("edclass")));
+            studentList.add(temp);
+            cursor.moveToNext();
+        }
+        return studentList;
+    }
+
+    public void delete(String id){
+        db.execSQL("delete from student where edid="+id);
     }
 
 }
