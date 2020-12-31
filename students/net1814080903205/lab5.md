@@ -117,6 +117,7 @@ public class Database extends ContentProvider {
             default:
                 throw new IllegalArgumentException("Unknown URI " + uri);
         }
+        
         if (sortOrder == null || sortOrder == "") {
             sortOrder = NAME;
         }
