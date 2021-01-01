@@ -24,13 +24,16 @@
 
 2. 在splash_activity.xml插入启动页面的图片
 
+```
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/infomationbackground" />
+```
 
 6. 打开另外一个Activity
 
+```
 protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -54,9 +57,11 @@ protected void onCreate(Bundle savedInstanceState){
                 startActivity(intent);
             }
         });
+```
 
 ## 四、实验结果
 
+```
 activity_main.xml
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -93,7 +98,9 @@ activity_main.xml
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+```
 
+```
 Net1814080903310Activity
 
 package edu.hzuapps.androidlabs.students.net1814080903310;
@@ -134,7 +141,7 @@ public class Net1814080903310Activity extends AppCompatActivity {
         });
     }
 }
-
+```
 
 ## 五、实验心得
 这次实验在主页上添加了一张图片，并且点击主页的按钮进行跳转。
