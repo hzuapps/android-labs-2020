@@ -305,7 +305,7 @@ activity_sorted.xml如下:
 ```
 ## 四、实验结果及截图
 
-![实验四图片](https://github.com/hzuapps/android-labs-2020/blob/master/students/net1814080903301/4.jpg)
+![avatar](https://raw.githubusercontent.com/WeiCzai/android-labs-2020/master/students/net1814080903315/labs4.jpg)
 
 ## 五、实验心得
 本次实现主要实现界面布局，并且完善界面点击操作事件，添加了一些可输入的文本框，使界面更加丰富，学到了三种布局，我在这次实验使用了两种布局，一个是linearlayout，另外一个是constraintlayout，学到了非常多的东西。
