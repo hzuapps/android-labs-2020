@@ -30,6 +30,7 @@
 
 ## 四、实验结果
 
+```
 Net1814080903310Activity.java
 
 package edu.hzuapps.androidlabs.students.net1814080903310;
@@ -59,7 +60,9 @@ public class Net1814080903310Activity extends AppCompatActivity {
     private void startActivity(Intent intent) {
     }
 }
+```
 
+```
 AndroidManifest.xml
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,7 +105,9 @@ public class Information1814080903310Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main1814080903310);
     }
 }
+```
 
+```
 PlayVideo18148080903310Activity
 
 package edu.hzuapps.androidlabs.students.net1814080903310;
@@ -119,6 +124,7 @@ public class PlayVideo18148080903310Activity extends AppCompatActivity {
         setContentView(R.layout.activity_first18148080903310);
     }
 }
+```
 
 ## 五、实验心得
 这次实验做的是在Activity上添加按钮，来实现Activity之间的跳转。就是在app里面点击按钮来实现页面跳转。
