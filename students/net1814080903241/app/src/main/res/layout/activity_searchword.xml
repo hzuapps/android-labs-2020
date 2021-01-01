@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <TextView
+        android:id="@+id/pu_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="TextView" />
-</LinearLayout>
+        android:text="Please input."
+        android:textColor="#C72828"
+        android:textSize="24sp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="英译汉"
+        android:textSize="20sp" />
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="汉译英"
+        android:layout_toRightOf="@id/cb_1"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cb_2"
+        android:hint="英译汉"
+        android:textColor="#AC20CE"
+        android:maxLines="3"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_1"
+        android:layout_marginTop="30dp"
+        android:hint="汉译英"
+        android:maxLines="3"
+        android:textColor="#AC20CE"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_2"
+        android:layout_marginTop="100dp"
+        android:text="Confirm"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="#3FAFAF"/>
+
+</RelativeLayout>

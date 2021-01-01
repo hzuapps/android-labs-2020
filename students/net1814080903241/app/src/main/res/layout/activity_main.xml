@@ -16,12 +16,15 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
         android:text="单词打卡"
+        android:textColor="#887785"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="464dp"
         android:text="搜索单词或短语"
+        android:textColor="#887785"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -43,7 +48,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="背单词打卡"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="89dp" />
+        android:textColor="#887785"
+        android:textSize="@android:dimen/app_icon_size"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/zmiaomiao"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="75dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
