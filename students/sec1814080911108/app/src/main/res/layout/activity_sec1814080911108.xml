@@ -7,7 +7,6 @@
     tools:context=".Sec1814080911108Activity"
     android:orientation="vertical"
     android:background="#ffffff">
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="400dp"
@@ -23,15 +22,16 @@
             android:background="#111111"
             android:scaleType="centerCrop"
             android:src="@drawable/logo" />
-        <!--   浏览窗口     -->
+        <!--   网址     -->
         <EditText
-            android:id="@+id/address"
+            android:id="@+id/textUrl"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignBottom="@id/logo"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="-67dp"
+            android:padding="10dp"
             android:background="@drawable/edit_text"
             android:inputType="text"
             android:maxLines="1" />
