@@ -7,8 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".CipheruploadActivity"
-    android:background="@drawable/background">
-
+    android:background="@drawable/background"
+    >
     <CheckBox
         android:id="@+id/administration"
         android:layout_width="match_parent"
@@ -33,35 +33,11 @@
         android:textSize="15dp"
         />
     <CheckBox
-        android:id="@+id/R_and_D"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="研发部门"
-        android:layout_marginTop="90dp"
-        android:textSize="15dp"
-        />
-    <CheckBox
-        android:id="@+id/purchase"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="采购部门"
-        android:layout_marginTop="120dp"
-        android:textSize="15dp"
-        />
-    <CheckBox
-        android:id="@+id/production"
+        android:id="@+id/produce"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="生产部门"
-        android:layout_marginTop="150dp"
-        android:textSize="15dp"
-        />
-    <CheckBox
-        android:id="@+id/logistics"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="后勤部门"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="90dp"
         android:textSize="15dp"
         />
     <CheckBox
@@ -69,13 +45,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="全体员工"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="120dp"
         android:textSize="15dp"
         />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="550dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
         android:text="确定"
         android:id="@+id/sure"
         android:textSize="20dp"

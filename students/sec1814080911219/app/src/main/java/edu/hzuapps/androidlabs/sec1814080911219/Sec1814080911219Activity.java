@@ -17,48 +17,48 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
+
+
 
 public class Sec1814080911219Activity extends AppCompatActivity {
     final Activity thisActivity=this;
     static final String ID = "id";
     TextView tv;
-    String path="1";//文件路径
-    private ListView listView;
+    public static String path="1";//文件路径
+    Socket client;
+    DataInputStream in;
+    DataOutputStream out;
+    String massage=null;
+    private Handler handler = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        verifyStoragePermissions(this);//动态申请存储权限+
-
+        verifyStoragePermissions(this);//动态申请存储权限
         Button button1=(Button)findViewById(R.id.button_cipherupload);
-        View view1=findViewById(R.id.button_cipherupload);
         Button button2=(Button)findViewById(R.id.button_showfilelist);
-        View view2=findViewById(R.id.button_showfilelist);
-        //页面跳转
-        button1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intent=new Intent(thisActivity,CipheruploadActivity.class);
-                thisActivity.startActivity(intent);
-            }
-        });
         //页面跳转
         button2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -89,28 +89,6 @@ public class Sec1814080911219Activity extends AppCompatActivity {
                 log_name.setText(null);
             }
         });
-        //明文上传
-        Button public_load=(Button) findViewById(R.id.button_publicupload);
-        public_load.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-            @Override
-            public void onClick(View v) {
-                if(path.equals("1"))
-                {
-                    AlertDialog alertDialog1 = new AlertDialog.Builder(thisActivity)
-                            .setTitle("警告")//标题
-                            .setMessage("请选择文件！")//内容
-                            .create();
-                    alertDialog1.show();
-                }
-                else{
-                    publicupload_log(path);
-                    Toast toast=Toast.makeText(thisActivity,"文件上传成功！",Toast.LENGTH_SHORT);
-                    toast.show();
-                    path="1";
-                }
-            }
-        });
         //密文上传
         Button cipher_load=(Button) findViewById(R.id.button_cipherupload);
         cipher_load.setOnClickListener(new View.OnClickListener() {
@@ -126,15 +104,16 @@ public class Sec1814080911219Activity extends AppCompatActivity {
                     alertDialog1.show();
                 }
                 else{
+                    Intent intent=new Intent(thisActivity,CipheruploadActivity.class);
+                    thisActivity.startActivity(intent);
                     cipherupload_log(path);
-                    Toast toast=Toast.makeText(thisActivity,"文件上传成功！",Toast.LENGTH_SHORT);
-                    toast.show();
+                    Filepath.path=path;
                     path="1";
+
                 }
             }
         });
     }
-
     //调用系统文件管理器各函数
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -276,7 +255,7 @@ public class Sec1814080911219Activity extends AppCompatActivity {
     //编写日志文件
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void log(String date, String username, String log_path, String log_kind){
-        File file=new File("/storage/emulated/0/test/",log_kind);
+        File file=new File("/storage/emulated/0/",log_kind);
         try {
             file.createNewFile();
         } catch (IOException e) {
@@ -301,19 +280,6 @@ public class Sec1814080911219Activity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-    //明文上传文件的日志文件
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    public void publicupload_log(String log_path){
-        String date=getsystime();//获取系统时间
-        String username=getusername();
-        if(username.equals(null)){
-            Toast toast=Toast.makeText(thisActivity,"请输入登陆名",Toast.LENGTH_SHORT);
-            toast.show();
-        }
-        else {
-            log(date,username,log_path,"publicload_log.txt");
-        }
-    }
     //加密上传文件的日志文件
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void cipherupload_log(String log_path){
@@ -327,4 +293,5 @@ public class Sec1814080911219Activity extends AppCompatActivity {
             log(date,username,log_path,"cipherupload_log.txt");
         }
     }
+
 }
