@@ -23,7 +23,7 @@ public class ShowActivity extends AppCompatActivity {
         kaonai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ShowActivity.this, StoreActivity.class);
+                Intent i = new Intent(ShowActivity.this, PersonalDetailsActivity.class);
                 startActivity(i);
             }
         });
@@ -31,7 +31,7 @@ public class ShowActivity extends AppCompatActivity {
         fan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ShowActivity.this, StoreActivity.class);
+                Intent i = new Intent(ShowActivity.this, PersonalDetailsActivity.class);
                 startActivity(i);
             }
         });
@@ -39,7 +39,7 @@ public class ShowActivity extends AppCompatActivity {
         hanbao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ShowActivity.this, StoreActivity.class);
+                Intent i = new Intent(ShowActivity.this, PersonalDetailsActivity.class);
                 startActivity(i);
             }
         });
@@ -47,7 +47,7 @@ public class ShowActivity extends AppCompatActivity {
         roujuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ShowActivity.this, StoreActivity.class);
+                Intent i = new Intent(ShowActivity.this, PersonalDetailsActivity.class);
                 startActivity(i);
             }
         });
