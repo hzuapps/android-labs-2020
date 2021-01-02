@@ -11,19 +11,23 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.hzuapps.pyq.filehelper.FileHelper;
 import edu.hzuapps.pyq.listview.Message;
 import edu.hzuapps.pyq.listview.MessageAdapter;
 
 public class LookPyqActivity extends AppCompatActivity {
+    private FileHelper fileHelper;
     private List<Message> messageList=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_look_pyq);
 
+        fileHelper =  new FileHelper(getApplicationContext());
         Button btnLook = (Button) findViewById(R.id.btnLook);
         btnLook.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,7 +81,19 @@ public class LookPyqActivity extends AppCompatActivity {
 
     // 初始化数据
     private void initMessage(){
-        Message a=new Message("一万年太长，和你在一起，只争朝夕。",R.drawable.pyqlogo);
+        String message = "";
+        try {
+            message = fileHelper.read("message");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String[] lines = message.split("。");
+        for (String line:
+             lines) {
+            Message top=new Message(line + "。",R.drawable.pyqlogo);
+            messageList.add(top);
+        }
+        Message a=new Message("lime。",R.drawable.pyqlogo);
         messageList.add(a);
         Message b=new Message("情书给你一封，情话给你一句，余生给你一人。",R.drawable.pyqlogo);
         messageList.add(b);
