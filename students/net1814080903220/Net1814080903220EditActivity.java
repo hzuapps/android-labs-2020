@@ -1,8 +1,6 @@
 package edu.hzuapps.androidlabs.net1814080903220;
 
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +15,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 
 public class Net1814080903220EditActivity extends AppCompatActivity {
@@ -79,6 +80,11 @@ public class Net1814080903220EditActivity extends AppCompatActivity {
         final TextView mtvContent1 = (TextView)findViewById(R.id.text1);
         Button mBtnShow = (Button)findViewById(R.id.baocun);
         final EditText editText = (EditText)findViewById(R.id.E_dit);
+        /*******获取网络图片url，用Glide.load加载该网络图片进入该布局*******/
+        ImageView mIg = (ImageView) findViewById(R.id.imageback);
+        mIg.setAlpha(80);
+        Glide.with(this).load("https://p1.ssl.qhimgs1.com/sdr/400__/t0106390b4760abe341.jpg").into(mIg);
+
         /****点击保存按钮后显示EditText输入后数据****/
         mBtnShow.setOnClickListener(new View.OnClickListener() {
             @Override
