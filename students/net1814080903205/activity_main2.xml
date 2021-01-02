@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="80dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,35 +21,30 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/xingming" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/xingbie" />
-
-    <EditText
+        android:id="@+id/edid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/xuehao" />
 
     <EditText
+        android:id="@+id/edname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/xingming" />
+
+    <EditText
+        android:id="@+id/edclass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/banji" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/xueyuan" />
-
     <Button
-        android:layout_width="100dp"
+        android:id="@+id/button1"
+        android:layout_width="124dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:text="@string/xinjian" />
 
-</LinearLayout> 
+</LinearLayout>
