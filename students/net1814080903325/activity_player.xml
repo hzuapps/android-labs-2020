@@ -9,21 +9,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="22dp"
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="1"
         android:text="这是标题"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/track_pager_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/track_title"
-        android:layout_marginTop="35dp"
-        android:layout_marginBottom="90dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,7 +73,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:layout_marginBottom="16dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -81,14 +81,14 @@
             <ImageView
                 android:id="@+id/player_mode_switch_btn"
                 android:layout_width="0dp"
-                android:layout_height="20dp"
+                android:layout_height="18dp"
                 android:layout_weight="1"
                 android:src="@drawable/selector_player_play_mode_list" />
 
             <ImageView
                 android:id="@+id/play_pre"
                 android:layout_width="0dp"
-                android:layout_height="20dp"
+                android:layout_height="18dp"
                 android:layout_weight="1"
                 android:src="@mipmap/previous_press" />
 
@@ -102,14 +102,14 @@
             <ImageView
                 android:id="@+id/play_next"
                 android:layout_width="0dp"
-                android:layout_height="20dp"
+                android:layout_height="18dp"
                 android:layout_weight="1"
                 android:src="@drawable/selector_player_next" />
 
             <ImageView
                 android:id="@+id/player_list"
                 android:layout_width="0dp"
-                android:layout_height="20dp"
+                android:layout_height="18dp"
                 android:layout_weight="1"
                 android:src="@drawable/selector_player_play_list" />
 
