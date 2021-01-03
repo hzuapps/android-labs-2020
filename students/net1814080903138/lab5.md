@@ -36,8 +36,6 @@ protected void onCreate(Bundle savedInstanceState) {
 
         } catch (Exception e) {
                 String sql = "create table tb_hw(_id integer primary key autoincrement,db_hwname varchar(20),db_hwfinish varchar(50))";
-                System.out.println("已进行");
-
                 db.execSQL(sql);
 
                 insertData(db, hwname, hwfinish);
