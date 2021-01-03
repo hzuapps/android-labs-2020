@@ -50,6 +50,15 @@ public class Net1814080903138Activity extends AppCompatActivity {
                 thisActivity.startActivity(intent);
             }
         });
+
+        Button button3 = findViewById(R.id.button_sy6);
+        button3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent =new Intent(thisActivity,HttpClientUIActivity.class);
+                thisActivity.startActivity(intent);
+            }
+
+        });
     }
 
 
