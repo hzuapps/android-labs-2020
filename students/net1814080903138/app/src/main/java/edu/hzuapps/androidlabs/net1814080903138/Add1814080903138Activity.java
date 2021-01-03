@@ -28,23 +28,25 @@ public class Add1814080903138Activity extends AppCompatActivity {
         mBtn_check = (Button)findViewById(R.id.btn_check);
         mBtn_add = findViewById(R.id.btn_add);
         mBtn_show = findViewById(R.id.btn_show);
-        medittext = findViewById(R.id.homework_name);
+
 
         mSharePreferences = this.getSharedPreferences("data",MODE_PRIVATE);//文件名称，模式:通常使用MORE_PRIVATE
         mEditor = mSharePreferences.edit();
 
-        intent = new Intent();
+
 
 
 
         mBtn_check.setOnClickListener(new View.OnClickListener() {
 
-
             @Override
             public void onClick(View v) {
+                medittext = findViewById(R.id.homework_name);
+                String inputText=medittext.getText().toString();
 
-                intent.setClass(thisActivity, Check1814080903138Activity.class);
-                thisActivity.startActivity(intent);
+                Intent intent=new Intent(thisActivity, Check1814080903138Activity.class);
+                intent.putExtra("data",inputText);
+                startActivity(intent);
 
             }
         });
@@ -52,7 +54,9 @@ public class Add1814080903138Activity extends AppCompatActivity {
         mBtn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                medittext = findViewById(R.id.homework_name);
 //                intent.putExtra("data",medittext.getText().toString());
+
 
                 Toast.makeText(Add1814080903138Activity.this,"已成功添加",Toast.LENGTH_SHORT).show();
                 mEditor.putString("name",medittext.getText().toString());
