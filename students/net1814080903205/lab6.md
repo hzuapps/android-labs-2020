@@ -79,6 +79,7 @@ class ViewHolder{
     Button deleteBtn;
 }
 ```
+
 # 四、实验结果
 ![实验截图](https://github.com/luo-2/android-labs-2020/blob/master/students/net1814080903205/lab6.jpg)
 
