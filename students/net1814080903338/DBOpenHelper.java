@@ -9,7 +9,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
     public DBOpenHelper(Context context, String name, CursorFactory factory,
                         int version) {
-        super(context, "SqliteTest3 .db", null, 1);//向系统申请一个SqliteTest.db文件存这个数据库，其中1是数据库版本。
+        super(context, "SqliteTe .db", null, 1);//向系统申请一个SqliteTest.db文件存这个数据库，其中1是数据库版本。
     }
 
     @Override
@@ -18,6 +18,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
                 "create table if not exists t_user("+
                         "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,"+
                         "text TEXT,"+
+                        "mood VARCHAR(255),"+
                         "isDel INTEGER DEFAULT 0"+
                         ")";//如果初次运行，建立一张t_user表，建表的时候注意，自增是AUTOINCREMENT，而不是mysql的AUTO_INCREMENT
         sqliteDatabase.execSQL(sql);

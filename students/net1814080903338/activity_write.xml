@@ -7,12 +7,24 @@
     tools:context=".WriteActivity">
 
     <EditText
+        android:id="@+id/EditWriteMood"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="心情"
+        android:imeOptions="actionDone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
         android:id="@+id/EditWrite1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         android:layout_toLeftOf="@id/buttonWrite"
-        android:hint="请输入"
+        android:hint="记录"
         android:imeOptions="actionDone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -23,9 +35,9 @@
         android:id="@+id/buttonWrite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="356dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="420dp"
         android:text="@string/button_confirm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

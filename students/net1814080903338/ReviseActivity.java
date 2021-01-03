@@ -16,6 +16,7 @@ public class ReviseActivity extends AppCompatActivity {
     private Button button_revise;
     private Button button_delete;
     private EditText editText_revise;
+    private EditText editText_mood;
     private UserDao userDao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,11 @@ public class ReviseActivity extends AppCompatActivity {
         final int id=Integer.parseInt(data);
         User user=userDao.dbQueryOneById(id);
         String text= user.getText();
+        String mood= user.getMood();
         editText_revise = (EditText) findViewById(R.id.EditWrite_revise);
         editText_revise.setText(text);
+        editText_mood = (EditText) findViewById(R.id.EditWrite_mood);
+        editText_mood.setText(mood);
         button_revise = (Button) findViewById(R.id.button_revise);
         button_revise.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,16 +43,22 @@ public class ReviseActivity extends AppCompatActivity {
 
 
                 String text = editText_revise.getText() + "";
-
-                userDao.dbUpdateText(id,text);
-                Toast.makeText(
+                String mood = editText_mood.getText() + "";
+                if(text != "" && mood != "") {
+                    userDao.dbUpdateText(id, text, mood);
+                    Toast.makeText(
+                            ReviseActivity.this,
+                            "修改成功" + text +" "+ mood, Toast.LENGTH_SHORT)
+                            .show();
+                    Intent intent = new Intent(ReviseActivity.this,
+                            ReadActivity.class);
+                    startActivity(intent);
+                }
+                else
+                {Toast.makeText(
                         ReviseActivity.this,
-                        "成功写入：" + text , Toast.LENGTH_SHORT)
-                        .show();
-                Intent intent = new Intent(ReviseActivity.this,
-                        ReadActivity.class);
-                startActivity(intent);
-
+                        "请输入完整信息", Toast.LENGTH_SHORT)
+                        .show();}
 
             }
         });

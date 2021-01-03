@@ -25,16 +25,17 @@ public class UserDao {
             User user = new User();
 //            user.setId(cursor.getInt(cursor.getColumnIndex("id")));
             user.setText(cursor.getString(cursor.getColumnIndex("text")));
+            user.setMood(cursor.getString(cursor.getColumnIndex("mood")));
             return user;// 返回一个用户给前台
         }
         return null;// 没有返回null
     }
     // 插入用户数据
-    public void dbInsert(String text) {
+    public void dbInsert(String text , String mood) {
         sqliteDatabase = dbOpenHelper.getWritableDatabase();// 以读写方法打开数据库，不仅仅是写，getReadableDatabase()是只读
-        String sql = "insert into t_user(text,isDel) values (?,0)";
+        String sql = "insert into t_user(text,mood,isDel) values (?,?,0)";
 
-        Object bindArgs[] = new Object[] { text };
+        Object bindArgs[] = new Object[] { text,mood };
         // 执行这条无返回值的sql语句
         sqliteDatabase.execSQL(sql, bindArgs);
     }
@@ -51,11 +52,15 @@ public class UserDao {
         return 0;// 如果没有数据，则返回0
     }
 
-    public void dbUpdateText(int id,String text) {
+    public void dbUpdateText(int id,String text,String mood) {
         sqliteDatabase = dbOpenHelper.getWritableDatabase();
         String sql = "update t_user set text=? where id=? and isDel=0";
         Object bindArgs[] = new Object[] { text, id };
         sqliteDatabase.execSQL(sql, bindArgs);
+        String sql1 = "update t_user set mood=? where id=? and isDel=0";
+        Object bindArgs1[] = new Object[] { mood, id };
+        sqliteDatabase.execSQL(sql1, bindArgs1);
+
     }
 
 

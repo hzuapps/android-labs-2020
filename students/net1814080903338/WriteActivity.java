@@ -18,6 +18,7 @@ public class WriteActivity extends Activity {
 
     private EditText editTextB2;
     private Button buttonB1;
+    private EditText editTextB3;
 
     private UserDao userDao;
 
@@ -31,6 +32,7 @@ public class WriteActivity extends Activity {
         editTextB2 = (EditText) findViewById(R.id.EditWrite1);
 
         buttonB1 = (Button) findViewById(R.id.buttonWrite);
+        editTextB3 = (EditText) findViewById(R.id.EditWriteMood);
 
 
 
@@ -40,17 +42,22 @@ public class WriteActivity extends Activity {
 
 
                 String text = editTextB2.getText() + "";
+                String mood = editTextB3.getText() + "";
 
-
-                userDao.dbInsert(text);
-                Toast.makeText(
+                if(text != "" && mood != "")
+                {
+                    userDao.dbInsert(text,mood);
+                    Intent intent = new Intent(WriteActivity.this,
+                            ReadActivity.class);
+                    startActivity(intent);
+                }
+                else
+                {Toast.makeText(
                         WriteActivity.this,
-                        "成功写入：" + text , Toast.LENGTH_SHORT)
-                        .show();
+                        "请输入完整信息" , Toast.LENGTH_SHORT)
+                        .show();}
 
-                Intent intent = new Intent(WriteActivity.this,
-                        ReadActivity.class);
-                startActivity(intent);
+
 
             }
         });
