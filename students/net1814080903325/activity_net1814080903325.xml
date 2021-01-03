@@ -14,7 +14,7 @@
     <RelativeLayout
         android:id="@+id/subscription_container"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_below="@id/iv_large_cover"
         android:background="#ffffff">
 
@@ -23,7 +23,7 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="18dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/shape_subscription_bg"
             android:gravity="center"
             android:text="+订阅"
