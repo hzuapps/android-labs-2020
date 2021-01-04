@@ -76,18 +76,3 @@ public class BuyActivity extends AppCompatActivity {
         }
     }
 }
-//import android.widget.ArrayAdapter;
-//import android.widget.ListView;
-//
-//public class BuyActivity extends AppCompatActivity {
-//    String[] a={"四级真题","六级真题","六级听力","四级听力","四级阅读","六级阅读"};
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_buy);
-//        ListView listView =(ListView)findViewById(R.id.mobile_list);
-//        ArrayAdapter arrayAdapter = new ArrayAdapter(this,R.layout.activity_buy_item,a);
-//        listView.setAdapter(arrayAdapter);
-//    }
-//}

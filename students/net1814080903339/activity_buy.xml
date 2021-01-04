@@ -5,13 +5,6 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".BuyActivity">
-
-<!--<ListView-->
-    <!--android:id="@+id/mobile_list"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--&gt;-->
-<!--</ListView>-->
     <TextView
         android:id="@+id/book_title"
         android:layout_width="match_parent"

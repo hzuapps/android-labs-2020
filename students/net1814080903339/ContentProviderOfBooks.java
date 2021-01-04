@@ -13,9 +13,7 @@ import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
 import java.util.HashMap;
-/**
- * 类名最好改为: BookProvider
- */
+
 public class ContentProviderOfBooks extends ContentProvider {
     static final String PROVIDER_NAME = "edu.hzuapps.androidlabs.Library";
     static final String URL = "content://" + PROVIDER_NAME + "/books";
