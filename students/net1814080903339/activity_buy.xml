@@ -1,4 +1,4 @@
-<LinearLayout
+<RelativeLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
@@ -6,11 +6,53 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".BuyActivity">
 
-<ListView
-    android:id="@+id/mobile_list"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
-</ListView>
-
-</LinearLayout>
+<!--<ListView-->
+    <!--android:id="@+id/mobile_list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--&gt;-->
+<!--</ListView>-->
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="图书信息"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_width="512px"
+        android:layout_height="512px"
+        android:src="@drawable/bg"
+        android:layout_below="@+id/book_title"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="书名"
+        android:layout_below="@+id/book_cover"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/book_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="标签"
+        android:layout_below="@+id/book_name"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:layout_below="@+id/book_tags"
+        android:layout_alignParentLeft="true"/>
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一本"
+        android:layout_below="@+id/book_tags"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
