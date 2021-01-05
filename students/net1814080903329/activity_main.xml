@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="作业发布"
+        />
+
+    <Button
+        android:id="@+id/btn_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="作业提交"
+        />
+
+    <Button
+        android:id="@+id/btn_imge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="作业图片"
+        />
+
+    <Button
+        android:id="@+id/btn_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="文件存储"
+        />
+
+    <Button
+        android:id="@+id/btn_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="访问网络"
+        />
+    <Button
+        android:id="@+id/btn_url1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="下载网络图片"
+        />
+
+
+</LinearLayout>

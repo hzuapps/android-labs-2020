@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginTop="10dp"
+    app:contentPadding="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@color/gary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    //ID
+    <TextView
+        android:id="@+id/item_local_music_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="1"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    //歌曲名
+    <TextView
+            android:id="@+id/item_local_music_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="伟大的渺小"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/item_local_music_num"
+            android:singleLine="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/item_local_music_num"
+            android:layout_marginStart="20dp" />
+    //歌手名
+
+    <TextView
+        android:id="@+id/item_local_music_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_local_music_song"
+        android:layout_alignStart="@id/item_local_music_song"
+        android:layout_alignLeft="@id/item_local_music_song"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@id/item_local_music_num"
+        android:layout_toRightOf="@id/item_local_music_num"
+        android:text="林俊杰"
+        android:textColor="#888"
+        android:textSize="14sp" />
+    //歌手和专辑中的分界线
+        <TextView
+            android:id="@+id/item_local_music_line"
+            android:layout_width="2dp"
+            android:layout_height="18dp"
+            android:layout_alignTop="@+id/item_local_music_singer"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/item_local_music_singer"
+            android:background="#888"
+            tools:ignore="RtlHardcoded" />
+//专辑名
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_local_music_ablum"
+            android:text=""
+            android:layout_toRightOf="@id/item_local_music_line"
+            android:layout_alignTop="@id/item_local_music_singer"
+            android:textSize="14sp"
+            android:textColor="#888"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+    //播放时长
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_local_music_durtion"
+            android:layout_below="@+id/item_local_music_singer"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#888"/>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入本地音乐界面"
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="333dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>-->

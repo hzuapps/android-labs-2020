@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Net1814080903220MainActivity"
+    android:background="@drawable/bird"> **主页界面放置app背景图片
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/E_dit"
+        android:layout_width="310dp"
+        android:layout_height="70dp"
+        android:text="编辑纪念日"
+        android:textSize="35dp"
+        android:background="@drawable/btn_edit"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp">
+    </Button>
+
+    <Button
+        android:id="@+id/P_icture"
+        android:layout_width="310dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="470dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_picture"
+        android:text="更换背景图片"
+        android:textColor="#FFF"
+        android:textSize="30dp">
+    </Button>
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="295dp"
+        android:background="@drawable/show_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="220dp"
+        android:background="@drawable/show_sec"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        >
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:text="纪念日还有"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="55dp"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        >
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.hzuapps.androids.AlarmView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/lightyellow"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lvAlarmList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnAddAlarm"
+        android:text="@string/add_alarm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</edu.hzuapps.androids.AlarmView>

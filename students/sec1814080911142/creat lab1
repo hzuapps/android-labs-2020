@@ -1,0 +1,35 @@
+# 实验一 Android开发环境搭建
+##一、实验目标  
+
+1. 搭建 Android（Android Studio）开发环境
+2. 熟悉并掌握Git与GitHub.com提交实验代码的方法
+
+## 二、实验内容
+
+1. 搭建Android开发环境
+2. 创建项目
+3. 创建名为Sec1814080911142Activity的java类
+4. 运行显示HelloWorld
+5. 熟练Git常用命令
+
+## 三、实验步骤
+
+1. 搭建Android开发环境
+2. 将项目Fork到自己的仓库
+3. 将项目克隆到本地  
+4. 创建学号文件夹sec1814080911142
+5. 创建名为Sec1814080911142Activity的java类
+```java
+package edu.hzuapps.androidlabs
+public class Sec1814080911142Activity{
+}
+```
+6. 提交代码并请求合并
+
+## 四、实验结果
+![实验一图片](https://github.com/hzuapps/android-labs-2020/students/sec1814080911142/运行截图.PNG)
+## 五、实验心得
+
+  这次试验，是我们第一次接触github和Android，对于提交作业的GitHub我还是不太清楚怎么提交成功，我印象最深的是在自己电脑上提交完后忘记到网站上去执行 pull request操作，
+以至于每次都提交失败，我很困惑，于是在下一次课程中，我向同学和老师请教，最终将问题解决，将作业提交成功。
+  通过这次实验让我明白了合作的重要性，有时候自己想不明白的事情就要先通过现有的方法去寻找答案，如果再找不到就要向有经验的人请教。

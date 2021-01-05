@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.hzuapps.androidlabs.sec1814080911243">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Sec1814080911243Activity">
+
+        </activity>
+
+        <activity android:name=".PetsActivity">
+
+        </activity>
+
+        <activity android:name=".FindActivity">
+
+        </activity>
+
+        <activity android:name=".MyActivity">
+
+        </activity>
+
+        <activity android:name=".Pet_circleActivity">
+
+        </activity>
+
+        <activity android:name=".firstActivity">
+
+        </activity>
+
+        <activity android:name=".SecondActivity">
+
+        </activity>
+
+        <activity android:name=".ThirdActivity">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -20,8 +20,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Net1814080903339Activity">
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="423dp"
@@ -113,6 +111,6 @@ tools:context=".BuyActivity">
 
    ## 四、实验结果 
   ![实验截图](https://raw.githubusercontent.com/39-chen/android-labs-2020/master/students/net1814080903339/4.jpg)
-  
+
    ## 五、实验心得 
   本次实验主要是对界面的布局进行设计，线性布局比较容易理解和实现，app三个的界面都设置了线性布局。

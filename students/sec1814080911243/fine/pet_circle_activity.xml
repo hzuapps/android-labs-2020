@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/test_view"
+        android:text="@string/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_toRightOf="@+id/test_view"
+        android:layout_alignBottom="@+id/test_view"
+        android:inputType="number"
+        android:id="@+id/EditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/confirm_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/test_view"
+        android:layout_toRightOf="@+id/EditText"
+        android:text="@string/List_View_Button" />
+
+    <ListView
+        android:layout_below="@+id/confirm_Button"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

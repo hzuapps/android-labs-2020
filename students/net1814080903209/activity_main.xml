@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Net1814080903209Activity"
+    android:background="@color/clocorBackground">
+
+
+    <TextView
+        android:id="@+id/tx_count"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="Bills记账本"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:background="@color/colorMain"/>
+
+    <ImageView
+        android:id="@+id/img_bc"
+        android:layout_width="match_parent"
+        android:layout_height="649dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bc" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:textSize="60dp"
+        android:text="记账本"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMain"
+            android:layout_weight="1"
+            android:text="记录" />
+
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="展示"
+            android:background="@color/colorMain"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:alignmentMode="alignBounds"
+        android:columnCount="2"
+        android:padding="8dp"
+        android:useDefaultMargins="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:text="@string/profile_avatar" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_baseline_account_circle_24" />
+
+        <TextView
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="@string/profile_username" />
+
+        <EditText
+            android:id="@+id/profile_id"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <TextView
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:text="@string/profile_sexual" />
+
+        <Spinner
+            android:id="@+id/sexual_spinner"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="end" />
+
+        <TextView
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="@string/profile_age" />
+
+        <Spinner
+            android:id="@+id/age_spinner"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_gravity="end" />
+
+        <TextView
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="@string/profile_intro" />
+
+        <EditText
+            android:id="@+id/intro_text"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="80dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/profile_submit_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

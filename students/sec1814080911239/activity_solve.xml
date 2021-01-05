@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SolveActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/solve"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/solve" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_toLeftOf="@id/solve"
+        android:layout_alignTop="@id/solve"
+        android:background="@drawable/share" />
+
+    <Button
+        android:id="@+id/knowledge"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_toLeftOf="@id/share"
+        android:layout_alignTop="@id/share"
+        android:background="@drawable/knowledge" />
+
+    <Button
+        android:id="@+id/first"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_toLeftOf="@id/knowledge"
+        android:layout_alignTop="@id/knowledge"
+        android:background="@drawable/first" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search"
+        android:inputType="none"
+        ></EditText>
+
+</RelativeLayout>
+
+

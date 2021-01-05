@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Net1814080903318Activity"
+    android:background="#7FFFD4"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="274dp"
+            android:layout_height="194dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="300dp"
+            android:background="@color/colorAccent"
+
+            android:text="录屏"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="274dp"
+            android:layout_height="197dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="520dp"
+            android:background="@color/colorAccent"
+            android:text="我的"
+            android:textColor="@android:color/background_light"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="410dp"
+            android:layout_height="274dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/logo" />
+    </RelativeLayout>
+
+</LinearLayout>

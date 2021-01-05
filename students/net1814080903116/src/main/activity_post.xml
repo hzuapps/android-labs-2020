@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="38dp"-->
+<!--            android:hint="解忧墙" />-->
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="395dp"
+            android:layout_height="32dp"
+            android:background="@drawable/layout"
+            android:ems="10"
+            android:orientation="horizontal"
+            android:text="Name"
+            android:textColor="#607b8b"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/idTV"
+            android:layout_width="395dp"
+            android:layout_height="233dp"
+            android:background="@drawable/layout"
+            android:textColor="#607b8b"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            android:hint="内容1" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

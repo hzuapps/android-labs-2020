@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.hzuapps.androidlabs">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".net1814080903137.FileDownloadActivity"></activity>
+        <activity android:name=".net1814080903137.HttpClientActivity" />
+        <!--<activity android:name=".examples.SqliteGuideActivity" />-->
+        <!--<activity android:name=".examples.ContentProviderActivity" />-->
+        <!--<activity android:name=".examples.RelativeLayoutActivity" />-->
+        <!--<activity android:name=".examples.LinearLayoutActivity" />-->
+        <!--<activity android:name=".examples.GridViewActivity" />-->
+        <!--<activity android:name=".examples.ListViewActivity" />-->
+        <!--<activity android:name=".examples.ActivityBasic2Activity" />-->
+        <!--<activity-->
+            <!--android:name=".BackActivity"-->
+            <!--android:label="@string/title_activity_back"-->
+            <!--android:theme="@style/AppTheme.NoActionBar" />-->
+        <!--<activity android:name=".examples.ActivityBasicActivity" />-->
+        <activity android:name=".net1814080903137.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name=".examples.Net123456Activity" />-->
+    </application>
+
+</manifest>

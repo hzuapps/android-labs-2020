@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">简易浏览器</string>
+    <string name="to">接收人</string>
+    <string name="subject">主题</string>
+    <string name="message">内容</string>
+    <string name="send">发信人</string>
+    <string name="home">http://www.baidu.com</string>
+    <string name="collect">收藏成功</string>
+    <string name="fail">收藏失败</string>
+    <string name="input_url">请输入网址</string>
+</resources>

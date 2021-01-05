@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    <Spinner
+        android:id="@+id/music"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <resources>
+        <string-array android:name="背景音乐">
+            <item>开</item>
+            <item>关</item>
+        </string-array>
+    </resources>
+
+    <Spinner
+        android:id="@+id/difficulty"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <resources>
+        <string-array android:name="游戏难度">
+            <item>简单</item>
+            <item>中等</item>
+            <item>魔鬼</item>
+        </string-array>
+    </resources>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/send" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+</LinearLayout>

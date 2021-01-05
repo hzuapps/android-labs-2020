@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">sec1814080911142</string>
+    <string name="smdl">扫码登录</string>
+    <string name="fkcg">付款成功</string>
+    <string name="to1">登录界面</string>
+    <string name="subject">内容</string>
+    <string name="submit1">确定</string>
+    <string name="submit2">取消</string>
+    <string name="fkcg11">欢迎使用</string>
+    <string name="fkcg22">问题反馈</string>
+</resources>

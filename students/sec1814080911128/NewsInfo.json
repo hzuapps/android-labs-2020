@@ -1,0 +1,51 @@
+[
+	{
+		"icon":"https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/img/a.png",
+		"title":"中国数据内容大会聚焦数据内容与可视化",
+		"content":"12月19日，“行业与前瞻——2020中国数据内容大会”在浙江杭州举行。",
+		"type":"1",
+		"comment":"69"
+	},
+	{
+		"icon":"https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/img/b.png",
+		"title":"热解读丨中央经济工作会议再提这个战略基点",
+		"content":"十三五”迎来收官时刻，“十四五”即将开启征程，中央经济工作会议为中国经济发展把脉定向，明确了2021年经济工作八项重点任务，其中之一是坚持扩大内需这个战略基点。",
+		"type":"2",
+		"comment":"35"
+	},
+	{
+		"icon":"https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/img/c.png",
+		"title":"经济数据亮眼 中国坐稳全球经济复苏头把交椅",
+		"content":"据中国国家统计局公布的最新数据显示，11月全国规模以上工业增加值同比实际增长7%，11月社会消费品零售总额同比增长5%，均高于10月增速。",
+		"type":"3",
+		"comment":"32"
+	},
+	{
+		"icon":"https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/img/d.png",
+		"title":"回归祖国21周年 澳门风华正茂",
+		"content":"21年前的12月20日，漂泊多年的澳门回家了！回归以来，“一国两制”成功实践，澳门经历了翻天覆地的变化：社会稳定、经济发展、文化繁荣，澳门老百姓感受到了幸福感。",
+		"type":"1",
+		"comment":"60"
+	},
+	{
+		"icon":"https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/img/e.png",
+		"title":"关闭边境、停飞航班 多国采取措施应对英国新冠病毒变种",
+		"content":"英国卫生大臣马特·汉考称，一种新变异的新冠病毒正在英格兰部分地区加速传播。19日，首相约翰逊表示，病毒变异后的传播性，比已存在的病毒毒株高出70%。",
+		"type":"2",
+		"comment":"44"
+	},
+	{
+		"icon":"https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/img/f.png",
+		"title":"一杯奶茶钱的“惠民保”是否值得买",
+		"content":"保费仅几十元，相当于一杯奶茶钱，而保额高达百万元，且不限年龄、不限职业、不限健康状况，手机即可购买，还有政府支持……几乎一夜之间，“惠民保”席卷全国、遍地开花，成了今年最火爆的健康险。",
+		"type":"1",
+		"comment":"54"
+	},
+	{
+		"icon":"https://github.com/Jadore147258369/android-labs-2020/blob/master/students/sec1814080911128/img/g.png",
+		"title":"破解新时代戏曲“生态密码”",
+		"content":"戏曲因其悠久的发展历史、独特的气度神韵和深厚广泛的群众基础，成为体现和传承中华优秀传统文化基因的重要载体。新时代的戏曲，其传统文化价值获得社会极大的肯定，在探索和奔向现代化的过程中呈现出新的发展态势。",
+		"type":"1",
+		"comment":"42"
+	}
+]

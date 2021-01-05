@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_netRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="248dp"
+        android:onClick="onClickRead"
+
+        android:text="@string/button_read" />
+
+    <Button
+        android:id="@+id/button_netWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="45dp"
+        android:onClick="onClickWrite"
+        android:text="@string/button_write"
+        android:layout_marginStart="140dp" />
+
+
+
+
+</LinearLayout>

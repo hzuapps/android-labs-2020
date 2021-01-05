@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:ignore="RelativeOverlap">
+
+
+    <Spinner
+        android:id="@+id/dates"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/times"
+        android:entries="@array/medal"/>
+    <Spinner
+        android:id="@id/times"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:entries="@array/object"/>
+
+
+    <TestView
+        android:id="@+id/object_list"
+        android:layout_width="395dp"
+        android:layout_height="432dp"
+        android:layout_below="@id/times"
+        android:orientation="vertical"
+
+        />
+
+
+</RelativeLayout>

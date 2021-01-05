@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.k00.androidlabs.Sec1814080911139Acitivity">
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="查看小说"/>
+
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="开始阅读"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/bt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="205dp"
+        android:text="A reader machine"
+        android:textSize="20sp"
+        android:textColor="#5e9cff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bg1" />
+
+</RelativeLayout>

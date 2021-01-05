@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sec1814080911108Activity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+        <!--   logo     -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="150dp"
+            android:background="#111111"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+        <!--   网址     -->
+        <EditText
+            android:id="@+id/textUrl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/logo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="-67dp"
+            android:padding="10dp"
+            android:background="@drawable/edit_text"
+            android:inputType="text"
+            android:maxLines="1" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:baselineAligned="false"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="740dp">
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
+                android:id="@+id/nav_left"
+                style="@style/NavIcon"
+                android:layout_width="wrap_content"
+                android:src="@drawable/nav_left" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
+                android:id="@+id/nav_right"
+                style="@style/NavIcon"
+                android:layout_width="wrap_content"
+                android:src="@drawable/nav_right" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
+                android:id="@+id/nav_home"
+                style="@style/NavIcon"
+                android:layout_width="wrap_content"
+                android:src="@drawable/nav_home" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
+                android:id="@+id/bookmark_collect"
+                style="@style/NavIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:src="@drawable/bookmark_collect" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
+                android:id="@+id/bookmarks"
+                style="@style/NavIcon"
+                android:layout_width="wrap_content"
+                android:src="@drawable/nav_menu" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

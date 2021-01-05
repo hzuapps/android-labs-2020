@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sec1814080911131activity">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActicity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Sec1814080911131Activity">
+        </activity>
+
+        <activity android:name=".First_Activity">
+        </activity>
+
+        <activity android:name=".Second_Activity">
+        </activity>
+
+        <activity android:name=".Third_Activity">
+        </activity>
+
+        <activity android:name=".Four_Activity">
+        </activity>
+
+        <activity android:name=".FirstActivity">
+        </activity>
+
+        <activity android:name=".SecondActivity">
+        </activity>
+
+
+
+
+    </application>
+
+</manifest>

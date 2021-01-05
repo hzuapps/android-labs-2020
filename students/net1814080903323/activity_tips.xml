@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.hzuapp.androidlabs.net1814080903323activity.TipsActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="309dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="93dp"
+        android:background="#2187B5"
+        android:text="小技巧Tips"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="314dp"
+        android:layout_height="30dp"
+        android:text="释放压力的技巧"
+        android:textColor="#26C9DD"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="126dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="314dp"
+        android:layout_height="135dp"
+        android:text="正文"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+
+    <!-- A CardView that contains a TextView -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

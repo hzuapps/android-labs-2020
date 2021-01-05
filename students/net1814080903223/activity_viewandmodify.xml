@@ -1,0 +1,33 @@
+ tools:ignore="MissingConstraints"
+        	        tools:layout_editor_absoluteX="0dp"
+        	        tools:layout_editor_absoluteY="0dp"
+               android:background="#F5ffff">
+        	        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/textview_03_01"
+                  android:layout_width="match_parent"
+            	            android:layout_height="wrap_content"       	
+           	            android:textStyle="bold"
+           	            android:textSize="35sp"
+            android:textColor="#EE0000"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textview_03_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginLeft="250dp"
+                android:id="@+id/button_fanhui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="返回"/>
+        </LinearLayout>
+       </LinearLayout>
+</android.support.design.widget.CoordinatorLayout> 

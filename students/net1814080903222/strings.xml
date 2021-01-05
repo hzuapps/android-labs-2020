@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">kGallery</string>
+    <string name="title_home">主页</string>
+    <string name="title_browser">浏览</string>
+    <string name="title_setting">设置</string>
+    <string name="pictures">图片</string>
+    <string name="settings_exclude_category_text">主页中隐藏文件或文件夹</string>
+    <string name="settings_exclude_switch_text">启用此功能</string>
+    <string name="settings_exclude_button_text">添加文件或文件夹</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <EditText
+        android:id="@+id/courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="课程名" />
+
+    <EditText
+        android:id="@+id/courseRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="教室" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/courseDay"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="周几" />-->
+
+    <EditText
+        android:id="@+id/courseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="上课节数" />
+
+    <EditText
+        android:id="@+id/startWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="起始周" />
+
+    <EditText
+        android:id="@+id/endWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="终止周" />
+
+    <EditText
+        android:id="@+id/courseOdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="是否单双周" />
+
+    <Spinner
+        android:id="@+id/courseDay"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:spinnerMode="dialog" />
+
+
+    <Button
+        android:id="@+id/addCourse"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="添加课程" />
+
+</LinearLayout>
