@@ -46,7 +46,7 @@
         types += isBluetoothConn ? ", 蓝牙" : "";
 
         text.setTextColor(mConnected ? Color.GREEN : Color.RED);
-        text.setText(mConnected ? "网络正常 (" +types + ")" : "网络未连接!");
+        text.setText(mConnected ? "网络正常 (" +types + ")" : "网络未连接!!");
     }
  ```
 2. 在页面跳转后在输出框中输出对应的网络类型。
