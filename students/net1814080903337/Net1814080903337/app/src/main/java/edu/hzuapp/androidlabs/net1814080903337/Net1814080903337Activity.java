@@ -16,12 +16,9 @@ public class Net1814080903337Activity extends AppCompatActivity {
         Intent intent = new Intent(this,SeekActivity.class);
         startActivity(intent);
     }
-    public void Overdue(View view) {
-        Intent intent = new Intent(this,OverdueActivity.class);
-        startActivity(intent);
-    }
-public void SeekResult(View view){
-        Intent intent=new Intent(this,SeekResult.class);
+
+public void AllResult(View view){
+        Intent intent=new Intent(this,AllResult.class);
         startActivity(intent);
 }
     @Override
