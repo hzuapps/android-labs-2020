@@ -66,7 +66,7 @@ protected void onCreate(Bundle savedInstanceState) {
 ```
 
  ## 四、实验结果
-[第六次实验图片](https://github.com/taoge183/android-labs-2020/blob/master/students/net1814080903320/shiyan6.PNG)
+ ![第六次实验图片](https://github.com/taoge183/android-labs-2020/blob/master/students/net1814080903320/shiyan6.PNG)
 
  ## 五、心得体会
   本次实验，主要是对于网络的设置。本次实验成功添加了网络连接代码，希望在接下来可以有进一步的实现完善网络功能。
