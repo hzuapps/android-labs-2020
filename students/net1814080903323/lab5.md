@@ -93,7 +93,7 @@ public class TipsActivity extends AppCompatActivity {
 
 ## 四、实验结果
   
-![应用首页](https://github.com/joshua-ben/android-labs-2020/blob/master/students/net1814080903323/test5.jpg)  
+![示例截图](https://github.com/joshua-ben/android-labs-2020/blob/master/students/net1814080903323/test5.jpg)  
 
 
 ## 五、实验心得
