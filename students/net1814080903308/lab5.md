@@ -67,6 +67,7 @@
     String[] split = line.split("#");
     Title.setText(split[0]);
     Text.setText(split[1]);
+
 ``` 
 
 # 四、实验结果
