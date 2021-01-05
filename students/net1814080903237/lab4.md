@@ -25,6 +25,7 @@ ArrayAdapter<String> adapter=new ArrayAdapter<String>(
         listView.setAdapter(adapter);
 ```
 ## 四、实验结果  
+![ListView的使用](https://github.com/liangyunrong/android-labs-2020/blob/master/students/net1814080903237/app/src/main/res/drawable/sy4.png)
 ## 五、实验心得  
 这个实验也还好
 &#160; &#160;这个实验就是给界面添加资源，添加图片就好了，还是很简单的。
