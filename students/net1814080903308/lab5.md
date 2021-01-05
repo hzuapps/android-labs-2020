@@ -21,53 +21,24 @@
 2.按钮获取方法。    
 ```
 <Button
-   android:id="@+id/save"
-   android:layout_width="100dp"
-   android:layout_height="wrap_content"
-   android:layout_weight="1"
+   ......
    android:onClick="save"
-   android:text="@string/state"
-   android:textSize="20dp" />
+   ......>
    
    //方法
-    public void save(View view) {
-        //当内容不为空时
-        if(!TextUtils.isEmpty(Title.getText()) && !TextUtils.isEmpty(Text.getText())){
-            FileOutputStream fos = null;
-            try {
-
-
-                //Context中的方法openFileOutput()，获取一个FileOutputStream对象
-                fos = openFileOutput("data", Context.MODE_PRIVATE);
-                String str = Title.getText().toString().trim() + "#" + Text.getText().toString().trim();
-                fos.write(str.getBytes());
-                Toast.makeText(getApplicationContext(), "保存成功", Toast.LENGTH_SHORT).show();
-
-
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                try {
-                    fos.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }else{
-            Toast.makeText(getApplicationContext(), "请输入内容", Toast.LENGTH_SHORT).show();
-        }
-    }
+   fos = openFileOutput("data", Context.MODE_PRIVATE);
+   String str = Title.getText().toString().trim() + "#" + Text.getText().toString().trim();
+   fos.write(str.getBytes());
+   Toast.makeText(getApplicationContext(), "保存成功", Toast.LENGTH_SHORT).show();
 ``` 
 3.利用Context中的openFileInput()方法获取输入流    
 ```
-    FileInputStream data = openFileInput("data");
-    BufferedReader reader = new BufferedReader(new InputStreamReader(data));
-    String line = reader.readLine();
-    String[] split = line.split("#");
-    Title.setText(split[0]);
-    Text.setText(split[1]);
-
+   FileInputStream data = openFileInput("data");
+   BufferedReader reader = new BufferedReader(new InputStreamReader(data));
+   String line = reader.readLine();
+   String[] split = line.split("#");
+   Title.setText(split[0]);
+   Text.setText(split[1]);
 ``` 
 
 # 四、实验结果
