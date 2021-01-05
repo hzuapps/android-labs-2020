@@ -110,4 +110,4 @@ context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.pars
 
 ## 五、实验心得
 
-本次实验是本学期移动应用开发的第五次实验课，学会了如何在Android中实现存储数据，了解到有三种方式：一是文件存储，二是轻量存储、三是SQLite数据库存储，三种存储方式各有各的优势.
+本次实验是本学期移动应用开发的第五次实验课，学会了如何在Android中实现存储数据，了解到有三种方式：一是文件存储，二是轻量存储、三是SQLite数据库存储，三种存储方式各有各的优势。
