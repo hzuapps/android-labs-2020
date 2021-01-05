@@ -36,5 +36,6 @@ Button button_manage = (Button) findViewById(R.id.button1);
 ```
 4. 在activity_manage.xml、activity_sell.xml中添加TextView文本来表明是哪一个按钮的跳转页面。
 ## 四、实验结果  
+![主界面截图](https://github.com/liangyunrong/android-labs-2020/blob/master/students/net1814080903237/app/src/main/res/drawable/sy2.png)
 ## 五、实验心得  
 &#160; &#160;这个实验不是很难，只要理解了跳转代码怎么实现就好了，但是我做了很久，因为一直跳转不成功，开始还以为是界面的布局不妥当导致的秒退，结果是AndroidManifest.xml缺了代码。
