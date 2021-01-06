@@ -18,52 +18,68 @@
         android:id="@+id/name1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="42dp"
             android:text="姓名："
             android:textSize="17dp" />
+
         <EditText
+            android:id="@+id/editName"
+            android:hint="请输入姓名"
             android:layout_width="357dp"
             android:layout_height="match_parent" />
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="42dp"
             android:text="性别："
             android:textSize="17dp" />
+
         <EditText
-            android:layout_width="184dp"
-            android:layout_height="match_parent" />
+            android:id="@+id/editSex"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:hint="请输入“男”或“女”" />
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:text="日期："
         android:textSize="17dp" />
+
     <EditText
         android:id="@+id/data"
+        android:hint="请输入年月日"
         android:layout_width="357dp"
         android:layout_height="42dp"/>
+
 </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="42dp"
             android:text="铃声："
             android:textSize="17dp" />
+
         <EditText
             android:id="@+id/ring"
             android:layout_width="357dp"
@@ -76,14 +92,18 @@
         android:layout_height="wrap_content">
     <Button
         android:id="@+id/button2_1"
+        android:onClick="btn2_1Click"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="@string/done1" />
+        android:text="@string/done1"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/button2_2"
+        android:onClick="btn2_2Click"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="查看信息" />
+        android:text="查看信息"
+        tools:ignore="OnClick" />
 </LinearLayout>
 </LinearLayout>
