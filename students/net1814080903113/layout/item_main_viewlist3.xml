@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="80dp"
+                android:layout_height="200dp"
+                android:clipToPadding="false"
+                android:paddingLeft="10dp"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:src="@drawable/aquamodel1"/>-->
+
+            <view
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#D7C4BB"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maidfu"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="125dp"/>
+
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D7C4BB"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

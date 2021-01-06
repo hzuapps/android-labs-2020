@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查网络"/>
+
+    <TextView
+        android:id="@+id/text_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button_download_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载图片"/>
+
+    <Button
+        android:id="@+id/button_download_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载网页"/>
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+</LinearLayout>
