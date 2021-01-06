@@ -120,7 +120,7 @@ public class Utils {
 ```
 
 ## 四、实验结果
-![运行截图]()
+![运行截图](https://github.com/yesijie0216/android-labs-2020/blob/master/students/net1814080903136/lab5.jpg)
 
 ## 五、实验心得
 本次实验完成的是外部存储，创建实体类和工具类，对本地文件进行存放，然后输出到列表。本次实验学会了怎样获取外部文件，后续的功能以现在的能力还未能做出。
