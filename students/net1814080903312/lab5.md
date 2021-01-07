@@ -65,7 +65,7 @@ public void huoqu(View v){
     }
 ```
 # 四、实验结果
-![播放界面]()
-![播放界面]()
+![播放界面](https://raw.githubusercontent.com/xiangzuonidekongbai/android-labs-2020/master/students/net1814080903312/lab5-1.PNG)
+![播放界面](https://raw.githubusercontent.com/xiangzuonidekongbai/android-labs-2020/master/students/net1814080903312/lab5-2.PNG)
 # 五、实验心得
 本次实验学习如何访问内存并进行文件存储，一开始毫无头绪，通过观看一些教学视频以及网上一些大佬的代码后，慢慢摸索出来，但是代码还是存在问题，没能真正完成。
