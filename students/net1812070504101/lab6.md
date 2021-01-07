@@ -227,8 +227,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         app:layout_constraintVertical_bias="0.193" />
    ```
 ## 四.实验结果
-<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab6_2.png">
-<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab6_1.png">
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab6_2.png">  
+<img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab6_1.png">  
 ## 五.实验心得
 这次实验是做网络编程，实现在网络上下载文件的功能，主要难点，如何查看到自己下载的文件，还是通过powershell 在ADK中  
 /storage/emulated/BoboMusic目录下看到了自己下载的足音.mp3文件
