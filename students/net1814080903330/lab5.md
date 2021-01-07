@@ -16,6 +16,7 @@
 ```
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
+
 2.创建LocalMusicBean.java
 ```
     private String id; //歌曲id
@@ -39,19 +40,17 @@
         this.albumArt = albumArt;
     }
     .........
-    ```
+```
     3.创建LocaLMusicAdapter.java适配器对象
     4.Net1814080903330.java中补上有关代码
-    ```
+```
     //针对sd卡读取权限申请
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_STORAGE = {
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
-    ```
     
-    ```
     //申请权限
 
     public static void verifyStoragePermissions(Activity activity) {
@@ -62,9 +61,6 @@
             ActivityCompat.requestPermissions(activity, PERMISSIONS_STORAGE, REQUEST_EXTERNAL_STORAGE);
         }
     }
-    ```
-    
-    ```
         public void playMusicInMusicBean(LocalMusicBean musicBean) {
         /*根据传入对象播放音乐*/
         //设置底部显示的歌手名称和歌曲名
@@ -87,7 +83,6 @@
             e.printStackTrace();
         }
     }
-    ```
     private void loadLocalMusicData() {
         /* 加载本地存储当中的音乐mp3文件到集合当中*/
 //        1.获取ContentResolver对象
@@ -118,7 +113,7 @@
          //        数据源变化，提示适配器更新
         adapter.notifyDataSetChanged();
     }
-   ```
+```
 # 四、实验结果
 
 # 五、实验心得
