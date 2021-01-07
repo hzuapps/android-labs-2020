@@ -80,4 +80,4 @@ public class FileStorageActivity extends AppCompatActivity {
 
 
 ## 五、实验心得
-通过这次实验，我学会了安州的文件存储功能
+通过这次实验，我学会了安卓的文件存储功能
