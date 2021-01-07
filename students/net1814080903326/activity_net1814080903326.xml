@@ -5,28 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/b"
     tools:context=".Net1814080903326Activity">
 
-    <ImageView
-        android:id="@+id/iv_show"
-        android:src="@drawable/user1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_weight="1"
-        />
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="123"
+        android:textSize="20dp"
+
+        ></TextView>
+
+    <EditText
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/tv_show"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <Button
+        android:id="@+id/btu_new"
+        android:text="刷新数据"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+
+
+        ></Button>
+
+
 
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_weight="1"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/btn_inf"
+            android:id="@+id/btn_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="消息"
+            android:text="视频"
+            ></Button>
+
+
+        <Button
+            android:id="@+id/btn_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="评论"
             ></Button>
 
         <Button
@@ -35,7 +77,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="我"
-            />
+            ></Button>
 
         />
     </LinearLayout>
