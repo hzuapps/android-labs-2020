@@ -43,7 +43,7 @@ public class CheckActivity extends AppCompatActivity {
 
 # 四、实验结果
 
-![lab4](https://github.com/wuuuxj/android-labs-2020/tree/master/students/sec1814080911205/lab4.jpg)
+![lab4](https://github.com/wuuuxj/android-labs-2020/tree/master/students/sec1814080911205/lab4.png)
 
 # 五、实验心得体会
  通过本次实验，学会了适配器和线性布局以及相对布局的使用
