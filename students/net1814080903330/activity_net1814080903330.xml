@@ -7,77 +7,116 @@
     android:background="@drawable/timg"
     android:orientation="vertical"
     tools:context=".Net1814080903330Activity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:orientation="horizontal"
-    >
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="0dip"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:text="主页"
-        android:textSize="30dp"
-        />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dip"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:text="收索"
-        android:textSize="30dp"/>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="0dip"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:text="收藏"
-        android:textSize="30dp" />
-</LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="40dp"
         android:orientation="horizontal"
         >
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button1"
             android:layout_width="0dip"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="上"
-            android:textSize="30dp"
+            android:text="主页"
+            android:textSize="15dp"
+            android:background="#33EEEEEE"
             />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/button2"
             android:layout_width="0dip"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="停/开始"
-            android:textSize="30dp"/>
+            android:text="收索"
+            android:textSize="15dp"
+            android:background="#33EEEEEE"/>
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/button3"
             android:layout_width="0dip"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="下"
-            android:textSize="30dp" />
-
-
+            android:text="收藏"
+            android:textSize="15dp"
+            android:background="#33EEEEEE"/>
     </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/local_music_bottomlayout"
+        android:background="#33EEEEEE">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9933FA"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/icon_song"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/a1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/local_music_bottom_iv_icon"/>
+        <TextView
+            android:id="@+id/local_music_bottom_tv_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toRightOf="@id/local_music_bottom_iv_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/local_music_bottom_tv_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:layout_below="@id/local_music_bottom_tv_song"
+            android:layout_alignLeft="@id/local_music_bottom_tv_song"
+            android:layout_marginTop="10dp"/>
 
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_next"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
 
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_play"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_next"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/local_music_bottom_iv_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_last"
+            android:layout_toLeftOf="@id/local_music_bottom_iv_play"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/local_music_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/local_music_bottomlayout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
 </LinearLayout>
+
+
