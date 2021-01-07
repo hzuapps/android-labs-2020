@@ -39,10 +39,12 @@
         this.path = path;
         this.albumArt = albumArt;
     }
-    .........
 ```
-    3.创建LocaLMusicAdapter.java适配器对象
-    4.Net1814080903330.java中补上有关代码
+
+3.创建LocaLMusicAdapter.java适配器对象
+    
+4.Net1814080903330.java中补上有关代码
+    
 ```
     //针对sd卡读取权限申请
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
