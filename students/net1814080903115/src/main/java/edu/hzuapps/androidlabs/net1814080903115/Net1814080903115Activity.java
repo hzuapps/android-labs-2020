@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import org.w3c.dom.Text;
 
@@ -24,12 +26,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Net1814080903115Activity extends AppCompatActivity {
             @Override
             protected void onCreate(Bundle savedInstanceState){
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_main);
+
+
+
 
                 final Activity thisActivity = this;
 
