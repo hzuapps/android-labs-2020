@@ -67,9 +67,7 @@ public class TestSensorActivity extends Activity {
 
         }
     };
-    /**
-     * 动作执行
-     */
+   
     Handler handler = new Handler() {
 
         @Override
