@@ -38,7 +38,7 @@
         this.path = path;
         this.albumArt = albumArt;
     }
-    ...
+    .........
     ```
     3.创建LocaLMusicAdapter.java适配器对象
     4.Net1814080903330.java中补上有关代码
@@ -50,6 +50,7 @@
             Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
     ```
+    
     ```
     //申请权限
 
@@ -62,6 +63,7 @@
         }
     }
     ```
+    
     ```
         public void playMusicInMusicBean(LocalMusicBean musicBean) {
         /*根据传入对象播放音乐*/
@@ -117,5 +119,10 @@
         adapter.notifyDataSetChanged();
     }
    ```
-    
+# 四、实验结果
+
+# 五、实验心得
+    一开始很多东西都不太不理解，在网上学习了很久有关数据存储的知识，终于完成了。
+
+
     
