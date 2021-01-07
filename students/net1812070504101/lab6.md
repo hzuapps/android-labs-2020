@@ -135,14 +135,8 @@ public class FileUtils {
 }
 ```
 
-### 3.MianActivty
+### 3.MianActivty文件  
 ```
-package edu.hzuapp.androidlabs.fileutils;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 //1,在Manifest文件中注册Internet和读写SDCard的权限
@@ -206,7 +200,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.043" />
-
     <Button
         android:id="@+id/but2"
         android:layout_width="306dp"
@@ -230,6 +223,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 <img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab6_2.png">  
 <img src="https://github.com/lyRomantic/android-labs-2020/blob/master/students/net1812070504101/lab6_1.png">
   
-## 四.实验心得    
+## 五.实验心得    
 这次实验是做网络编程，实现在网络上下载文件的功能，主要难点，如何查看到自己下载的文件，还是通过powershell 在ADK中  
 /storage/emulated/BoboMusic目录下看到了自己下载的足音.mp3文件
