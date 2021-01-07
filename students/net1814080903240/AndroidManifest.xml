@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BindingActivity"></activity>
+        <activity android:name=".BindingActivity"/>
         <activity android:name=".InstallActivity"/>
+        <activity android:name=".FileStoreActivity"/>
         <activity android:name=".Net1814080903240Activity">
 
             <intent-filter>

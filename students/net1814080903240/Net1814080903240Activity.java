@@ -16,11 +16,29 @@ public class Net1814080903240Activity extends AppCompatActivity {
 
         final Net1814080903240Activity thisActivity = this;
 
-        Button button = (Button) findViewById(R.id.button1);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button button_install = (Button) findViewById(R.id.install);
+        button_install.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(thisActivity,bindingActivity.class);
+                Intent intent = new Intent(thisActivity, InstallActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button_binding = (Button) findViewById(R.id.binding);
+        button_binding.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(thisActivity, BindingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button_evaluate = (Button) findViewById(R.id.comment);
+        button_evaluate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(thisActivity, FileStoreActivity.class);
                 startActivity(intent);
             }
         });
