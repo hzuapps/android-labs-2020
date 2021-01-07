@@ -7,12 +7,35 @@
     android:orientation="vertical"
     tools:context=".SearchTradingActivity">
 
-    <ListView
+    <Spinner android:id="@+id/Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    </Spinner>
+    <Button
+        android:id="@+id/button_contentprovider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加"
+        android:layout_marginTop="10dp" />
 
-        android:id="@+id/trading_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
 
-    </ListView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="惠州学院"
+            android:id="@+id/trading_textview1"
+            android:layout_alignParentLeft="true"
+    />
 
-</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+20.00"
+        android:id="@+id/trading_textview2"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+   </LinearLayout>
