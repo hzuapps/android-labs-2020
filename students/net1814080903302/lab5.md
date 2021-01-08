@@ -167,7 +167,7 @@ public class Lab5 extends AppCompatActivity {
 }
 ```
 
-![实验五截图](https://raw.githubusercontent.com/juntao100/android-labs-2020/master/students/net1814080903302/lab5.jpg）
+![实验五截图](https://raw.githubusercontent.com/juntao100/android-labs-2020/master/students/net1814080903302/lab5.jpg)
 
 ## 五、实验心得
 这次实验对我来说非常难，虽然我参考了老师和别的同学的代码和网上的相关代码试图模仿来做，但和我做的内容差距很大，而且我Java基础差，所以这次实验没运行成功，不过以后需要改进一下。
