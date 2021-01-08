@@ -39,11 +39,12 @@
 
      <Button
          android:id="@+id/btn_start"
+         android:onClick="btClick"
          android:layout_width="match_parent"
          android:layout_height="50dp"
          android:layout_below="@id/et_2"
          android:layout_marginTop="100dp"
-         android:text="来复习旧单词吧"
+         android:text="save it."
          android:textColor="#fff"
          android:textSize="20dp"
          android:background="#ff9933"/>
