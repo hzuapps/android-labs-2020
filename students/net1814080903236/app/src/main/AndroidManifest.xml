@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".RecordActivity"></activity>
         <activity android:name=".RemindActivity"></activity>
+        <activity android:name=".InformationActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
