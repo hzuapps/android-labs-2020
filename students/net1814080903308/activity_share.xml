@@ -10,36 +10,44 @@
         android:layout_height="200dp"
         android:src="@drawable/logo3"
         />
+
     <EditText
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_marginTop="30dp"
-        android:textSize="30dp"
-        android:hint="@string/tile" />
+        android:hint="@string/tile"
+        android:textSize="30dp" />
 
     <EditText
+        android:id="@+id/text"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="302dp"
         android:layout_weight="1"
         android:gravity="top"
-        android:textSize="30dp"
-        android:hint="@string/message" />
+        android:hint="@string/message"
+        android:textSize="30dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
+            android:id="@+id/save"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="20dp"
-            android:text="@string/state" />
+            android:onClick="save"
+            android:text="@string/state"
+            android:textSize="20dp" />
+
         <Button
+            android:id="@+id/send"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="20dp"
-            android:text="@string/send" />
+            android:text="@string/send"
+            android:textSize="20dp" />
     </LinearLayout>
 
 </LinearLayout>
