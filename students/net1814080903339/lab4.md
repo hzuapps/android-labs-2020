@@ -34,6 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button2"
         app:layout_constraintVertical_bias="0.571" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -50,6 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -66,6 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
@@ -94,12 +97,14 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".BuyActivity">
+
 <ListView
     android:id="@+id/mobile_list"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
 </ListView>
+
 </LinearLayout>
 ```
 3.错题归纳和课程观看页面也同样设置了线性布局和对其进行了相应的配置。
