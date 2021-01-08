@@ -1,4 +1,4 @@
-package edu.hzuapps.androidlabs.net1814080903239;
+package edu.hzuapps.androidlabs.androidpractice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,8 +14,9 @@ public class Net1814080903239Activity extends AppCompatActivity {
         setContentView(R.layout.activity_net1814080903239);
 
         final Net1814080903239Activity thisActivity = this;
-        Button button = (Button) findViewById(R.id.button1);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button button1 = (Button) findViewById(R.id.button1);
+        Button button2 = (Button) findViewById(R.id.add_button);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(thisActivity, ShowhouseActivity.class);
@@ -23,6 +24,13 @@ public class Net1814080903239Activity extends AppCompatActivity {
             }
         });
 
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(thisActivity,AddhouseActivity .class);
+                startActivity(intent);
+            }
+        });
     }
 }
 

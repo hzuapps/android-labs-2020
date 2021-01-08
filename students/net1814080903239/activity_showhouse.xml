@@ -4,39 +4,56 @@
     android:layout_width="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
+    android:background="@drawable/ic_logo_3"
     android:layout_height="match_parent">
 
-    <EditText
+    <Button
+        android:id="@+id/wkc_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/to"
-        android:inputType=""
-       />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/subject" />
+        android:layout_height="69dp"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#FF9800"
 
-    <EditText
+        android:hint="@string/home1" />
+
+    <Button
+        android:id="@+id/jzy_button"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="top"
-        android:hint="@string/message" />
+        android:layout_height="62dp"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:hint="@string/home2" />
+
+    <Button
+        android:id="@+id/bgy_button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:hint="@string/home3" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp">
 
     <Button
         android:id="@+id/button2"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
+        android:layout_gravity="end"
         android:text="@string/button2_name" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/return1_button"
         android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_gravity="left"
-        android:text="@string/button3_name" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="150dp"
+        android:text="@string/button3_name"
+        android:layout_marginStart="150dp" />
+</LinearLayout>
 
 </LinearLayout>
 
