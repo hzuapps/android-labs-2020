@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edticlassroom">
+
+    <TextView
+        android:id="@+id/classroomaddresstextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="68dp"
+        android:text="教学楼地点"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/classroomaddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/classroomaddresstextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/classroomnumbertextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:text="教室房间号"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classroomaddresstextView" />
+
+    <EditText
+        android:id="@+id/classroomnumbereditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/classroomnumbertextView"
+        app:layout_constraintTop_toBottomOf="@+id/classroomaddresstextView" />
+
+    <TextView
+        android:id="@+id/booktimetextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:text="预订时间"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classroomnumbertextView" />
+
+    <EditText
+        android:id="@+id/booktimeeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/booktimetextView"
+        app:layout_constraintTop_toBottomOf="@+id/classroomnumbereditText" />
+
+    <TextView
+        android:id="@+id/applicanttextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:text="申请人"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booktimetextView" />
+
+    <EditText
+        android:id="@+id/applicanteditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/applicanttextView"
+        app:layout_constraintTop_toBottomOf="@+id/booktimeeditText" />
+
+    <TextView
+        android:id="@+id/PurposeapplicationtextView"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:text="申请目的"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/applicanttextView" />
+
+    <EditText
+        android:id="@+id/PurposeapplicationeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/PurposeapplicationtextView"
+        app:layout_constraintTop_toBottomOf="@+id/applicanteditText" />
+
+
+
+
+    <Button
+        android:id="@+id/CourseChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="620dp"
+        android:onClick="change"
+        android:text="修改"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/courseRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="620dp"
+        android:onClick="restart"
+        android:text="刷新"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />f
+
+</androidx.constraintlayout.widget.ConstraintLayout>
