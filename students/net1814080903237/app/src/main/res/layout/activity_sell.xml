@@ -15,18 +15,26 @@ android:paddingRight="16dp" >
 
     <EditText
         android:id="@+id/name1"
-        android:layout_width="86dp"
-        android:layout_height="57dp"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
 
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-
-        android:layout_marginBottom="245dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="262dp"
         android:hint="@string/reminder" />
 
     <Button
+        android:id="@+id/save"
+        android:onClick="saveClick"
         android:layout_width="96dp"
         android:layout_height="wrap_content"
-
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
@@ -39,7 +47,8 @@ android:paddingRight="16dp" >
         android:text="@string/done" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/choose"
+        android:onClick="chooseClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/name"
@@ -49,5 +58,18 @@ android:paddingRight="16dp" >
         android:layout_marginRight="141dp"
         android:layout_marginBottom="75dp"
         android:text="选择图片" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="253dp"
+        android:text="价格"
+        android:textSize="25dp" />
 
 </RelativeLayout>
