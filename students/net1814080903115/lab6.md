@@ -1,38 +1,43 @@
-package edu.hzuapps.androidlabs.net1814080903115;
+# 实验六：Android网络编程
 
-import androidx.appcompat.app.AppCompatActivity;
+## 一、实验目标
 
-import android.app.Activity;
-import android.app.DownloadManager;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
+1. 掌握Android网络访问方法；
+2. 理解XML和JSON表示数据的方法。
 
-import android.text.TextUtils;
-import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
-import android.view.View;
-import android.view.textclassifier.ConversationActions;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+```
+注意：选择实现的功能，一定要跟你的选题相关！
+```
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+## 二、实验内容
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+1. 在个人目录中创建一个表示数据的XML或JSON文件；
+2. 数据文件代码提交之后从GitHub获取文件URL；
+3. 在应用中通过网络编程访问GitHub的数据文件；
+4. 在应用中解析并显示文件所包含的数据；
+5. 将应用运行结果截图。
 
-import okhttp3.Call;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
+## 三、实验步骤
 
+1. 在 build.gradle 上导入依赖
+```java
+ implementation 'com.squareup.okhttp3:okhttp:3.14.2'
+ implementation 'com.squareup.okio:okio:1.17.4'
+```
+2. 在 AndroidManifest.xml 上添加网络权限
+
+```xml
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+3. 对 BrowseActivity.java 进行修改
+
+```java
 public class BrowseActivity extends AppCompatActivity {
     private TextView textView;
     public String text;
@@ -136,3 +141,16 @@ public class BrowseActivity extends AppCompatActivity {
         }
     }
 }
+```
+
+
+
+## 四、实验结果及截图
+
+![实验6图片](https://github.com/1CHONG/android-labs-2020/raw/master/students/net1814080903115/lab6_2.png)
+
+![实验6图片](https://github.com/1CHONG/android-labs-2020/raw/master/students/net1814080903115/lab6.png)
+
+## 五、实验心得
+
+这次实验主要是让我们掌握Android网络访问方法，理解XML和JSON表示数据的方法。这次实验有一个需要注意的点是首先要在配置启动网络权限，否则发送不了请求，然后实验过程中我自己写了一个json文件，然后发现我一直获取不到文件的值，但是老师给的json文件链接我就可以获取到，后来发现老师给的那个是api接口的地址，最后我用安卓模拟器模拟发送给本地电脑请求，应该使用地址10.0.2.2这个ip获取我自己写的内容。
