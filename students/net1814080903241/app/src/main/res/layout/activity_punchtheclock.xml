@@ -44,7 +44,7 @@
          android:layout_height="50dp"
          android:layout_below="@id/et_2"
          android:layout_marginTop="100dp"
-         android:text="save it."
+         android:text="save it ."
          android:textColor="#fff"
          android:textSize="20dp"
          android:background="#ff9933"/>
