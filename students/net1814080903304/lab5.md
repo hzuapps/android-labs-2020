@@ -8,7 +8,7 @@
 &emsp; 2.将应用运行结果截图；  
 ## 三、实验步骤
 &emsp; 1.创建EditHomework.java
-~~~
+```
 private static final String chineseeditText = "chineseeditText";
     private static final String matheditText = "matheditText";
     private static final String englisheditText = "englisheditText";
@@ -98,11 +98,11 @@ private static final String chineseeditText = "chineseeditText";
 
     }
 
-~~~
+```
 
 
 &emsp; 2.创建activity_edit_homework.xml
-~~~
+```
 <TextView
         android:id="@+id/chinesetextView"
         android:layout_width="88dp"
@@ -260,7 +260,7 @@ private static final String chineseeditText = "chineseeditText";
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-~~~
+```
 
 ## 四、实验结果
 ![lab5](https://raw.githubusercontent.com/Hacker-LAM/android-labs-2020/master/students/net1814080903304/lab5.png)
