@@ -19,83 +19,53 @@
 1. 使用LinearLayout布局
 
 ```
+activity_play1814080903310.xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".students.net1814080903310.Information1814080903310Activity">
+    tools:context=".students.net1814080903310.PlayVideo18148080903310Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="请输入您的昵称" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="请输入您的邮箱" />
-
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textEmailAddress" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="请输入您的电话" />
-
-        <EditText
-            android:id="@+id/editTextPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="phone" />
+            <VideoView
+                android:id="@+id/videoView2"
+                android:layout_width="354dp"
+                android:layout_height="242dp"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/write"
+                android:id="@+id/startVideo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="onClick"
-                android:text="保存" />
+                android:text="播放" />
 
             <Button
-                android:id="@+id/read"
+                android:id="@+id/stopVideo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="onClick"
-                android:text="读取"
-                tools:ignore="OnClick" />
+                android:text="结束" />
         </LinearLayout>
-
     </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
     ```
     
     2. 初始化控件、实现界面控件的事件处理，例如点击按钮；
@@ -223,6 +193,67 @@ public class Information1814080903310Activity extends AppCompatActivity {
 }
 ```
 
+```
+package edu.hzuapps.androidlabs.students.net1814080903310;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.MediaController;
+import android.widget.VideoView;
+
+import edu.hzuapps.androidlabs.R;
+
+public class PlayVideo18148080903310Activity extends AppCompatActivity {
+    private VideoView videoView;
+    private Button startVideo;
+    private Button stopVideo;
+    private MediaController mediaController;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_play18148080903310);
+        intView();
+    }
+
+    private void intView(){
+        videoView = (VideoView)findViewById(R.id.videoView2);
+        startVideo = (Button)findViewById(R.id.startVideo);
+        stopVideo = (Button)findViewById(R.id.stopVideo);
+
+        startVideo.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                init();
+            }
+        });
+        stopVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                videoView.stopPlayback();
+            }
+        });
+    }
+
+    private void init(){
+        videoView = (VideoView)findViewById(R.id.videoView2);
+        mediaController = new MediaController(this);
+        String uri = "android.resource://"+getPackageName()+"/"+R.raw.video;
+        videoView.setVideoURI(Uri.parse(uri));
+        videoView.setMediaController(mediaController);
+        mediaController.setMediaPlayer(videoView);
+        videoView.requestFocus();
+        videoView.start();
+    }
+}
+```
+
 ## 四、实验结果
 
 ![实验4结果截图](https://github.com/JeesionChone/android-labs-2020/blob/master/students/net1814080903310/lab4_1.png)
@@ -233,4 +264,4 @@ public class Information1814080903310Activity extends AppCompatActivity {
 
 用android studio的默认constraint布局的话，要给约束才不会让图标跳回0.0的坐标，用linear布局就会方便很多。
 按钮的点击事件在这里做了两个activity的，一个是主页面点击按钮跳转到“我的”页面，一个是跳转到“视频”页面。
-在“我的”页面中，设置了一个保存资料卡的按钮，一个读取资料卡的按钮。
+在“视频”页面中，用的是内置的VideoView控件来实现。设置了一个点击播放视频的按钮，一个点击停止播放的按钮。
