@@ -9,20 +9,18 @@ import android.view.View;
 public class Net1814080903340Activity extends AppCompatActivity {
 
         public void onClickEasy(View view) {
-            Intent intent = new Intent(this, Easy.class);
+            Intent intent = new Intent(this, EasyActivity.class);
             startActivity(intent);
         }
         public void onClickMiddle(View view) {
-            Intent intent = new Intent(this,Middle.class);
+            Intent intent = new Intent(this, MiddleActivity.class);
             startActivity(intent);
         }
 
         public void onClickHigh(View view) {
-            Intent intent = new Intent(this,High.class);
+            Intent intent = new Intent(this, HighActivity.class);
             startActivity(intent);
         }
-
-
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
