@@ -35,9 +35,11 @@ public class Net1814080903220MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView textView = (TextView) findViewById(R.id.content);
-        TextView textView1 = (TextView) findViewById(R.id.apartdate1);
-
+        Intent intent=getIntent();
+        TextView textView = findViewById(R.id.content);
+        TextView textView1 = findViewById(R.id.apartdate1);
+        textView.setText(intent.getStringExtra("data"));
+        textView1.setText(intent.getStringExtra("data1"));
     }
 
     /*@Override
