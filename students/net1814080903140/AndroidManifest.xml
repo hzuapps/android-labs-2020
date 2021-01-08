@@ -11,16 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SearchCityActivity"></activity>
+        <uses-feature android:name="android.hardware.camera" android:required="true" />
+        <activity android:name=".PhotoActivity"></activity>
+        <activity android:name=".HttpClientUIActivity" />
+        <activity android:name=".FileDownloadActivity" />
+        <activity android:name=".HttpClientActivity" />
+        <activity android:name=".DBManager" />
+        <activity android:name=".DBHelper" />
+        <activity android:name=".datatwoActivity" />
+        <activity android:name=".dataoneActivity" />
+        <activity android:name=".SearchCityActivity" />
         <activity android:name=".CityMangeActivity" />
         <activity android:name=".Net1814080903140Activity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
