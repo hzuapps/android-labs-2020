@@ -12,10 +12,6 @@ import android.widget.Button;
 
 import androidx.core.content.ContextCompat;
 
-/**
- * Created by jobs on 2016/11/4.
- */
-
 public class EasySudu extends View {
     private String STR = "900853004000462300230070005"
             + "680000031507901602310000049" + "800090013001328000400615008";

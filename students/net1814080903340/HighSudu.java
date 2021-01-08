@@ -12,9 +12,6 @@ import android.widget.Button;
 
 import androidx.core.content.ContextCompat;
 
-/**
- * Created by jobs on 2016/11/4.
- */
 
 public class HighSudu extends View {
     private String STR = "010008570607050009052170000"
