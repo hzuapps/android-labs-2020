@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity" >
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/camera_surfaceview"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="计时区域"
+        android:id="@+id/camera_time"/>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_main"
+            android:id="@+id/camera_photo"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"
+            android:text="照片摄取"/>
+        <Button android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_main"
+            android:id="@+id/camera_vedio"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"
+            android:text="视频摄取"/>
+    </LinearLayout>
+</RelativeLayout>
