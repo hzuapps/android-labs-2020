@@ -14,8 +14,9 @@ public class NetAboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net_about_ativity);
 
-
+        Button btn1 = (Button)findViewById(R.id.button);
         Button btn3 = (Button)findViewById(R.id.button3);
+        Button btn4 = (Button)findViewById(R.id.button4);
         final NetAboutActivity thisActivity = this;
         btn3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -23,5 +24,18 @@ public class NetAboutActivity extends AppCompatActivity {
                 thisActivity.startActivity(intent);
             }
         });
-}
+        btn4.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(thisActivity,MainActivity.class);
+                thisActivity.startActivity(intent);
+            }
+        });
+        btn1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(thisActivity,MainActivity3.class);
+                thisActivity.startActivity(intent);
+            }
+        });
+    }
+
 }
