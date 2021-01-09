@@ -7,19 +7,34 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import static java.lang.Integer.parseInt;
 
 public class ShiftActivity extends AppCompatActivity {
+    private EditText editText;
+    private Button button;
+    private EditText resultText;
+    private Button button1;
+    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shift);
+        editText = findViewById(R.id.edit_text);
+        button = findViewById(R.id.button);
+        button1 = findViewById(R.id.button1);
+        resultText = findViewById(R.id.result_text);
+        button2 = findViewById(R.id.button2);
+
 
         final Activity thisActivity = this;
 
         Button btnOpen = (Button) findViewById(R.id.button_back2);
-        btnOpen.setX(300f);
-        btnOpen.setY(200f);
+        btnOpen.setX(000f);
+        btnOpen.setY(150f);
 
         View view = findViewById(R.id.button_back2);
 
@@ -28,7 +43,44 @@ public class ShiftActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(thisActivity, Net1814080903129Activity.class);
                 thisActivity.startActivity(intent);
-                //thisActivity.startActivityForResult(intent, 2016);
+            }
+        });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resultText.setText("");
+                editText.setText("");
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String str = editText.getText().toString().trim();
+                if (!str.matches("^[0-9]+$")) {
+                    resultText.setText("请输入正整数");
+                    return;
+                }
+                else{
+                    String two = Integer.toBinaryString(parseInt(str));
+                    resultText.setText(two);
+
+                }
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String he = resultText.getText().toString();
+                if (!he.matches("^[0-1]+$")) {
+                    editText.setText("请输入数字0或1");
+                    return;
+                }
+                else{
+                    String ten = Integer.valueOf(he, 2).toString();
+                    editText.setText(ten);
+                }
             }
         });
     }

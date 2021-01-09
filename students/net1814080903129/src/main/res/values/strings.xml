@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">进制换算器</string>
+    <string name="sjz">十进制数：</string>
+    <string name="sza">如 1+1-1</string>
+    <string name="ejz">二进制数：</string>
+    <string name="szb">如 1+1-1</string>
+    <string name="qc">清除</string>
+    <string name="js">计算</string>
+    <string name="jg">0</string>
+    <string name="sr">输入：</string>
+    <string name="sc">结果：</string>
+    <string name="ten">如\"12\"</string>
+    <string name="tow">如\"101\"</string>
+    <string name="hs1">十转二</string>
+    <string name="hs2">二转十</string>
+</resources>
