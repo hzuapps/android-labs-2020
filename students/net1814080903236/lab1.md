@@ -21,5 +21,6 @@ public class Net1814080903236Activity{
 ```
 5. 利用Git相关命令提交代码并发Pull Request
 ## 四、实验结果
+![结果截图](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy1.png)
 ## 五、实验心得体会  
  这次实验主要的问题在于Android Studio的安装上，一直出现问题重新安装的很多遍，安装后在虚拟机那里卡顿，加上一条内存条有明显改善，然后就可以了，在对Git的相关命令还需再熟悉一下。

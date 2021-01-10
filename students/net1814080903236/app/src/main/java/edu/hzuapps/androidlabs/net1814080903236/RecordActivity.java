@@ -27,7 +27,6 @@ public class RecordActivity extends AppCompatActivity {
         editName=findViewById(R.id.editName);
         editSex=findViewById(R.id.editSex);
         data=findViewById(R.id.data);
-
         button_record = findViewById(R.id.button2_1);
         button_information = findViewById(R.id.button2_2);
 
@@ -42,8 +41,10 @@ public class RecordActivity extends AppCompatActivity {
         if(fileOutputStream!=null){
             fileOutputStream.close();
         }
+
         Toast.makeText(this, "添加成功", Toast.LENGTH_SHORT).show();
     }
+    
     public void btn2_2Click(View view){
         final RecordActivity thisActivity2 = this;
         button_information.setOnClickListener(new View.OnClickListener() {
