@@ -35,6 +35,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="http" />
+
+        <Button
+            android:id="@+id/gpsB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="gps" />
+
+        <Button
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="photo" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
     </LinearLayout>
 
     <ImageView
