@@ -2,30 +2,71 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="edu.hzuapps.androidlabs.Sec1814080911130Activity"
     android:background="@drawable/background">
 
     <Button
         android:id="@+id/button_play"
-        android:layout_width="175dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="开始游戏"
+        style="@style/ButtonText"
         android:background="#E91E63"
-        android:alpha="0.6"
         android:textColor="#FFEB3B"
-        android:textSize="25dp" />
-
-    <Button
+        android:textSize="25sp"
+        android:alpha="0.6"
+        android:text="@string/start"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    
+    <Button 
+        android:id="@+id/button_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ButtonText"
+        android:background="#E91E63"
+        android:textColor="#FFEB3B"
+        android:textSize="25sp"
+        android:alpha="0.6"
+        android:text="@string/rank"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_play"/>
+    
+    <Button 
         android:id="@+id/button_options"
-        android:layout_width="175dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="选项"
+        style="@style/ButtonText"
         android:background="#E91E63"
-        android:alpha="0.6"
         android:textColor="#FFEB3B"
-        android:textSize="25dp"/>
+        android:textSize="25sp"
+        android:alpha="0.6"
+        android:text="@string/set"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_rank"/>
+
+    <Button 
+        android:id="@+id/button_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ButtonText"
+        android:background="#E91E63"
+        android:textColor="#FFEB3B"
+        android:textSize="25sp"
+        android:alpha="0.6"
+        android:text="@string/out"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_options"/>
+
 </LinearLayout>
