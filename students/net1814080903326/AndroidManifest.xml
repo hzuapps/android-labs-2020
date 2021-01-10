@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="hzu.android.labs">
+    package="edu.hzuapps.androidlabs.net1814080903326">
 
     <application
         android:allowBackup="true"
@@ -8,8 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".PageTurning1"></activity>
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".FirstActivity"></activity>
         <activity android:name=".Net1814080903326Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
