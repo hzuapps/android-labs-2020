@@ -10,34 +10,34 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:orientation="vertical">
+            android:paddingRight="16dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:orientation="horizontal"
-            android:background="@drawable/js">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/js"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
 
-                <Button
-                    android:id="@+id/button_operation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="600dp"
-                    android:text="普通运算" />
+                        <Button
+                            android:id="@+id/button_operation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="600dp"
+                            android:text="普通运算" />
 
-                <Button
-                    android:id="@+id/button_shift"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="进制换算"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="600dp" />
-        </LinearLayout>
+                        <Button
+                            android:id="@+id/button_shift"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="600dp"
+                            android:text="进制换算" />
+                </LinearLayout>
         </LinearLayout>
 
 

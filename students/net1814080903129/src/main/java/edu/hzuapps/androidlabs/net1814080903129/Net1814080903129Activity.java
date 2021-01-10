@@ -18,8 +18,7 @@ public class Net1814080903129Activity extends AppCompatActivity {
         final Activity thisActivity = this;
 
         Button btnOpen = (Button) findViewById(R.id.button_operation);
-        btnOpen.setX(300f);
-        btnOpen.setY(200f);
+
 
         View view = findViewById(R.id.button_operation);
 
@@ -28,13 +27,11 @@ public class Net1814080903129Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(thisActivity, OperationActivity.class);
                 thisActivity.startActivity(intent);
-                //thisActivity.startActivityForResult(intent, 2016);
             }
         });
 
         Button btnOpen2 = (Button) findViewById(R.id.button_shift);
-        btnOpen2.setX(600f);
-        btnOpen2.setY(200f);
+
 
         View view2 = findViewById(R.id.button_shift);
 
@@ -43,7 +40,6 @@ public class Net1814080903129Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(thisActivity, ShiftActivity.class);
                 thisActivity.startActivity(intent);
-                //thisActivity.startActivityForResult(intent, 2016);
             }
         });
     }
