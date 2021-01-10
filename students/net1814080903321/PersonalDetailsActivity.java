@@ -3,11 +3,14 @@ package edu.hzuapp.androidlabs.net1814080903321;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -27,6 +30,16 @@ public class PersonalDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_details);
         initView();
+
+        FloatingActionButton fab = findViewById(R.id.fab3);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(PersonalDetailsActivity.this, Net1814080903321Activity.class);
+                startActivity(i);
+            }
+        });
+
     }
     private void initView() {
         //关联控件
