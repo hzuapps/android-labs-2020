@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Net1814080903302Activity">
+    tools:context=".Net1814080903302Activity"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,15 +35,22 @@
             android:id="@+id/startluyin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="65dp"
+            android:layout_marginLeft="20dp"
             android:text="开始录音" />
 
         <Button
             android:id="@+id/luyinline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="65dp"
+            android:layout_marginLeft="20dp"
             android:text="录音列表" />
+
+        <Button
+            android:id="@+id/lab5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="实验5"/>
     </LinearLayout>
 
 </LinearLayout>
