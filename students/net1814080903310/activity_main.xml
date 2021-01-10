@@ -4,38 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textview_01"
+    <Button
+        android:id="@+id/video"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/InfomationBackground"
-        android:text="Hello World!"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="43dp"
+        android:text="视频"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/info"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="627dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/infomationbackground"
+        app:layout_constraintBottom_toTopOf="@+id/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="首页"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="38dp"
         android:text="我的"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="59dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/InfomationBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
