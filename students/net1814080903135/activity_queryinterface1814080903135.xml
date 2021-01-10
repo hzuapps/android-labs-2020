@@ -1,38 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical">
     tools:context=".Queryinterface1814080903135Activity"
     android:background="@drawable/timg">
 
-<TextView
+    <TextView
+        android:id="@+id/textview_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="30dp"
-        android:textColor="#3F51B5"
-        tools:layout_editor_absoluteY="406dp"
-        tools:layout_editor_absoluteX="15dp" />
-    >
+        android:drawableTop="@drawable/timg"
+        android:text=" "
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="140dp" />
 
-<LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/timg"
-        tools:layout_editor_absoluteY="12dp"
-        tools:layout_editor_absoluteX="12dp">
-
-
-    </LinearLayout>
 
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="183dp"
-        android:layout_height="140dp"
+        android:layout_width="83dp"
+        android:layout_height="40dp"
         android:text="查询"
+        android:layout_below="@+id/edit_message1"
         tools:layout_editor_absoluteX="133dp"
         tools:layout_editor_absoluteY="192dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:id="@+id/edit_message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="发送"
+        android:layout_below="@+id/button3"/>
+</LinearLayout>
+
+
