@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_logo_4"
+    android:layerType="hardware">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:hint="@string/address"
+        android:text="地址：惠州市惠城区佳兆业1栋1号"
+        android:textSize="20dp"
+        android:textColor="#B2F436"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:hint="@string/price"
+        android:textSize="20dp"
+        android:textColor="#B2F436"
+        android:text="房价：3500/平方米"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="@string/type"
+        android:textColor="#B2F436"
+        android:textSize="20dp"
+        android:text="户型：3房一厅"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#B2F436"
+        android:hint="@string/area"
+        android:textSize="20dp"
+        android:text="面积：140平方米"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/rent_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/renthous_name" />
+
+        <Button
+            android:id="@+id/return2_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="150dp"
+            android:text="@string/button3_name"
+            android:layout_marginStart="150dp" />
+    </LinearLayout>
+
+</LinearLayout>
