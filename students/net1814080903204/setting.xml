@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Copy1Activity"
+    tools:context=".setting"
     >
 
 
@@ -38,7 +38,6 @@
         android:hint="@string/activity_copy1_Word2"
         android:layout_below="@id/NumbersOfMedicine"
         android:layout_centerHorizontal="true"
-
         >
 
 
@@ -49,7 +48,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/activity_copy1_Word1"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/id_btn_write"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/TimeForMedicine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/save"/>
 
 
 </RelativeLayout>
