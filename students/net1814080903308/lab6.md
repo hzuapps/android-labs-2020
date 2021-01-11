@@ -149,7 +149,7 @@
 歌单界面  
 !(https://github.com/Json-xl/android-labs-2020/blob/master/students/net1814080903308/sy/sy6-1.jpg)  
 播放界面  
-!(https://github.com/Json-xl/android-labs-2020/blob/master/students/net1814080903308/sy/sy6-2.jpg)  
+!(https://github.com/Json-xl/android-labs-2020/blob/master/students/net1814080903308/sy/sy6-2.png)  
 
 ## 五、实验心得
-本次实验没有做网络编程，在原有的APP基础上继续优化，实现了播放界面、歌单界面、收藏界面的转跳，可能是安卓版本问题，播放音乐会闪退实现不了，接下来看看能不能解决问题，继续努力。
+本次实验没有做网络编程，在原有的APP基础上继续优化，实现了播放界面、歌单界面、专辑界面的转跳，可能是安卓版本问题，播放音乐会闪退实现不了，接下来看看能不能解决问题，继续努力。
