@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".StoreActivity">
 
         <TextView
-            android:id="@+id/head3"
+            android:id="@+id/head2"
             android:layout_width="411dp"
             android:layout_height="46dp"
             android:background="#55B0ED"
@@ -22,103 +23,148 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="195dp"
-            android:layout_height="164dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:src="@drawable/yihetang"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/head3"
-            tools:ignore="MissingConstraints" />
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="195dp"
-            android:layout_height="55dp"
-            android:background="#DCE8F8"
-            android:text="益禾堂"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="@+id/imageView1"
-            app:layout_constraintTop_toBottomOf="@+id/imageView1"
-            tools:ignore="DuplicateIds,MissingConstraints,UnknownId" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="195dp"
-            android:layout_height="164dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:src="@drawable/maidanglao"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_margin="30dp"
+                            android:layout_marginTop="200dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                        <ImageButton
+                                            android:id="@+id/button1"
+                                            android:layout_width="242dp"
+                                            android:layout_height="200dp"
+                                            android:scaleType="centerInside"
+                                            app:srcCompat="@drawable/yihetang"
+                                            tools:ignore="MissingConstraints" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="益禾堂"
+                                            android:textSize="30sp"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="195dp"
-            android:layout_height="164dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:src="@drawable/zhujiaofan"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button1" />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_margin="30dp"
+                            android:layout_marginTop="200dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                        <ImageButton
+                                            android:id="@+id/button2"
+                                            android:layout_width="242dp"
+                                            android:layout_height="200dp"
+                                            android:scaleType="centerInside"
+                                            app:srcCompat="@drawable/hualaishi"
+                                            tools:ignore="MissingConstraints" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="华莱士"
+                                            android:textSize="30sp"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="195dp"
-            android:layout_height="164dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:src="@drawable/hualaishi"
-            app:layout_constraintStart_toEndOf="@+id/imageView1"
-            app:layout_constraintTop_toBottomOf="@+id/head3" />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_margin="30dp"
+                            android:layout_marginTop="200dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                        <ImageButton
+                                            android:id="@+id/button3"
+                                            android:layout_width="242dp"
+                                            android:layout_height="200dp"
+                                            android:scaleType="centerInside"
+                                            app:srcCompat="@drawable/zhujiaofan"
+                                            tools:ignore="MissingConstraints" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="隆江猪脚饭"
+                                            android:textSize="30sp"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="195dp"
-            android:layout_height="55dp"
-            android:background="#DCE8F8"
-            android:text="华莱士"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_margin="30dp"
+                            android:layout_marginTop="200dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                        <ImageButton
+                                            android:id="@+id/button4"
+                                            android:layout_width="242dp"
+                                            android:layout_height="200dp"
+                                            android:scaleType="centerInside"
+                                            app:srcCompat="@drawable/maidanglao"
+                                            tools:ignore="MissingConstraints" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="麦当劳"
+                                            android:textSize="30sp"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                </LinearLayout>
+        </ScrollView>
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="195dp"
-            android:layout_height="55dp"
-            android:background="#DCE8F8"
-            android:text="猪脚饭"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="195dp"
-            android:layout_height="55dp"
-            android:background="#DCE8F8"
-            android:text="麦当劳"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_marginEnd="28dp"
-            android:layout_marginRight="28dp"
-            android:layout_marginBottom="40dp"
-            android:clickable="true"
-            android:src="?android:attr/listChoiceIndicatorSingle"
-            app:backgroundTint="#C1E6FF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:visibility="visible" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
