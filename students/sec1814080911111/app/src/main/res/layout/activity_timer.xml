@@ -4,14 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".TimerActivity" >
 
+    <TextView
+        android:id="@+id/time_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计时器"
+        android:textSize="35dp"
+        android:layout_marginTop="200dp"
+        android:textColor="#99CCFF"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!--<Chronometer-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:textSize="30dp"-->
+        <!--/>-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10sp">
     <Button
         android:id="@+id/startTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:background="@drawable/button_drawable"
         android:layout_weight="1"
         android:text="开始计时" />
 
@@ -20,7 +43,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:background="@drawable/button_drawable"
         android:layout_weight="1"
         android:text="停止计时" />
+</LinearLayout>
 
 </LinearLayout>
