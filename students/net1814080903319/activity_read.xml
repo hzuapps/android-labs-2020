@@ -3,15 +3,26 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="曲谱"
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="180dp"
-        android:textColor="#F394E0"/>
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="曲谱"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#F394E0"/>
 
+        <Button
+            android:id="@+id/button_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@+id/tv"
+            android:text="拍照" />
+    </RelativeLayout>
     <View
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
@@ -21,6 +32,7 @@
         android:layout_marginTop="2dp"/>
 
     <ImageView
+        android:id="@+id/tupian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/qingtian">
