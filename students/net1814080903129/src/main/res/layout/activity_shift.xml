@@ -92,12 +92,22 @@
             android:textSize="25dp"/>
 
         <Button
-            android:id="@+id/button_back2"
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:text="@string/zsd"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:text="返回"
             android:textSize="25dp"/>
+
+
 
 
     </LinearLayout>

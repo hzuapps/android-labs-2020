@@ -33,9 +33,6 @@ public class ShiftActivity extends AppCompatActivity {
         final Activity thisActivity = this;
 
         Button btnOpen = (Button) findViewById(R.id.button_back2);
-        btnOpen.setX(000f);
-        btnOpen.setY(150f);
-
         View view = findViewById(R.id.button_back2);
 
         btnOpen.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +42,19 @@ public class ShiftActivity extends AppCompatActivity {
                 thisActivity.startActivity(intent);
             }
         });
+
+        Button btnOpen2 = (Button) findViewById(R.id.button3);
+        View view2 = findViewById(R.id.button3);
+
+        btnOpen2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(thisActivity, knowledge.class);
+                thisActivity.startActivity(intent);
+            }
+        });
+
+
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

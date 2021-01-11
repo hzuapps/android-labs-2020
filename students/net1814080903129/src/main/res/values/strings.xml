@@ -13,4 +13,9 @@
     <string name="tow">如\"101\"</string>
     <string name="hs1">十转二</string>
     <string name="hs2">二转十</string>
+    <string name="zsd">换算方法说明</string>
+    <string name="sjz1">十进制转二进制方法：</string>
+    <string name="sjz2">十进制整数转换为二进制整数采用除2取余，逆序排列法。</string>
+    <string name="ejz1">二进制转十进制方法:</string>
+    <string name="ejz2">二进制转为十进制的时候，先把二进制从高位（最左边的“1”）开始按从上到下的顺序写出，第一位就是最后的商“2 2 = 1 余0”，余数肯定是加零。其他位数如果有（原来的余数），就先乘以“2”再加“1”。</string>
 </resources>
