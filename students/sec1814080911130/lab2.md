@@ -24,7 +24,7 @@
 6. 设置Play和Options点击事件；
 7. 创建intent跳转对象，使用显式方法Intent(源Activity.this,目标Activity.class)；
 8. startActivity(intent)实现点击跳转
-```
+```java
 public class Sec1814080911130Activity extends AppCompatActivity {
 
     @Override
