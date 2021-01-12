@@ -14,7 +14,7 @@
 ## 三、实验步骤
 
 - 修改MusicActivity.java和activity_music.xml  
-  包含了两个菜单文件：song1（歌曲菜单）和song2（专辑菜单），默认情况下展示song1歌曲菜单,点击切换显示song2专辑菜单
+  包含了两个菜单文件：Song1Activity.java（歌曲菜单）和Song2Activity.java（专辑菜单），默认情况下展示song1歌曲菜单,点击切换显示song2专辑菜单
 
 ```xml
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -48,13 +48,13 @@
 
             fm=getSupportFragmentManager();//若是继承FragmentActivity，fm=getFragmentManger();
             ft=fm.beginTransaction();
-        ft.replace(R.id.content,new song1());//默认情况下song1
+        ft.replace(R.id.content,new Song1Activity());//默认情况下Song1Activity
         ft.commit();
     }
 
 ```
 
-- song1类是音乐列表界面，主要是创建onCreateView方法，参数分别为inflater（布局填充器），container(容器)，savedInstanceState(保存实例状态)。  
+- Song1Activity类是音乐列表界面，主要是创建onCreateView方法，参数分别为inflater（布局填充器），container(容器)，savedInstanceState(保存实例状态)。  
   首先声明一个变量view，用布局填充器的方法显示为music_list的布局文件，然后listView通过findViewById的方法，绑定lv布局文件中的对应控件。
 
 ```java
