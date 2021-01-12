@@ -10,5 +10,6 @@
 1. 找到与·选题相符的图片，放在drawable目录下。
 2. 在activity_main.xml中添加imageview组件，把图片加入主界面。
 ## 四、实验结果  
+![添加的图片位置](https://github.com/liangyunrong/android-labs-2020/blob/master/students/net1814080903237/app/src/main/res/drawable/sy3.png)
 ## 五、实验心得  
 &#160; &#160;这个实验就是给界面添加资源，添加图片就好了，还是很简单的。
