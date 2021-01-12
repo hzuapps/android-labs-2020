@@ -1,8 +1,13 @@
 package edu.hzuapps.browers.bookmarks;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,6 +31,7 @@ import java.util.Map;
 
 import edu.hzuapps.browers.helper.FileHelper;
 import edu.hzuapps.browers.R;
+import edu.hzuapps.browers.webview.MyWebViewActivity;
 
 
 public class BookmarksActivity extends AppCompatActivity {
@@ -43,7 +49,7 @@ public class BookmarksActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         // ListView
-        BookmarkAdapter adapter = new BookmarkAdapter(
+        final BookmarkAdapter adapter = new BookmarkAdapter(
                 // 上下文，即当前的activity
                 BookmarksActivity.this,
                 // 一条数据都显示在这个View中
@@ -53,6 +59,20 @@ public class BookmarksActivity extends AppCompatActivity {
         );
         ListView listView  = (ListView) findViewById(R.id.list_bookmarks);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String webUrl = bookmarkList.get(i).getUrl();
+                String title = bookmarkList.get(i).getTitle();
+                // 点击访问网址
+                Intent intent = new Intent(BookmarksActivity.this, MyWebViewActivity.class);
+                // Bundle携带数据
+                Bundle bundle = new Bundle();
+                bundle.putString("webUrl",webUrl);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -82,12 +102,17 @@ public class BookmarksActivity extends AppCompatActivity {
 
         String strs = this.fileHelper.read("bookmarks");
         if(!strs.isEmpty()){
+
             // 文件中有内容
-            String[] contents = strs.split("。");
-            for(String item : contents){
-                String msg[] = item.split("-");
-                Bookmark bookmark5 = new Bookmark(msg[0],R.id.webIcon,msg[1]);
-                bookmarkList.add(bookmark5);
+            String[] contents = strs.split("￥");
+
+            for(String jsonItem : contents){
+                com.alibaba.fastjson.JSONObject jsonObject = com.alibaba.fastjson.JSONObject.parseObject(jsonItem);
+                String title = jsonObject.getString("title");
+                String url = jsonObject.getString("url");
+
+                Bookmark bookmark5 = new Bookmark(title,R.drawable.bookmark_icon,url);
+                bookmarkList.add(0,bookmark5);
             }
         }
 
@@ -110,7 +135,6 @@ public class BookmarksActivity extends AppCompatActivity {
                 lines = URLDecoder.decode(lines, "utf-8");
                 sb.append(lines);
             }
-            System.out.println(sb);
             jsonText = sb.toString();
             reader.close();
             // 断开连接

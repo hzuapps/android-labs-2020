@@ -16,7 +16,7 @@
             android:id="@+id/webIcon"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:contentDescription="favicon"
+            android:contentDescription="@string/favicon"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:padding="13dp"
@@ -135,7 +135,7 @@
         <RelativeLayout style="@style/NavItem">
 
             <ImageView
-                android:id="@+id/nav_menu"
+                android:id="@+id/bookmarks"
                 style="@style/NavIcon"
                 android:src="@drawable/nav_menu" />
 
