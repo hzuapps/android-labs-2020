@@ -37,5 +37,7 @@
 ```
 5.利用Git相关命令提交图片文件和布局代码并发Pull Request
 ## 四、实验结果
+![结果截图1](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy3_1.png)   
+![结果截图2](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy3_2.png)   
 ## 五、实验心得体会
 这次实验学习了如何添加图片，并在自己设计的界面上使用图片，还有结合按钮实现Activity的跳转，另外在实验过程中也学习了一点布局的相关知识，在这里我采用了<LinearLayout>布局，感觉在使用上它比较方便，也容易理解各部分之间的关系，后面还再好好学习，让我的界面看起来比较丰富一点吧。

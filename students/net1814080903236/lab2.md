@@ -43,5 +43,8 @@ Button button = findViewById(R.id.button2);
 ```
 7. 利用Git相关命令提交代码并发Pull Request
 ## 四、实验结果
+![结果截图1](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy2_1.png)   
+![结果截图2](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy2_2.png)   
+![结果截图3](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy2_3.png)  
 ## 五、实验心得体会
 这次实验完成的比较久，在目前还只是一个初步的设计，后面还会继续完善它，感觉通过所学的知识做了一点小小的东西很不错，以后还要继续好好学习！

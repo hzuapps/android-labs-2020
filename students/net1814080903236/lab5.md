@@ -44,5 +44,7 @@
     }
 ```
 ## 四、实验结果
+![结果截图1](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy5_1.png)   
+![结果截图2](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy5_2.png)
 ## 五、实验心得体会
 这次实验学习数据的文件存储和数据库存储，我实验是采用的是文件存储中的内部存储功能，做实验遇到不懂的地方上网查阅资料弄懂了，觉得还挺简单的了，挺有趣的。

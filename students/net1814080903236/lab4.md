@@ -26,5 +26,9 @@ findViewById(R.id.my_button);
 3. 在activity_record.xml这个界面可以记录生日人的姓名、生日等相关信息，此界面中有两个按钮，分别是“确定添加”和“查看信息”，点击“确定添加”保存记录的信息，而点击“查看信息”则可以查看已经记录的信息，这里已经有了三天记录：张三，李芳和王五。
 4. 在发出生日提醒中添加两个按钮，分别是“确定”，“稍后提醒”，点击分别是返回主页面
 ## 四、实验结果
+![结果截图1](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy4_1.png)  
+![结果截图2](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy4_2.png)   
+![结果截图3](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy4_3.png)   
+![结果截图4](https://github.com/huangqiulian/android-labs-2020/blob/master/students/net1814080903236/sy4_4.png)
 ## 五、实验心得体会
 这次实验是对选题的需要界面的设计，原来只有三个界面，后来考虑到还需要有一个查看记录后的信息的界面，于是又添加多了一个information界面，后来在提交代码到GitHub上面出现了一个问题，总是登录不上去并且代码没办法提交上去，后来去看了邮箱才知道是版本太低了，也顺利解决了。
