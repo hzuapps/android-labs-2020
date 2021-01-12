@@ -27,7 +27,7 @@ public class CourseActivity extends AppCompatActivity {
         Intent intent=getIntent();
         week=intent.getStringExtra("week");
         EditText editText=(EditText)findViewById(R.id.Week);
-        editText.setText(week);/* */
+        editText.setText(week);
 
     }
 

@@ -22,6 +22,9 @@ public class ImformationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imformation);
+
+        String []texts=getImformation();
+        changeEditText(texts);
     }
 
     public void change(View view){
