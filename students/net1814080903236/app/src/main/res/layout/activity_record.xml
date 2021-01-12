@@ -12,8 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/title2"
-        android:textSize="25dp"
+        android:textSize="40sp"
         android:textStyle="bold" />
+
     <LinearLayout
         android:id="@+id/name1"
         android:layout_width="wrap_content"
@@ -24,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="42dp"
             android:text="姓名："
-            android:textSize="17dp" />
+            android:textSize="17sp" />
 
         <EditText
             android:id="@+id/editName"
@@ -42,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="42dp"
             android:text="性别："
-            android:textSize="17dp" />
+            android:textSize="17sp" />
         <EditText
             android:id="@+id/editSex"
             android:layout_width="350dp"
@@ -53,52 +54,63 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
-        android:text="日期："
-        android:textSize="17dp" />
-    <EditText
-        android:id="@+id/data"
-        android:hint="请输入年月日"
-        android:layout_width="357dp"
-        android:layout_height="42dp"/>
-</LinearLayout>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="日期："
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/data"
+            android:hint="请输入年月日"
+            android:layout_width="357dp"
+            android:layout_height="42dp"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
+            android:layout_width="220dp"
             android:layout_height="42dp"
-            android:text="铃声："
-            android:textSize="17dp" />
-        <EditText
-            android:id="@+id/ring"
-            android:layout_width="357dp"
-            android:layout_height="match_parent" />
+            android:text="     铃声,你可以自定义录制"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/button2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="download"
+            android:text="开始录制"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/button2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="download"
+            android:text="停止录制"
+            tools:ignore="OnClick" />
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <Button
-        android:id="@+id/button2_1"
-        android:onClick="btn2_1Click"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="@string/done1"
-        tools:ignore="OnClick" />
-    <Button
-        android:id="@+id/button2_2"
-        android:onClick="btn2_2Click"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="查看信息"
-        tools:ignore="OnClick" />
-</LinearLayout>
+        <Button
+            android:id="@+id/button2_1"
+            android:onClick="btn2_1Click"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/done1"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/button2_2"
+            android:onClick="btn2_2Click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看信息"
+            tools:ignore="OnClick" />
+    </LinearLayout>
 
 </LinearLayout>
