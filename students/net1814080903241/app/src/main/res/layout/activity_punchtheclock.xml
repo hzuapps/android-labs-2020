@@ -37,6 +37,7 @@
         android:textColor="#AC20CE"
         android:textSize="16sp" />
 
+
      <Button
          android:id="@+id/btn_start"
          android:onClick="btClick"
@@ -49,5 +50,5 @@
          android:textSize="20dp"
          android:background="#ff9933"/>
 
-
 </RelativeLayout>
+
