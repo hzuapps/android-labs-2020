@@ -37,7 +37,18 @@ public class Net1814080903323Activity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        final Button botton3;
+        botton3 = findViewById(R.id.button3);
+        botton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                botton3.setBackgroundColor(Color.rgb(255, 0, 0));
+                Intent i = new Intent(Net1814080903323Activity.this, MusicActivity.class);
+                startActivity(i);
+            }
+        });
 
+    }
 
 
    /*    Button button1 = (Button) findViewById(R.id.button1);
@@ -59,6 +70,5 @@ public class Net1814080903323Activity extends AppCompatActivity {
         });
 */
 
-    }
 }
 
