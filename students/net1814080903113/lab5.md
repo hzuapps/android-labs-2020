@@ -38,6 +38,7 @@ if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
                 ActivityCompat.requestPermissions(this, PERMISSIONS_STORAGE, REQUEST_PERMISSION_CODE);
             }
         }
+        
 ```
 
 - 读写权限
@@ -94,6 +95,7 @@ try {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        
 ```
 
 - 通知图库更新
