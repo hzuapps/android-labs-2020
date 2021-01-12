@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Net1814080903113MainActivity"
+    android:background="@drawable/aqua5">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="240dp"
+            android:layout_height="450dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/chat"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_viewshow"
+            android:layout_width="180dp"
+            android:layout_height="260dp"
+            android:clipToPadding="false"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="47dp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="480dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/aqua22"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/photostrat"
+            android:paddingTop="2dp"
+            android:layout_gravity="center"
+            android:textColor="#554236"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="570dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/aqua23"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/haisinintro"
+            android:paddingTop="2dp"
+            android:layout_gravity="center"
+            android:textColor="#554236"/>
+
+
+    </LinearLayout>
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/akukinbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/aquaneko"
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginBottom="60dp"/>-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_above="@+id/main_radio" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/main_radio"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:paddingTop="5dp">-->
+
+<!--        <RadioGroup-->
+<!--            android:id="@+id/rg_main"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_main"-->
+<!--                style="@style/rb_style"-->
+<!--                android:checked="true"-->
+<!--                android:drawableTop="@drawable/aqua24"-->
+<!--                android:text="@string/shouye"/>-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_intro"-->
+<!--                style="@style/rb_style"-->
+<!--                android:drawableTop="@drawable/aqua22"-->
+<!--                android:text="@string/photostrat" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rb_message"-->
+<!--                style="@style/rb_style"-->
+<!--                android:drawableTop="@drawable/aqua23"-->
+<!--                android:text="@string/haisinintro"/>-->
+
+
+<!--        </RadioGroup>-->
+
+
+<!--    </LinearLayout>-->
+
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/main_back"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="754dp"-->
+        <!--android:src="@drawable/aqua5"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:contentDescription="@string/app_name"/>-->
+
+
+</RelativeLayout>
