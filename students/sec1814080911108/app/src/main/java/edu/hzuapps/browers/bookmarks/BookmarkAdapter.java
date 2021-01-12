@@ -34,6 +34,7 @@ public class BookmarkAdapter extends ArrayAdapter {
         View view = LayoutInflater.from(getContext()).inflate(resourceId, null);
         ImageView bookmarkImage = (ImageView) view.findViewById(R.id.bookmark_icon);
         TextView bookmarkTitle = (TextView) view.findViewById(R.id.bookmark_title);
+
         bookmarkImage.setImageResource(bookmark.getImageId());
         bookmarkTitle.setText(bookmark.getTitle());
 //        return super.getView(position, convertView, parent);

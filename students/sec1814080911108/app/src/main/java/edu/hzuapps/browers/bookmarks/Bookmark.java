@@ -14,8 +14,17 @@ public class Bookmark {
         this.url = url;
     }
 
+
     public String getTitle() {
         return title;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public void setTitle(String title) {

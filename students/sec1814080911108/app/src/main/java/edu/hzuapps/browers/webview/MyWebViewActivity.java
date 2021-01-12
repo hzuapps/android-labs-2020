@@ -23,9 +23,15 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+
+import org.json.JSONException;
+
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
+import java.util.List;
+import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -34,6 +40,8 @@ import edu.hzuapps.browers.Sec1814080911108Activity;
 import edu.hzuapps.browers.bookmarks.Bookmark;
 import edu.hzuapps.browers.bookmarks.BookmarksActivity;
 import edu.hzuapps.browers.helper.FileHelper;
+
+import static java.net.URLEncoder.encode;
 
 public class MyWebViewActivity extends AppCompatActivity implements View.OnClickListener{
     private WebView webView;
@@ -63,7 +71,7 @@ public class MyWebViewActivity extends AppCompatActivity implements View.OnClick
 
         mContext = MyWebViewActivity.this;
         manager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-
+        fileHelper = new FileHelper(mContext);
         // 绑定控件
         initView();
 
@@ -73,7 +81,16 @@ public class MyWebViewActivity extends AppCompatActivity implements View.OnClick
         } catch (IOException e) {
             e.printStackTrace();
         }
-        manager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+
+        // Bundle 接收数据
+        Bundle bundle = this.getIntent().getExtras();
+        if (bundle != null){
+            String webUrl = bundle.getString("webUrl");
+            loadBookmark(webUrl);
+        }else{
+            loadIndex();
+        }
+
     }
     /**
      * 绑定控件
@@ -86,7 +103,7 @@ public class MyWebViewActivity extends AppCompatActivity implements View.OnClick
         btnStart = (ImageView)findViewById(R.id.btnStart);
         goBack = (ImageView)findViewById(R.id.goBack);
         goForward = (ImageView)findViewById(R.id.goForward);
-        bookmarks = (ImageView)findViewById(R.id.bookmark_collect);
+        bookmarks = (ImageView)findViewById(R.id.bookmarks);
         goHome = (ImageView)findViewById(R.id.nav_home);
         bookmarkCollect = (ImageView)findViewById(R.id.bookmark_collect);
 
@@ -150,7 +167,7 @@ public class MyWebViewActivity extends AppCompatActivity implements View.OnClick
         // 启用 js 功能
         settings.setJavaScriptEnabled(true);
         // 设置浏览器 UserAgent
-        settings.setUserAgentString(settings.getUserAgentString() + " mkBrowser/" + getVerName(mContext));
+        settings.setUserAgentString(settings.getUserAgentString() + "Browser/" + getVerName(mContext));
 
         // 将图片调整到适合 WebView 的大小
         settings.setUseWideViewPort(true);
@@ -181,21 +198,32 @@ public class MyWebViewActivity extends AppCompatActivity implements View.OnClick
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         }
+    }
 
+    public void loadIndex(){
         // 加载首页
-        fileHelper = new FileHelper(getApplicationContext());
-        String input = this.fileHelper.read("searchList");
-        if (!isHttpUrl(input)){
+        String searchKey = null;
+        try {
+            searchKey = fileHelper.read("searchKey");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        if (!isHttpUrl(searchKey)){
             // 不是网址，加载搜索引擎处理
             try {
                 // URL 编码
-                input = URLEncoder.encode(input, "utf-8");
+                searchKey = encode(searchKey, "utf-8");
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
-            input = "www.baidu.com/s?wd=" + input + "&ie=UTF-8";
+            searchKey = "www.baidu.com/s?wd=" + searchKey + "&ie=UTF-8";
         }
-        webView.loadUrl("http://" + input);
+        webView.loadUrl("http://" + searchKey);
+    }
+
+    public void loadBookmark(String webUrl){
+        webView.loadUrl(webUrl);
     }
 
     @Override
@@ -214,7 +242,7 @@ public class MyWebViewActivity extends AppCompatActivity implements View.OnClick
                         // 不是网址，加载搜索引擎处理
                         try {
                             // URL 编码
-                            input = URLEncoder.encode(input, "utf-8");
+                            input = encode(input, "utf-8");
                         } catch (UnsupportedEncodingException e) {
                             e.printStackTrace();
                         }
@@ -244,12 +272,14 @@ public class MyWebViewActivity extends AppCompatActivity implements View.OnClick
                 Intent intent = new Intent(MyWebViewActivity.this, Sec1814080911108Activity.class);
                 startActivity(intent);
             case R.id.bookmark_collect:
-                // 添加书签
-                String webTitle = webView.getTitle();
-                String webUrl = webView.getUrl();
-                fileHelper = new FileHelper(mContext);
-                try {
-                    fileHelper.save("bookmarks",webTitle + "-" + webUrl + "。");
+                // 创建JSONObject
+                JSONObject jsonObject = new JSONObject();
+                String[] title = webView.getTitle().split("-");
+                jsonObject.put("title", title[0]);
+                jsonObject.put("url", webView.getUrl());
+                String jsonStr = jsonObject.toJSONString() + "￥";
+                try{
+                    fileHelper.add("bookmarks",jsonStr);
                     Toast.makeText(MyWebViewActivity.this, "收藏成功", Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
                     Toast.makeText(MyWebViewActivity.this, "收藏失败", Toast.LENGTH_SHORT).show();
@@ -279,6 +309,7 @@ public class MyWebViewActivity extends AppCompatActivity implements View.OnClick
             e.printStackTrace();
         }
     }
+
     /**
      * 重写 WebViewClient
      */

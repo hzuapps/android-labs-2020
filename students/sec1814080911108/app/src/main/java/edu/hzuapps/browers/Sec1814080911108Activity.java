@@ -1,5 +1,6 @@
 package edu.hzuapps.browers;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -10,6 +11,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -22,6 +24,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -37,11 +40,13 @@ public class Sec1814080911108Activity extends AppCompatActivity implements View.
     private EditText textUrl;
     private ImageView btnCollect;
 
+    @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sec1814080911108);
         mContext = getApplicationContext();
+        fileHelper = new FileHelper(mContext);
 
         initView();
     }
@@ -75,13 +80,10 @@ public class Sec1814080911108Activity extends AppCompatActivity implements View.
                 if (keyCode == KeyEvent.KEYCODE_ENTER && keyEvent.getAction() == KeyEvent.ACTION_DOWN) {
                     // 执行搜索
                     textUrl.clearFocus();
-                    String searchUrl = textUrl.getText().toString();
-                    // 搜索内容写入文件
-                    fileHelper = new FileHelper(mContext);
+                    String searchKey = textUrl.getText().toString();
                     try {
-                        fileHelper.save("searchList", searchUrl);
+                        fileHelper.save("searchKey",searchKey);
                     } catch (Exception e) {
-                        Toast.makeText(Sec1814080911108Activity.this, R.string.fail, Toast.LENGTH_SHORT).show();
                         e.printStackTrace();
                     }
                     Intent intent = new Intent(Sec1814080911108Activity.this, MyWebViewActivity.class);
@@ -97,7 +99,7 @@ public class Sec1814080911108Activity extends AppCompatActivity implements View.
         switch (view.getId()){
             case R.id.bookmarks:
                 // 发出Toast
-                Toast.makeText(Sec1814080911108Activity.this, "遇见爱情", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Sec1814080911108Activity.this, "遇见爱情", Toast.LENGTH_SHORT).show();
                 // 显式Intent
                 Intent bookmarksIntent = new Intent(Sec1814080911108Activity.this, BookmarksActivity.class);
                 startActivity(bookmarksIntent);
@@ -105,7 +107,6 @@ public class Sec1814080911108Activity extends AppCompatActivity implements View.
             case R.id.bookmark_collect:
                 Toast.makeText(Sec1814080911108Activity.this, "主页无法收藏", Toast.LENGTH_SHORT).show();
                 // 往文件中写入内容
-//                fileHelper = new FileHelper(mContext);
 //                String title = "服刑相当于住宾馆 狱中“帝王”牵出93名“保护伞。英特纳雄耐尔，就一定要实现。";
 //                try {
 //                    fileHelper.save("bookmark",title);
