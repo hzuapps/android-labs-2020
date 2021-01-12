@@ -28,5 +28,14 @@ public class ChoseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(thisActivity, ChoseActivity.class);
+                startActivity(intent);
+}
     }
 }
