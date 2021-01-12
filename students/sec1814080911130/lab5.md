@@ -218,7 +218,7 @@ private List<Map<String,String>> getAllRank(){
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/rank_title" />
-```xml
+```
 
 8、测试结果
 
