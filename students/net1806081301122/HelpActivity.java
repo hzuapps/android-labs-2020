@@ -1,4 +1,4 @@
-package edu.hzuapps.androidlabs.net1806081301122;
+package edu.hzuapps.androidlabs.Net1806081301122activity.androidLabs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,18 +8,18 @@ import android.view.View;
 import android.widget.Button;
 
 public class HelpActivity extends AppCompatActivity {
+    Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
-        Button button = findViewById(R.id.help);
-        final HelpActivity _this = this;
-        button.setOnClickListener(new View.OnClickListener() {
+        back = (Button) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(_this, HelpActivity.class);
-                _this.startActivity(intent);
+                Intent intent = new Intent(HelpActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
