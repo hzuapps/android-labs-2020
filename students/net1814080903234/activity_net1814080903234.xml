@@ -5,8 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="edu.hzuapp.androidlabs.net1814080903234.Net1814080903234Activity"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="1">
+    
     <!--<TextView-->
         <!--android:id="@+id/textView1"-->
         <!--android:layout_width="wrap_content"-->
@@ -14,29 +16,69 @@
         <!--android:drawableTop="@drawable/buttonbg"-->
         <!--/>-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    <Button
+        android:id="@+id/net_con1"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:text="contact"
+        android:textSize="20dp"
+        />
 
-        <Button
-            android:id="@+id/net_con1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="contact"
-            android:textSize="20dp"
-            android:layout_marginTop="550dp"
-            />
+    <Button
+        android:id="@+id/net_dyn1"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:text="dynamic"
+        android:textSize="20dp"
+        />
 
-        <Button
-            android:id="@+id/net_dyn1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="550dp"
-            android:layout_weight="1"
-            android:text="dynamic"
-            android:textSize="20dp" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/net_tree"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:text="tree"
+        android:textSize="20dp"
+        />
+
+    <!--<Button-->
+        <!--android:id="@+id/main"-->
+        <!--android:layout_width="410dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="main"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="500dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/net_tree"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="550dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="tree"-->
+            <!--android:textSize="20dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/net_con1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="550dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="contact"-->
+            <!--android:textSize="20dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/net_dyn1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="550dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="dynamic"-->
+            <!--android:textSize="20dp" />-->
+    <!--</LinearLayout>-->
 
 </LinearLayout>
