@@ -277,5 +277,5 @@ public class HttpClientUIActivity extends AppCompatActivity {
 
 ## 五、实验心得
 
-​		本次实验学习Android上的网络编程。
+通过本次的实验，我学习到了如何在Android设备中使用网络编程，获取Json文件。
 
