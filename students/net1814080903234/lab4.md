@@ -76,7 +76,7 @@ btnDyn.setOnClickListener(new View.OnClickListener(){
 ```
 
 # 四、实验结果
-
-
+![](https://github.com/jun-stack/android-labs-2020/blob/master/students/net1814080903234/lab4_1.png)
+![](https://github.com/jun-stack/android-labs-2020/blob/master/students/net1814080903234/lab4_2.png)
 # 五、实验心得
 我在本次实验中学到了Android界面设计编程中的LinearLayout和RelativeLayout布局的使用，尤其熟悉了<Button/>组件的运用
