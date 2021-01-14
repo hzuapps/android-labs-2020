@@ -7,38 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".PerformanceActivity">
 
+    <Button
+        android:id="@+id/btClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="请触碰此区域"
+        android:background="#998a66"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
     <TextView
-        android:id="@+id/textview_01"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvCount"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/performance"
-        android:text="  开始运动"
-        android:paddingLeft="160dp"
-        android:paddingTop="100dp"/>
-
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="724dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="6dp">
-
-        <Button
-            android:id="@+id/performance_btn_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="开始运动"
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="90dp"/>
-
-        <Button
-            android:id="@+id/main_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="50dp"
-            android:text="返回" />
-    </LinearLayout>
-
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#be142a"
+        android:text="TextView" />
 
 </LinearLayout>

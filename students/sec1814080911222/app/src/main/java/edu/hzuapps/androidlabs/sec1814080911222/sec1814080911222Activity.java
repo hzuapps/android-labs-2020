@@ -7,14 +7,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
+public class sec1814080911222Activity extends AppCompatActivity  {
 
-public class sec1814080911222Activity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         final Activity thisActivity = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sec_1814080911222_activity);
@@ -37,5 +40,12 @@ public class sec1814080911222Activity extends AppCompatActivity {
                 thisActivity.finish();
             }
         });
+
+
+
     }
+
+
+
+
 }

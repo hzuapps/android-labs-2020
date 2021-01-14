@@ -19,9 +19,9 @@
             android:id="@+id/plan_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="指定计划"
+            android:text="设置计划"
             android:layout_marginTop="300dp"
-            android:layout_marginLeft="70dp"/>
+            android:layout_marginLeft="30dp"/>
 
         <Button
             android:id="@+id/performance_btn"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:text="开始运动"
             android:layout_marginTop="300dp"
-            android:layout_marginLeft="85dp"/>
+            android:layout_marginLeft="75dp"/>
     </LinearLayout>
 
 </LinearLayout>
