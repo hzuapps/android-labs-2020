@@ -15,7 +15,6 @@
         android:layout_marginTop="25dp"
         android:hint="@string/MedicineName"
         android:layout_centerHorizontal="true"
-        app:layout_constraintTop_toTopOf="parent"
         >
 
     </EditText>
@@ -51,7 +50,7 @@
         android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/id_btn_write"
+        android:id="@+id/btn_write"
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_below="@+id/TimeForMedicine"
@@ -59,5 +58,12 @@
         android:layout_marginTop="100dp"
         android:text="@string/save"/>
 
-
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/btn_write"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/back"/>
 </RelativeLayout>
