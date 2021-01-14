@@ -55,7 +55,8 @@ Button login=(Button)findViewById(R.id.button);
 ```
 
 # 四、实验结果
-
+![](https://github.com/jun-stack/android-labs-2020/blob/master/students/net1814080903234/lab5_1.png)
+![](https://github.com/jun-stack/android-labs-2020/blob/master/students/net1814080903234/lab5_2.png)
 # 五、实验心得
 这次实验做的是文件储存，本来是想做SqLite数据库的，但是当储存数据后，出现闪退的情况，百度和问同学都解决不了这个问题 之后我便选择用文件储存来完成这实验
 
