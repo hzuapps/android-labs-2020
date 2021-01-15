@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#8456"
+        android:gravity="center"
+        android:text="闲鱼，让你的闲置游起来"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#8456"
+        android:gravity="center"
+        android:text="闲鱼，让你的闲置游起来"
+        android:textColor="#FFF" />
+
+    <com.lzy.widget.VerticalSlide
+        android:id="@+id/dragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/top">
+
+        <FrameLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.lzy.widget.VerticalSlide>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="66dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_arrow_upward"/>
+</RelativeLayout>
