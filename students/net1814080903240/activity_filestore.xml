@@ -5,7 +5,15 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:padding="25dp"
+    android:id="@+id/comment_camera"
     android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/content" />
 
     <EditText
         android:id="@+id/et_suggest"
@@ -26,10 +34,9 @@
         android:layout_height="wrap_content"
         android:text="@string/show" />
 
-    <TextView
-        android:id="@+id/text_view"
+    <Button
+        android:id="@+id/take_photos"
         android:layout_width="360dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="10dp"
-        android:hint="@string/content"/>
+        android:layout_height="wrap_content"
+        android:text="拍照"/>
 </LinearLayout>

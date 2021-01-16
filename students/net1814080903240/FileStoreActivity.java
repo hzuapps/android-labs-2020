@@ -1,11 +1,17 @@
 package edu.hzuapps.androidlabs.net1814080903240;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.FileInputStream;
@@ -19,6 +25,9 @@ public class FileStoreActivity extends AppCompatActivity {
     private TextView mContent;
     private final String mFileName = "test.txt";
 
+    private Button take_photo;
+    private LinearLayout linearLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +38,7 @@ public class FileStoreActivity extends AppCompatActivity {
         show_btn = findViewById(R.id.show_btn);
         mContent = findViewById(R.id.text_view);
 
+        //处理点击按钮
         save_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,11 +47,25 @@ public class FileStoreActivity extends AppCompatActivity {
             }
         });
 
-
+        //处理点击按钮
         show_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mContent.setText(read());
+            }
+        });
+
+
+        //准备界面
+        linearLayout = findViewById(R.id.comment_camera);
+
+        //处理点击按钮
+        take_photo = findViewById(R.id.take_photos);
+        take_photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //请求拍照
+                dispatchTakePhotoIntent();
             }
         });
     }
@@ -92,4 +116,27 @@ public class FileStoreActivity extends AppCompatActivity {
         return null;
     }
 
+    static final int REQUEST_IMAGE_CAPTURE =1;
+
+    // 请求拍照
+    private void dispatchTakePhotoIntent(){
+        Intent takePhotoIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if(takePhotoIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(takePhotoIntent,REQUEST_IMAGE_CAPTURE);
+        }
+    }
+
+    //获取缩略图
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
+        super.onActivityResult(requestCode,resultCode,data);
+        if (requestCode == REQUEST_IMAGE_CAPTURE && requestCode == RESULT_OK){
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            ImageView imageView = new ImageView(this);
+            //设置图片大小
+            imageView.setImageBitmap(imageBitmap);
+            linearLayout.addView(imageView);
+        }
+    }
 }
