@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="299dp"
         android:gravity="center">
 
         <ImageView
@@ -23,8 +23,25 @@
             android:layout_marginTop="20dp"
             android:text="录音机"
             android:textSize="32dp" />
+
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="bottom">
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:format="00:00"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,22 +52,23 @@
             android:id="@+id/startluyin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="30dp"
             android:text="开始录音" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopluyin"
+            android:text="停止录音"
+            android:layout_marginLeft="30dp"
+            android:enabled="false"/>
 
         <Button
             android:id="@+id/luyinline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="30dp"
             android:text="录音列表" />
 
-        <Button
-            android:id="@+id/lab5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="实验5"/>
     </LinearLayout>
 
 </LinearLayout>
