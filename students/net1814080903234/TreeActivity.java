@@ -1,27 +1,31 @@
-# 一、实验目标
+package edu.hzuapp.androidlabs.net1814080903234;
 
-1. 了解Andoid的存储手段用    
-2. 掌握Android的文件存储
+import android.app.Activity;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
-# 二、实验内容
+public class TreeActivity extends AppCompatActivity {
 
-1. 将应用产生的数据保存到文件存储中    
-2. 说明使用的文件存储方式：内部 or 外部    
-3. 结果截图  
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_tree);
 
-# 三、实验步骤
+        final Activity thisActivity = this;
+        //获取各个数据信息
+        final EditText nameET =(EditText)findViewById(R.id.name);
+        final EditText idET =(EditText)findViewById(R.id.neirong);
 
-1. 获取数据信息
-```
-//获取各个数据信息
-final EditText nameET =(EditText)findViewById(R.id.name);
-final EditText idET =(EditText)findViewById(R.id.neirong);
-```
-2. 触发按钮点击事件，将获取输入的信息
-```
-final Activity thisActivity = this;
-Button login=(Button)findViewById(R.id.button);
+        //获得按钮控件
+        Button login=(Button)findViewById(R.id.button);
         login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -49,14 +53,9 @@ Button login=(Button)findViewById(R.id.button);
                     }
                 }
                 Intent intent =new Intent(thisActivity,DataActivity.class);
+                //intent.setClass(TreeActivity.this,DataActivity.class);
                 thisActivity.startActivity(intent);//实现跳转
             }
         });
-```
-
-# 四、实验结果
-![](https://github.com/jun-stack/android-labs-2020/blob/master/students/net1814080903234/lab5_1.png)
-![](https://github.com/jun-stack/android-labs-2020/blob/master/students/net1814080903234/lab5_2.png)
-# 五、实验心得
-这次实验做的是文件储存，本来是想做SqLite数据库的，但是当储存数据后，出现闪退的情况，百度和问同学都解决不了这个问题 之后我便选择用文件储存来完成这实验
-
+    }
+}
