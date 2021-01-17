@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:padding="20dp"
+    android:id="@+id/comment_camera"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/take_photos"
+        android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:text="拍照"/>
+</LinearLayout>
