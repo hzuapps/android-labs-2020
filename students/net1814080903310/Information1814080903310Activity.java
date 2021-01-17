@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.FileNotFoundException;
@@ -24,6 +25,10 @@ public class Information1814080903310Activity extends AppCompatActivity {
     private Button read;
     private Context This;
 
+    private TextView viewName;
+    private TextView viewPhone;
+    private TextView viewEmail;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +39,10 @@ public class Information1814080903310Activity extends AppCompatActivity {
         Phone = (EditText)findViewById(R.id.editTextPhone);
         read = (Button)findViewById(R.id.read);
         write = (Button)findViewById(R.id.write);
+
+        viewName = (TextView)findViewById(R.id.viewName);
+        viewEmail = (TextView)findViewById(R.id.viewEmail);
+        viewPhone = (TextView)findViewById(R.id.viewPhone);
     }
 
     public void onClick(View view){
@@ -59,7 +68,10 @@ public class Information1814080903310Activity extends AppCompatActivity {
         PersonName.setText("");
         EmailAddress.setText("");
         Phone.setText("");
-        Toast.makeText(this,"昵称为："+mPersonName+"邮箱为："+mEmailAddress+"电话为："+mPhone,Toast.LENGTH_LONG).show();
+        viewName.setText("您的昵称为："+mPersonName);
+        viewEmail.setText("您的邮箱为："+mEmailAddress);
+        viewPhone.setText("您的电话为："+mPhone);
+        //Toast.makeText(this,"昵称为："+mPersonName+"邮箱为："+mEmailAddress+"电话为："+mPhone,Toast.LENGTH_LONG).show();
     }
     private boolean msave(String PersonName,String EmailAddress,String Phone){
         SharedPreferences sp = getSharedPreferences("info",MODE_PRIVATE);

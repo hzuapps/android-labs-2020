@@ -17,6 +17,7 @@ public class PlayVideo18148080903310Activity extends AppCompatActivity {
     private Button startVideo;
     private Button stopVideo;
     private MediaController mediaController;
+    private Button playVideo2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class PlayVideo18148080903310Activity extends AppCompatActivity {
         videoView = (VideoView)findViewById(R.id.videoView2);
         startVideo = (Button)findViewById(R.id.startVideo);
         stopVideo = (Button)findViewById(R.id.stopVideo);
+        playVideo2 = (Button)findViewById(R.id.playVideo2);
 
         startVideo.setOnClickListener(new View.OnClickListener(){
 
@@ -43,6 +45,13 @@ public class PlayVideo18148080903310Activity extends AppCompatActivity {
                 videoView.stopPlayback();
             }
         });
+        playVideo2.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                init2();
+            }
+        });
     }
 
     private void init(){
@@ -55,5 +64,15 @@ public class PlayVideo18148080903310Activity extends AppCompatActivity {
         videoView.requestFocus();
         videoView.start();
     }
-}
 
+    private void init2(){
+        videoView = (VideoView)findViewById(R.id.videoView2);
+        mediaController = new MediaController(this);
+        String uri = "android.resource://"+getPackageName()+"/"+R.raw.video2;
+        videoView.setVideoURI(Uri.parse(uri));
+        videoView.setMediaController(mediaController);
+        mediaController.setMediaPlayer(videoView);
+        videoView.requestFocus();
+        videoView.start();
+    }
+}
