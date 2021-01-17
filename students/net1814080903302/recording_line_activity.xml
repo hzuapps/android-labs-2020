@@ -9,21 +9,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="已保存的录音:"
+        android:text="已保存的录音"
         android:textSize="25dp"
+        android:layout_gravity="center"
         android:textColor="@android:color/black" />
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:textSize="25dp"
-        android:text="录音1" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:textSize="25dp"
-        android:text="录音2" />
 
 </LinearLayout>
