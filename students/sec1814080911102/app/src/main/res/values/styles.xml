@@ -1,0 +1,24 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="OnePxActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item><!--透明状态栏并占用状态栏位置 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:backgroundDimAmount">0.5</item><!-- 背景模糊的透明度 数值越小越透明-->
+        <item name="android:windowIsFloating">true</item><!-- 浮现在Activity之上 -->
+        <item name="windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowAnimationStyle">@null</item><!-- 进入和退出动画 -->
+    </style>
+
+
+</resources>
