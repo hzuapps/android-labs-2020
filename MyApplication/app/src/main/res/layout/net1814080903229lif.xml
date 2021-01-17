@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/beijing"
+    tools:context=".Net1814080903229TravelActivity">
+
+    <TextView
+        android:id="@+id/lif_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生活小贴士"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/heise"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shenghuoxiaotieshi"
+        android:textColor="@color/heise"/>
+
+</LinearLayout>

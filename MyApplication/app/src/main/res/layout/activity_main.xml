@@ -6,19 +6,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/beijing"
     tools:context=".Net1814080903229MainActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="245dp"
-        android:layout_height="145dp"
-        app:srcCompat="@drawable/basicnecessitiesoflife" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="245dp"
+            android:layout_height="145dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/basicnecessitiesoflife" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button"
