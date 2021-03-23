@@ -1,4 +1,4 @@
-# 移动应用开发实验库（2020春）   
+# 移动应用开发实验库（2020秋、课程结束）   
 实验要求：https://github.com/hzuapps/android-labs-2020/issues?q=is%3Aissue+is%3Aopen+label%3ALab
 
 # 使用 Markdown 编写实验报告
